@@ -7,6 +7,6 @@
     <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> style="margin: 0px;padding: 0px;">
     <?php wp_body_open(); ?>
     <div class="terminal-africa-theme-bs">
