@@ -1,0 +1,67 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;500;600;700;800&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap);
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&display=swap");
+
+.terminal-africa-theme-bs {
+  .terminal-header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+    .t-hub-logo {
+      img {
+        height: 35px;
+        object-fit: contain;
+      }
+    }
+
+    .t-hub-menu {
+      ul {
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0px;
+        margin-top: 10px;
+
+        li {
+          list-style-type: none;
+
+          a {
+            font-family: "Lato", sans-serif;
+            font-size: 16px;
+            font-weight: 550;
+            color: #333333;
+          }
+        }
+      }
+    }
+
+    .t-hub-dedicated {
+      .d-flex {
+        gap: 10px;
+
+        a:first-child {
+          background: #f7941e;
+          padding: 10px 20px;
+          font-family: "Lato", sans-serif;
+          font-size: 12px;
+          font-weight: 400;
+          color: white;
+          border-radius: 5px;
+        }
+
+        a:last-child {
+          border: 1px solid #f7941e;
+          background: transparent;
+          padding: 10px 20px;
+          font-family: "Lato", sans-serif;
+          font-size: 12px;
+          font-weight: 400;
+          color: #f7941e;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}
