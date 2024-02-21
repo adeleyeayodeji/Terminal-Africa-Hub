@@ -15,7 +15,7 @@ if (!defined('WPINC')) {
 }
 
 //define constants
-define('TERMINAL_THEME_VERSION', '1.0.0');
+define('TERMINAL_THEME_VERSION', time());
 define('TERMINAL_THEME_DIR', get_template_directory());
 define('TERMINAL_THEME_URI', get_template_directory_uri());
 //assets url
