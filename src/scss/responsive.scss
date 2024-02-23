@@ -1,21 +1,176 @@
 .terminal-africa-theme-bs {
   /* Extra small devices (phones, 600px and down) */
   @media only screen and (max-width: 600px) {
+    .terminal-mobile-menu {
+      display: flex;
+    }
+
+    .terminal-header {
+      display: none;
+    }
+
+    .terminal-cta {
+      flex-direction: column !important;
+    }
+
+    .terminal-hero-section {
+      .hero-content {
+        padding: 3rem 3rem;
+
+        h1 {
+          font-size: 55px;
+        }
+
+        p {
+          font-size: 17px;
+        }
+      }
+    }
+
+    .terminal-partners {
+      .d-flex {
+        justify-content: center !important;
+      }
+    }
   }
 
   /* Small devices (portrait tablets and large phones, 600px and up) */
   @media only screen and (min-width: 600px) {
+    .terminal-mobile-menu {
+      display: flex;
+    }
+
+    .terminal-header {
+      display: none;
+    }
+
+    .terminal-cta {
+      flex-direction: column !important;
+    }
+
+    .terminal-hero-section {
+      .hero-content {
+        padding: 3rem 3rem;
+
+        h1 {
+          font-size: 55px;
+        }
+
+        p {
+          font-size: 17px;
+        }
+      }
+    }
+
+    .terminal-partners {
+      .d-flex {
+        justify-content: space-between !important;
+      }
+    }
   }
 
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width: 768px) {
+    .terminal-mobile-menu {
+      display: flex;
+    }
+
+    .terminal-header {
+      display: none;
+    }
+
+    .terminal-cta {
+      flex-direction: column !important;
+    }
+
+    .terminal-hero-section {
+      .hero-content {
+        padding: 3rem 3rem;
+
+        h1 {
+          font-size: 55px;
+        }
+
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .terminal-partners {
+      .d-flex {
+        justify-content: space-between !important;
+      }
+    }
   }
 
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {
+    .terminal-mobile-menu {
+      display: flex;
+    }
+
+    .terminal-header {
+      display: none;
+    }
+
+    .terminal-cta {
+      flex-direction: column !important;
+    }
+
+    .terminal-hero-section {
+      .hero-content {
+        padding: 3rem 3rem;
+
+        h1 {
+          font-size: 60px;
+        }
+
+        p {
+          font-size: 19px;
+        }
+      }
+    }
+
+    .terminal-partners {
+      .d-flex {
+        justify-content: space-between !important;
+      }
+    }
   }
 
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (min-width: 1200px) {
+    .terminal-mobile-menu {
+      display: none;
+    }
+
+    .terminal-header {
+      display: flex;
+    }
+
+    .terminal-cta {
+      flex-direction: row !important;
+    }
+
+    .terminal-hero-section {
+      .hero-content {
+        padding: 5rem 8rem;
+
+        h1 {
+          font-size: 70px;
+        }
+
+        p {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .terminal-partners {
+      .d-flex {
+        justify-content: space-between !important;
+      }
+    }
   }
 }
