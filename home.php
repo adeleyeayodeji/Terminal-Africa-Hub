@@ -30,8 +30,28 @@ get_header();
         <div class="t-hub-logo">
             <img src="http://localhost:8888/wordpress/wp-content/plugins/terminal-africa/assets/img/logo-full.png" alt="">
         </div>
-        <div class="t-hub-mobile-menu">
+        <div class="t-hub-mobile-menu terminal-mobile-menu-content-trigger cursor-pointer">
             <img src="<?php echo esc_url(TERMINAL_THEME_ASSETS_URI . 'img/menu-icon.svg') ?>" alt="">
+        </div>
+    </div>
+    <div class="terminal-mobile-menu-content">
+        <div class="t-hub-menu">
+            <?php
+            //wp menu
+            wp_nav_menu(
+                array(
+                    'theme_location' => 'primary',
+                    'container' => '',
+                    'menu_class' => 't-hub-menu-ul'
+                )
+            );
+            ?>
+        </div>
+        <div class="t-hub-dedicated">
+            <nav class="d-flex">
+                <a href="#">Book Shipment</a>
+                <a href="#">Track Shipment</a>
+            </nav>
         </div>
     </div>
     <div class="terminal-hero-section" style="background-image: url('<?php echo esc_url(TERMINAL_THEME_ASSETS_URI . 'img/bg.jpeg') ?>');">
@@ -54,7 +74,7 @@ get_header();
     </div>
     <div class="terminal-service">
         <div class="row m-0 justify-content-center">
-            <div class="col-lg-5 col-md-5 col-sm-12">
+            <div class="col-lg-5 col-md-5 col-sm-12 mb-5">
                 <h2>
                     Check out our services
                 </h2>
@@ -103,7 +123,7 @@ get_header();
     </div>
     <div class="terminal-footer">
         <div class="row m-0">
-            <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+            <div class="col-lg-3 col-md-3 col-sm-6 mb-5">
                 <div class="terminal-footer-1">
                     <img src="http://localhost:8888/wordpress/wp-content/plugins/terminal-africa/assets/img/logo-full.png" alt="">
                     <nav>
@@ -125,7 +145,7 @@ get_header();
                     </nav>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+            <div class="col-lg-3 col-md-3 col-sm-6 mb-5">
                 <h4>Product</h4>
                 <?php
                 //get wp menu 'product'
@@ -139,7 +159,7 @@ get_header();
                 );
                 ?>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+            <div class="col-lg-3 col-md-3 col-sm-6 mb-5">
                 <h4>Company</h4>
                 <?php
                 //get wp menu 'product'
@@ -153,7 +173,7 @@ get_header();
                 );
                 ?>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+            <div class="col-lg-3 col-md-3 col-sm-6 mb-5">
                 <h4>Legal</h4>
                 <?php
                 //get wp menu 'product'

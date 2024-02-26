@@ -32,6 +32,47 @@
         justify-content: center !important;
       }
     }
+
+    .terminal-service {
+      h2 {
+        font-size: 40px;
+      }
+    }
+
+    .terminal-review {
+      h2 {
+        font-size: 28px;
+      }
+
+      p {
+        font-size: 20px;
+        font-weight: 300;
+      }
+
+      p.terminal-review-profile {
+        font-size: 25px;
+      }
+
+      img {
+        height: 20px;
+      }
+    }
+
+    .terminal-in-touch {
+      h2 {
+        font-size: 40px;
+        font-weight: 600;
+      }
+
+      p {
+        font-size: 24px;
+        font-weight: 300;
+      }
+    }
+
+    .terminal-footer {
+      padding: 5rem 4rem;
+    }
   }
 
   /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -66,6 +107,47 @@
       .d-flex {
         justify-content: space-between !important;
       }
+    }
+
+    .terminal-service {
+      h2 {
+        font-size: 40px;
+      }
+    }
+
+    .terminal-review {
+      h2 {
+        font-size: 28px;
+      }
+
+      p {
+        font-size: 20px;
+        font-weight: 300;
+      }
+
+      p.terminal-review-profile {
+        font-size: 25px;
+      }
+
+      img {
+        height: 20px;
+      }
+    }
+
+    .terminal-in-touch {
+      h2 {
+        font-size: 40px;
+        font-weight: 600;
+      }
+
+      p {
+        font-size: 24px;
+        font-weight: 300;
+      }
+    }
+
+    .terminal-footer {
+      padding: 5rem 4rem;
     }
   }
 
@@ -102,6 +184,47 @@
         justify-content: space-between !important;
       }
     }
+
+    .terminal-service {
+      h2 {
+        font-size: 40px;
+      }
+    }
+
+    .terminal-review {
+      h2 {
+        font-size: 28px;
+      }
+
+      p {
+        font-size: 20px;
+        font-weight: 300;
+      }
+
+      p.terminal-review-profile {
+        font-size: 25px;
+      }
+
+      img {
+        height: 20px;
+      }
+    }
+
+    .terminal-in-touch {
+      h2 {
+        font-size: 40px;
+        font-weight: 600;
+      }
+
+      p {
+        font-size: 24px;
+        font-weight: 300;
+      }
+    }
+
+    .terminal-footer {
+      padding: 5rem 4rem;
+    }
   }
 
   /* Large devices (laptops/desktops, 992px and up) */
@@ -137,6 +260,47 @@
         justify-content: space-between !important;
       }
     }
+
+    .terminal-service {
+      h2 {
+        font-size: 70px;
+      }
+    }
+
+    .terminal-review {
+      h2 {
+        font-size: 50px;
+      }
+
+      p {
+        font-size: 32px;
+        font-weight: 400;
+      }
+
+      p.terminal-review-profile {
+        font-size: 36px;
+      }
+
+      img {
+        height: auto;
+      }
+    }
+
+    .terminal-in-touch {
+      h2 {
+        font-size: 45px;
+        font-weight: 600;
+      }
+
+      p {
+        font-size: 24px;
+        font-weight: 400;
+      }
+    }
+
+    .terminal-footer {
+      padding: 5rem 4rem;
+    }
   }
 
   /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -171,6 +335,47 @@
       .d-flex {
         justify-content: space-between !important;
       }
+    }
+
+    .terminal-service {
+      h2 {
+        font-size: 80px;
+      }
+    }
+
+    .terminal-review {
+      h2 {
+        font-size: 50px;
+      }
+
+      p {
+        font-size: 32px;
+        font-weight: 400;
+      }
+
+      p.terminal-review-profile {
+        font-size: 36px;
+      }
+
+      img {
+        height: auto;
+      }
+    }
+
+    .terminal-in-touch {
+      h2 {
+        font-size: 60px;
+        font-weight: 600;
+      }
+
+      p {
+        font-size: 24px;
+        font-weight: 400;
+      }
+    }
+
+    .terminal-footer {
+      padding: 5rem 10rem;
     }
   }
 }
