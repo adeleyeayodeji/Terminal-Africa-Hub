@@ -20,4 +20,12 @@ jQuery(document).ready(function ($) {
   $(window).scroll(function () {
     $(".terminal-mobile-menu-content").hide();
   });
+
+  //hide all .customize-partial-edit-shortcut under .t-hub-menu-ul
+  setInterval(() => {
+    //ul
+    var ul_terminal_menu = $(".t-hub-menu-ul");
+    //hide all .customize-partial-edit-shortcut
+    ul_terminal_menu.find(".customize-partial-edit-shortcut").hide();
+  }, 100);
 });

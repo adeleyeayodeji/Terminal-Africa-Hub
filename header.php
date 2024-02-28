@@ -9,4 +9,78 @@
 
 <body <?php body_class(); ?> style="margin: 0px;padding: 0px;">
     <?php wp_body_open(); ?>
+    <!-- terminal-africa-theme-bs -->
     <div class="terminal-africa-theme-bs">
+        <!-- container-fluid -->
+        <div class="container-fluid p-0 m-0">
+            <div class="terminal-header">
+                <div class="t-hub-logo">
+                    <a href="<?php echo site_url(); ?>">
+                        <?php
+                        $custom_logo_id = get_theme_mod('custom_logo');
+                        $logo_image = wp_get_attachment_image_src($custom_logo_id, 'full');
+                        if ($logo_image) {
+                            echo '<img src="' . esc_url($logo_image[0]) . '" alt="' . get_bloginfo('name') . '">';
+                        } else {
+                            echo '<img src="' . esc_url(TERMINAL_THEME_ASSETS_URI . 'img/menu-icon.svg') . '" alt="Terminal Africa Default">';
+                        }
+                        ?>
+                    </a>
+                </div>
+                <div class="t-hub-menu">
+                    <?php
+                    //wp menu
+                    wp_nav_menu(
+                        array(
+                            'theme_location' => 'primary',
+                            'container' => '',
+                            'menu_class' => 't-hub-menu-ul'
+                        )
+                    );
+                    ?>
+                </div>
+                <div class="t-hub-dedicated">
+                    <div class="d-flex">
+                        <a href="#">Book Shipment</a>
+                        <a href="#">Track Shipment</a>
+                    </div>
+                </div>
+            </div>
+            <div class="terminal-mobile-menu">
+                <div class="t-hub-logo">
+                    <a href="<?php echo site_url(); ?>">
+                        <?php
+                        $custom_logo_id = get_theme_mod('custom_logo');
+                        $logo_image = wp_get_attachment_image_src($custom_logo_id, 'full');
+                        if ($logo_image) {
+                            echo '<img src="' . esc_url($logo_image[0]) . '" alt="' . get_bloginfo('name') . '">';
+                        } else {
+                            echo '<img src="' . esc_url(TERMINAL_THEME_ASSETS_URI . 'img/menu-icon.svg') . '" alt="Terminal Africa Default">';
+                        }
+                        ?>
+                    </a>
+                </div>
+                <div class="t-hub-mobile-menu terminal-mobile-menu-content-trigger cursor-pointer">
+                    <img src="<?php echo esc_url(TERMINAL_THEME_ASSETS_URI . 'img/menu-icon.svg') ?>" alt="" class="cursor-pointer">
+                </div>
+            </div>
+            <div class="terminal-mobile-menu-content">
+                <div class="t-hub-menu">
+                    <?php
+                    //wp menu
+                    wp_nav_menu(
+                        array(
+                            'theme_location' => 'primary',
+                            'container' => '',
+                            'menu_class' => 't-hub-menu-ul'
+                        )
+                    );
+                    ?>
+                </div>
+                <div class="t-hub-dedicated">
+                    <nav class="d-flex">
+                        <a href="#">Book Shipment</a>
+                        <a href="#">Track Shipment</a>
+                    </nav>
+                </div>
+            </div>
