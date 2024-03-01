@@ -179,34 +179,6 @@ class Terminal_GetInTouch_Widget extends \Elementor\Widget_Base
                 </div>
             </div>
         </div>
-    <?php
-    }
-
-    /**
-     * Render Terminal Get In Touch Widget Output
-     *
-     * @access protected
-     */
-    protected function _content_template()
-    {
-    ?>
-        <div class="terminal-in-touch" style="background-color: {{{ settings.background_color }}}">
-            <div class="row m-0 justify-content-center">
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <h2>
-                        {{{ settings.title }}}
-                    </h2>
-                    <p>
-                        {{{ settings.description }}}
-                    </p>
-                    <div>
-                        <a href="{{{ settings.url.url }}}" title="{{{ settings.contact }}}">
-                            {{{ settings.contact }}}
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
 <?php
     }
 }

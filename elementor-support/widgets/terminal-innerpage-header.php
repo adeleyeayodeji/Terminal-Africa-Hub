@@ -140,26 +140,6 @@ class Terminal_Innerpage_Header_Widget extends \Elementor\Widget_Base
                 <?php echo esc_html(get_the_title()); ?>
             </h2>
         </div>
-    <?php
-    }
-
-    /**
-     * Render Terminal Innerpage Header Widget output on the frontend.
-     *
-     * Written in PHP and used to generate the final HTML.
-     *
-     * @access protected
-     *
-     * @return void
-     */
-    protected function _content_template()
-    {
-    ?>
-        <div class="terminal-innerpage-header" style="background-color: {{settings.header_bg_color}}">
-            <h2 style="color:{{settings.title_color}}">
-                <?php echo esc_html(get_the_title()); ?>
-            </h2>
-        </div>
 <?php
     }
 }

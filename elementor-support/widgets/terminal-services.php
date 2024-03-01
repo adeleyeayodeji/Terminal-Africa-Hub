@@ -311,35 +311,6 @@ class Terminal_Services_Widget extends \Elementor\Widget_Base
                 </div>
             </div>
         </div>
-    <?php
-    }
-
-    /**
-     * Render Terminal Services Widget Output
-     *
-     * @access protected
-     */
-    protected function _content_template()
-    {
-    ?>
-        <div class="terminal-service" style="background-color: {{{ settings.background_color }}}">
-            <div class="row m-0 justify-content-center align-items-center" style="flex-direction: {{{ settings.column_direction }}}">
-                <div class="col-lg-5 col-md-5 col-sm-12 mb-5">
-                    <h2>
-                        {{{ settings.title }}}
-                    </h2>
-                    <p>
-                        {{{ settings.description }}}
-                    </p>
-                    <div>
-                        {{{ settings.enable_link ? '<a href="' + settings.url.url + '" title="' + settings.url_title + '">' + settings.url_title + '</a>' : '' }}}
-                    </div>
-                </div>
-                <div class="col-lg-5 col-md-5 col-sm-12 text-center">
-                    <img src="{{{ settings.image.url }}}" alt="{{{ settings.title }}}">
-                </div>
-            </div>
-        </div>
 <?php
     }
 }
