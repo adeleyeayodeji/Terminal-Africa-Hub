@@ -108,6 +108,20 @@ class Terminal_Services_Widget extends \Elementor\Widget_Base
             ]
         );
 
+        //title type
+        $this->add_control(
+            'title_type',
+            [
+                'label' => __('Title Type', TERMINAL_THEME_TEXT_DOMAIN),
+                'type' => \Elementor\Controls_Manager::SELECT,
+                'default' => 'terminal-large',
+                'options' => [
+                    'terminal-large' => __('Large', TERMINAL_THEME_TEXT_DOMAIN),
+                    'terminal-small' => __('Small', TERMINAL_THEME_TEXT_DOMAIN)
+                ]
+            ]
+        );
+
         $this->add_control(
             'description',
             [
@@ -288,11 +302,13 @@ class Terminal_Services_Widget extends \Elementor\Widget_Base
     protected function render()
     {
         $settings = $this->get_settings_for_display();
+        //get title_type
+        $title_type = $settings['title_type'];
 ?>
         <div class="terminal-service" style="background-color: <?php echo esc_attr($settings['background_color']); ?>">
             <div class="row m-0 justify-content-center align-items-center" style="flex-direction: <?php echo esc_attr($settings['column_direction']); ?>">
                 <div class="col-lg-5 col-md-5 col-sm-12 mb-5">
-                    <h2>
+                    <h2 class="<?php echo esc_attr($title_type); ?>">
                         <?php echo esc_html($settings['title']); ?>
                     </h2>
                     <p>

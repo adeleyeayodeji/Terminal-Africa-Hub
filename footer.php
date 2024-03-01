@@ -2,7 +2,17 @@
       <div class="row m-0">
           <div class="col-lg-3 col-md-3 col-sm-6 mb-5">
               <div class="terminal-footer-1">
-                  <img src="http://localhost:8888/wordpress/wp-content/plugins/terminal-africa/assets/img/logo-full.png" alt="">
+                  <a href="<?php echo site_url(); ?>">
+                      <?php
+                        $custom_logo_id = get_theme_mod('custom_logo');
+                        $logo_image = wp_get_attachment_image_src($custom_logo_id, 'full');
+                        if ($logo_image) {
+                            echo '<img src="' . esc_url($logo_image[0]) . '" alt="' . get_bloginfo('name') . '">';
+                        } else {
+                            echo '<img src="' . esc_url(TERMINAL_THEME_ASSETS_URI . 'img/menu-icon.svg') . '" alt="Terminal Africa Default">';
+                        }
+                        ?>
+                  </a>
                   <nav>
                       <a href="mailto:info@company.com">info@company.com</a>
                       <a href="tel:+234012345678">+234012345678</a>

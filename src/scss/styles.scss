@@ -317,6 +317,14 @@
       margin-bottom: 60px;
     }
 
+    h2.terminal-small {
+      font-size: 60px;
+    }
+
+    h2.terminal-large {
+      font-size: 80px;
+    }
+
     p {
       font-family: "Lato", sans-serif;
       font-size: 24px;
@@ -544,6 +552,10 @@
 
         .d-flex {
           gap: 10px;
+
+          p {
+            margin-bottom: 0px;
+          }
         }
 
         a {

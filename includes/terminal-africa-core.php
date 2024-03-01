@@ -20,6 +20,33 @@ class TerminalTheme
      */
     public function __construct()
     {
+        //check if elementor plugin is installed
+        if (class_exists('Elementor\Plugin')) {
+            //init theme
+            $this->init();
+        } else {
+            //add admin notice
+            add_action('admin_notices', array($this, 'elementor_missing_notice'));
+        }
+    }
+
+    /**
+     * Elementor Missing Notice
+     * 
+     */
+    public function elementor_missing_notice()
+    {
+        ob_start();
+        require_once TERMINAL_THEME_DIR . '/templates/notice/install-elementor.php';
+        echo ob_get_clean();
+    }
+
+    /**
+     * Init Theme
+     * 
+     */
+    public function init()
+    {
         //init elementor
         $this->init_elementor();
         //enqueue frontend scripts
@@ -36,6 +63,25 @@ class TerminalTheme
         add_action('wp_head', array($this, 'terminal_africa_customizer_styles'), PHP_INT_MAX);
         //customizer scripts
         add_action('customize_controls_enqueue_scripts', array($this, 'terminal_africa_customizer_scripts'), PHP_INT_MAX);
+        //check page init
+        add_action('after_setup_theme', array($this, 'check_page_init'));
+    }
+
+    /**
+     * check_page_init
+     * 
+     */
+    public function check_page_init()
+    {
+        //check if page url match elementor-app
+        $current_url = $_SERVER['REQUEST_URI'];
+        //get option terminal-first-init
+        $first_init = get_option('terminal-first-init', false);
+        if (strpos($current_url, 'elementor-app') !== false && $first_init === false) {
+            //redirect to wp admin
+            wp_redirect(admin_url());
+            exit;
+        }
     }
 
     /**
