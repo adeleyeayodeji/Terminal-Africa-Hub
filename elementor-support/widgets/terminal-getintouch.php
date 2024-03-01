@@ -161,6 +161,10 @@ class Terminal_GetInTouch_Widget extends \Elementor\Widget_Base
     protected function render()
     {
         $settings = $this->get_settings_for_display();
+        //check if $settings['url']['url'] has http
+        if (strpos($settings['url']['url'], 'http') === false) {
+            $settings['url']['url'] = site_url($settings['url']['url']);
+        }
 ?>
         <div class="terminal-in-touch" style="background-color: <?php echo esc_attr($settings['background_color']); ?>">
             <div class="row m-0 justify-content-center">

@@ -306,7 +306,7 @@
   margin-bottom: 60px;
 }
 .terminal-africa-theme-bs .terminal-service h2.terminal-small {
-  font-size: 60px;
+  font-size: 50px;
 }
 .terminal-africa-theme-bs .terminal-service h2.terminal-large {
   font-size: 80px;
@@ -433,6 +433,10 @@
   color: #fff;
 }
 .terminal-africa-theme-bs .terminal-footer .t-hub-menu-ul {
+  padding: 0px;
+  list-style-type: none;
+}
+.terminal-africa-theme-bs .terminal-footer .t-hub-menu-ul ul {
   padding: 0px;
   list-style-type: none;
 }

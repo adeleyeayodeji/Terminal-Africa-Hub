@@ -318,7 +318,7 @@
     }
 
     h2.terminal-small {
-      font-size: 60px;
+      font-size: 50px;
     }
 
     h2.terminal-large {
@@ -478,6 +478,11 @@
     .t-hub-menu-ul {
       padding: 0px;
       list-style-type: none;
+
+      ul {
+        padding: 0px;
+        list-style-type: none;
+      }
 
       li {
         margin-bottom: 10px;
