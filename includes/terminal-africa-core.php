@@ -98,8 +98,11 @@ class TerminalTheme
         }
         //Check if the homepage is set
         if (isset($homepage_id)) {
-            update_option('page_on_front', $homepage_id);
-            update_option('show_on_front', 'page');
+            $page_on_front = get_option('page_on_front');
+            if (empty($page_on_front)) {
+                update_option('page_on_front', $homepage_id);
+                update_option('show_on_front', 'page');
+            }
         }
     }
 
