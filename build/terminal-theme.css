@@ -9503,6 +9503,9 @@
   .terminal-africa-theme-bs .terminal-service h2 {
     font-size: 40px;
   }
+  .terminal-africa-theme-bs .terminal-service h2.terminal-large {
+    font-size: 40px;
+  }
   .terminal-africa-theme-bs .terminal-review h2 {
     font-size: 28px;
   }
@@ -9557,6 +9560,9 @@
     justify-content: space-between !important;
   }
   .terminal-africa-theme-bs .terminal-service h2 {
+    font-size: 40px;
+  }
+  .terminal-africa-theme-bs .terminal-service h2.terminal-large {
     font-size: 40px;
   }
   .terminal-africa-theme-bs .terminal-review h2 {
@@ -9615,6 +9621,9 @@
   .terminal-africa-theme-bs .terminal-service h2 {
     font-size: 40px;
   }
+  .terminal-africa-theme-bs .terminal-service h2.terminal-large {
+    font-size: 40px;
+  }
   .terminal-africa-theme-bs .terminal-review h2 {
     font-size: 28px;
   }
@@ -9671,6 +9680,9 @@
   .terminal-africa-theme-bs .terminal-service h2 {
     font-size: 70px;
   }
+  .terminal-africa-theme-bs .terminal-service h2.terminal-large {
+    font-size: 70px;
+  }
   .terminal-africa-theme-bs .terminal-review h2 {
     font-size: 50px;
   }
@@ -9725,6 +9737,9 @@
     justify-content: space-between !important;
   }
   .terminal-africa-theme-bs .terminal-service h2 {
+    font-size: 80px;
+  }
+  .terminal-africa-theme-bs .terminal-service h2.terminal-large {
     font-size: 80px;
   }
   .terminal-africa-theme-bs .terminal-review h2 {
