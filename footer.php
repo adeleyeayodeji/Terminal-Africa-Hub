@@ -4,29 +4,26 @@
               <div class="terminal-footer-1">
                   <a href="<?php echo site_url(); ?>">
                       <?php
-                        $custom_logo_id = get_theme_mod('custom_logo');
-                        $logo_image = wp_get_attachment_image_src($custom_logo_id, 'full');
-                        if ($logo_image) {
-                            echo '<img src="' . esc_url($logo_image[0]) . '" alt="' . get_bloginfo('name') . '">';
-                        } else {
-                            echo '<img src="' . esc_url(TERMINAL_THEME_ASSETS_URI . 'img/menu-icon.svg') . '" alt="Terminal Africa Default">';
-                        }
+                        //fetch footer_logo
+                        $footer_img_link = get_theme_mod('footer_logo', TERMINAL_THEME_ASSETS_URI . 'img/menu-icon.svg');
+                        //display footer_logo
+                        echo '<img src="' . esc_url($footer_img_link) . '" alt="' . get_bloginfo('name') . '">';
                         ?>
                   </a>
                   <nav>
-                      <a href="mailto:info@company.com">info@company.com</a>
-                      <a href="tel:+234012345678">+234012345678</a>
+                      <a href="mailto:<?php echo esc_attr(get_theme_mod('company_email')); ?>"><?php echo esc_html(get_theme_mod('company_email')); ?></a>
+                      <a href="tel:<?php echo esc_attr(get_theme_mod('company_phone')); ?>"><?php echo esc_html(get_theme_mod('company_phone')); ?></a>
                   </nav>
               </div>
               <div class="terminal-footer-1-social">
                   <nav>
-                      <a href="#">
+                      <a href="<?php echo esc_url(get_theme_mod('facebook_link')); ?>" target="_blank">
                           <img src="<?php echo esc_url(TERMINAL_THEME_ASSETS_URI . 'img/facebook.svg') ?>" alt="">
                       </a>
-                      <a href="#">
+                      <a href="<?php echo esc_url(get_theme_mod('twitter_link')); ?>" target="_blank">
                           <img src="<?php echo esc_url(TERMINAL_THEME_ASSETS_URI . 'img/x.svg') ?>" alt="">
                       </a>
-                      <a href="#">
+                      <a href="<?php echo esc_url(get_theme_mod('instagram_link')); ?>" target="_blank">
                           <img src="<?php echo esc_url(TERMINAL_THEME_ASSETS_URI . 'img/instagram.svg') ?>" alt="">
                       </a>
                   </nav>
@@ -41,7 +38,7 @@
                         'theme_location' => 'footer',
                         'container' => '',
                         'menu_class' => 't-hub-menu-ul',
-                        'menu' => 'product'
+                        'menu' => 'products'
                     )
                 );
                 ?>

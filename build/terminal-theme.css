@@ -301,7 +301,7 @@
 .terminal-africa-theme-bs .terminal-service h2 {
   font-family: "Lato", sans-serif;
   font-size: 80px;
-  font-weight: 500;
+  font-weight: 700;
   color: #333333;
   margin-bottom: 60px;
 }
@@ -9501,10 +9501,14 @@
     justify-content: center !important;
   }
   .terminal-africa-theme-bs .terminal-service h2 {
-    font-size: 40px;
+    font-size: 28px;
+    margin-bottom: 25px;
   }
   .terminal-africa-theme-bs .terminal-service h2.terminal-large {
-    font-size: 40px;
+    font-size: 32px;
+  }
+  .terminal-africa-theme-bs .terminal-review {
+    padding: 5rem 2rem;
   }
   .terminal-africa-theme-bs .terminal-review h2 {
     font-size: 28px;
@@ -9520,11 +9524,11 @@
     height: 20px;
   }
   .terminal-africa-theme-bs .terminal-in-touch h2 {
-    font-size: 40px;
+    font-size: 28px;
     font-weight: 600;
   }
   .terminal-africa-theme-bs .terminal-in-touch p {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 300;
   }
   .terminal-africa-theme-bs .terminal-footer {
@@ -9560,10 +9564,14 @@
     justify-content: space-between !important;
   }
   .terminal-africa-theme-bs .terminal-service h2 {
-    font-size: 40px;
+    font-size: 28px;
+    margin-bottom: 25px;
   }
   .terminal-africa-theme-bs .terminal-service h2.terminal-large {
-    font-size: 40px;
+    font-size: 32px;
+  }
+  .terminal-africa-theme-bs .terminal-review {
+    padding: 5rem 2rem;
   }
   .terminal-africa-theme-bs .terminal-review h2 {
     font-size: 28px;
@@ -9579,11 +9587,11 @@
     height: 20px;
   }
   .terminal-africa-theme-bs .terminal-in-touch h2 {
-    font-size: 40px;
+    font-size: 28px;
     font-weight: 600;
   }
   .terminal-africa-theme-bs .terminal-in-touch p {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 300;
   }
   .terminal-africa-theme-bs .terminal-footer {
@@ -9619,10 +9627,14 @@
     justify-content: space-between !important;
   }
   .terminal-africa-theme-bs .terminal-service h2 {
-    font-size: 40px;
+    font-size: 28px;
+    margin-bottom: 30px;
   }
   .terminal-africa-theme-bs .terminal-service h2.terminal-large {
-    font-size: 40px;
+    font-size: 32px;
+  }
+  .terminal-africa-theme-bs .terminal-review {
+    padding: 5rem 2rem;
   }
   .terminal-africa-theme-bs .terminal-review h2 {
     font-size: 28px;
@@ -9638,11 +9650,11 @@
     height: 20px;
   }
   .terminal-africa-theme-bs .terminal-in-touch h2 {
-    font-size: 40px;
+    font-size: 28px;
     font-weight: 600;
   }
   .terminal-africa-theme-bs .terminal-in-touch p {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 300;
   }
   .terminal-africa-theme-bs .terminal-footer {
@@ -9679,12 +9691,16 @@
   }
   .terminal-africa-theme-bs .terminal-service h2 {
     font-size: 70px;
+    margin-bottom: 40px;
   }
   .terminal-africa-theme-bs .terminal-service h2.terminal-large {
     font-size: 70px;
   }
+  .terminal-africa-theme-bs .terminal-review {
+    padding: 5rem 8rem;
+  }
   .terminal-africa-theme-bs .terminal-review h2 {
-    font-size: 50px;
+    font-size: 60px;
   }
   .terminal-africa-theme-bs .terminal-review p {
     font-size: 32px;
@@ -9697,12 +9713,12 @@
     height: auto;
   }
   .terminal-africa-theme-bs .terminal-in-touch h2 {
-    font-size: 45px;
+    font-size: 60px;
     font-weight: 600;
   }
   .terminal-africa-theme-bs .terminal-in-touch p {
-    font-size: 24px;
-    font-weight: 400;
+    font-size: 32px;
+    font-weight: 300;
   }
   .terminal-africa-theme-bs .terminal-footer {
     padding: 5rem 4rem;
@@ -9737,13 +9753,17 @@
     justify-content: space-between !important;
   }
   .terminal-africa-theme-bs .terminal-service h2 {
-    font-size: 80px;
+    font-size: 70px;
+    margin-bottom: 60px;
   }
   .terminal-africa-theme-bs .terminal-service h2.terminal-large {
-    font-size: 80px;
+    font-size: 70px;
+  }
+  .terminal-africa-theme-bs .terminal-review {
+    padding: 5rem 8rem;
   }
   .terminal-africa-theme-bs .terminal-review h2 {
-    font-size: 50px;
+    font-size: 60px;
   }
   .terminal-africa-theme-bs .terminal-review p {
     font-size: 32px;
@@ -9760,8 +9780,8 @@
     font-weight: 600;
   }
   .terminal-africa-theme-bs .terminal-in-touch p {
-    font-size: 24px;
-    font-weight: 400;
+    font-size: 32px;
+    font-weight: 300;
   }
   .terminal-africa-theme-bs .terminal-footer {
     padding: 5rem 10rem;

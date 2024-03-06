@@ -250,6 +250,83 @@ class TerminalTheme
             'section' => 'terminal_footer_section',
             'settings' => 'footer_text_color'
         )));
+
+        //theme footer logo
+        $wp_customize->add_setting('footer_logo', array(
+            'default' => '',
+            'transport' => 'refresh',
+        ));
+
+        // Add a control for the footer logo
+        $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'footer_logo', array(
+            'label' => __('Footer Logo', 'terminal-africa'),
+            'section' => 'terminal_footer_section',
+            'settings' => 'footer_logo'
+        )));
+
+        //Company email
+        $wp_customize->add_setting('company_email', array(
+            'default' => 'info@company.com',
+            'transport' => 'refresh',
+        ));
+
+        // Add a control for the company email
+        $wp_customize->add_control('company_email', array(
+            'label' => __('Company Email', 'terminal-africa'),
+            'section' => 'terminal_footer_section',
+            'settings' => 'company_email'
+        ));
+
+        //Company phone
+        $wp_customize->add_setting('company_phone', array(
+            'default' => '+234012345678',
+            'transport' => 'refresh',
+        ));
+
+        // Add a control for the company phone
+        $wp_customize->add_control('company_phone', array(
+            'label' => __('Company Phone', 'terminal-africa'),
+            'section' => 'terminal_footer_section',
+            'settings' => 'company_phone'
+        ));
+
+        //social media links
+        $wp_customize->add_setting('facebook_link', array(
+            'default' => '#',
+            'transport' => 'refresh',
+        ));
+
+        // Add a control for the facebook link
+        $wp_customize->add_control('facebook_link', array(
+            'label' => __('Facebook Link', 'terminal-africa'),
+            'section' => 'terminal_footer_section',
+            'settings' => 'facebook_link'
+        ));
+
+        $wp_customize->add_setting('twitter_link', array(
+            'default' => '#',
+            'transport' => 'refresh',
+        ));
+
+        // Add a control for the twitter link
+        $wp_customize->add_control('twitter_link', array(
+            'label' => __('Twitter Link', 'terminal-africa'),
+            'section' => 'terminal_footer_section',
+            'settings' => 'twitter_link'
+        ));
+
+
+        $wp_customize->add_setting('instagram_link', array(
+            'default' => '#',
+            'transport' => 'refresh',
+        ));
+
+        // Add a control for the instagram link
+        $wp_customize->add_control('instagram_link', array(
+            'label' => __('Instagram Link', 'terminal-africa'),
+            'section' => 'terminal_footer_section',
+            'settings' => 'instagram_link'
+        ));
     }
 
     //add custom style 
