@@ -1,4 +1,32 @@
 jQuery(document).ready(function ($) {
+  $(".terminal-faq-header").each(function (index, element) {
+    $(this).click(function (e) {
+      e.preventDefault();
+      //get the parent
+      let parentDiv = $(this).parent();
+      //close all open terminal-faq-body
+      $(".terminal-faq-body").each(function (index, element) {
+        //get the prev element
+        let prevElement = $(this).prev();
+        //replace img src from accordion-close.svg to accordion-open.svg
+        prevElement.find("img").attr("src", (i, val) => {
+          return val.replace("accordion-close.svg", "accordion-open.svg");
+        });
+
+        //slide up
+        $(this).slideUp();
+      });
+      //find .terminal-faq-body and slide down
+      parentDiv.find(".terminal-faq-body").slideDown();
+      //replace img src from accordion-open.svg to accordion-close.svg
+      $(this)
+        .find("img")
+        .attr("src", (i, val) => {
+          return val.replace("accordion-open.svg", "accordion-close.svg");
+        });
+    });
+  });
+
   /**
    * terminal-mobile-menu-content-trigger
    *

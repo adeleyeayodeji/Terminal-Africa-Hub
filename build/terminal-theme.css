@@ -58,6 +58,9 @@
   /**
   * terminal-contact-form Section 
   */
+  /**
+  * terminal-faqs Section 
+  */
 }
 .terminal-africa-theme-bs .terminal-mobile-menu {
   display: flex;
@@ -306,7 +309,9 @@
   margin-bottom: 60px;
 }
 .terminal-africa-theme-bs .terminal-service h2.terminal-small {
-  font-size: 50px;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 40px;
 }
 .terminal-africa-theme-bs .terminal-service h2.terminal-large {
   font-size: 80px;
@@ -566,6 +571,55 @@
   background: #333333;
   color: white;
   text-decoration: none;
+}
+.terminal-africa-theme-bs .terminal-faqs {
+  padding: 5rem 5rem;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+.terminal-africa-theme-bs .terminal-faqs .terminal-faq-footer-note {
+  margin-top: 3rem;
+}
+.terminal-africa-theme-bs .terminal-faqs .terminal-faq-footer-note a {
+  font-family: "Lato", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  color: #000000;
+}
+.terminal-africa-theme-bs .terminal-faqs .terminal-faq-item {
+  border-bottom: 1px solid #e6e6e6;
+  padding: 2rem 0rem;
+}
+.terminal-africa-theme-bs .terminal-faqs .terminal-faq-item .terminal-faq-header {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.terminal-africa-theme-bs .terminal-faqs .terminal-faq-item .terminal-faq-header h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 32px;
+  font-weight: 550;
+  color: #333333;
+  margin-bottom: 1rem;
+}
+.terminal-africa-theme-bs .terminal-faqs .terminal-faq-item .terminal-faq-header img {
+  width: 20px;
+  height: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.terminal-africa-theme-bs .terminal-faqs .terminal-faq-item .terminal-faq-body {
+  display: none;
+}
+.terminal-africa-theme-bs .terminal-faqs .terminal-faq-item .terminal-faq-body p {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #808080;
+  margin-bottom: 1rem;
+  line-height: 30px;
 }
 /*!*********************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/scss/terminal_bootstrap.scss ***!
@@ -9540,6 +9594,12 @@
   .terminal-africa-theme-bs .terminal-contact-form {
     padding: 5rem 2rem;
   }
+  .terminal-africa-theme-bs .terminal-innerpage-header {
+    padding: 7rem 1rem;
+  }
+  .terminal-africa-theme-bs .terminal-innerpage-header h2 {
+    font-size: 45px;
+  }
 }
 @media only screen and (min-width: 600px) {
   .terminal-africa-theme-bs .terminal-mobile-menu {
@@ -9602,6 +9662,12 @@
   }
   .terminal-africa-theme-bs .terminal-contact-form {
     padding: 5rem 2rem;
+  }
+  .terminal-africa-theme-bs .terminal-innerpage-header {
+    padding: 7rem 1rem;
+  }
+  .terminal-africa-theme-bs .terminal-innerpage-header h2 {
+    font-size: 45px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -9666,6 +9732,12 @@
   .terminal-africa-theme-bs .terminal-contact-form {
     padding: 5rem 5rem;
   }
+  .terminal-africa-theme-bs .terminal-innerpage-header {
+    padding: 7rem 3rem;
+  }
+  .terminal-africa-theme-bs .terminal-innerpage-header h2 {
+    font-size: 50px;
+  }
 }
 @media only screen and (min-width: 992px) {
   .terminal-africa-theme-bs .terminal-mobile-menu {
@@ -9729,6 +9801,12 @@
   .terminal-africa-theme-bs .terminal-contact-form {
     padding: 5rem 5rem;
   }
+  .terminal-africa-theme-bs .terminal-innerpage-header {
+    padding: 7rem 10rem;
+  }
+  .terminal-africa-theme-bs .terminal-innerpage-header h2 {
+    font-size: 60px;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .terminal-africa-theme-bs .terminal-mobile-menu {
@@ -9791,6 +9869,12 @@
   }
   .terminal-africa-theme-bs .terminal-contact-form {
     padding: 5rem 5rem;
+  }
+  .terminal-africa-theme-bs .terminal-innerpage-header {
+    padding: 7rem 10rem;
+  }
+  .terminal-africa-theme-bs .terminal-innerpage-header h2 {
+    font-size: 60px;
   }
 }
 
