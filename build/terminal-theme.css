@@ -599,7 +599,7 @@
 }
 .terminal-africa-theme-bs .terminal-faqs .terminal-faq-item .terminal-faq-header h3 {
   font-family: "Lato", sans-serif;
-  font-size: 32px;
+  font-size: 25px;
   font-weight: 550;
   color: #333333;
   margin-bottom: 1rem;
@@ -609,14 +609,14 @@
   height: 20px;
   -o-object-fit: contain;
      object-fit: contain;
+  margin-bottom: 1rem;
 }
 .terminal-africa-theme-bs .terminal-faqs .terminal-faq-item .terminal-faq-body {
   display: none;
 }
 .terminal-africa-theme-bs .terminal-faqs .terminal-faq-item .terminal-faq-body p {
   font-family: "Lato", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 18px;
   color: #808080;
   margin-bottom: 1rem;
   line-height: 30px;
@@ -9600,6 +9600,15 @@
   .terminal-africa-theme-bs .terminal-innerpage-header h2 {
     font-size: 45px;
   }
+  .terminal-africa-theme-bs .terminal-faqs {
+    padding: 5rem 2rem;
+  }
+  .terminal-africa-theme-bs .terminal-faqs .terminal-faq-item .terminal-faq-header h3 {
+    font-size: 22px;
+  }
+  .terminal-africa-theme-bs .terminal-faqs .terminal-faq-item .terminal-faq-body p {
+    font-size: 15px;
+  }
 }
 @media only screen and (min-width: 600px) {
   .terminal-africa-theme-bs .terminal-mobile-menu {
@@ -9668,6 +9677,15 @@
   }
   .terminal-africa-theme-bs .terminal-innerpage-header h2 {
     font-size: 45px;
+  }
+  .terminal-africa-theme-bs .terminal-faqs {
+    padding: 5rem 2rem;
+  }
+  .terminal-africa-theme-bs .terminal-faqs .terminal-faq-item .terminal-faq-header h3 {
+    font-size: 22px;
+  }
+  .terminal-africa-theme-bs .terminal-faqs .terminal-faq-item .terminal-faq-body p {
+    font-size: 15px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -9738,6 +9756,15 @@
   .terminal-africa-theme-bs .terminal-innerpage-header h2 {
     font-size: 50px;
   }
+  .terminal-africa-theme-bs .terminal-faqs {
+    padding: 5rem 5rem;
+  }
+  .terminal-africa-theme-bs .terminal-faqs .terminal-faq-item .terminal-faq-header h3 {
+    font-size: 23px;
+  }
+  .terminal-africa-theme-bs .terminal-faqs .terminal-faq-item .terminal-faq-body p {
+    font-size: 16px;
+  }
 }
 @media only screen and (min-width: 992px) {
   .terminal-africa-theme-bs .terminal-mobile-menu {
@@ -9807,6 +9834,15 @@
   .terminal-africa-theme-bs .terminal-innerpage-header h2 {
     font-size: 60px;
   }
+  .terminal-africa-theme-bs .terminal-faqs {
+    padding: 5rem 5rem;
+  }
+  .terminal-africa-theme-bs .terminal-faqs .terminal-faq-item .terminal-faq-header h3 {
+    font-size: 25px;
+  }
+  .terminal-africa-theme-bs .terminal-faqs .terminal-faq-item .terminal-faq-body p {
+    font-size: 18px;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .terminal-africa-theme-bs .terminal-mobile-menu {
@@ -9875,6 +9911,15 @@
   }
   .terminal-africa-theme-bs .terminal-innerpage-header h2 {
     font-size: 60px;
+  }
+  .terminal-africa-theme-bs .terminal-faqs {
+    padding: 5rem 5rem;
+  }
+  .terminal-africa-theme-bs .terminal-faqs .terminal-faq-item .terminal-faq-header h3 {
+    font-size: 25px;
+  }
+  .terminal-africa-theme-bs .terminal-faqs .terminal-faq-item .terminal-faq-body p {
+    font-size: 18px;
   }
 }
 

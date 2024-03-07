@@ -54,6 +54,8 @@ class TerminalElementor
         \Elementor\Plugin::instance()->widgets_manager->register(new Terminal_Address_Widget());
         //Terminal_Contact_Widget
         \Elementor\Plugin::instance()->widgets_manager->register(new Terminal_Contact_Widget());
+        //Terminal_FAQ_Widget
+        \Elementor\Plugin::instance()->widgets_manager->register(new Terminal_FAQ_Widget());
     }
 
     /**
