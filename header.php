@@ -22,7 +22,7 @@
                         if ($logo_image) {
                             echo '<img src="' . esc_url($logo_image[0]) . '" alt="' . get_bloginfo('name') . '">';
                         } else {
-                            echo '<img src="' . esc_url(TERMINAL_THEME_ASSETS_URI . 'img/menu-icon.svg') . '" alt="Terminal Africa Default">';
+                            echo '<img src="' . esc_url(TERMINAL_THEME_ASSETS_URI . 'img/logo-full.png') . '" alt="Terminal Africa Default">';
                         }
                         ?>
                     </a>
@@ -55,7 +55,7 @@
                         if ($logo_image) {
                             echo '<img src="' . esc_url($logo_image[0]) . '" alt="' . get_bloginfo('name') . '">';
                         } else {
-                            echo '<img src="' . esc_url(TERMINAL_THEME_ASSETS_URI . 'img/menu-icon.svg') . '" alt="Terminal Africa Default">';
+                            echo '<img src="' . esc_url(TERMINAL_THEME_ASSETS_URI . 'img/logo-full.png') . '" alt="Terminal Africa Default">';
                         }
                         ?>
                     </a>

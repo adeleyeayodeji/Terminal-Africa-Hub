@@ -28,6 +28,79 @@ jQuery(document).ready(function ($) {
   });
 
   /**
+   * terminal-form-fields
+   *
+   */
+  $("#terminal-submit-contact").submit(function (e) {
+    e.preventDefault();
+    //get the form
+    var form = $(this);
+    //get name, email and message
+    var name = form.find("input[name='name']").val();
+    var email = form.find("input[name='email']").val();
+    var message = form.find("textarea[name='message']").val();
+    //ajax
+    $.ajax({
+      type: "POST",
+      url: terminal_africa_hub.ajax_url,
+      data: {
+        name,
+        email,
+        message,
+        nonce: terminal_africa_hub.nonce,
+        action: "terminal_hub_contact_form"
+      },
+      dataType: "json",
+      beforeSend: function () {
+        //block the form
+        form.block({
+          message: null,
+          overlayCSS: {
+            background: "#fff",
+            opacity: 0.6
+          }
+        });
+      },
+      success: function (response) {
+        //unblock the form
+        form.unblock();
+        console.log(response);
+        //show the message
+        if (response.success) {
+          //show success message
+          form
+            .find(".terminal-form-message")
+            .html(
+              `<div class="alert alert-success">${response.data.message}</div>`
+            )
+            .show();
+          //clear the form
+          form[0].reset();
+        } else {
+          //show error message
+          form
+            .find(".terminal-form-message")
+            .html(
+              `<div class="alert alert-danger">${response.data.message}</div>`
+            )
+            .show();
+        }
+      },
+      error: function (response) {
+        //unblock the form
+        form.unblock();
+        //show error message
+        form
+          .find(".terminal-form-message")
+          .html(
+            `<div class="alert alert-danger">An error occurred, please try again later</div>`
+          )
+          .show();
+      }
+    });
+  });
+
+  /**
    * terminal-mobile-menu-content-trigger
    *
    */

@@ -65,6 +65,45 @@ class TerminalTheme
         add_action('customize_controls_enqueue_scripts', array($this, 'terminal_africa_customizer_scripts'), PHP_INT_MAX);
         //check page init
         add_action('after_setup_theme', array($this, 'check_page_init'));
+        //add ajax terminal_hub_contact_form
+        add_action('wp_ajax_terminal_hub_contact_form', array($this, 'terminal_hub_contact_form'));
+    }
+
+    /**
+     * terminal_hub_contact_form
+     * 
+     */
+    public function terminal_hub_contact_form()
+    {
+        //check nonce
+        if (!check_ajax_referer('terminal-africa-theme-nonce', 'nonce')) {
+            wp_send_json_error(array(
+                'message' => 'Nonce verification failed'
+            ));
+        }
+        //get form data
+        $name = sanitize_text_field($_POST['name']);
+        $email = sanitize_email($_POST['email']);
+        $message = sanitize_textarea_field($_POST['message']);
+        //send email
+        $to = get_option('admin_email');
+        $subject = 'New message from ' . get_bloginfo('name');
+        $headers = array('Content-Type: text/html; charset=UTF-8');
+        $body = 'Name: ' . $name . '<br/>';
+        $body .= 'Email: ' . $email . '<br/>';
+        $body .= 'Message: ' . $message . '<br/>';
+        //send email
+        $send = wp_mail($to, $subject, $body, $headers);
+        if ($send) {
+            wp_send_json_success(array(
+                'message' => 'Message sent successfully'
+            ));
+        } else {
+            //get error message from $send
+            wp_send_json_error(array(
+                'message' => 'Message could not be sent, please try again'
+            ));
+        }
     }
 
     /**
@@ -149,6 +188,22 @@ class TerminalTheme
                 update_option('page_on_front', $homepage_id);
                 update_option('show_on_front', 'page');
             }
+        }
+
+        //Check if we have menu 'Main Menu' then set to primary
+        $menu_name = 'Main Menu';
+        $menu_exists = wp_get_nav_menu_object($menu_name);
+        if ($menu_exists) {
+            $menu_id = $menu_exists->term_id;
+            //set Display location to primary
+            set_theme_mod('nav_menu_locations', array('primary' => $menu_id));
+        }
+
+        //check if permalink is set to post name
+        if (get_option('permalink_structure') !== '/%postname%/') {
+            global $wp_rewrite;
+            $wp_rewrite->set_permalink_structure('/%postname%/');
+            $wp_rewrite->flush_rules();
         }
     }
 
@@ -253,7 +308,7 @@ class TerminalTheme
 
         //theme footer logo
         $wp_customize->add_setting('footer_logo', array(
-            'default' => '',
+            'default' => TERMINAL_THEME_ASSETS_URI . 'img/logo-full.png',
             'transport' => 'refresh',
         ));
 
@@ -380,10 +435,18 @@ class TerminalTheme
      */
     public function enqueue_scripts()
     {
+        //add blockui
+        wp_enqueue_script('terminal-blockui', TERMINAL_THEME_ASSETS_URI . 'js/jquery.blockUI.js', array('jquery'), TERMINAL_THEME_VERSION, true);
         //enqueue scripts
         wp_enqueue_style('terminal-africa-hub', TERMINAL_THEME_BUILD_URI . 'terminal-theme.css', array(), TERMINAL_THEME_VERSION, 'all');
         //enqueue scripts
         wp_enqueue_script('terminal-africa-hub-script', TERMINAL_THEME_BUILD_URI . 'terminal-theme.js', array('jquery'), TERMINAL_THEME_VERSION, true);
+        //localize scripts
+        wp_localize_script('terminal-africa-hub-script', 'terminal_africa_hub', array(
+            'ajax_url' => admin_url('admin-ajax.php'),
+            'home_url' => home_url(),
+            'nonce' => wp_create_nonce('terminal-africa-theme-nonce')
+        ));
     }
 
     /**

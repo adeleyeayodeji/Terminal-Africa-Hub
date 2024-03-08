@@ -5,14 +5,14 @@
                   <a href="<?php echo site_url(); ?>">
                       <?php
                         //fetch footer_logo
-                        $footer_img_link = get_theme_mod('footer_logo', TERMINAL_THEME_ASSETS_URI . 'img/menu-icon.svg');
+                        $footer_img_link = get_theme_mod('footer_logo', TERMINAL_THEME_ASSETS_URI . 'img/logo-full.png');
                         //display footer_logo
                         echo '<img src="' . esc_url($footer_img_link) . '" alt="' . get_bloginfo('name') . '">';
                         ?>
                   </a>
                   <nav>
-                      <a href="mailto:<?php echo esc_attr(get_theme_mod('company_email')); ?>"><?php echo esc_html(get_theme_mod('company_email')); ?></a>
-                      <a href="tel:<?php echo esc_attr(get_theme_mod('company_phone')); ?>"><?php echo esc_html(get_theme_mod('company_phone')); ?></a>
+                      <a href="mailto:<?php echo esc_attr(get_theme_mod('company_email', 'info@company.com')) . '" target="_blank'; ?>"><?php echo esc_html(get_theme_mod('company_email', 'info@company.com')); ?></a>
+                      <a href="tel:<?php echo esc_attr(get_theme_mod('company_phone', '+234012345678')); ?>"><?php echo esc_html(get_theme_mod('company_phone', '+234012345678')); ?></a>
                   </nav>
               </div>
               <div class="terminal-footer-1-social">

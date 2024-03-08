@@ -87,6 +87,28 @@ class Terminal_Contact_Widget extends \Elementor\Widget_Base
             ]
         );
 
+        //title
+        $this->add_control(
+            'title',
+            [
+                'label' => __('Title', TERMINAL_THEME_TEXT_DOMAIN),
+                'type' => \Elementor\Controls_Manager::TEXT,
+                'default' => __('Talk to us', TERMINAL_THEME_TEXT_DOMAIN),
+                'label_block' => true,
+            ]
+        );
+
+        //button text
+        $this->add_control(
+            'button_text',
+            [
+                'label' => __('Button Text', TERMINAL_THEME_TEXT_DOMAIN),
+                'type' => \Elementor\Controls_Manager::TEXT,
+                'default' => __('Send Message', TERMINAL_THEME_TEXT_DOMAIN),
+                'label_block' => true,
+            ]
+        );
+
         //end
         $this->end_controls_section();
     }
@@ -103,20 +125,23 @@ class Terminal_Contact_Widget extends \Elementor\Widget_Base
 ?>
         <div class="terminal-contact-form">
             <h3>
-                Talk to us
+                <?php echo esc_html($settings['title']); ?>
             </h3>
-            <form action="" class="terminal-form-fields">
+            <form action="" class="terminal-form-fields" id="terminal-submit-contact">
                 <div class="form-group">
-                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name">
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
                 </div>
                 <div class="form-group">
-                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email">
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
                 </div>
                 <div class="form-group">
-                    <textarea name="message" id="message" class="form-control" placeholder="Enter your message" cols="50" rows="5"></textarea>
+                    <textarea name="message" id="message" class="form-control" placeholder="Enter your message" cols="50" rows="5" required></textarea>
                 </div>
+                <div class="terminal-form-message" style="display: none;"></div>
                 <div class="form-group">
-                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <button type="submit" class="btn btn-primary">
+                        <?php echo esc_html($settings['button_text']); ?>
+                    </button>
                 </div>
             </form>
         </div>
