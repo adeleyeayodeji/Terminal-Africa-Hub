@@ -41,8 +41,8 @@
                 </div>
                 <div class="t-hub-dedicated">
                     <div class="d-flex">
-                        <a href="#">Book Shipment</a>
-                        <a href="#">Track Shipment</a>
+                        <a href="<?php echo esc_attr(get_theme_mod('book_shipment_link', "#")); ?>">Book Shipment</a>
+                        <a href="<?php echo esc_attr(get_theme_mod('track_shipment_link', "#")); ?>">Track Shipment</a>
                     </div>
                 </div>
             </div>
@@ -79,8 +79,12 @@
                 </div>
                 <div class="t-hub-dedicated">
                     <nav class="d-flex">
-                        <a href="#">Book Shipment</a>
-                        <a href="#">Track Shipment</a>
+                        <a href="<?php echo esc_attr(get_theme_mod('book_shipment_link', "#")); ?>">
+                            Book Shipment
+                        </a>
+                        <a href="<?php echo esc_attr(get_theme_mod('track_shipment_link', "#")); ?>">
+                            Track Shipment
+                        </a>
                     </nav>
                 </div>
             </div>

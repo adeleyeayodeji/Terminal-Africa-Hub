@@ -137,8 +137,8 @@ class Terminal_Hero_Widget extends \Elementor\Widget_Base
                     <?php echo esc_html($settings['hero_description']); ?>
                 </p>
                 <div class="d-flex terminal-cta">
-                    <a href="<?php echo esc_url(TERMINAL_BOOK_SHIPMENT_URL); ?>">Book Shipment</a>
-                    <a href="<?php echo esc_url(TERMINAL_TRACK_SHIPMENT_URL); ?>">Track Shipment</a>
+                    <a href="<?php echo esc_attr(get_theme_mod('book_shipment_link', "#")); ?>">Book Shipment</a>
+                    <a href="<?php echo esc_attr(get_theme_mod('track_shipment_link', "#")); ?>">Track Shipment</a>
                 </div>
             </div>
         </div>
@@ -162,8 +162,8 @@ class Terminal_Hero_Widget extends \Elementor\Widget_Base
                     {{{ settings.hero_description }}}
                 </p>
                 <div class="d-flex terminal-cta">
-                    <a href="<?php echo esc_url(TERMINAL_BOOK_SHIPMENT_URL); ?>">Book Shipment</a>
-                    <a href="<?php echo esc_url(TERMINAL_TRACK_SHIPMENT_URL); ?>">Track Shipment</a>
+                    <a href="<?php echo esc_attr(get_theme_mod('book_shipment_link', "#")); ?>">Book Shipment</a>
+                    <a href="<?php echo esc_attr(get_theme_mod('track_shipment_link', "#")); ?>">Track Shipment</a>
                 </div>
             </div>
         </div>

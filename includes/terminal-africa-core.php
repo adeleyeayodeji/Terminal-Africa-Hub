@@ -266,6 +266,32 @@ class TerminalTheme
             'section' => 'terminal_africa_section',
             'settings' => 'track_shipment_hover_color'
         )));
+
+        //Add book shipment link
+        $wp_customize->add_setting('book_shipment_link', array(
+            'default' => '#',
+            'transport' => 'refresh',
+        ));
+
+        // Add a control for the book shipment link
+        $wp_customize->add_control('book_shipment_link', array(
+            'label' => __('Book Shipment Link', 'terminal-africa'),
+            'section' => 'terminal_africa_section',
+            'settings' => 'book_shipment_link'
+        ));
+
+        //Add track shipment link
+        $wp_customize->add_setting('track_shipment_link', array(
+            'default' => '#',
+            'transport' => 'refresh',
+        ));
+
+        // Add a control for the track shipment link
+        $wp_customize->add_control('track_shipment_link', array(
+            'label' => __('Track Shipment Link', 'terminal-africa'),
+            'section' => 'terminal_africa_section',
+            'settings' => 'track_shipment_link'
+        ));
     }
 
     /**
