@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-	<!-- generator="WordPress/6.4.3" created="2024-03-08 07:12" -->
+	<!-- generator="WordPress/6.4.3" created="2024-03-11 11:36" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -26,16 +26,16 @@
 >
 
 <channel>
-	<title>Terminal Africa</title>
-	<link>http://localhost:8888/wordpress3</link>
+	<title>WordPress Plugin Development</title>
+	<link>http://localhost:8888/wordpress</link>
 	<description></description>
-	<pubDate>Fri, 08 Mar 2024 07:12:36 +0000</pubDate>
+	<pubDate>Mon, 11 Mar 2024 11:36:49 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
-	<wp:base_site_url>http://localhost:8888/wordpress3</wp:base_site_url>
-	<wp:base_blog_url>http://localhost:8888/wordpress3</wp:base_blog_url>
+	<wp:base_site_url>http://localhost:8888/wordpress</wp:base_site_url>
+	<wp:base_blog_url>http://localhost:8888/wordpress</wp:base_blog_url>
 
-		<wp:author><wp:author_id>1</wp:author_id><wp:author_login><![CDATA[admin]]></wp:author_login><wp:author_email><![CDATA[adeleyeayodeji12345@gmail.com]]></wp:author_email><wp:author_display_name><![CDATA[admin]]></wp:author_display_name><wp:author_first_name><![CDATA[]]></wp:author_first_name><wp:author_last_name><![CDATA[]]></wp:author_last_name></wp:author>
+		<wp:author><wp:author_id>1</wp:author_id><wp:author_login><![CDATA[wordpress]]></wp:author_login><wp:author_email><![CDATA[adeleyeayodeji12345@gmail.com]]></wp:author_email><wp:author_display_name><![CDATA[wordpress]]></wp:author_display_name><wp:author_first_name><![CDATA[]]></wp:author_first_name><wp:author_last_name><![CDATA[]]></wp:author_last_name></wp:author>
 
 		<wp:category>
 		<wp:term_id>1</wp:term_id>
@@ -43,39 +43,31 @@
 		<wp:category_parent><![CDATA[]]></wp:category_parent>
 		<wp:cat_name><![CDATA[Uncategorized]]></wp:cat_name>
 	</wp:category>
-					<wp:term><wp:term_id>4</wp:term_id><wp:term_taxonomy>nav_menu</wp:term_taxonomy><wp:term_slug><![CDATA[company]]></wp:term_slug><wp:term_name><![CDATA[company]]></wp:term_name>
+					<wp:term><wp:term_id>10</wp:term_id><wp:term_taxonomy>nav_menu</wp:term_taxonomy><wp:term_slug><![CDATA[company]]></wp:term_slug><wp:term_name><![CDATA[company]]></wp:term_name>
 </wp:term>
-	<wp:term><wp:term_id>5</wp:term_id><wp:term_taxonomy>nav_menu</wp:term_taxonomy><wp:term_slug><![CDATA[legal]]></wp:term_slug><wp:term_name><![CDATA[legal]]></wp:term_name>
+	<wp:term><wp:term_id>11</wp:term_id><wp:term_taxonomy>nav_menu</wp:term_taxonomy><wp:term_slug><![CDATA[legal]]></wp:term_slug><wp:term_name><![CDATA[legal]]></wp:term_name>
 </wp:term>
-	<wp:term><wp:term_id>2</wp:term_id><wp:term_taxonomy>nav_menu</wp:term_taxonomy><wp:term_slug><![CDATA[main-menu]]></wp:term_slug><wp:term_name><![CDATA[Main Menu]]></wp:term_name>
+	<wp:term><wp:term_id>12</wp:term_id><wp:term_taxonomy>nav_menu</wp:term_taxonomy><wp:term_slug><![CDATA[main-menu]]></wp:term_slug><wp:term_name><![CDATA[Main Menu]]></wp:term_name>
 </wp:term>
-	<wp:term><wp:term_id>3</wp:term_id><wp:term_taxonomy>nav_menu</wp:term_taxonomy><wp:term_slug><![CDATA[products]]></wp:term_slug><wp:term_name><![CDATA[products]]></wp:term_name>
+	<wp:term><wp:term_id>13</wp:term_id><wp:term_taxonomy>nav_menu</wp:term_taxonomy><wp:term_slug><![CDATA[products]]></wp:term_slug><wp:term_name><![CDATA[products]]></wp:term_name>
 </wp:term>
 
 	<generator>https://wordpress.org/?v=6.4.3</generator>
 
-<image>
-	<url>http://localhost:8888/wordpress3/wp-content/uploads/2024/03/cropped-logo-full-1-32x32.png</url>
-	<title>Terminal Africa</title>
-	<link>http://localhost:8888/wordpress3</link>
-	<width>32</width>
-	<height>32</height>
-</image> 
-
 		<item>
 		<title><![CDATA[Default Kit]]></title>
-		<link>http://localhost:8888/wordpress3/?elementor_library=default-kit</link>
-		<pubDate>Fri, 01 Mar 2024 12:37:33 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8888/wordpress3/?p=11</guid>
+		<link>http://localhost:8888/wordpress/?elementor_library=default-kit</link>
+		<pubDate>Mon, 11 Mar 2024 08:23:29 +0000</pubDate>
+		<dc:creator><![CDATA[wordpress]]></dc:creator>
+		<guid isPermaLink="false">http://localhost:8888/wordpress/?p=6</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>11</wp:post_id>
-		<wp:post_date><![CDATA[2024-03-01 12:37:33]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2024-03-01 12:37:33]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-03-01 12:37:33]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-03-01 12:37:33]]></wp:post_modified_gmt>
+		<wp:post_id>6</wp:post_id>
+		<wp:post_date><![CDATA[2024-03-11 08:23:29]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2024-03-11 08:23:29]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2024-03-11 08:23:29]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-03-11 08:23:29]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[default-kit]]></wp:post_name>
@@ -95,215 +87,108 @@
 		</wp:postmeta>
 							</item>
 					<item>
-		<title><![CDATA[Contact]]></title>
-		<link>http://localhost:8888/wordpress3/?p=21</link>
-		<pubDate></pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8888/wordpress3/?p=21</guid>
+		<title><![CDATA[Default Kit]]></title>
+		<link>http://localhost:8888/wordpress/?elementor_library=default-kit-2</link>
+		<pubDate>Fri, 01 Mar 2024 12:37:33 +0000</pubDate>
+		<dc:creator><![CDATA[wordpress]]></dc:creator>
+		<guid isPermaLink="false">http://localhost:8888/wordpress3/?p=11</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>21</wp:post_id>
-		<wp:post_date><![CDATA[2024-03-01 13:16:32]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[0000-00-00 00:00:00]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-03-01 13:16:32]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[0000-00-00 00:00:00]]></wp:post_modified_gmt>
+		<wp:post_id>11</wp:post_id>
+		<wp:post_date><![CDATA[2024-03-01 12:37:33]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2024-03-01 12:37:33]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2024-03-01 12:37:33]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-03-01 12:37:33]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[]]></wp:post_name>
-		<wp:status><![CDATA[draft]]></wp:status>
+		<wp:post_name><![CDATA[default-kit-2]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
 		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>1</wp:menu_order>
-		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[elementor_library]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
 														<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key>
-		<wp:meta_value><![CDATA[custom]]></wp:meta_value>
+		<wp:meta_key><![CDATA[_elementor_edit_mode]]></wp:meta_key>
+		<wp:meta_value><![CDATA[builder]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key>
-		<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		<wp:meta_key><![CDATA[_elementor_template_type]]></wp:meta_key>
+		<wp:meta_value><![CDATA[kit]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key>
-		<wp:meta_value><![CDATA[21]]></wp:meta_value>
+		<wp:meta_key><![CDATA[_elementor_edit_mode]]></wp:meta_key>
+		<wp:meta_value><![CDATA[builder]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key>
-		<wp:meta_value><![CDATA[custom]]></wp:meta_value>
+		<wp:meta_key><![CDATA[_elementor_template_type]]></wp:meta_key>
+		<wp:meta_value><![CDATA[kit]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key>
-		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		<wp:meta_key><![CDATA[_elementor_edit_mode]]></wp:meta_key>
+		<wp:meta_value><![CDATA[builder]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+		<wp:meta_key><![CDATA[_elementor_template_type]]></wp:meta_key>
+		<wp:meta_value><![CDATA[kit]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key>
-		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		<wp:meta_key><![CDATA[_elementor_edit_mode]]></wp:meta_key>
+		<wp:meta_value><![CDATA[builder]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key>
-		<wp:meta_value><![CDATA[#]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_orphaned]]></wp:meta_key>
-		<wp:meta_value><![CDATA[1709298992]]></wp:meta_value>
-		</wp:postmeta>
-							</item>
-					<item>
-		<title><![CDATA[logo-full (1)]]></title>
-		<link>http://localhost:8888/wordpress3/logo-full-1/</link>
-		<pubDate>Fri, 01 Mar 2024 13:34:44 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8888/wordpress3/wp-content/uploads/2024/03/logo-full-1.png</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>52</wp:post_id>
-		<wp:post_date><![CDATA[2024-03-01 13:34:44]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2024-03-01 13:34:44]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-03-01 13:34:44]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-03-01 13:34:44]]></wp:post_modified_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[logo-full-1]]></wp:post_name>
-		<wp:status><![CDATA[inherit]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[attachment]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-						<wp:attachment_url><![CDATA[http://localhost:8888/wordpress3/wp-content/uploads/2024/03/logo-full-1.png]]></wp:attachment_url>
-											<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
-		<wp:meta_value><![CDATA[2024/03/logo-full-1.png]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:6:{s:5:"width";i:3158;s:6:"height";i:894;s:4:"file";s:23:"2024/03/logo-full-1.png";s:8:"filesize";i:37878;s:5:"sizes";a:6:{s:6:"medium";a:5:{s:4:"file";s:22:"logo-full-1-300x85.png";s:5:"width";i:300;s:6:"height";i:85;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:3881;}s:5:"large";a:5:{s:4:"file";s:24:"logo-full-1-1024x290.png";s:5:"width";i:1024;s:6:"height";i:290;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:13896;}s:9:"thumbnail";a:5:{s:4:"file";s:23:"logo-full-1-150x150.png";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:1891;}s:12:"medium_large";a:5:{s:4:"file";s:23:"logo-full-1-768x217.png";s:5:"width";i:768;s:6:"height";i:217;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:10078;}s:9:"1536x1536";a:5:{s:4:"file";s:24:"logo-full-1-1536x435.png";s:5:"width";i:1536;s:6:"height";i:435;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:22670;}s:9:"2048x2048";a:5:{s:4:"file";s:24:"logo-full-1-2048x580.png";s:5:"width";i:2048;s:6:"height";i:580;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:32223;}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
-		</wp:postmeta>
-							</item>
-					<item>
-		<title><![CDATA[cropped-logo-full-1.png]]></title>
-		<link>http://localhost:8888/wordpress3/cropped-logo-full-1-png/</link>
-		<pubDate>Fri, 01 Mar 2024 13:35:03 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8888/wordpress3/wp-content/uploads/2024/03/cropped-logo-full-1.png</guid>
-		<description></description>
-		<content:encoded><![CDATA[http://localhost:8888/wordpress3/wp-content/uploads/2024/03/cropped-logo-full-1.png]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>53</wp:post_id>
-		<wp:post_date><![CDATA[2024-03-01 13:35:03]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2024-03-01 13:35:03]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-03-01 13:35:03]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-03-01 13:35:03]]></wp:post_modified_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[cropped-logo-full-1-png]]></wp:post_name>
-		<wp:status><![CDATA[inherit]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[attachment]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-						<wp:attachment_url><![CDATA[http://localhost:8888/wordpress3/wp-content/uploads/2024/03/cropped-logo-full-1.png]]></wp:attachment_url>
-											<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
-		<wp:meta_value><![CDATA[2024/03/cropped-logo-full-1.png]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_attachment_context]]></wp:meta_key>
-		<wp:meta_value><![CDATA[site-icon]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:6:{s:5:"width";i:512;s:6:"height";i:512;s:4:"file";s:31:"2024/03/cropped-logo-full-1.png";s:8:"filesize";i:11834;s:5:"sizes";a:6:{s:6:"medium";a:5:{s:4:"file";s:31:"cropped-logo-full-1-300x300.png";s:5:"width";i:300;s:6:"height";i:300;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:6905;}s:9:"thumbnail";a:5:{s:4:"file";s:31:"cropped-logo-full-1-150x150.png";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:3114;}s:13:"site_icon-270";a:5:{s:4:"file";s:31:"cropped-logo-full-1-270x270.png";s:5:"width";i:270;s:6:"height";i:270;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:6120;}s:13:"site_icon-192";a:5:{s:4:"file";s:31:"cropped-logo-full-1-192x192.png";s:5:"width";i:192;s:6:"height";i:192;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:4140;}s:13:"site_icon-180";a:5:{s:4:"file";s:31:"cropped-logo-full-1-180x180.png";s:5:"width";i:180;s:6:"height";i:180;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:3863;}s:12:"site_icon-32";a:5:{s:4:"file";s:29:"cropped-logo-full-1-32x32.png";s:5:"width";i:32;s:6:"height";i:32;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:680;}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
-		</wp:postmeta>
-							</item>
-					<item>
-		<title><![CDATA[https://unsplash.com/photos/BNBA1h-NgdY]]></title>
-		<link>http://localhost:8888/wordpress3/https-unsplash-com-photos-bnba1h-ngdy/</link>
-		<pubDate>Fri, 01 Mar 2024 13:37:29 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8888/wordpress3/wp-content/uploads/2024/03/f6d8bb23e03638f799b8c7cc1001677e-1.jpeg</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[https://unsplash.com/photos/BNBA1h-NgdY]]></excerpt:encoded>
-		<wp:post_id>57</wp:post_id>
-		<wp:post_date><![CDATA[2024-03-01 13:37:29]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2024-03-01 13:37:29]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-03-01 13:37:29]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-03-01 13:37:29]]></wp:post_modified_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[https-unsplash-com-photos-bnba1h-ngdy]]></wp:post_name>
-		<wp:status><![CDATA[inherit]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[attachment]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-						<wp:attachment_url><![CDATA[http://localhost:8888/wordpress3/wp-content/uploads/2024/03/f6d8bb23e03638f799b8c7cc1001677e-1-scaled.jpeg]]></wp:attachment_url>
-											<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
-		<wp:meta_value><![CDATA[2024/03/f6d8bb23e03638f799b8c7cc1001677e-1-scaled.jpeg]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:7:{s:5:"width";i:2560;s:6:"height";i:1703;s:4:"file";s:54:"2024/03/f6d8bb23e03638f799b8c7cc1001677e-1-scaled.jpeg";s:8:"filesize";i:533085;s:5:"sizes";a:6:{s:6:"medium";a:5:{s:4:"file";s:47:"f6d8bb23e03638f799b8c7cc1001677e-1-300x200.jpeg";s:5:"width";i:300;s:6:"height";i:200;s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";i:18882;}s:5:"large";a:5:{s:4:"file";s:48:"f6d8bb23e03638f799b8c7cc1001677e-1-1024x681.jpeg";s:5:"width";i:1024;s:6:"height";i:681;s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";i:137698;}s:9:"thumbnail";a:5:{s:4:"file";s:47:"f6d8bb23e03638f799b8c7cc1001677e-1-150x150.jpeg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";i:8278;}s:12:"medium_large";a:5:{s:4:"file";s:47:"f6d8bb23e03638f799b8c7cc1001677e-1-768x511.jpeg";s:5:"width";i:768;s:6:"height";i:511;s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";i:87621;}s:9:"1536x1536";a:5:{s:4:"file";s:49:"f6d8bb23e03638f799b8c7cc1001677e-1-1536x1022.jpeg";s:5:"width";i:1536;s:6:"height";i:1022;s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";i:252577;}s:9:"2048x2048";a:5:{s:4:"file";s:49:"f6d8bb23e03638f799b8c7cc1001677e-1-2048x1362.jpeg";s:5:"width";i:2048;s:6:"height";i:1362;s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";i:387755;}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:11:"CHUTTERSNAP";s:6:"camera";s:0:"";s:7:"caption";s:39:"https://unsplash.com/photos/BNBA1h-NgdY";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:39:"https://unsplash.com/photos/BNBA1h-NgdY";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}s:14:"original_image";s:39:"f6d8bb23e03638f799b8c7cc1001677e-1.jpeg";}]]></wp:meta_value>
+		<wp:meta_key><![CDATA[_elementor_template_type]]></wp:meta_key>
+		<wp:meta_value><![CDATA[kit]]></wp:meta_value>
 		</wp:postmeta>
 							</item>
 					<item>
 		<title><![CDATA[Home]]></title>
-		<link>http://localhost:8888/wordpress3/</link>
+		<link>http://localhost:8888/wordpress/</link>
 		<pubDate>Tue, 27 Feb 2024 10:13:06 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
+		<dc:creator><![CDATA[wordpress]]></dc:creator>
 		<guid isPermaLink="false">http://localhost:8888/wordpress/?page_id=109</guid>
 		<description></description>
 		<content:encoded><![CDATA[<h1>
                     Terminal Africa Shipment                </h1>
                 <p>
                     We deliver your goods to your door step with ease and convenience. We are the best in the business.                 </p>
-                    <a href="https://terminal.africa/book-shipment/">Book Shipment</a>
-                    <a href="https://terminal.africa/track-shipment/">Track Shipment</a>
-                <img src="http://localhost:8888/wordpress3/wp-content/themes/terminal-africa-hub/assets/img/dhl.svg" alt="DHL">
-                <img src="http://localhost:8888/wordpress3/wp-content/themes/terminal-africa-hub/assets/img/ups.svg" alt="UPS">
-                <img src="http://localhost:8888/wordpress3/wp-content/themes/terminal-africa-hub/assets/img/Fedex.svg" alt="Fedex">
-                <img src="http://localhost:8888/wordpress3/wp-content/themes/terminal-africa-hub/assets/img/Aramex.svg" alt="Aramex">
+                    <a href="#">Book Shipment</a>
+                    <a href="#">Track Shipment</a>
+                <img src="http://localhost:8888/wordpress/wp-content/themes/terminal-africa-hub/assets/img/dhl.svg" alt="DHL">
+                <img src="http://localhost:8888/wordpress/wp-content/themes/terminal-africa-hub/assets/img/ups.svg" alt="UPS">
+                <img src="http://localhost:8888/wordpress/wp-content/themes/terminal-africa-hub/assets/img/Fedex.svg" alt="Fedex">
+                <img src="http://localhost:8888/wordpress/wp-content/themes/terminal-africa-hub/assets/img/Aramex.svg" alt="Aramex">
                     <h2>
                         Check out our shipment services                    </h2>
                     <p>
                         We offer a wide range of services to meet your needs                    </p>
                                                     <a href="#" title="View all services">
                                 View all services                            </a>
-                    <img src="http://localhost:8888/wordpress3/wp-content/themes/terminal-africa-hub/assets/img/image-1.svg" alt="Check out our shipment services">
+                    <img src="http://localhost:8888/wordpress/wp-content/themes/terminal-africa-hub/assets/img/image-1.svg" alt="Check out our shipment services">
             <h2>
                 Customer Review            </h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consectetur ut pretium egestas aliquam libero, duis est sed. Velit varius sit a elit et quis lectus enim, justo            </p>
             <p>
                 John Doe            </p>
-                <img src="http://localhost:8888/wordpress3/wp-content/themes/terminal-africa-hub/assets/img/star-filled.svg" alt="">
-                <img src="http://localhost:8888/wordpress3/wp-content/themes/terminal-africa-hub/assets/img/star-filled.svg" alt="">
-                <img src="http://localhost:8888/wordpress3/wp-content/themes/terminal-africa-hub/assets/img/star-filled.svg" alt="">
-                <img src="http://localhost:8888/wordpress3/wp-content/themes/terminal-africa-hub/assets/img/star.svg" alt="">
-                <img src="http://localhost:8888/wordpress3/wp-content/themes/terminal-africa-hub/assets/img/star.svg" alt="">
+                <img src="http://localhost:8888/wordpress/wp-content/themes/terminal-africa-hub/assets/img/star-filled.svg" alt="">
+                <img src="http://localhost:8888/wordpress/wp-content/themes/terminal-africa-hub/assets/img/star-filled.svg" alt="">
+                <img src="http://localhost:8888/wordpress/wp-content/themes/terminal-africa-hub/assets/img/star-filled.svg" alt="">
+                <img src="http://localhost:8888/wordpress/wp-content/themes/terminal-africa-hub/assets/img/star.svg" alt="">
+                <img src="http://localhost:8888/wordpress/wp-content/themes/terminal-africa-hub/assets/img/star.svg" alt="">
                     <h2>
                         Get in touch                    </h2>
                     <p>
                         We are here to help you. Contact us for any inquiries or to get started with our services.                    </p>
-                        <a href="http://localhost:8888/wordpress3/#" title="Contact us">
+                        <a href="http://localhost:8888/wordpress/#" title="Contact us">
                             Contact us                        </a>]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>109</wp:post_id>
 		<wp:post_date><![CDATA[2024-02-27 10:13:06]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2024-02-27 10:13:06]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-03-06 14:35:47]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-03-06 14:35:47]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2024-03-11 11:29:51]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-03-11 11:29:51]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[terminal-hub-home]]></wp:post_name>
@@ -331,7 +216,7 @@
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_elementor_data]]></wp:meta_key>
-		<wp:meta_value><![CDATA[[{"id":"8d4f1e3","elType":"container","settings":{"flex_direction":"column","css_classes":"terminal-elementor-container"},"elements":[{"id":"d0ccc6d","elType":"widget","settings":{"hero_title":"Terminal Africa Shipment","hero_description":"We deliver your goods to your door step with ease and convenience. We are the best in the business. ","hero_background":{"url":"http:\/\/localhost:8888\/wordpress3\/wp-content\/uploads\/2024\/03\/f6d8bb23e03638f799b8c7cc1001677e-1-scaled.jpeg","id":57,"size":"","alt":"","source":"library"}},"elements":[],"widgetType":"terminal-hero"}],"isInner":false},{"id":"04f3215","elType":"container","settings":{"flex_direction":"column","css_classes":"terminal-elementor-container"},"elements":[{"id":"81b03b0","elType":"widget","settings":{"partners":[{"partner_image":{"url":"http:\/\/localhost:8888\/wordpress\/wp-content\/uploads\/2024\/02\/654a1808ebbedd57ef441997_dhl-1-1.png","id":153,"alt":"","source":"library","size":""},"_id":"3817b31"},{"_id":"89eb2be","partner_image":{"url":"http:\/\/localhost:8888\/wordpress\/wp-content\/uploads\/2024\/02\/654a1843c78fe7d5e0199d96_UPSSSS-1-1.png","id":155,"size":"","alt":"","source":"library"}},{"_id":"de0b664","partner_image":{"url":"http:\/\/localhost:8888\/wordpress\/wp-content\/uploads\/2024\/02\/Fedex-Logo-1-1.png","id":156,"size":"","alt":"","source":"library"}},{"_id":"cb4a338","partner_image":{"url":"http:\/\/localhost:8888\/wordpress\/wp-content\/uploads\/2024\/02\/Aramex-logo-1-1.png","id":157,"size":"","alt":"","source":"library"}}]},"elements":[],"widgetType":"terminal-partners"}],"isInner":false},{"id":"20794e7","elType":"container","settings":{"flex_direction":"column","css_classes":"terminal-elementor-container"},"elements":[{"id":"9f0ed86","elType":"widget","settings":{"title":"Check out our shipment services","description":"We offer a wide range of services to meet your needs","url_title":"View all services","background_color":"#FDEEDD"},"elements":[],"widgetType":"terminal-services"}],"isInner":false},{"id":"74b7569","elType":"container","settings":{"flex_direction":"column","css_classes":"terminal-elementor-container"},"elements":[{"id":"2cc6127","elType":"widget","settings":{"review_title":"Customer Review","review_description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consectetur ut pretium egestas aliquam libero, duis est sed. Velit varius sit a elit et quis lectus enim, justo","review_author":"John Doe"},"elements":[],"widgetType":"terminal-review"}],"isInner":false},{"id":"ee9858d","elType":"container","settings":{"flex_direction":"column","css_classes":"terminal-elementor-container"},"elements":[{"id":"da4a88f","elType":"widget","settings":{"title":"Get in touch","description":"We are here to help you. Contact us for any inquiries or to get started with our services.","contact":"Contact us","background_color":"#FDEEDD"},"elements":[],"widgetType":"terminal-getintouch"}],"isInner":false}]]]></wp:meta_value>
+		<wp:meta_value><![CDATA[[{"id":"8d4f1e3","elType":"container","settings":{"flex_direction":"column","css_classes":"terminal-elementor-container"},"elements":[{"id":"d0ccc6d","elType":"widget","settings":{"hero_title":"Terminal Africa Shipment","hero_description":"We deliver your goods to your door step with ease and convenience. We are the best in the business. ","hero_background":{"url":"https:\/\/tplugtest.com\/wp-content\/uploads\/2024\/03\/f6d8bb23e03638f799b8c7cc1001677e-1-scaled-1.jpeg","id":"","size":"","source":"url"}},"elements":[],"widgetType":"terminal-hero"}],"isInner":false},{"id":"04f3215","elType":"container","settings":{"flex_direction":"column","css_classes":"terminal-elementor-container"},"elements":[{"id":"81b03b0","elType":"widget","settings":{"partners":[{"partner_image":{"url":"http:\/\/localhost:8888\/wordpress\/wp-content\/uploads\/2024\/02\/654a1808ebbedd57ef441997_dhl-1-1.png","id":153,"alt":"","source":"library","size":""},"_id":"3817b31"},{"_id":"89eb2be","partner_image":{"url":"http:\/\/localhost:8888\/wordpress\/wp-content\/uploads\/2024\/02\/654a1843c78fe7d5e0199d96_UPSSSS-1-1.png","id":155,"size":"","alt":"","source":"library"}},{"_id":"de0b664","partner_image":{"url":"http:\/\/localhost:8888\/wordpress\/wp-content\/uploads\/2024\/02\/Fedex-Logo-1-1.png","id":156,"size":"","alt":"","source":"library"}},{"_id":"cb4a338","partner_image":{"url":"http:\/\/localhost:8888\/wordpress\/wp-content\/uploads\/2024\/02\/Aramex-logo-1-1.png","id":157,"size":"","alt":"","source":"library"}}]},"elements":[],"widgetType":"terminal-partners"}],"isInner":false},{"id":"20794e7","elType":"container","settings":{"flex_direction":"column","css_classes":"terminal-elementor-container"},"elements":[{"id":"9f0ed86","elType":"widget","settings":{"title":"Check out our shipment services","description":"We offer a wide range of services to meet your needs","url_title":"View all services","background_color":"#FDEEDD"},"elements":[],"widgetType":"terminal-services"}],"isInner":false},{"id":"74b7569","elType":"container","settings":{"flex_direction":"column","css_classes":"terminal-elementor-container"},"elements":[{"id":"2cc6127","elType":"widget","settings":{"review_title":"Customer Review","review_description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consectetur ut pretium egestas aliquam libero, duis est sed. Velit varius sit a elit et quis lectus enim, justo","review_author":"John Doe"},"elements":[],"widgetType":"terminal-review"}],"isInner":false},{"id":"ee9858d","elType":"container","settings":{"flex_direction":"column","css_classes":"terminal-elementor-container"},"elements":[{"id":"da4a88f","elType":"widget","settings":{"title":"Get in touch","description":"We are here to help you. Contact us for any inquiries or to get started with our services.","contact":"Contact us","background_color":"#FDEEDD"},"elements":[],"widgetType":"terminal-getintouch"}],"isInner":false}]]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_elementor_page_assets]]></wp:meta_key>
@@ -340,9 +225,9 @@
 							</item>
 					<item>
 		<title><![CDATA[What we offer]]></title>
-		<link>http://localhost:8888/wordpress3/service-page/</link>
+		<link>http://localhost:8888/wordpress/services/</link>
 		<pubDate>Wed, 28 Feb 2024 08:12:23 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
+		<dc:creator><![CDATA[wordpress]]></dc:creator>
 		<guid isPermaLink="false">http://localhost:8888/wordpress/?page_id=190</guid>
 		<description></description>
 		<content:encoded><![CDATA[<h2 style="color:#333333">
@@ -351,26 +236,26 @@
                         Our Services                    </h2>
                     <p>
                         We offer a wide range of services to meet your needs                    </p>
-                    <img src="http://localhost:8888/wordpress/wp-content/uploads/2024/02/demo-service.png" alt="Our Services">
+                    <img src="https://tplugtest.com/wp-content/uploads/2024/03/demo-service.png" alt="Our Services">
                     <h2>
                         Our Services                    </h2>
                     <p>
                         We offer a wide range of services to meet your needs                    </p>
-                    <img src="http://localhost:8888/wordpress/wp-content/uploads/2024/02/demo-service.png" alt="Our Services">
+                    <img src="https://tplugtest.com/wp-content/uploads/2024/03/demo-service.png" alt="Our Services">
                     <h2>
                         Our Services                    </h2>
                     <p>
                         We offer a wide range of services to meet your needs                    </p>
-                    <img src="http://localhost:8888/wordpress/wp-content/uploads/2024/02/demo-service.png" alt="Our Services">]]></content:encoded>
+                    <img src="https://tplugtest.com/wp-content/uploads/2024/03/demo-service.png" alt="Our Services">]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>190</wp:post_id>
 		<wp:post_date><![CDATA[2024-02-28 08:12:23]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2024-02-28 08:12:23]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-03-07 06:31:05]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-03-07 06:31:05]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2024-03-11 11:31:18]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-03-11 11:31:18]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[service-page]]></wp:post_name>
+		<wp:post_name><![CDATA[services]]></wp:post_name>
 		<wp:status><![CDATA[publish]]></wp:status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
@@ -395,7 +280,7 @@
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_elementor_data]]></wp:meta_key>
-		<wp:meta_value><![CDATA[[{"id":"0861e53","elType":"container","settings":{"flex_direction":"column","css_classes":"terminal-elementor-container"},"elements":[{"id":"6d336c4","elType":"widget","settings":{"header_bg_color":"#FDEEDD","header_bg_image":{"url":"http:\/\/localhost:8888\/wordpress\/wp-content\/uploads\/2023\/12\/400163070_6735633919888143_4044392186665359644_n.jpg","id":66,"size":"","alt":"","source":"library"},"__globals__":{"title_color":""}},"elements":[],"widgetType":"terminal-innerpage-header"}],"isInner":false},{"id":"0d0570d","elType":"container","settings":{"flex_direction":"column","css_classes":"terminal-elementor-container"},"elements":[{"id":"b47945b","elType":"widget","settings":{"title":"Our Services","description":"We offer a wide range of services to meet your needs","url_title":"View all services","background_color":"#FFFFFF","image":{"url":"http:\/\/localhost:8888\/wordpress\/wp-content\/uploads\/2024\/02\/demo-service.png","id":224,"size":"","alt":"","source":"library"},"url_button_bg":"#F7941E","url_button_bg_hover":"#000000","url_title_color_hover":"#FFFFFF","enable_link":"","image_size":{"unit":"%","size":66,"sizes":[]},"image_size_tablet":{"unit":"%","size":"","sizes":[]},"image_size_mobile":{"unit":"%","size":"","sizes":[]},"title_type":"terminal-small"},"elements":[],"widgetType":"terminal-services"},{"id":"de45065","elType":"widget","settings":{"title":"Our Services","description":"We offer a wide range of services to meet your needs","url_title":"View all services","background_color":"#FFFFFF","image":{"url":"http:\/\/localhost:8888\/wordpress\/wp-content\/uploads\/2024\/02\/demo-service.png","id":224,"size":"","alt":"","source":"library"},"url_button_bg":"#F7941E","url_button_bg_hover":"#000000","url_title_color_hover":"#FFFFFF","enable_link":"","image_size":{"unit":"%","size":66,"sizes":[]},"image_size_tablet":{"unit":"%","size":"","sizes":[]},"image_size_mobile":{"unit":"%","size":"","sizes":[]},"column_direction":"row-reverse","title_type":"terminal-small"},"elements":[],"widgetType":"terminal-services"},{"id":"4178ca5","elType":"widget","settings":{"title":"Our Services","description":"We offer a wide range of services to meet your needs","url_title":"View all services","background_color":"#FFFFFF","image":{"url":"http:\/\/localhost:8888\/wordpress\/wp-content\/uploads\/2024\/02\/demo-service.png","id":224,"size":"","alt":"","source":"library"},"url_button_bg":"#F7941E","url_button_bg_hover":"#000000","url_title_color_hover":"#FFFFFF","enable_link":"","image_size":{"unit":"%","size":66,"sizes":[]},"image_size_tablet":{"unit":"%","size":"","sizes":[]},"image_size_mobile":{"unit":"%","size":"","sizes":[]},"title_type":"terminal-small"},"elements":[],"widgetType":"terminal-services"}],"isInner":false},{"id":"b8c17a5","elType":"container","settings":{"flex_direction":"column","css_classes":"terminal-elementor-container"},"elements":[],"isInner":false}]]]></wp:meta_value>
+		<wp:meta_value><![CDATA[[{"id":"0861e53","elType":"container","settings":{"flex_direction":"column","css_classes":"terminal-elementor-container"},"elements":[{"id":"6d336c4","elType":"widget","settings":{"header_bg_color":"#FDEEDD","header_bg_image":{"url":"http:\/\/localhost:8888\/wordpress\/wp-content\/uploads\/2023\/12\/400163070_6735633919888143_4044392186665359644_n.jpg","id":66,"size":"","alt":"","source":"library"},"__globals__":{"title_color":""}},"elements":[],"widgetType":"terminal-innerpage-header"}],"isInner":false},{"id":"0d0570d","elType":"container","settings":{"flex_direction":"column","css_classes":"terminal-elementor-container"},"elements":[{"id":"b47945b","elType":"widget","settings":{"title":"Our Services","description":"We offer a wide range of services to meet your needs","url_title":"View all services","background_color":"#FFFFFF","image":{"url":"https:\/\/tplugtest.com\/wp-content\/uploads\/2024\/03\/demo-service.png","id":"","size":"","source":"url"},"url_button_bg":"#F7941E","url_button_bg_hover":"#000000","url_title_color_hover":"#FFFFFF","enable_link":"","image_size":{"unit":"%","size":66,"sizes":[]},"image_size_tablet":{"unit":"%","size":"","sizes":[]},"image_size_mobile":{"unit":"%","size":"","sizes":[]},"title_type":"terminal-small"},"elements":[],"widgetType":"terminal-services"},{"id":"de45065","elType":"widget","settings":{"title":"Our Services","description":"We offer a wide range of services to meet your needs","url_title":"View all services","background_color":"#FFFFFF","image":{"url":"https:\/\/tplugtest.com\/wp-content\/uploads\/2024\/03\/demo-service.png","id":"","size":"","source":"url"},"url_button_bg":"#F7941E","url_button_bg_hover":"#000000","url_title_color_hover":"#FFFFFF","enable_link":"","image_size":{"unit":"%","size":66,"sizes":[]},"image_size_tablet":{"unit":"%","size":"","sizes":[]},"image_size_mobile":{"unit":"%","size":"","sizes":[]},"column_direction":"row-reverse","title_type":"terminal-small"},"elements":[],"widgetType":"terminal-services"},{"id":"4178ca5","elType":"widget","settings":{"title":"Our Services","description":"We offer a wide range of services to meet your needs","url_title":"View all services","background_color":"#FFFFFF","image":{"url":"https:\/\/tplugtest.com\/wp-content\/uploads\/2024\/03\/demo-service.png","id":"","size":"","source":"url"},"url_button_bg":"#F7941E","url_button_bg_hover":"#000000","url_title_color_hover":"#FFFFFF","enable_link":"","image_size":{"unit":"%","size":66,"sizes":[]},"image_size_tablet":{"unit":"%","size":"","sizes":[]},"image_size_mobile":{"unit":"%","size":"","sizes":[]},"title_type":"terminal-small"},"elements":[],"widgetType":"terminal-services"}],"isInner":false},{"id":"b8c17a5","elType":"container","settings":{"flex_direction":"column","css_classes":"terminal-elementor-container"},"elements":[],"isInner":false}]]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_elementor_page_assets]]></wp:meta_key>
@@ -405,12 +290,16 @@
 		<wp:meta_key><![CDATA[_elementor_page_settings]]></wp:meta_key>
 		<wp:meta_value><![CDATA[a:1:{s:8:"settings";a:1:{s:11:"title_color";s:7:"#000000";}}]]></wp:meta_value>
 		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
 							</item>
 					<item>
 		<title><![CDATA[Get in Touch]]></title>
-		<link>http://localhost:8888/wordpress3/get-in-touch/</link>
+		<link>http://localhost:8888/wordpress/get-in-touch/</link>
 		<pubDate>Fri, 01 Mar 2024 04:47:41 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
+		<dc:creator><![CDATA[wordpress]]></dc:creator>
 		<guid isPermaLink="false">http://localhost:8888/wordpress/?page_id=286</guid>
 		<description></description>
 		<content:encoded><![CDATA[<h2 style="color:#333333">
@@ -447,8 +336,8 @@
 		<wp:post_id>286</wp:post_id>
 		<wp:post_date><![CDATA[2024-03-01 04:47:41]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2024-03-01 04:47:41]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-03-07 06:29:24]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-03-07 06:29:24]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2024-03-01 04:47:41]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-03-01 04:47:41]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[get-in-touch]]></wp:post_name>
@@ -484,55 +373,277 @@
 		</wp:postmeta>
 							</item>
 					<item>
-		<title><![CDATA[400163070_6735633919888143_4044392186665359644_n]]></title>
-		<link>http://localhost:8888/wordpress3/terminal-hub-home/400163070_6735633919888143_4044392186665359644_n/</link>
-		<pubDate>Fri, 01 Mar 2024 15:28:11 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8888/wordpress3/wp-content/uploads/2024/03/400163070_6735633919888143_4044392186665359644_n.jpg</guid>
+		<title><![CDATA[Hello world!]]></title>
+		<link>http://localhost:8888/wordpress/hello-world-2/</link>
+		<pubDate>Fri, 01 Mar 2024 11:34:55 +0000</pubDate>
+		<dc:creator><![CDATA[wordpress]]></dc:creator>
+		<guid isPermaLink="false">http://localhost:8888/wordpress3/?p=1</guid>
 		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>
+<!-- /wp:paragraph -->]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>295</wp:post_id>
-		<wp:post_date><![CDATA[2024-03-01 15:28:11]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2024-03-01 15:28:11]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-03-01 15:28:11]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-03-01 15:28:11]]></wp:post_modified_gmt>
+		<wp:post_date><![CDATA[2024-03-01 11:34:55]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2024-03-01 11:34:55]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2024-03-01 11:34:55]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-03-01 11:34:55]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[400163070_6735633919888143_4044392186665359644_n]]></wp:post_name>
-		<wp:status><![CDATA[inherit]]></wp:status>
-		<wp:post_parent>109</wp:post_parent>
+		<wp:ping_status><![CDATA[open]]></wp:ping_status>
+		<wp:post_name><![CDATA[hello-world-2]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-						<wp:attachment_url><![CDATA[http://localhost:8888/wordpress3/wp-content/uploads/2024/03/400163070_6735633919888143_4044392186665359644_n.jpg]]></wp:attachment_url>
-											<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
-		<wp:meta_value><![CDATA[2024/03/400163070_6735633919888143_4044392186665359644_n.jpg]]></wp:meta_value>
+										<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+						<wp:comment>
+			<wp:comment_id>2</wp:comment_id>
+			<wp:comment_author><![CDATA[A WordPress Commenter]]></wp:comment_author>
+			<wp:comment_author_email><![CDATA[wapuu@wordpress.example]]></wp:comment_author_email>
+			<wp:comment_author_url>https://wordpress.org/</wp:comment_author_url>
+			<wp:comment_author_IP><![CDATA[]]></wp:comment_author_IP>
+			<wp:comment_date><![CDATA[2024-03-01 11:34:55]]></wp:comment_date>
+			<wp:comment_date_gmt><![CDATA[2024-03-01 11:34:55]]></wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[Hi, this is a comment.
+To get started with moderating, editing, and deleting comments, please visit the Comments screen in the dashboard.
+Commenter avatars come from <a href="https://en.gravatar.com/" rel="nofollow ugc">Gravatar</a>.]]></wp:comment_content>
+			<wp:comment_approved><![CDATA[1]]></wp:comment_approved>
+			<wp:comment_type><![CDATA[comment]]></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+			<wp:comment_user_id>0</wp:comment_user_id>
+							</wp:comment>
+					</item>
+					<item>
+		<title><![CDATA[FAQ]]></title>
+		<link>http://localhost:8888/wordpress/faq/</link>
+		<pubDate>Wed, 06 Mar 2024 14:16:28 +0000</pubDate>
+		<dc:creator><![CDATA[wordpress]]></dc:creator>
+		<guid isPermaLink="false">http://localhost:8888/wordpress3/?page_id=322</guid>
+		<description></description>
+		<content:encoded><![CDATA[<h2 style="color:#333333">
+                FAQ            </h2>
+                        <h3>
+                            Question 1                        </h3>
+                        <img src="http://localhost:8888/wordpress3/wp-content/themes/terminal-africa-hub/assets//img/accordion-close.svg" alt="Question 1">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur. Eu pulvinar laoreet aliquet maecenas nulla orci eu amet non. Quis malesuada amet nec non sed diam auctor. Massa in suspendisse malesuada faucibus proin sit ultricies. Velit sit diam quis rhoncus risus congue.                        </p>
+                        <h3>
+                            Question 2                        </h3>
+                        <img src="http://localhost:8888/wordpress3/wp-content/themes/terminal-africa-hub/assets//img/accordion-open.svg" alt="Question 2">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur. Eu pulvinar laoreet aliquet maecenas nulla orci eu amet non. Quis malesuada amet nec non sed diam auctor. Massa in suspendisse malesuada faucibus proin sit ultricies. Velit sit diam quis rhoncus risus congue.                        </p>
+                        <h3>
+                            Question 3                        </h3>
+                        <img src="http://localhost:8888/wordpress3/wp-content/themes/terminal-africa-hub/assets//img/accordion-open.svg" alt="Question 3">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur. Eu pulvinar laoreet aliquet maecenas nulla orci eu amet non. Quis malesuada amet nec non sed diam auctor. Massa in suspendisse malesuada faucibus proin sit ultricies. Velit sit diam quis rhoncus risus congue.                        </p>
+                        <h3>
+                            Question 4                        </h3>
+                        <img src="http://localhost:8888/wordpress3/wp-content/themes/terminal-africa-hub/assets//img/accordion-open.svg" alt="Question 4">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur. Eu pulvinar laoreet aliquet maecenas nulla orci eu amet non. Quis malesuada amet nec non sed diam auctor. Massa in suspendisse malesuada faucibus proin sit ultricies. Velit sit diam quis rhoncus risus congue.                        </p>
+                <a href="#">
+                    Can&#039;t find the answer you&#039;re looking for? Please chat to our friendly team.                </a>]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>322</wp:post_id>
+		<wp:post_date><![CDATA[2024-03-06 14:16:28]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2024-03-06 14:16:28]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2024-03-06 14:16:28]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-03-06 14:16:28]]></wp:post_modified_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[faq]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+														<wp:postmeta>
+		<wp:meta_key><![CDATA[_elementor_edit_mode]]></wp:meta_key>
+		<wp:meta_value><![CDATA[builder]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:6:{s:5:"width";i:2048;s:6:"height";i:1536;s:4:"file";s:60:"2024/03/400163070_6735633919888143_4044392186665359644_n.jpg";s:8:"filesize";i:179708;s:5:"sizes";a:5:{s:6:"medium";a:5:{s:4:"file";s:60:"400163070_6735633919888143_4044392186665359644_n-300x225.jpg";s:5:"width";i:300;s:6:"height";i:225;s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";i:13098;}s:5:"large";a:5:{s:4:"file";s:61:"400163070_6735633919888143_4044392186665359644_n-1024x768.jpg";s:5:"width";i:1024;s:6:"height";i:768;s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";i:97055;}s:9:"thumbnail";a:5:{s:4:"file";s:60:"400163070_6735633919888143_4044392186665359644_n-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";i:5512;}s:12:"medium_large";a:5:{s:4:"file";s:60:"400163070_6735633919888143_4044392186665359644_n-768x576.jpg";s:5:"width";i:768;s:6:"height";i:576;s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";i:60075;}s:9:"1536x1536";a:5:{s:4:"file";s:62:"400163070_6735633919888143_4044392186665359644_n-1536x1152.jpg";s:5:"width";i:1536;s:6:"height";i:1152;s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";i:179300;}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
+		<wp:meta_key><![CDATA[_elementor_template_type]]></wp:meta_key>
+		<wp:meta_value><![CDATA[wp-page]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_elementor_version]]></wp:meta_key>
+		<wp:meta_value><![CDATA[3.19.4]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+		<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_elementor_data]]></wp:meta_key>
+		<wp:meta_value><![CDATA[[{"id":"53937f6","elType":"container","settings":{"flex_direction":"column","css_classes":"terminal-elementor-container"},"elements":[{"id":"92e7138","elType":"widget","settings":[],"elements":[],"widgetType":"terminal-innerpage-header"}],"isInner":false},{"id":"9d652e1","elType":"container","settings":{"flex_direction":"column","css_classes":"terminal-elementor-container"},"elements":[{"id":"907e02c","elType":"widget","settings":{"faqs":[{"question":"Question 1","answer":"Lorem ipsum dolor sit amet consectetur. Eu pulvinar laoreet aliquet maecenas nulla orci eu amet non. Quis malesuada amet nec non sed diam auctor. Massa in suspendisse malesuada faucibus proin sit ultricies. Velit sit diam quis rhoncus risus congue.","_id":"cd4264d"},{"question":"Question 2","answer":"Lorem ipsum dolor sit amet consectetur. Eu pulvinar laoreet aliquet maecenas nulla orci eu amet non. Quis malesuada amet nec non sed diam auctor. Massa in suspendisse malesuada faucibus proin sit ultricies. Velit sit diam quis rhoncus risus congue.","_id":"dd59070"},{"_id":"7b605bd","question":"Question 3","answer":"Lorem ipsum dolor sit amet consectetur. Eu pulvinar laoreet aliquet maecenas nulla orci eu amet non. Quis malesuada amet nec non sed diam auctor. Massa in suspendisse malesuada faucibus proin sit ultricies. Velit sit diam quis rhoncus risus congue."},{"_id":"4302607","question":"Question 4","answer":"Lorem ipsum dolor sit amet consectetur. Eu pulvinar laoreet aliquet maecenas nulla orci eu amet non. Quis malesuada amet nec non sed diam auctor. Massa in suspendisse malesuada faucibus proin sit ultricies. Velit sit diam quis rhoncus risus congue."}],"footer_link":"Can't find the answer you're looking for? Please chat to our friendly team."},"elements":[],"widgetType":"terminal-faq"}],"isInner":false}]]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_elementor_page_assets]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:0:{}]]></wp:meta_value>
+		</wp:postmeta>
+							</item>
+					<item>
+		<title><![CDATA[Terms of use]]></title>
+		<link>http://localhost:8888/wordpress/terms-of-use/</link>
+		<pubDate>Wed, 06 Mar 2024 14:17:43 +0000</pubDate>
+		<dc:creator><![CDATA[wordpress]]></dc:creator>
+		<guid isPermaLink="false">http://localhost:8888/wordpress3/?page_id=325</guid>
+		<description></description>
+		<content:encoded><![CDATA[<h2 style="color:#333333">
+                Terms of use            </h2>
+                        <h3>
+                            About Account                        </h3>
+                        <img src="http://localhost:8888/wordpress3/wp-content/themes/terminal-africa-hub/assets//img/accordion-close.svg" alt="About Account">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur. Et praesent tristique porttitor duis vivamus facilisis lorem. Magna id platea aliquet vel nibh. Vestibulum gravida tristique habitant fringilla urna. Tempor sed porttitor fringilla nec tincidunt at non ac. Id eget est quis ut adipiscing. Nibh diam ut quis suspendisse cras est ut egestas. Sed consequat integer augue id quisque aliquam purus.
+Praesent feugiat vulputate est sed mauris. Arcu justo auctor in semper felis. Sed arcu in lorem non convallis turpis. Sed enim vitae sit proin aliquam nibh consectetur. Tellus auctor nibh et tincidunt faucibus. Amet ut et augue varius consequat ac adipiscing eleifend tortor. Pellentesque faucibus porta luctus aliquam pretium. Egestas integer sem consequat quis vulputate ligula purus nibh eu. Ipsum morbi ut viverra nisl. Vestibulum sed nibh ultricies ac cursus. Elementum eu arcu viverra eget. Aliquet ligula tempus ultricies et sed aliquam luctus ante. Turpis turpis ac nec orci scelerisque non. Parturient quam pulvinar bibendum non sed tincidunt odio etiam nisl.
+Sed justo odio tellus pulvinar iaculis a mi aliquet. Consectetur quisque etiam sollicitudin sit nisl a vel sit tincidunt. Mattis enim phasellus est sed massa. Ridiculus quisque elit facilisis vestibulum ultricies dignissim dictum erat malesuada. Tellus vel integer aliquam quam senectus interdum praesent. Dui ac imperdiet ultrices euismod ipsum. Quam suspendisse odio semper tortor eleifend vitae. Proin quis duis euismod tortor. Senectus euismod ut hac sed. Arcu libero lectus arcu fringilla aliquam. Mauris accumsan mauris blandit volutpat et aliquet. Pretium ipsum sit viverra a ut facilisi pellentesque nisl orci. Convallis in massa at dignissim amet elit mauris at.
+Ipsum feugiat molestie lacus turpis sit egestas. Nulla velit non egestas tincidunt adipiscing magna dignissim in velit. Faucibus viverra nibh duis pellentesque libero tellus tristique sit. In id viverra quis sollicitudin. Metus neque ac purus natoque a. Ullamcorper augue magna diam tellus. Feugiat et vulputate adipiscing hendrerit. Sodales ut elementum semper massa vulputate diam nisl dolor. Risus id et in dis magna amet. Diam vulputate vitae et consectetur. Proin fermentum sollicitudin aliquam eu id non venenatis diam. Tincidunt adipiscing nam vitae nisl ultrices amet. Purus nam neque et nunc aliquet pellentesque. Quis eget pretium pharetra pellentesque tellus pellentesque. Sit vel egestas in semper egestas eget arcu euismod.
+Pellentesque diam ornare netus ut tortor condimentum. Aliquam et volutpat sagittis vel. Donec vestibulum id lacinia vitae proin mollis eget magna curabitur. Ipsum tempor sed mattis fermentum. Mi nullam ultrices ac aliquam accumsan eros convallis. Gravida metus morbi netus donec morbi natoque. Consectetur urna nec vivamus hendrerit suspendisse ridiculus fringilla quam. In venenatis consectetur volutpat bibendum malesuada pulvinar. Consectetur vitae imperdiet dis morbi. Sit elementum sollicitudin aliquam turpis nisi faucibus. Placerat eget quis nec adipiscing sit consequat. Pretium amet ultrices sed porttitor egestas libero massa tincidunt. Nisl odio cras etiam tortor vitae metus mollis imperdiet quis. Consequat magna viverra libero sem id et neque faucibus turpis.                        </p>
+                        <h3>
+                            Fees And Returns                        </h3>
+                        <img src="http://localhost:8888/wordpress3/wp-content/themes/terminal-africa-hub/assets//img/accordion-open.svg" alt="Fees And Returns">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur. Eu pulvinar laoreet aliquet maecenas nulla orci eu amet non. Quis malesuada amet nec non sed diam auctor. Massa in suspendisse malesuada faucibus proin sit ultricies. Velit sit diam quis rhoncus risus congue.                        </p>
+                        <h3>
+                            Humane Behaviour                        </h3>
+                        <img src="http://localhost:8888/wordpress3/wp-content/themes/terminal-africa-hub/assets//img/accordion-open.svg" alt="Humane Behaviour">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur. Eu pulvinar laoreet aliquet maecenas nulla orci eu amet non. Quis malesuada amet nec non sed diam auctor. Massa in suspendisse malesuada faucibus proin sit ultricies. Velit sit diam quis rhoncus risus congue.                        </p>
+                        <h3>
+                            Legal Issues                        </h3>
+                        <img src="http://localhost:8888/wordpress3/wp-content/themes/terminal-africa-hub/assets//img/accordion-open.svg" alt="Legal Issues">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur. Eu pulvinar laoreet aliquet maecenas nulla orci eu amet non. Quis malesuada amet nec non sed diam auctor. Massa in suspendisse malesuada faucibus proin sit ultricies. Velit sit diam quis rhoncus risus congue.                        </p>
+                        <h3>
+                            Account Canellation                        </h3>
+                        <img src="http://localhost:8888/wordpress3/wp-content/themes/terminal-africa-hub/assets//img/accordion-open.svg" alt="Account Canellation">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur. Eu pulvinar laoreet aliquet maecenas nulla orci eu amet non. Quis malesuada amet nec non sed diam auctor. Massa in suspendisse malesuada faucibus proin sit ultricies. Velit sit diam quis rhoncus risus congue.                        </p>
+                <a href="#">
+                    Can&#039;t find the answer you&#039;re looking for? Please chat to our friendly team.                </a>]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>325</wp:post_id>
+		<wp:post_date><![CDATA[2024-03-06 14:17:43]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2024-03-06 14:17:43]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2024-03-06 14:17:43]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-03-06 14:17:43]]></wp:post_modified_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[terms-of-use]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+														<wp:postmeta>
+		<wp:meta_key><![CDATA[_elementor_edit_mode]]></wp:meta_key>
+		<wp:meta_value><![CDATA[builder]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_elementor_template_type]]></wp:meta_key>
+		<wp:meta_value><![CDATA[wp-page]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_elementor_version]]></wp:meta_key>
+		<wp:meta_value><![CDATA[3.19.4]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+		<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_elementor_data]]></wp:meta_key>
+		<wp:meta_value><![CDATA[[{"id":"b09a0c8","elType":"container","settings":{"flex_direction":"column","css_classes":"terminal-elementor-container"},"elements":[{"id":"7306fab","elType":"widget","settings":[],"elements":[],"widgetType":"terminal-innerpage-header"}],"isInner":false},{"id":"b40b34b","elType":"container","settings":{"flex_direction":"column","css_classes":"terminal-elementor-container"},"elements":[{"id":"2460bcb","elType":"widget","settings":{"faqs":[{"question":"About Account","answer":"Lorem ipsum dolor sit amet consectetur. Et praesent tristique porttitor duis vivamus facilisis lorem. Magna id platea aliquet vel nibh. Vestibulum gravida tristique habitant fringilla urna. Tempor sed porttitor fringilla nec tincidunt at non ac. Id eget est quis ut adipiscing. Nibh diam ut quis suspendisse cras est ut egestas. Sed consequat integer augue id quisque aliquam purus.\nPraesent feugiat vulputate est sed mauris. Arcu justo auctor in semper felis. Sed arcu in lorem non convallis turpis. Sed enim vitae sit proin aliquam nibh consectetur. Tellus auctor nibh et tincidunt faucibus. Amet ut et augue varius consequat ac adipiscing eleifend tortor. Pellentesque faucibus porta luctus aliquam pretium. Egestas integer sem consequat quis vulputate ligula purus nibh eu. Ipsum morbi ut viverra nisl. Vestibulum sed nibh ultricies ac cursus. Elementum eu arcu viverra eget. Aliquet ligula tempus ultricies et sed aliquam luctus ante. Turpis turpis ac nec orci scelerisque non. Parturient quam pulvinar bibendum non sed tincidunt odio etiam nisl.\nSed justo odio tellus pulvinar iaculis a mi aliquet. Consectetur quisque etiam sollicitudin sit nisl a vel sit tincidunt. Mattis enim phasellus est sed massa. Ridiculus quisque elit facilisis vestibulum ultricies dignissim dictum erat malesuada. Tellus vel integer aliquam quam senectus interdum praesent. Dui ac imperdiet ultrices euismod ipsum. Quam suspendisse odio semper tortor eleifend vitae. Proin quis duis euismod tortor. Senectus euismod ut hac sed. Arcu libero lectus arcu fringilla aliquam. Mauris accumsan mauris blandit volutpat et aliquet. Pretium ipsum sit viverra a ut facilisi pellentesque nisl orci. Convallis in massa at dignissim amet elit mauris at.\nIpsum feugiat molestie lacus turpis sit egestas. Nulla velit non egestas tincidunt adipiscing magna dignissim in velit. Faucibus viverra nibh duis pellentesque libero tellus tristique sit. In id viverra quis sollicitudin. Metus neque ac purus natoque a. Ullamcorper augue magna diam tellus. Feugiat et vulputate adipiscing hendrerit. Sodales ut elementum semper massa vulputate diam nisl dolor. Risus id et in dis magna amet. Diam vulputate vitae et consectetur. Proin fermentum sollicitudin aliquam eu id non venenatis diam. Tincidunt adipiscing nam vitae nisl ultrices amet. Purus nam neque et nunc aliquet pellentesque. Quis eget pretium pharetra pellentesque tellus pellentesque. Sit vel egestas in semper egestas eget arcu euismod.\nPellentesque diam ornare netus ut tortor condimentum. Aliquam et volutpat sagittis vel. Donec vestibulum id lacinia vitae proin mollis eget magna curabitur. Ipsum tempor sed mattis fermentum. Mi nullam ultrices ac aliquam accumsan eros convallis. Gravida metus morbi netus donec morbi natoque. Consectetur urna nec vivamus hendrerit suspendisse ridiculus fringilla quam. In venenatis consectetur volutpat bibendum malesuada pulvinar. Consectetur vitae imperdiet dis morbi. Sit elementum sollicitudin aliquam turpis nisi faucibus. Placerat eget quis nec adipiscing sit consequat. Pretium amet ultrices sed porttitor egestas libero massa tincidunt. Nisl odio cras etiam tortor vitae metus mollis imperdiet quis. Consequat magna viverra libero sem id et neque faucibus turpis.","_id":"0d8e556"},{"question":"Fees And Returns","answer":"Lorem ipsum dolor sit amet consectetur. Eu pulvinar laoreet aliquet maecenas nulla orci eu amet non. Quis malesuada amet nec non sed diam auctor. Massa in suspendisse malesuada faucibus proin sit ultricies. Velit sit diam quis rhoncus risus congue.","_id":"966a717"},{"_id":"11ac7f1","question":"Humane Behaviour","answer":"Lorem ipsum dolor sit amet consectetur. Eu pulvinar laoreet aliquet maecenas nulla orci eu amet non. Quis malesuada amet nec non sed diam auctor. Massa in suspendisse malesuada faucibus proin sit ultricies. Velit sit diam quis rhoncus risus congue."},{"_id":"27d948b","question":"Legal Issues","answer":"Lorem ipsum dolor sit amet consectetur. Eu pulvinar laoreet aliquet maecenas nulla orci eu amet non. Quis malesuada amet nec non sed diam auctor. Massa in suspendisse malesuada faucibus proin sit ultricies. Velit sit diam quis rhoncus risus congue."},{"_id":"68b43bd","question":"Account Canellation","answer":"Lorem ipsum dolor sit amet consectetur. Eu pulvinar laoreet aliquet maecenas nulla orci eu amet non. Quis malesuada amet nec non sed diam auctor. Massa in suspendisse malesuada faucibus proin sit ultricies. Velit sit diam quis rhoncus risus congue."}],"footer_link":"Can't find the answer you're looking for? Please chat to our friendly team.","enable_footer_link":""},"elements":[],"widgetType":"terminal-faq"}],"isInner":false}]]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_elementor_page_assets]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:0:{}]]></wp:meta_value>
+		</wp:postmeta>
+							</item>
+					<item>
+		<title><![CDATA[Privacy policy]]></title>
+		<link>http://localhost:8888/wordpress/privacy-policy/</link>
+		<pubDate>Wed, 06 Mar 2024 14:18:02 +0000</pubDate>
+		<dc:creator><![CDATA[wordpress]]></dc:creator>
+		<guid isPermaLink="false">http://localhost:8888/wordpress3/?page_id=328</guid>
+		<description></description>
+		<content:encoded><![CDATA[<h2 style="color:#333333">
+                Privacy policy            </h2>
+                        <h3>
+                            Question 1                        </h3>
+                        <img src="http://localhost:8888/wordpress/wp-content/themes/terminal-africa-hub/assets//img/accordion-close.svg" alt="Question 1">
+                        <p>
+                            Answer 1                        </p>
+                        <h3>
+                            Question 2                        </h3>
+                        <img src="http://localhost:8888/wordpress/wp-content/themes/terminal-africa-hub/assets//img/accordion-open.svg" alt="Question 2">
+                        <p>
+                            Answer 2                        </p>
+                <a href="#">
+                    Can&#039;t find the answer you&#039;re looking for? Please chat to our friendly team.                </a>]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>328</wp:post_id>
+		<wp:post_date><![CDATA[2024-03-06 14:18:02]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2024-03-06 14:18:02]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2024-03-11 11:35:32]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-03-11 11:35:32]]></wp:post_modified_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[privacy-policy]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+														<wp:postmeta>
+		<wp:meta_key><![CDATA[_elementor_edit_mode]]></wp:meta_key>
+		<wp:meta_value><![CDATA[builder]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_elementor_template_type]]></wp:meta_key>
+		<wp:meta_value><![CDATA[wp-page]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_elementor_version]]></wp:meta_key>
+		<wp:meta_value><![CDATA[3.19.4]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+		<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_elementor_data]]></wp:meta_key>
+		<wp:meta_value><![CDATA[[{"id":"28138fd","elType":"container","settings":{"flex_direction":"column","css_classes":"terminal-elementor-container"},"elements":[{"id":"f96a5fe","elType":"widget","settings":[],"elements":[],"widgetType":"terminal-innerpage-header"}],"isInner":false},{"id":"6f91636","elType":"container","settings":{"flex_direction":"column","css_classes":"terminal-elementor-container"},"elements":[{"id":"090c20c","elType":"widget","settings":{"faqs":[{"question":"Question 1","answer":"Answer 1","_id":"78cca8f"},{"question":"Question 2","answer":"Answer 2","_id":"ace4afb"}],"footer_link":"Can't find the answer you're looking for? Please chat to our friendly team."},"elements":[],"widgetType":"terminal-faq"}],"isInner":false}]]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_elementor_page_assets]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:0:{}]]></wp:meta_value>
 		</wp:postmeta>
 							</item>
 					<item>
 		<title><![CDATA[Services]]></title>
-		<link>http://localhost:8888/wordpress3/2024/03/06/314/</link>
-		<pubDate>Wed, 06 Mar 2024 14:12:19 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8888/wordpress3/?p=314</guid>
+		<link>http://localhost:8888/wordpress/services/</link>
+		<pubDate>Mon, 11 Mar 2024 08:54:10 +0000</pubDate>
+		<dc:creator><![CDATA[wordpress]]></dc:creator>
+		<guid isPermaLink="false">http://localhost:8888/wordpress/services/</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>314</wp:post_id>
-		<wp:post_date><![CDATA[2024-03-06 14:12:45]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2024-03-06 14:12:19]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-03-06 14:12:45]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-03-06 14:12:45]]></wp:post_modified_gmt>
+		<wp:post_id>368</wp:post_id>
+		<wp:post_date><![CDATA[2024-03-11 08:54:10]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2024-03-11 08:54:10]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2024-03-11 08:54:10]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-03-11 08:54:10]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[314]]></wp:post_name>
+		<wp:post_name><![CDATA[services]]></wp:post_name>
 		<wp:status><![CDATA[publish]]></wp:status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>1</wp:menu_order>
@@ -575,18 +686,18 @@
 							</item>
 					<item>
 		<title><![CDATA[Get Quotes]]></title>
-		<link>http://localhost:8888/wordpress3/2024/03/06/get-quotes/</link>
-		<pubDate>Wed, 06 Mar 2024 14:12:19 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8888/wordpress3/?p=315</guid>
+		<link>http://localhost:8888/wordpress/get-quotes/</link>
+		<pubDate>Mon, 11 Mar 2024 08:54:10 +0000</pubDate>
+		<dc:creator><![CDATA[wordpress]]></dc:creator>
+		<guid isPermaLink="false">http://localhost:8888/wordpress/get-quotes/</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>315</wp:post_id>
-		<wp:post_date><![CDATA[2024-03-06 14:12:45]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2024-03-06 14:12:19]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-03-06 14:12:45]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-03-06 14:12:45]]></wp:post_modified_gmt>
+		<wp:post_id>369</wp:post_id>
+		<wp:post_date><![CDATA[2024-03-11 08:54:10]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2024-03-11 08:54:10]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2024-03-11 08:54:10]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-03-11 08:54:10]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[get-quotes]]></wp:post_name>
@@ -607,7 +718,7 @@
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key>
-		<wp:meta_value><![CDATA[315]]></wp:meta_value>
+		<wp:meta_value><![CDATA[369]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key>
@@ -632,18 +743,18 @@
 							</item>
 					<item>
 		<title><![CDATA[Contact]]></title>
-		<link>http://localhost:8888/wordpress3/2024/03/06/contact/</link>
-		<pubDate>Wed, 06 Mar 2024 14:12:19 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8888/wordpress3/?p=316</guid>
+		<link>http://localhost:8888/wordpress/contact/</link>
+		<pubDate>Mon, 11 Mar 2024 08:54:10 +0000</pubDate>
+		<dc:creator><![CDATA[wordpress]]></dc:creator>
+		<guid isPermaLink="false">http://localhost:8888/wordpress/contact/</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>316</wp:post_id>
-		<wp:post_date><![CDATA[2024-03-06 14:12:45]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2024-03-06 14:12:19]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-03-06 14:12:45]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-03-06 14:12:45]]></wp:post_modified_gmt>
+		<wp:post_id>370</wp:post_id>
+		<wp:post_date><![CDATA[2024-03-11 08:54:10]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2024-03-11 08:54:10]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2024-03-11 08:54:10]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-03-11 08:54:10]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[contact]]></wp:post_name>
@@ -689,18 +800,18 @@
 							</item>
 					<item>
 		<title><![CDATA[Get Quotes]]></title>
-		<link>http://localhost:8888/wordpress3/2024/03/06/get-quotes-2/</link>
-		<pubDate>Wed, 06 Mar 2024 14:15:03 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8888/wordpress3/?p=317</guid>
+		<link>http://localhost:8888/wordpress/get-quotes-2/</link>
+		<pubDate>Mon, 11 Mar 2024 08:54:10 +0000</pubDate>
+		<dc:creator><![CDATA[wordpress]]></dc:creator>
+		<guid isPermaLink="false">http://localhost:8888/wordpress/get-quotes-2/</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>317</wp:post_id>
-		<wp:post_date><![CDATA[2024-03-06 14:15:03]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2024-03-06 14:15:03]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-03-06 14:15:03]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-03-06 14:15:03]]></wp:post_modified_gmt>
+		<wp:post_id>371</wp:post_id>
+		<wp:post_date><![CDATA[2024-03-11 08:54:10]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2024-03-11 08:54:10]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2024-03-11 08:54:10]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-03-11 08:54:10]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[get-quotes-2]]></wp:post_name>
@@ -721,7 +832,7 @@
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key>
-		<wp:meta_value><![CDATA[317]]></wp:meta_value>
+		<wp:meta_value><![CDATA[371]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key>
@@ -746,18 +857,18 @@
 							</item>
 					<item>
 		<title><![CDATA[Track Shipment]]></title>
-		<link>http://localhost:8888/wordpress3/2024/03/06/track-shipment/</link>
-		<pubDate>Wed, 06 Mar 2024 14:15:03 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8888/wordpress3/?p=318</guid>
+		<link>http://localhost:8888/wordpress/track-shipment/</link>
+		<pubDate>Mon, 11 Mar 2024 08:54:10 +0000</pubDate>
+		<dc:creator><![CDATA[wordpress]]></dc:creator>
+		<guid isPermaLink="false">http://localhost:8888/wordpress/track-shipment/</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>318</wp:post_id>
-		<wp:post_date><![CDATA[2024-03-06 14:15:03]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2024-03-06 14:15:03]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-03-06 14:15:03]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-03-06 14:15:03]]></wp:post_modified_gmt>
+		<wp:post_id>372</wp:post_id>
+		<wp:post_date><![CDATA[2024-03-11 08:54:10]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2024-03-11 08:54:10]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2024-03-11 08:54:10]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-03-11 08:54:10]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[track-shipment]]></wp:post_name>
@@ -778,7 +889,7 @@
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key>
-		<wp:meta_value><![CDATA[318]]></wp:meta_value>
+		<wp:meta_value><![CDATA[372]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key>
@@ -803,18 +914,18 @@
 							</item>
 					<item>
 		<title><![CDATA[Book Shipment]]></title>
-		<link>http://localhost:8888/wordpress3/2024/03/06/book-shipment/</link>
-		<pubDate>Wed, 06 Mar 2024 14:15:03 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8888/wordpress3/?p=319</guid>
+		<link>http://localhost:8888/wordpress/book-shipment/</link>
+		<pubDate>Mon, 11 Mar 2024 08:54:10 +0000</pubDate>
+		<dc:creator><![CDATA[wordpress]]></dc:creator>
+		<guid isPermaLink="false">http://localhost:8888/wordpress/book-shipment/</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>319</wp:post_id>
-		<wp:post_date><![CDATA[2024-03-06 14:15:03]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2024-03-06 14:15:03]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-03-06 14:15:03]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-03-06 14:15:03]]></wp:post_modified_gmt>
+		<wp:post_id>373</wp:post_id>
+		<wp:post_date><![CDATA[2024-03-11 08:54:10]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2024-03-11 08:54:10]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2024-03-11 08:54:10]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-03-11 08:54:10]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[book-shipment]]></wp:post_name>
@@ -835,7 +946,7 @@
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key>
-		<wp:meta_value><![CDATA[319]]></wp:meta_value>
+		<wp:meta_value><![CDATA[373]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key>
@@ -860,21 +971,21 @@
 							</item>
 					<item>
 		<title><![CDATA[Services]]></title>
-		<link>http://localhost:8888/wordpress3/2024/03/06/servicea/</link>
-		<pubDate>Wed, 06 Mar 2024 14:15:51 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8888/wordpress3/?p=320</guid>
+		<link>http://localhost:8888/wordpress/services-2/</link>
+		<pubDate>Mon, 11 Mar 2024 08:54:10 +0000</pubDate>
+		<dc:creator><![CDATA[wordpress]]></dc:creator>
+		<guid isPermaLink="false">http://localhost:8888/wordpress/services-2/</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>320</wp:post_id>
-		<wp:post_date><![CDATA[2024-03-06 14:16:48]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2024-03-06 14:15:51]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-03-06 14:16:48]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-03-06 14:16:48]]></wp:post_modified_gmt>
+		<wp:post_id>374</wp:post_id>
+		<wp:post_date><![CDATA[2024-03-11 08:54:10]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2024-03-11 08:54:10]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2024-03-11 08:54:10]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-03-11 08:54:10]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[servicea]]></wp:post_name>
+		<wp:post_name><![CDATA[services-2]]></wp:post_name>
 		<wp:status><![CDATA[publish]]></wp:status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>1</wp:menu_order>
@@ -917,18 +1028,18 @@
 							</item>
 					<item>
 		<title><![CDATA[Contact us]]></title>
-		<link>http://localhost:8888/wordpress3/2024/03/06/contact-us/</link>
-		<pubDate>Wed, 06 Mar 2024 14:16:48 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8888/wordpress3/?p=321</guid>
+		<link>http://localhost:8888/wordpress/contact-us/</link>
+		<pubDate>Mon, 11 Mar 2024 08:54:10 +0000</pubDate>
+		<dc:creator><![CDATA[wordpress]]></dc:creator>
+		<guid isPermaLink="false">http://localhost:8888/wordpress/contact-us/</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>321</wp:post_id>
-		<wp:post_date><![CDATA[2024-03-06 14:16:48]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2024-03-06 14:16:48]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-03-06 14:16:48]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-03-06 14:16:48]]></wp:post_modified_gmt>
+		<wp:post_id>375</wp:post_id>
+		<wp:post_date><![CDATA[2024-03-11 08:54:10]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2024-03-11 08:54:10]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2024-03-11 08:54:10]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-03-11 08:54:10]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[contact-us]]></wp:post_name>
@@ -974,21 +1085,21 @@
 							</item>
 					<item>
 		<title><![CDATA[]]></title>
-		<link>http://localhost:8888/wordpress3/2024/03/06/324/</link>
-		<pubDate>Wed, 06 Mar 2024 14:16:48 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8888/wordpress3/?p=324</guid>
+		<link>http://localhost:8888/wordpress/376/</link>
+		<pubDate>Mon, 11 Mar 2024 08:54:10 +0000</pubDate>
+		<dc:creator><![CDATA[wordpress]]></dc:creator>
+		<guid isPermaLink="false">http://localhost:8888/wordpress/376/</guid>
 		<description></description>
 		<content:encoded><![CDATA[ ]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>324</wp:post_id>
-		<wp:post_date><![CDATA[2024-03-06 14:16:48]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2024-03-06 14:16:48]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-03-06 14:16:48]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-03-06 14:16:48]]></wp:post_modified_gmt>
+		<wp:post_id>376</wp:post_id>
+		<wp:post_date><![CDATA[2024-03-11 08:54:10]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2024-03-11 08:54:10]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2024-03-11 08:54:10]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-03-11 08:54:10]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[324]]></wp:post_name>
+		<wp:post_name><![CDATA[376]]></wp:post_name>
 		<wp:status><![CDATA[publish]]></wp:status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>3</wp:menu_order>
@@ -1031,21 +1142,21 @@
 							</item>
 					<item>
 		<title><![CDATA[]]></title>
-		<link>http://localhost:8888/wordpress3/2024/03/06/327/</link>
-		<pubDate>Wed, 06 Mar 2024 14:18:17 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8888/wordpress3/?p=327</guid>
+		<link>http://localhost:8888/wordpress/377/</link>
+		<pubDate>Mon, 11 Mar 2024 08:54:10 +0000</pubDate>
+		<dc:creator><![CDATA[wordpress]]></dc:creator>
+		<guid isPermaLink="false">http://localhost:8888/wordpress/377/</guid>
 		<description></description>
 		<content:encoded><![CDATA[ ]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>327</wp:post_id>
-		<wp:post_date><![CDATA[2024-03-06 14:18:17]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2024-03-06 14:18:17]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-03-06 14:18:17]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-03-06 14:18:17]]></wp:post_modified_gmt>
+		<wp:post_id>377</wp:post_id>
+		<wp:post_date><![CDATA[2024-03-11 08:54:10]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2024-03-11 08:54:10]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2024-03-11 08:54:10]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-03-11 08:54:10]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[327]]></wp:post_name>
+		<wp:post_name><![CDATA[377]]></wp:post_name>
 		<wp:status><![CDATA[publish]]></wp:status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>1</wp:menu_order>
@@ -1088,21 +1199,21 @@
 							</item>
 					<item>
 		<title><![CDATA[]]></title>
-		<link>http://localhost:8888/wordpress3/2024/03/06/330/</link>
-		<pubDate>Wed, 06 Mar 2024 14:18:17 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8888/wordpress3/?p=330</guid>
+		<link>http://localhost:8888/wordpress/378/</link>
+		<pubDate>Mon, 11 Mar 2024 08:54:10 +0000</pubDate>
+		<dc:creator><![CDATA[wordpress]]></dc:creator>
+		<guid isPermaLink="false">http://localhost:8888/wordpress/378/</guid>
 		<description></description>
 		<content:encoded><![CDATA[ ]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>330</wp:post_id>
-		<wp:post_date><![CDATA[2024-03-06 14:18:17]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2024-03-06 14:18:17]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-03-06 14:18:17]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-03-06 14:18:17]]></wp:post_modified_gmt>
+		<wp:post_id>378</wp:post_id>
+		<wp:post_date><![CDATA[2024-03-11 08:54:10]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2024-03-11 08:54:10]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2024-03-11 08:54:10]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-03-11 08:54:10]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[330]]></wp:post_name>
+		<wp:post_name><![CDATA[378]]></wp:post_name>
 		<wp:status><![CDATA[publish]]></wp:status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>2</wp:menu_order>
@@ -1145,20 +1256,20 @@
 							</item>
 					<item>
 		<title><![CDATA[Hello world!]]></title>
-		<link>http://localhost:8888/wordpress3/2024/03/01/hello-world/</link>
-		<pubDate>Fri, 01 Mar 2024 11:34:55 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8888/wordpress3/?p=1</guid>
+		<link>http://localhost:8888/wordpress/hello-world/</link>
+		<pubDate>Mon, 11 Mar 2024 08:22:10 +0000</pubDate>
+		<dc:creator><![CDATA[wordpress]]></dc:creator>
+		<guid isPermaLink="false">http://localhost:8888/wordpress/?p=1</guid>
 		<description></description>
 		<content:encoded><![CDATA[<!-- wp:paragraph -->
 <p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>
 <!-- /wp:paragraph -->]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>1</wp:post_id>
-		<wp:post_date><![CDATA[2024-03-01 11:34:55]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2024-03-01 11:34:55]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-03-01 11:34:55]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-03-01 11:34:55]]></wp:post_modified_gmt>
+		<wp:post_date><![CDATA[2024-03-11 08:22:10]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2024-03-11 08:22:10]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2024-03-11 08:22:10]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-03-11 08:22:10]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[open]]></wp:comment_status>
 		<wp:ping_status><![CDATA[open]]></wp:ping_status>
 		<wp:post_name><![CDATA[hello-world]]></wp:post_name>
@@ -1175,8 +1286,8 @@
 			<wp:comment_author_email><![CDATA[wapuu@wordpress.example]]></wp:comment_author_email>
 			<wp:comment_author_url>https://wordpress.org/</wp:comment_author_url>
 			<wp:comment_author_IP><![CDATA[]]></wp:comment_author_IP>
-			<wp:comment_date><![CDATA[2024-03-01 11:34:55]]></wp:comment_date>
-			<wp:comment_date_gmt><![CDATA[2024-03-01 11:34:55]]></wp:comment_date_gmt>
+			<wp:comment_date><![CDATA[2024-03-11 08:22:10]]></wp:comment_date>
+			<wp:comment_date_gmt><![CDATA[2024-03-11 08:22:10]]></wp:comment_date_gmt>
 			<wp:comment_content><![CDATA[Hi, this is a comment.
 To get started with moderating, editing, and deleting comments, please visit the Comments screen in the dashboard.
 Commenter avatars come from <a href="https://en.gravatar.com/">Gravatar</a>.]]></wp:comment_content>
@@ -1188,18 +1299,18 @@ Commenter avatars come from <a href="https://en.gravatar.com/">Gravatar</a>.]]><
 					</item>
 					<item>
 		<title><![CDATA[Navigation]]></title>
-		<link>http://localhost:8888/wordpress3/2024/03/01/navigation/</link>
-		<pubDate>Fri, 01 Mar 2024 11:34:56 +0000</pubDate>
+		<link>http://localhost:8888/wordpress/navigation/</link>
+		<pubDate>Mon, 11 Mar 2024 08:22:11 +0000</pubDate>
 		<dc:creator><![CDATA[]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8888/wordpress3/2024/03/01/navigation/</guid>
+		<guid isPermaLink="false">http://localhost:8888/wordpress/2024/03/11/navigation/</guid>
 		<description></description>
 		<content:encoded><![CDATA[<!-- wp:page-list /-->]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>4</wp:post_id>
-		<wp:post_date><![CDATA[2024-03-01 11:34:56]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2024-03-01 11:34:56]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-03-01 11:34:56]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-03-01 11:34:56]]></wp:post_modified_gmt>
+		<wp:post_date><![CDATA[2024-03-11 08:22:11]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2024-03-11 08:22:11]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2024-03-11 08:22:11]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-03-11 08:22:11]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[navigation]]></wp:post_name>
@@ -1211,225 +1322,26 @@ Commenter avatars come from <a href="https://en.gravatar.com/">Gravatar</a>.]]><
 		<wp:is_sticky>0</wp:is_sticky>
 														</item>
 					<item>
-		<title><![CDATA[Elementor #107]]></title>
-		<link>http://localhost:8888/wordpress3/?page_id=107</link>
-		<pubDate>Thu, 07 Mar 2024 06:28:37 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8888/wordpress/?page_id=107</guid>
+		<title><![CDATA[Navigation]]></title>
+		<link>http://localhost:8888/wordpress/navigation-2/</link>
+		<pubDate>Fri, 01 Mar 2024 11:34:56 +0000</pubDate>
+		<dc:creator><![CDATA[wordpress]]></dc:creator>
+		<guid isPermaLink="false">http://localhost:8888/wordpress3/2024/03/01/navigation/</guid>
 		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
+		<content:encoded><![CDATA[<!-- wp:page-list /-->]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>107</wp:post_id>
-		<wp:post_date><![CDATA[2024-03-07 06:28:37]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2024-03-07 06:28:37]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-03-07 06:28:37]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-03-07 06:28:37]]></wp:post_modified_gmt>
+		<wp:post_id>296</wp:post_id>
+		<wp:post_date><![CDATA[2024-03-01 11:34:56]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2024-03-01 11:34:56]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2024-03-01 11:34:56]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-03-01 11:34:56]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														<wp:postmeta>
-		<wp:meta_key><![CDATA[_elementor_edit_mode]]></wp:meta_key>
-		<wp:meta_value><![CDATA[builder]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_elementor_template_type]]></wp:meta_key>
-		<wp:meta_value><![CDATA[wp-post]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_elementor_version]]></wp:meta_key>
-		<wp:meta_value><![CDATA[3.19.4]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-		<wp:meta_value><![CDATA[draft]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-		<wp:meta_value><![CDATA[1709792917]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-		<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-							</item>
-					<item>
-		<title><![CDATA[FAQ]]></title>
-		<link>http://localhost:8888/wordpress3/faq/</link>
-		<pubDate>Wed, 06 Mar 2024 14:16:28 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8888/wordpress3/?page_id=322</guid>
-		<description></description>
-		<content:encoded><![CDATA[<h2 style="color:#333333">
-                FAQ            </h2>
-                        <h3>
-                            Question 1                        </h3>
-                        <img src="http://localhost:8888/wordpress3/wp-content/themes/terminal-africa-hub/assets//img/accordion-close.svg" alt="Question 1">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur. Eu pulvinar laoreet aliquet maecenas nulla orci eu amet non. Quis malesuada amet nec non sed diam auctor. Massa in suspendisse malesuada faucibus proin sit ultricies. Velit sit diam quis rhoncus risus congue.                        </p>
-                        <h3>
-                            Question 2                        </h3>
-                        <img src="http://localhost:8888/wordpress3/wp-content/themes/terminal-africa-hub/assets//img/accordion-open.svg" alt="Question 2">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur. Eu pulvinar laoreet aliquet maecenas nulla orci eu amet non. Quis malesuada amet nec non sed diam auctor. Massa in suspendisse malesuada faucibus proin sit ultricies. Velit sit diam quis rhoncus risus congue.                        </p>
-                        <h3>
-                            Question 3                        </h3>
-                        <img src="http://localhost:8888/wordpress3/wp-content/themes/terminal-africa-hub/assets//img/accordion-open.svg" alt="Question 3">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur. Eu pulvinar laoreet aliquet maecenas nulla orci eu amet non. Quis malesuada amet nec non sed diam auctor. Massa in suspendisse malesuada faucibus proin sit ultricies. Velit sit diam quis rhoncus risus congue.                        </p>
-                        <h3>
-                            Question 4                        </h3>
-                        <img src="http://localhost:8888/wordpress3/wp-content/themes/terminal-africa-hub/assets//img/accordion-open.svg" alt="Question 4">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur. Eu pulvinar laoreet aliquet maecenas nulla orci eu amet non. Quis malesuada amet nec non sed diam auctor. Massa in suspendisse malesuada faucibus proin sit ultricies. Velit sit diam quis rhoncus risus congue.                        </p>
-                <a href="#">
-                    Can&#039;t find the answer you&#039;re looking for? Please chat to our friendly team.                </a>]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>322</wp:post_id>
-		<wp:post_date><![CDATA[2024-03-06 14:16:28]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2024-03-06 14:16:28]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-03-07 17:27:11]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-03-07 17:27:11]]></wp:post_modified_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[faq]]></wp:post_name>
+		<wp:post_name><![CDATA[navigation-2]]></wp:post_name>
 		<wp:status><![CDATA[publish]]></wp:status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														<wp:postmeta>
-		<wp:meta_key><![CDATA[_elementor_edit_mode]]></wp:meta_key>
-		<wp:meta_value><![CDATA[builder]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_elementor_template_type]]></wp:meta_key>
-		<wp:meta_value><![CDATA[wp-page]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_elementor_version]]></wp:meta_key>
-		<wp:meta_value><![CDATA[3.19.4]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-		<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_elementor_data]]></wp:meta_key>
-		<wp:meta_value><![CDATA[[{"id":"53937f6","elType":"container","settings":{"flex_direction":"column","css_classes":"terminal-elementor-container"},"elements":[{"id":"92e7138","elType":"widget","settings":[],"elements":[],"widgetType":"terminal-innerpage-header"}],"isInner":false},{"id":"9d652e1","elType":"container","settings":{"flex_direction":"column","css_classes":"terminal-elementor-container"},"elements":[{"id":"907e02c","elType":"widget","settings":{"faqs":[{"question":"Question 1","answer":"Lorem ipsum dolor sit amet consectetur. Eu pulvinar laoreet aliquet maecenas nulla orci eu amet non. Quis malesuada amet nec non sed diam auctor. Massa in suspendisse malesuada faucibus proin sit ultricies. Velit sit diam quis rhoncus risus congue.","_id":"cd4264d"},{"question":"Question 2","answer":"Lorem ipsum dolor sit amet consectetur. Eu pulvinar laoreet aliquet maecenas nulla orci eu amet non. Quis malesuada amet nec non sed diam auctor. Massa in suspendisse malesuada faucibus proin sit ultricies. Velit sit diam quis rhoncus risus congue.","_id":"dd59070"},{"_id":"7b605bd","question":"Question 3","answer":"Lorem ipsum dolor sit amet consectetur. Eu pulvinar laoreet aliquet maecenas nulla orci eu amet non. Quis malesuada amet nec non sed diam auctor. Massa in suspendisse malesuada faucibus proin sit ultricies. Velit sit diam quis rhoncus risus congue."},{"_id":"4302607","question":"Question 4","answer":"Lorem ipsum dolor sit amet consectetur. Eu pulvinar laoreet aliquet maecenas nulla orci eu amet non. Quis malesuada amet nec non sed diam auctor. Massa in suspendisse malesuada faucibus proin sit ultricies. Velit sit diam quis rhoncus risus congue."}],"footer_link":"Can't find the answer you're looking for? Please chat to our friendly team."},"elements":[],"widgetType":"terminal-faq"}],"isInner":false}]]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_elementor_page_assets]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:0:{}]]></wp:meta_value>
-		</wp:postmeta>
-							</item>
-					<item>
-		<title><![CDATA[Terms of use]]></title>
-		<link>http://localhost:8888/wordpress3/terms-of-use/</link>
-		<pubDate>Wed, 06 Mar 2024 14:17:43 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8888/wordpress3/?page_id=325</guid>
-		<description></description>
-		<content:encoded><![CDATA[<h2 style="color:#333333">
-                Terms of use            </h2>
-                        <h3>
-                            About Account                        </h3>
-                        <img src="http://localhost:8888/wordpress3/wp-content/themes/terminal-africa-hub/assets//img/accordion-close.svg" alt="About Account">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur. Et praesent tristique porttitor duis vivamus facilisis lorem. Magna id platea aliquet vel nibh. Vestibulum gravida tristique habitant fringilla urna. Tempor sed porttitor fringilla nec tincidunt at non ac. Id eget est quis ut adipiscing. Nibh diam ut quis suspendisse cras est ut egestas. Sed consequat integer augue id quisque aliquam purus.
-Praesent feugiat vulputate est sed mauris. Arcu justo auctor in semper felis. Sed arcu in lorem non convallis turpis. Sed enim vitae sit proin aliquam nibh consectetur. Tellus auctor nibh et tincidunt faucibus. Amet ut et augue varius consequat ac adipiscing eleifend tortor. Pellentesque faucibus porta luctus aliquam pretium. Egestas integer sem consequat quis vulputate ligula purus nibh eu. Ipsum morbi ut viverra nisl. Vestibulum sed nibh ultricies ac cursus. Elementum eu arcu viverra eget. Aliquet ligula tempus ultricies et sed aliquam luctus ante. Turpis turpis ac nec orci scelerisque non. Parturient quam pulvinar bibendum non sed tincidunt odio etiam nisl.
-Sed justo odio tellus pulvinar iaculis a mi aliquet. Consectetur quisque etiam sollicitudin sit nisl a vel sit tincidunt. Mattis enim phasellus est sed massa. Ridiculus quisque elit facilisis vestibulum ultricies dignissim dictum erat malesuada. Tellus vel integer aliquam quam senectus interdum praesent. Dui ac imperdiet ultrices euismod ipsum. Quam suspendisse odio semper tortor eleifend vitae. Proin quis duis euismod tortor. Senectus euismod ut hac sed. Arcu libero lectus arcu fringilla aliquam. Mauris accumsan mauris blandit volutpat et aliquet. Pretium ipsum sit viverra a ut facilisi pellentesque nisl orci. Convallis in massa at dignissim amet elit mauris at.
-Ipsum feugiat molestie lacus turpis sit egestas. Nulla velit non egestas tincidunt adipiscing magna dignissim in velit. Faucibus viverra nibh duis pellentesque libero tellus tristique sit. In id viverra quis sollicitudin. Metus neque ac purus natoque a. Ullamcorper augue magna diam tellus. Feugiat et vulputate adipiscing hendrerit. Sodales ut elementum semper massa vulputate diam nisl dolor. Risus id et in dis magna amet. Diam vulputate vitae et consectetur. Proin fermentum sollicitudin aliquam eu id non venenatis diam. Tincidunt adipiscing nam vitae nisl ultrices amet. Purus nam neque et nunc aliquet pellentesque. Quis eget pretium pharetra pellentesque tellus pellentesque. Sit vel egestas in semper egestas eget arcu euismod.
-Pellentesque diam ornare netus ut tortor condimentum. Aliquam et volutpat sagittis vel. Donec vestibulum id lacinia vitae proin mollis eget magna curabitur. Ipsum tempor sed mattis fermentum. Mi nullam ultrices ac aliquam accumsan eros convallis. Gravida metus morbi netus donec morbi natoque. Consectetur urna nec vivamus hendrerit suspendisse ridiculus fringilla quam. In venenatis consectetur volutpat bibendum malesuada pulvinar. Consectetur vitae imperdiet dis morbi. Sit elementum sollicitudin aliquam turpis nisi faucibus. Placerat eget quis nec adipiscing sit consequat. Pretium amet ultrices sed porttitor egestas libero massa tincidunt. Nisl odio cras etiam tortor vitae metus mollis imperdiet quis. Consequat magna viverra libero sem id et neque faucibus turpis.                        </p>
-                        <h3>
-                            Fees And Returns                        </h3>
-                        <img src="http://localhost:8888/wordpress3/wp-content/themes/terminal-africa-hub/assets//img/accordion-open.svg" alt="Fees And Returns">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur. Eu pulvinar laoreet aliquet maecenas nulla orci eu amet non. Quis malesuada amet nec non sed diam auctor. Massa in suspendisse malesuada faucibus proin sit ultricies. Velit sit diam quis rhoncus risus congue.                        </p>
-                        <h3>
-                            Humane Behaviour                        </h3>
-                        <img src="http://localhost:8888/wordpress3/wp-content/themes/terminal-africa-hub/assets//img/accordion-open.svg" alt="Humane Behaviour">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur. Eu pulvinar laoreet aliquet maecenas nulla orci eu amet non. Quis malesuada amet nec non sed diam auctor. Massa in suspendisse malesuada faucibus proin sit ultricies. Velit sit diam quis rhoncus risus congue.                        </p>
-                        <h3>
-                            Legal Issues                        </h3>
-                        <img src="http://localhost:8888/wordpress3/wp-content/themes/terminal-africa-hub/assets//img/accordion-open.svg" alt="Legal Issues">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur. Eu pulvinar laoreet aliquet maecenas nulla orci eu amet non. Quis malesuada amet nec non sed diam auctor. Massa in suspendisse malesuada faucibus proin sit ultricies. Velit sit diam quis rhoncus risus congue.                        </p>
-                        <h3>
-                            Account Canellation                        </h3>
-                        <img src="http://localhost:8888/wordpress3/wp-content/themes/terminal-africa-hub/assets//img/accordion-open.svg" alt="Account Canellation">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur. Eu pulvinar laoreet aliquet maecenas nulla orci eu amet non. Quis malesuada amet nec non sed diam auctor. Massa in suspendisse malesuada faucibus proin sit ultricies. Velit sit diam quis rhoncus risus congue.                        </p>
-                <a href="#">
-                    Can&#039;t find the answer you&#039;re looking for? Please chat to our friendly team.                </a>]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>325</wp:post_id>
-		<wp:post_date><![CDATA[2024-03-06 14:17:43]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2024-03-06 14:17:43]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-03-07 17:31:44]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-03-07 17:31:44]]></wp:post_modified_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[terms-of-use]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														<wp:postmeta>
-		<wp:meta_key><![CDATA[_elementor_edit_mode]]></wp:meta_key>
-		<wp:meta_value><![CDATA[builder]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_elementor_template_type]]></wp:meta_key>
-		<wp:meta_value><![CDATA[wp-page]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_elementor_version]]></wp:meta_key>
-		<wp:meta_value><![CDATA[3.19.4]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-		<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_elementor_data]]></wp:meta_key>
-		<wp:meta_value><![CDATA[[{"id":"b09a0c8","elType":"container","settings":{"flex_direction":"column","css_classes":"terminal-elementor-container"},"elements":[{"id":"7306fab","elType":"widget","settings":[],"elements":[],"widgetType":"terminal-innerpage-header"}],"isInner":false},{"id":"b40b34b","elType":"container","settings":{"flex_direction":"column","css_classes":"terminal-elementor-container"},"elements":[{"id":"2460bcb","elType":"widget","settings":{"faqs":[{"question":"About Account","answer":"Lorem ipsum dolor sit amet consectetur. Et praesent tristique porttitor duis vivamus facilisis lorem. Magna id platea aliquet vel nibh. Vestibulum gravida tristique habitant fringilla urna. Tempor sed porttitor fringilla nec tincidunt at non ac. Id eget est quis ut adipiscing. Nibh diam ut quis suspendisse cras est ut egestas. Sed consequat integer augue id quisque aliquam purus.\nPraesent feugiat vulputate est sed mauris. Arcu justo auctor in semper felis. Sed arcu in lorem non convallis turpis. Sed enim vitae sit proin aliquam nibh consectetur. Tellus auctor nibh et tincidunt faucibus. Amet ut et augue varius consequat ac adipiscing eleifend tortor. Pellentesque faucibus porta luctus aliquam pretium. Egestas integer sem consequat quis vulputate ligula purus nibh eu. Ipsum morbi ut viverra nisl. Vestibulum sed nibh ultricies ac cursus. Elementum eu arcu viverra eget. Aliquet ligula tempus ultricies et sed aliquam luctus ante. Turpis turpis ac nec orci scelerisque non. Parturient quam pulvinar bibendum non sed tincidunt odio etiam nisl.\nSed justo odio tellus pulvinar iaculis a mi aliquet. Consectetur quisque etiam sollicitudin sit nisl a vel sit tincidunt. Mattis enim phasellus est sed massa. Ridiculus quisque elit facilisis vestibulum ultricies dignissim dictum erat malesuada. Tellus vel integer aliquam quam senectus interdum praesent. Dui ac imperdiet ultrices euismod ipsum. Quam suspendisse odio semper tortor eleifend vitae. Proin quis duis euismod tortor. Senectus euismod ut hac sed. Arcu libero lectus arcu fringilla aliquam. Mauris accumsan mauris blandit volutpat et aliquet. Pretium ipsum sit viverra a ut facilisi pellentesque nisl orci. Convallis in massa at dignissim amet elit mauris at.\nIpsum feugiat molestie lacus turpis sit egestas. Nulla velit non egestas tincidunt adipiscing magna dignissim in velit. Faucibus viverra nibh duis pellentesque libero tellus tristique sit. In id viverra quis sollicitudin. Metus neque ac purus natoque a. Ullamcorper augue magna diam tellus. Feugiat et vulputate adipiscing hendrerit. Sodales ut elementum semper massa vulputate diam nisl dolor. Risus id et in dis magna amet. Diam vulputate vitae et consectetur. Proin fermentum sollicitudin aliquam eu id non venenatis diam. Tincidunt adipiscing nam vitae nisl ultrices amet. Purus nam neque et nunc aliquet pellentesque. Quis eget pretium pharetra pellentesque tellus pellentesque. Sit vel egestas in semper egestas eget arcu euismod.\nPellentesque diam ornare netus ut tortor condimentum. Aliquam et volutpat sagittis vel. Donec vestibulum id lacinia vitae proin mollis eget magna curabitur. Ipsum tempor sed mattis fermentum. Mi nullam ultrices ac aliquam accumsan eros convallis. Gravida metus morbi netus donec morbi natoque. Consectetur urna nec vivamus hendrerit suspendisse ridiculus fringilla quam. In venenatis consectetur volutpat bibendum malesuada pulvinar. Consectetur vitae imperdiet dis morbi. Sit elementum sollicitudin aliquam turpis nisi faucibus. Placerat eget quis nec adipiscing sit consequat. Pretium amet ultrices sed porttitor egestas libero massa tincidunt. Nisl odio cras etiam tortor vitae metus mollis imperdiet quis. Consequat magna viverra libero sem id et neque faucibus turpis.","_id":"0d8e556"},{"question":"Fees And Returns","answer":"Lorem ipsum dolor sit amet consectetur. Eu pulvinar laoreet aliquet maecenas nulla orci eu amet non. Quis malesuada amet nec non sed diam auctor. Massa in suspendisse malesuada faucibus proin sit ultricies. Velit sit diam quis rhoncus risus congue.","_id":"966a717"},{"_id":"11ac7f1","question":"Humane Behaviour","answer":"Lorem ipsum dolor sit amet consectetur. Eu pulvinar laoreet aliquet maecenas nulla orci eu amet non. Quis malesuada amet nec non sed diam auctor. Massa in suspendisse malesuada faucibus proin sit ultricies. Velit sit diam quis rhoncus risus congue."},{"_id":"27d948b","question":"Legal Issues","answer":"Lorem ipsum dolor sit amet consectetur. Eu pulvinar laoreet aliquet maecenas nulla orci eu amet non. Quis malesuada amet nec non sed diam auctor. Massa in suspendisse malesuada faucibus proin sit ultricies. Velit sit diam quis rhoncus risus congue."},{"_id":"68b43bd","question":"Account Canellation","answer":"Lorem ipsum dolor sit amet consectetur. Eu pulvinar laoreet aliquet maecenas nulla orci eu amet non. Quis malesuada amet nec non sed diam auctor. Massa in suspendisse malesuada faucibus proin sit ultricies. Velit sit diam quis rhoncus risus congue."}],"footer_link":"Can't find the answer you're looking for? Please chat to our friendly team.","enable_footer_link":""},"elements":[],"widgetType":"terminal-faq"}],"isInner":false}]]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_elementor_page_assets]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:0:{}]]></wp:meta_value>
-		</wp:postmeta>
-							</item>
-					<item>
-		<title><![CDATA[Privacy policy]]></title>
-		<link>http://localhost:8888/wordpress3/privacy-policy/</link>
-		<pubDate>Wed, 06 Mar 2024 14:18:02 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8888/wordpress3/?page_id=328</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>328</wp:post_id>
-		<wp:post_date><![CDATA[2024-03-06 14:18:02]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2024-03-06 14:18:02]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-03-06 14:18:02]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-03-06 14:18:02]]></wp:post_modified_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[privacy-policy]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_type><![CDATA[wp_navigation]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
 														</item>
