@@ -39,7 +39,7 @@ class Terminal_Partners_Widget extends \Elementor\Widget_Base
      */
     public function get_title()
     {
-        return __('Terminal Partners', 'terminal-africa-hub');
+        return __('Terminal Partners', TERMINAL_THEME_TEXT_DOMAIN);
     }
 
     /**
@@ -80,7 +80,7 @@ class Terminal_Partners_Widget extends \Elementor\Widget_Base
         $this->start_controls_section(
             'partners_section',
             [
-                'label' => __('Partners', 'terminal-africa-hub'),
+                'label' => __('Partners', TERMINAL_THEME_TEXT_DOMAIN),
                 'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
             ]
         );
@@ -90,7 +90,7 @@ class Terminal_Partners_Widget extends \Elementor\Widget_Base
         $repeater->add_control(
             'partner_image',
             [
-                'label' => __('Partner Image', 'terminal-africa-hub'),
+                'label' => __('Partner Image', TERMINAL_THEME_TEXT_DOMAIN),
                 'type' => \Elementor\Controls_Manager::MEDIA,
                 'label_block' => true,
             ]
@@ -99,7 +99,7 @@ class Terminal_Partners_Widget extends \Elementor\Widget_Base
         $this->add_control(
             'partners',
             [
-                'label' => __('Partners', 'terminal-africa-hub'),
+                'label' => __('Partners', TERMINAL_THEME_TEXT_DOMAIN),
                 'type' => \Elementor\Controls_Manager::REPEATER,
                 'fields' => $repeater->get_controls(),
                 'default' => [

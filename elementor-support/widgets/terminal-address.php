@@ -40,7 +40,7 @@ class Terminal_Address_Widget extends \Elementor\Widget_Base
      */
     public function get_title()
     {
-        return __('Terminal Address', 'terminal-africa-hub');
+        return __('Terminal Address', TERMINAL_THEME_TEXT_DOMAIN);
     }
 
     /**
@@ -83,40 +83,40 @@ class Terminal_Address_Widget extends \Elementor\Widget_Base
         $this->start_controls_section(
             'section_content',
             [
-                'label' => __('Content', 'terminal-africa-hub'),
+                'label' => __('Content', TERMINAL_THEME_TEXT_DOMAIN),
             ]
         );
 
         $this->add_control(
             'address',
             [
-                'label' => __('Address', 'terminal-africa-hub'),
+                'label' => __('Address', TERMINAL_THEME_TEXT_DOMAIN),
                 'type' => \Elementor\Controls_Manager::TEXTAREA,
                 'input_type' => 'text',
                 'default' => 'Amman street, Ikeja, Lagos.',
-                'placeholder' => __('Enter your address', 'terminal-africa-hub'),
+                'placeholder' => __('Enter your address', TERMINAL_THEME_TEXT_DOMAIN),
             ]
         );
 
         $this->add_control(
             'phone',
             [
-                'label' => __('Phone', 'terminal-africa-hub'),
+                'label' => __('Phone', TERMINAL_THEME_TEXT_DOMAIN),
                 'type' => \Elementor\Controls_Manager::TEXT,
                 'input_type' => 'text',
                 'default' => '+23412345678',
-                'placeholder' => __('Enter your phone number', 'terminal-africa-hub'),
+                'placeholder' => __('Enter your phone number', TERMINAL_THEME_TEXT_DOMAIN),
             ]
         );
 
         $this->add_control(
             'email',
             [
-                'label' => __('Email', 'terminal-africa-hub'),
+                'label' => __('Email', TERMINAL_THEME_TEXT_DOMAIN),
                 'type' => \Elementor\Controls_Manager::TEXT,
                 'input_type' => 'text',
                 'default' => 'info@company.com',
-                'placeholder' => __('Enter your email', 'terminal-africa-hub'),
+                'placeholder' => __('Enter your email', TERMINAL_THEME_TEXT_DOMAIN),
             ]
         );
 

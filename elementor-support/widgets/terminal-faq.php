@@ -41,7 +41,7 @@ class Terminal_FAQ_Widget extends \Elementor\Widget_Base
      */
     public function get_title()
     {
-        return __('Terminal FAQ', 'terminal-africa-hub');
+        return __('Terminal FAQ', TERMINAL_THEME_TEXT_DOMAIN);
     }
 
     /**
@@ -84,7 +84,7 @@ class Terminal_FAQ_Widget extends \Elementor\Widget_Base
         $this->start_controls_section(
             'content_section',
             [
-                'label' => __('Content', 'terminal-africa-hub'),
+                'label' => __('Content', TERMINAL_THEME_TEXT_DOMAIN),
                 'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
             ]
         );
@@ -94,9 +94,9 @@ class Terminal_FAQ_Widget extends \Elementor\Widget_Base
         $repeater->add_control(
             'question',
             [
-                'label' => __('Question', 'terminal-africa-hub'),
+                'label' => __('Question', TERMINAL_THEME_TEXT_DOMAIN),
                 'type' => \Elementor\Controls_Manager::TEXT,
-                'default' => __('Question', 'terminal-africa-hub'),
+                'default' => __('Question', TERMINAL_THEME_TEXT_DOMAIN),
                 'label_block' => true,
             ]
         );
@@ -104,9 +104,9 @@ class Terminal_FAQ_Widget extends \Elementor\Widget_Base
         $repeater->add_control(
             'answer',
             [
-                'label' => __('Answer', 'terminal-africa-hub'),
+                'label' => __('Answer', TERMINAL_THEME_TEXT_DOMAIN),
                 'type' => \Elementor\Controls_Manager::TEXTAREA,
-                'default' => __('Answer', 'terminal-africa-hub'),
+                'default' => __('Answer', TERMINAL_THEME_TEXT_DOMAIN),
                 'show_label' => false,
             ]
         );
@@ -114,17 +114,17 @@ class Terminal_FAQ_Widget extends \Elementor\Widget_Base
         $this->add_control(
             'faqs',
             [
-                'label' => __('FAQs', 'terminal-africa-hub'),
+                'label' => __('FAQs', TERMINAL_THEME_TEXT_DOMAIN),
                 'type' => \Elementor\Controls_Manager::REPEATER,
                 'fields' => $repeater->get_controls(),
                 'default' => [
                     [
-                        'question' => __('Question 1', 'terminal-africa-hub'),
-                        'answer' => __('Answer 1', 'terminal-africa-hub'),
+                        'question' => __('Question 1', TERMINAL_THEME_TEXT_DOMAIN),
+                        'answer' => __('Answer 1', TERMINAL_THEME_TEXT_DOMAIN),
                     ],
                     [
-                        'question' => __('Question 2', 'terminal-africa-hub'),
-                        'answer' => __('Answer 2', 'terminal-africa-hub'),
+                        'question' => __('Question 2', TERMINAL_THEME_TEXT_DOMAIN),
+                        'answer' => __('Answer 2', TERMINAL_THEME_TEXT_DOMAIN),
                     ],
                 ],
                 'title_field' => '{{{ question }}}',
@@ -135,10 +135,10 @@ class Terminal_FAQ_Widget extends \Elementor\Widget_Base
         $this->add_control(
             'enable_footer_link',
             [
-                'label' => __('Enable Footer Link', 'terminal-africa-hub'),
+                'label' => __('Enable Footer Link', TERMINAL_THEME_TEXT_DOMAIN),
                 'type' => \Elementor\Controls_Manager::SWITCHER,
-                'label_on' => __('Show', 'terminal-africa-hub'),
-                'label_off' => __('Hide', 'terminal-africa-hub'),
+                'label_on' => __('Show', TERMINAL_THEME_TEXT_DOMAIN),
+                'label_off' => __('Hide', TERMINAL_THEME_TEXT_DOMAIN),
                 'return_value' => 'yes',
                 'default' => 'yes',
             ]
@@ -148,9 +148,9 @@ class Terminal_FAQ_Widget extends \Elementor\Widget_Base
         $this->add_control(
             'footer_link',
             [
-                'label' => __('Footer Link', 'terminal-africa-hub'),
+                'label' => __('Footer Link', TERMINAL_THEME_TEXT_DOMAIN),
                 'type' => \Elementor\Controls_Manager::TEXT,
-                'default' => __('Can\'t find the answer you\'re looking for? Please chat to our friendly team.', 'terminal-africa-hub'),
+                'default' => __('Can\'t find the answer you\'re looking for? Please chat to our friendly team.', TERMINAL_THEME_TEXT_DOMAIN),
                 'label_block' => true,
             ]
         );
@@ -159,9 +159,9 @@ class Terminal_FAQ_Widget extends \Elementor\Widget_Base
         $this->add_control(
             'footer_link_url',
             [
-                'label' => __('Footer Link URL', 'terminal-africa-hub'),
+                'label' => __('Footer Link URL', TERMINAL_THEME_TEXT_DOMAIN),
                 'type' => \Elementor\Controls_Manager::URL,
-                'placeholder' => __('https://your-link.com', 'terminal-africa-hub'),
+                'placeholder' => __('https://your-link.com', TERMINAL_THEME_TEXT_DOMAIN),
                 'show_label' => false,
                 'default' => [
                     'url' => '#',

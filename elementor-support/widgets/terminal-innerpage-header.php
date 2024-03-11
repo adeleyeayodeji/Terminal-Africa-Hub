@@ -40,7 +40,7 @@ class Terminal_Innerpage_Header_Widget extends \Elementor\Widget_Base
      */
     public function get_title()
     {
-        return __('Terminal Innerpage Header', 'terminal-africa-hub');
+        return __('Terminal Innerpage Header', TERMINAL_THEME_TEXT_DOMAIN);
     }
 
     /**
@@ -85,7 +85,7 @@ class Terminal_Innerpage_Header_Widget extends \Elementor\Widget_Base
         $this->start_controls_section(
             'section_content',
             [
-                'label' => __('Content', 'terminal-africa-hub'),
+                'label' => __('Content', TERMINAL_THEME_TEXT_DOMAIN),
             ]
         );
 
@@ -93,7 +93,7 @@ class Terminal_Innerpage_Header_Widget extends \Elementor\Widget_Base
         $this->add_control(
             'title_color',
             [
-                'label' => __('Title Color', 'terminal-africa-hub'),
+                'label' => __('Title Color', TERMINAL_THEME_TEXT_DOMAIN),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'default' => '#333333',
             ]
@@ -103,7 +103,7 @@ class Terminal_Innerpage_Header_Widget extends \Elementor\Widget_Base
         $this->add_control(
             'header_bg_color',
             [
-                'label' => __('Header Background Color', 'terminal-africa-hub'),
+                'label' => __('Header Background Color', TERMINAL_THEME_TEXT_DOMAIN),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'default' => '#fdeedd',
             ]
