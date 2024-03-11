@@ -20,14 +20,8 @@ class TerminalTheme
      */
     public function __construct()
     {
-        //check if elementor plugin is installed
-        if (class_exists('Elementor\Plugin')) {
-            //init theme
-            $this->init();
-        } else {
-            //add admin notice
-            add_action('init', array($this, 'elementor_missing_checker'));
-        }
+        //init theme
+        $this->init();
     }
 
     /**
@@ -70,8 +64,14 @@ class TerminalTheme
      */
     public function init()
     {
-        //init elementor
-        $this->init_elementor();
+        //check if elementor plugin is installed
+        if (class_exists('Elementor\Plugin')) {
+            //init elementor
+            $this->init_elementor();
+        } else {
+            //add admin notice
+            add_action('init', array($this, 'elementor_missing_checker'));
+        }
         //enqueue frontend scripts
         add_action('wp_enqueue_scripts', array($this, 'enqueue_scripts'));
         //enqueue admin scripts
@@ -90,8 +90,6 @@ class TerminalTheme
         add_action('after_setup_theme', array($this, 'check_page_init'));
         //add ajax terminal_hub_contact_form
         add_action('wp_ajax_terminal_hub_contact_form', array($this, 'terminal_hub_contact_form'));
-        //wp
-        add_action('init', array($this, 'after_theme_initilized'));
         //wp ajax terminal_import_demo
         add_action('wp_ajax_terminal_import_demo', array($this, 'terminal_import_demo'));
     }
@@ -165,7 +163,10 @@ class TerminalTheme
      */
     public function activate()
     {
-        //silence is golden
+        //delete option terminal-first-init
+        delete_option('terminal-first-init');
+        //delete option terminal_hub_demo_imported
+        delete_option('terminal_hub_demo_imported');
     }
 
     /**
@@ -286,6 +287,12 @@ class TerminalTheme
         require_once TERMINAL_THEME_DIR . '/elementor-support/elementor-core.php';
         //init elementor
         new TerminalElementor();
+
+        //wp
+        add_action(
+            'init',
+            array($this, 'after_theme_initilized')
+        );
     }
 
     /**

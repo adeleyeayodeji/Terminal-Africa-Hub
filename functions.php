@@ -34,7 +34,8 @@ if (!class_exists('TerminalTheme')) {
     $terminalTheme = new TerminalTheme();
 }
 
-//on theme deactivation
-register_deactivation_hook(__FILE__, array($terminalTheme, 'deactivate'));
-//on theme activation
-register_activation_hook(__FILE__, array($terminalTheme, 'activate'));
+/**
+ * On theme deactivation or switch
+ * 
+ */
+add_action('switch_theme', [$terminalTheme, 'deactivate']);
