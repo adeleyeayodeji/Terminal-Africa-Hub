@@ -33,3 +33,8 @@ if (!class_exists('TerminalTheme')) {
     require_once get_template_directory() . '/includes/terminal-africa-core.php';
     $terminalTheme = new TerminalTheme();
 }
+
+//on theme deactivation
+register_deactivation_hook(__FILE__, array($terminalTheme, 'deactivate'));
+//on theme activation
+register_activation_hook(__FILE__, array($terminalTheme, 'activate'));

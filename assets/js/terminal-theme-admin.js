@@ -46,24 +46,33 @@ jQuery(document).ready(function ($) {
               title: "Importing Demo Content",
               text: "Please wait...",
               icon: "info",
-              footer: terminal_hub_config.footer_logo
+              footer: terminal_hub_config.footer_logo,
+              showConfirmButton: false
             });
           },
           success: function (response) {
-            //check response status
-            if (response.status) {
+            //check response success
+            if (response.success) {
               Swal.fire({
                 title: "Demo Content Imported",
                 text: "The demo content has been imported successfully.",
                 icon: "success",
-                footer: terminal_hub_config.footer_logo
+                footer: terminal_hub_config.footer_logo,
+                confirmButtonColor: "rgb(246 146 32)",
+                cancelButtonColor: "rgb(0 0 0)"
+              }).then((result) => {
+                if (result.isConfirmed) {
+                  location.reload();
+                }
               });
             } else {
               Swal.fire({
                 title: "Error",
-                text: response.message,
+                text: response.data.message,
                 icon: "error",
-                footer: terminal_hub_config.footer_logo
+                footer: terminal_hub_config.footer_logo,
+                confirmButtonColor: "rgb(246 146 32)",
+                cancelButtonColor: "rgb(0 0 0)"
               });
             }
           },
@@ -72,7 +81,9 @@ jQuery(document).ready(function ($) {
               title: "Error",
               text: "An error occurred while importing the demo content.",
               icon: "error",
-              footer: terminal_hub_config.footer_logo
+              footer: terminal_hub_config.footer_logo,
+              confirmButtonColor: "rgb(246 146 32)",
+              cancelButtonColor: "rgb(0 0 0)"
             });
           }
         });

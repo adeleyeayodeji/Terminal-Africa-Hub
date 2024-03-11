@@ -26,6 +26,29 @@ class TerminalTheme
             $this->init();
         } else {
             //add admin notice
+            add_action('init', array($this, 'elementor_missing_checker'));
+        }
+    }
+
+    /**
+     * Elementor Missing Checker
+     * 
+     */
+    public function elementor_missing_checker()
+    {
+        //check if plugin is installed
+        require_once ABSPATH . 'wp-admin/includes/plugin.php';
+        //get plugins
+        $plugins = get_plugins();
+        //check if elementor is installed
+        if (isset($plugins['elementor/elementor.php'])) {
+            //check if the plugin is activated
+            if (!is_plugin_active('elementor/elementor.php')) {
+                //add admin notice
+                add_action('admin_notices', array($this, 'elementor_missing_notice'));
+            }
+        } else {
+            //add admin notice
             add_action('admin_notices', array($this, 'elementor_missing_notice'));
         }
     }
@@ -88,20 +111,61 @@ class TerminalTheme
             }
             //require terminal import demo
             require_once TERMINAL_THEME_DIR . '/includes/terminal-demo-importer.php';
+
+            //check method exist wordpress_importer_init
+            if (!function_exists('wordpress_importer_init')) {
+                wp_send_json_error(array(
+                    'message' => 'Wordpress Importer not found'
+                ));
+            }
+
             //import demo content
             $importer = new TerminalDemoImporter();
-            $importer->import_demo();
-            //update option
-            update_option('terminal_hub_demo_imported', 'yes');
-            //send success message
-            wp_send_json_success(array(
-                'message' => 'Demo content imported successfully'
-            ));
+            $html = $importer->import_demo();
+
+            //check if html has 'Have fun!'
+            if (strpos($html, 'Have fun!') !== false) {
+                //update option
+                update_option('terminal_hub_demo_imported', 'yes');
+                //send success message
+                wp_send_json_success(array(
+                    'message' => 'Demo content imported successfully'
+                ));
+            } else {
+                //delete option terminal_hub_demo_imported
+                delete_option('terminal_hub_demo_imported');
+                //send error message
+                wp_send_json_error(array(
+                    'message' => 'Demo content could not be imported',
+                    'html' => $html
+                ));
+            }
         } catch (\Exception $e) {
             wp_send_json_error(array(
-                'message' => "Something went wrong, please try again. Error: {$e->getMessage()}"
+                'message' => "Error: {$e->getMessage()}"
             ));
         }
+    }
+
+    /**
+     * deactivate
+     * 
+     */
+    public function deactivate()
+    {
+        //delete option terminal-first-init
+        delete_option('terminal-first-init');
+        //delete option terminal_hub_demo_imported
+        delete_option('terminal_hub_demo_imported');
+    }
+
+    /**
+     * activate
+     * 
+     */
+    public function activate()
+    {
+        //silence is golden
     }
 
     /**
@@ -110,12 +174,39 @@ class TerminalTheme
      */
     public function after_theme_initilized()
     {
-        //check if the user has already imported the demo content
-        $imported = get_option('terminal_hub_demo_imported', 'no');
-        if ($imported == 'no') {
+        require_once ABSPATH . 'wp-admin/includes/plugin.php';
+        //check plugin is install
+        $plugins = get_plugins();
+        if (isset($plugins['wordpress-importer/wordpress-importer.php'])) {
+            //check if the plugin is activated
+            if (!is_plugin_active('wordpress-importer/wordpress-importer.php')) {
+                //add admin notice
+                add_action('admin_notices', array($this, 'wordpress_importer_missing_notice'));
+                //return
+                return;
+            }
+
+            //check if the user has already imported the demo content
+            $imported = get_option('terminal_hub_demo_imported', 'no');
+            if ($imported == 'no') {
+                //add admin notice
+                add_action('admin_notices', array($this, 'demo_import_notice'));
+            }
+        } else {
             //add admin notice
-            add_action('admin_notices', array($this, 'demo_import_notice'));
+            add_action('admin_notices', array($this, 'wordpress_importer_missing_notice'));
         }
+    }
+
+    /**
+     * wordpress_importer_missing_notice
+     * 
+     */
+    public function wordpress_importer_missing_notice()
+    {
+        ob_start();
+        require_once TERMINAL_THEME_DIR . '/templates/notice/install-importer.php';
+        echo ob_get_clean();
     }
 
     /**
@@ -177,6 +268,8 @@ class TerminalTheme
         //get option terminal-first-init
         $first_init = get_option('terminal-first-init', false);
         if (strpos($current_url, 'elementor-app') !== false && $first_init === false) {
+            //add option terminal-first-init
+            add_option('terminal-first-init', true);
             //redirect to wp admin
             wp_redirect(admin_url());
             exit;
