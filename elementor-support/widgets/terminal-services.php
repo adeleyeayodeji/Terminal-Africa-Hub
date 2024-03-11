@@ -40,7 +40,7 @@ class Terminal_Services_Widget extends \Elementor\Widget_Base
      */
     public function get_title()
     {
-        return __('Terminal Services', TERMINAL_THEME_TEXT_DOMAIN);
+        return __('Terminal Services', 'terminal-africa-hub');
     }
 
     /**
@@ -81,7 +81,7 @@ class Terminal_Services_Widget extends \Elementor\Widget_Base
         $this->start_controls_section(
             'section_content',
             [
-                'label' => __('Content', TERMINAL_THEME_TEXT_DOMAIN),
+                'label' => __('Content', 'terminal-africa-hub'),
             ]
         );
 
@@ -89,12 +89,12 @@ class Terminal_Services_Widget extends \Elementor\Widget_Base
         $this->add_control(
             'column_direction',
             [
-                'label' => __('Column Direction', TERMINAL_THEME_TEXT_DOMAIN),
+                'label' => __('Column Direction', 'terminal-africa-hub'),
                 'type' => \Elementor\Controls_Manager::SELECT,
                 'default' => 'row',
                 'options' => [
-                    'row' => __('Row', TERMINAL_THEME_TEXT_DOMAIN),
-                    'row-reverse' => __('Row Reverse', TERMINAL_THEME_TEXT_DOMAIN)
+                    'row' => __('Row', 'terminal-africa-hub'),
+                    'row-reverse' => __('Row Reverse', 'terminal-africa-hub')
                 ]
             ]
         );
@@ -102,9 +102,9 @@ class Terminal_Services_Widget extends \Elementor\Widget_Base
         $this->add_control(
             'title',
             [
-                'label' => __('Title', TERMINAL_THEME_TEXT_DOMAIN),
+                'label' => __('Title', 'terminal-africa-hub'),
                 'type' => \Elementor\Controls_Manager::TEXT,
-                'default' => __('Our Services', TERMINAL_THEME_TEXT_DOMAIN),
+                'default' => __('Our Services', 'terminal-africa-hub'),
             ]
         );
 
@@ -112,12 +112,12 @@ class Terminal_Services_Widget extends \Elementor\Widget_Base
         $this->add_control(
             'title_type',
             [
-                'label' => __('Title Type', TERMINAL_THEME_TEXT_DOMAIN),
+                'label' => __('Title Type', 'terminal-africa-hub'),
                 'type' => \Elementor\Controls_Manager::SELECT,
                 'default' => 'terminal-large',
                 'options' => [
-                    'terminal-large' => __('Large', TERMINAL_THEME_TEXT_DOMAIN),
-                    'terminal-small' => __('Small', TERMINAL_THEME_TEXT_DOMAIN)
+                    'terminal-large' => __('Large', 'terminal-africa-hub'),
+                    'terminal-small' => __('Small', 'terminal-africa-hub')
                 ]
             ]
         );
@@ -125,9 +125,9 @@ class Terminal_Services_Widget extends \Elementor\Widget_Base
         $this->add_control(
             'description',
             [
-                'label' => __('Description', TERMINAL_THEME_TEXT_DOMAIN),
+                'label' => __('Description', 'terminal-africa-hub'),
                 'type' => \Elementor\Controls_Manager::TEXTAREA,
-                'default' => __('We offer a wide range of services to meet your needs', TERMINAL_THEME_TEXT_DOMAIN),
+                'default' => __('We offer a wide range of services to meet your needs', 'terminal-africa-hub'),
             ]
         );
 
@@ -135,10 +135,10 @@ class Terminal_Services_Widget extends \Elementor\Widget_Base
         $this->add_control(
             'enable_link',
             [
-                'label' => __('Enable Link', TERMINAL_THEME_TEXT_DOMAIN),
+                'label' => __('Enable Link', 'terminal-africa-hub'),
                 'type' => \Elementor\Controls_Manager::SWITCHER,
-                'label_on' => __('Yes', TERMINAL_THEME_TEXT_DOMAIN),
-                'label_off' => __('No', TERMINAL_THEME_TEXT_DOMAIN),
+                'label_on' => __('Yes', 'terminal-africa-hub'),
+                'label_off' => __('No', 'terminal-africa-hub'),
                 'return_value' => 'yes',
                 'default' => 'yes',
             ]
@@ -148,9 +148,9 @@ class Terminal_Services_Widget extends \Elementor\Widget_Base
         $this->add_control(
             'url_title',
             [
-                'label' => __('URL Title', TERMINAL_THEME_TEXT_DOMAIN),
+                'label' => __('URL Title', 'terminal-africa-hub'),
                 'type' => \Elementor\Controls_Manager::TEXT,
-                'default' => __('View all services', TERMINAL_THEME_TEXT_DOMAIN),
+                'default' => __('View all services', 'terminal-africa-hub'),
                 'condition' => [
                     'enable_link' => 'yes',
                 ],
@@ -161,7 +161,7 @@ class Terminal_Services_Widget extends \Elementor\Widget_Base
         $this->add_control(
             'url_title_color',
             [
-                'label' => __('URL Title Color', TERMINAL_THEME_TEXT_DOMAIN),
+                'label' => __('URL Title Color', 'terminal-africa-hub'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'default' => '#fff',
                 'selectors' => [
@@ -177,7 +177,7 @@ class Terminal_Services_Widget extends \Elementor\Widget_Base
         $this->add_control(
             'url_button_bg',
             [
-                'label' => __('URL Button Background', TERMINAL_THEME_TEXT_DOMAIN),
+                'label' => __('URL Button Background', 'terminal-africa-hub'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'default' => '#f7941e',
                 'selectors' => [
@@ -193,7 +193,7 @@ class Terminal_Services_Widget extends \Elementor\Widget_Base
         $this->add_control(
             'url_button_bg_hover',
             [
-                'label' => __('URL Button Background Hover', TERMINAL_THEME_TEXT_DOMAIN),
+                'label' => __('URL Button Background Hover', 'terminal-africa-hub'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'default' => '#f7941e',
                 'selectors' => [
@@ -209,7 +209,7 @@ class Terminal_Services_Widget extends \Elementor\Widget_Base
         $this->add_control(
             'url_title_color_hover',
             [
-                'label' => __('URL Title Color Hover', TERMINAL_THEME_TEXT_DOMAIN),
+                'label' => __('URL Title Color Hover', 'terminal-africa-hub'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'default' => '#fff',
                 'selectors' => [
@@ -225,9 +225,9 @@ class Terminal_Services_Widget extends \Elementor\Widget_Base
         $this->add_control(
             'url',
             [
-                'label' => __('URL', TERMINAL_THEME_TEXT_DOMAIN),
+                'label' => __('URL', 'terminal-africa-hub'),
                 'type' => \Elementor\Controls_Manager::URL,
-                'placeholder' => __('https://your-link.com', TERMINAL_THEME_TEXT_DOMAIN),
+                'placeholder' => __('https://your-link.com', 'terminal-africa-hub'),
                 'show_external' => true,
                 'default' => [
                     'url' => '#',
@@ -243,7 +243,7 @@ class Terminal_Services_Widget extends \Elementor\Widget_Base
         $this->add_control(
             'image',
             [
-                'label' => __('Image', TERMINAL_THEME_TEXT_DOMAIN),
+                'label' => __('Image', 'terminal-africa-hub'),
                 'type' => \Elementor\Controls_Manager::MEDIA,
                 'default' => [
                     'url' => TERMINAL_THEME_ASSETS_URI . 'img/image-1.svg',
@@ -255,7 +255,7 @@ class Terminal_Services_Widget extends \Elementor\Widget_Base
         $this->add_responsive_control(
             'image_size',
             [
-                'label' => __('Image Size', TERMINAL_THEME_TEXT_DOMAIN),
+                'label' => __('Image Size', 'terminal-africa-hub'),
                 'type' => \Elementor\Controls_Manager::SLIDER,
                 'size_units' => ['%', 'rem'],
                 'range' => [
@@ -282,7 +282,7 @@ class Terminal_Services_Widget extends \Elementor\Widget_Base
         $this->add_control(
             'background_color',
             [
-                'label' => __('Background Color', TERMINAL_THEME_TEXT_DOMAIN),
+                'label' => __('Background Color', 'terminal-africa-hub'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'default' => '#fdeedd',
                 'selectors' => [

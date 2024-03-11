@@ -40,7 +40,7 @@ class Terminal_Contact_Widget extends \Elementor\Widget_Base
      */
     public function get_title()
     {
-        return __('Terminal Contact', TERMINAL_THEME_TEXT_DOMAIN);
+        return __('Terminal Contact', 'terminal-africa-hub');
     }
 
     /**
@@ -82,7 +82,7 @@ class Terminal_Contact_Widget extends \Elementor\Widget_Base
         $this->start_controls_section(
             'content_section',
             [
-                'label' => __('Content', TERMINAL_THEME_TEXT_DOMAIN),
+                'label' => __('Content', 'terminal-africa-hub'),
                 'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
             ]
         );
@@ -91,9 +91,9 @@ class Terminal_Contact_Widget extends \Elementor\Widget_Base
         $this->add_control(
             'title',
             [
-                'label' => __('Title', TERMINAL_THEME_TEXT_DOMAIN),
+                'label' => __('Title', 'terminal-africa-hub'),
                 'type' => \Elementor\Controls_Manager::TEXT,
-                'default' => __('Talk to us', TERMINAL_THEME_TEXT_DOMAIN),
+                'default' => __('Talk to us', 'terminal-africa-hub'),
                 'label_block' => true,
             ]
         );
@@ -102,9 +102,9 @@ class Terminal_Contact_Widget extends \Elementor\Widget_Base
         $this->add_control(
             'button_text',
             [
-                'label' => __('Button Text', TERMINAL_THEME_TEXT_DOMAIN),
+                'label' => __('Button Text', 'terminal-africa-hub'),
                 'type' => \Elementor\Controls_Manager::TEXT,
-                'default' => __('Send Message', TERMINAL_THEME_TEXT_DOMAIN),
+                'default' => __('Send Message', 'terminal-africa-hub'),
                 'label_block' => true,
             ]
         );

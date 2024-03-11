@@ -40,7 +40,7 @@ class Terminal_GetInTouch_Widget extends \Elementor\Widget_Base
      */
     public function get_title()
     {
-        return __('Terminal Get In Touch', TERMINAL_THEME_TEXT_DOMAIN);
+        return __('Terminal Get In Touch', 'terminal-africa-hub');
     }
 
     /**
@@ -83,7 +83,7 @@ class Terminal_GetInTouch_Widget extends \Elementor\Widget_Base
         $this->start_controls_section(
             'content_section',
             [
-                'label' => __('Content', TERMINAL_THEME_TEXT_DOMAIN),
+                'label' => __('Content', 'terminal-africa-hub'),
                 'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
             ]
         );
@@ -91,22 +91,22 @@ class Terminal_GetInTouch_Widget extends \Elementor\Widget_Base
         $this->add_control(
             'title',
             [
-                'label' => __('Title', TERMINAL_THEME_TEXT_DOMAIN),
+                'label' => __('Title', 'terminal-africa-hub'),
                 'type' => \Elementor\Controls_Manager::TEXT,
                 'input_type' => 'text',
-                'placeholder' => __('Enter title', TERMINAL_THEME_TEXT_DOMAIN),
-                'default' => __('Get in touch', TERMINAL_THEME_TEXT_DOMAIN),
+                'placeholder' => __('Enter title', 'terminal-africa-hub'),
+                'default' => __('Get in touch', 'terminal-africa-hub'),
             ]
         );
 
         $this->add_control(
             'description',
             [
-                'label' => __('Description', TERMINAL_THEME_TEXT_DOMAIN),
+                'label' => __('Description', 'terminal-africa-hub'),
                 'type' => \Elementor\Controls_Manager::TEXTAREA,
                 'input_type' => 'text',
-                'placeholder' => __('Enter description', TERMINAL_THEME_TEXT_DOMAIN),
-                'default' => __('We are here to help you. Contact us for any inquiries or to get started with our services.', TERMINAL_THEME_TEXT_DOMAIN),
+                'placeholder' => __('Enter description', 'terminal-africa-hub'),
+                'default' => __('We are here to help you. Contact us for any inquiries or to get started with our services.', 'terminal-africa-hub'),
             ]
         );
 
@@ -114,11 +114,11 @@ class Terminal_GetInTouch_Widget extends \Elementor\Widget_Base
         $this->add_control(
             'contact',
             [
-                'label' => __('Contact', TERMINAL_THEME_TEXT_DOMAIN),
+                'label' => __('Contact', 'terminal-africa-hub'),
                 'type' => \Elementor\Controls_Manager::TEXT,
                 'input_type' => 'text',
-                'placeholder' => __('Enter contact', TERMINAL_THEME_TEXT_DOMAIN),
-                'default' => __('Contact us', TERMINAL_THEME_TEXT_DOMAIN),
+                'placeholder' => __('Enter contact', 'terminal-africa-hub'),
+                'default' => __('Contact us', 'terminal-africa-hub'),
             ]
         );
 
@@ -126,7 +126,7 @@ class Terminal_GetInTouch_Widget extends \Elementor\Widget_Base
         $this->add_control(
             'url',
             [
-                'label' => __('URL', TERMINAL_THEME_TEXT_DOMAIN),
+                'label' => __('URL', 'terminal-africa-hub'),
                 'type' => \Elementor\Controls_Manager::URL,
                 'default' => [
                     'url' => '#'
@@ -138,7 +138,7 @@ class Terminal_GetInTouch_Widget extends \Elementor\Widget_Base
         $this->add_control(
             'background_color',
             [
-                'label' => __('Background Color', TERMINAL_THEME_TEXT_DOMAIN),
+                'label' => __('Background Color', 'terminal-africa-hub'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'default' => '#fdeedd',
                 'selectors' => [
