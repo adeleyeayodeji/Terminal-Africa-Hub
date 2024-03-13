@@ -2,7 +2,7 @@
       <div class="row m-0">
           <div class="col-lg-3 col-md-3 col-sm-6 mb-5">
               <div class="terminal-footer-1">
-                  <a href="<?php echo site_url(); ?>">
+                  <a href="<?php echo esc_url(home_url()); ?>">
                       <?php
                         //fetch footer_logo
                         $footer_img_link = get_theme_mod('footer_logo', TERMINAL_THEME_ASSETS_URI . 'img/logo-full.png');

@@ -15,6 +15,75 @@ if (!defined('ABSPATH')) {
 class TerminalDemoImporter
 {
     /**
+     * Download the demo file
+     * 
+     */
+    public function download_demo()
+    {
+        try {
+            //check if the file exists
+            if (file_exists(TERMINAL_THEME_DIR . '/assets/xml/demo-content.xml')) {
+                //return the file path
+                return TERMINAL_THEME_DIR . '/assets/xml/demo-content.xml';
+            }
+            //source
+            $source = 'https://tplugtest.com/downloads/demo-content.xml';
+            //destination
+            $destination = TERMINAL_THEME_DIR . '/assets/xml/demo-content.xml';
+            //download the file
+            $download = file_put_contents($destination, file_get_contents($source));
+            //check if the file was downloaded
+            if (!$download) {
+                throw new \Exception('The demo file could not be downloaded');
+            }
+            //return the file path
+            return $destination;
+        } catch (\Throwable $th) {
+            throw $th;
+        }
+    }
+
+    /**
+     * Remove the demo file
+     * 
+     */
+    public function remove_demo()
+    {
+        try {
+            //check if the file exists
+            if (file_exists(TERMINAL_THEME_DIR . '/assets/xml/demo-content.xml')) {
+                //delete the file
+                $delete = unlink(TERMINAL_THEME_DIR . '/assets/xml/demo-content.xml');
+                //check if the file was deleted
+                if (!$delete) {
+                    throw new \Exception('The demo file could not be deleted');
+                }
+            }
+        } catch (\Throwable $th) {
+            throw $th;
+        }
+    }
+
+    /**
+     * Remove previous nav menus
+     * 
+     */
+    public function remove_menus()
+    {
+        try {
+            //get all menus
+            $menus = wp_get_nav_menus();
+            //loop through the menus
+            foreach ($menus as $menu) {
+                //delete the menu
+                wp_delete_nav_menu($menu->term_id);
+            }
+        } catch (\Throwable $th) {
+            throw $th;
+        }
+    }
+
+    /**
      * import_demo
      * 
      */
@@ -62,14 +131,20 @@ class TerminalDemoImporter
             $importer = new WP_Import();
 
             // Check if the XML file exists
-            $demo_file = TERMINAL_THEME_DIR . '/assets/xml/demo-content.xml';
+            $demo_file = $this->download_demo();
             if (!file_exists($demo_file)) {
                 throw new \Exception('The XML file does not exist');
             }
 
+            // Remove previous nav menus
+            $this->remove_menus();
+
             ob_start();
             $result = $importer->import($demo_file);
             $html = ob_get_clean();
+
+            // Remove the demo file
+            $this->remove_demo();
 
             // Return the output of the import
             return $html;

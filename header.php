@@ -15,7 +15,7 @@
         <div class="container-fluid p-0 m-0">
             <div class="terminal-header">
                 <div class="t-hub-logo">
-                    <a href="<?php echo site_url(); ?>">
+                    <a href="<?php echo esc_url(home_url()); ?>">
                         <?php
                         $custom_logo_id = get_theme_mod('custom_logo');
                         $logo_image = wp_get_attachment_image_src($custom_logo_id, 'full');
@@ -48,7 +48,7 @@
             </div>
             <div class="terminal-mobile-menu">
                 <div class="t-hub-logo">
-                    <a href="<?php echo site_url(); ?>">
+                    <a href="<?php echo esc_url(home_url()); ?>">
                         <?php
                         $custom_logo_id = get_theme_mod('custom_logo');
                         $logo_image = wp_get_attachment_image_src($custom_logo_id, 'full');

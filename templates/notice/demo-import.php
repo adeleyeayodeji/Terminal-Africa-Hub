@@ -8,7 +8,7 @@ if (!defined('ABSPATH')) {
 <div class="notice notice-success">
     <p> Would you like to import the demo content for <strong>Terminal Africa Hub</strong>?</p>
     <p>
-        <a href="javascript:;" class="terminal-import-demo"><?php _e('Import Demo', TERMINAL_THEME_TEXT_DOMAIN); ?></a>
+        <a href="javascript:;" class="terminal-import-demo"><?php _e('Import Demo', 'terminal-africa-hub'); ?></a>
     </p>
-    <p class="description"><?php _e('Note: This will import the demo content and replace your current content. Please ensure you have a backup of your current content before proceeding.', TERMINAL_THEME_TEXT_DOMAIN); ?></p>
+    <p class="description"><?php _e('Note: This will import the demo content and replace your current content. Please ensure you have a backup of your current content before proceeding.', 'terminal-africa-hub'); ?></p>
 </div>

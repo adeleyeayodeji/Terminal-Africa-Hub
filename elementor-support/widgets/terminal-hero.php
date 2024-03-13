@@ -39,7 +39,7 @@ class Terminal_Hero_Widget extends \Elementor\Widget_Base
      */
     public function get_title()
     {
-        return __('Terminal Hero', TERMINAL_THEME_TEXT_DOMAIN);
+        return __('Terminal Hero', 'terminal-africa-hub');
     }
 
     /**
@@ -67,7 +67,7 @@ class Terminal_Hero_Widget extends \Elementor\Widget_Base
      */
     public function get_categories()
     {
-        return [TERMINAL_THEME_TEXT_DOMAIN];
+        return ['terminal-africa-hub'];
     }
 
     /**
@@ -80,7 +80,7 @@ class Terminal_Hero_Widget extends \Elementor\Widget_Base
         $this->start_controls_section(
             'hero_section',
             [
-                'label' => __('Hero Section', TERMINAL_THEME_TEXT_DOMAIN),
+                'label' => __('Hero Section', 'terminal-africa-hub'),
                 'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
             ]
         );
@@ -88,7 +88,7 @@ class Terminal_Hero_Widget extends \Elementor\Widget_Base
         $this->add_control(
             'hero_background',
             [
-                'label' => __('Background Image', TERMINAL_THEME_TEXT_DOMAIN),
+                'label' => __('Background Image', 'terminal-africa-hub'),
                 'type' => \Elementor\Controls_Manager::MEDIA,
                 'default' => [
                     'url' => \Elementor\Utils::get_placeholder_image_src(),
@@ -99,9 +99,9 @@ class Terminal_Hero_Widget extends \Elementor\Widget_Base
         $this->add_control(
             'hero_title',
             [
-                'label' => __('Hero Title', TERMINAL_THEME_TEXT_DOMAIN),
+                'label' => __('Hero Title', 'terminal-africa-hub'),
                 'type' => \Elementor\Controls_Manager::TEXT,
-                'default' => __('We Deliver Your Goods', TERMINAL_THEME_TEXT_DOMAIN),
+                'default' => __('We Deliver Your Goods', 'terminal-africa-hub'),
                 'label_block' => true,
             ]
         );
@@ -109,9 +109,9 @@ class Terminal_Hero_Widget extends \Elementor\Widget_Base
         $this->add_control(
             'hero_description',
             [
-                'label' => __('Hero Description', TERMINAL_THEME_TEXT_DOMAIN),
+                'label' => __('Hero Description', 'terminal-africa-hub'),
                 'type' => \Elementor\Controls_Manager::TEXTAREA,
-                'default' => __('We deliver your goods to your door step with ease and convenience. We are the best in the business.', TERMINAL_THEME_TEXT_DOMAIN),
+                'default' => __('We deliver your goods to your door step with ease and convenience. We are the best in the business.', 'terminal-africa-hub'),
                 'label_block' => true,
             ]
         );

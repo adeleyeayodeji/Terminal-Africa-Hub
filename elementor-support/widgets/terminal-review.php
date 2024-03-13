@@ -40,7 +40,7 @@ class Terminal_Review_Widget extends \Elementor\Widget_Base
      */
     public function get_title()
     {
-        return __('Terminal Review', TERMINAL_THEME_TEXT_DOMAIN);
+        return __('Terminal Review', 'terminal-africa-hub');
     }
 
     /**
@@ -81,7 +81,7 @@ class Terminal_Review_Widget extends \Elementor\Widget_Base
         $this->start_controls_section(
             'content_section',
             [
-                'label' => __('Content', TERMINAL_THEME_TEXT_DOMAIN),
+                'label' => __('Content', 'terminal-africa-hub'),
                 'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
             ]
         );
@@ -89,11 +89,11 @@ class Terminal_Review_Widget extends \Elementor\Widget_Base
         $this->add_control(
             'review_title',
             [
-                'label' => __('Review Title', TERMINAL_THEME_TEXT_DOMAIN),
+                'label' => __('Review Title', 'terminal-africa-hub'),
                 'type' => \Elementor\Controls_Manager::TEXT,
                 'input_type' => 'text',
-                'placeholder' => __('Enter Review Title', TERMINAL_THEME_TEXT_DOMAIN),
-                'default' => __('Customer Review', TERMINAL_THEME_TEXT_DOMAIN),
+                'placeholder' => __('Enter Review Title', 'terminal-africa-hub'),
+                'default' => __('Customer Review', 'terminal-africa-hub'),
             ]
         );
 
@@ -101,11 +101,11 @@ class Terminal_Review_Widget extends \Elementor\Widget_Base
         $this->add_control(
             'review_description',
             [
-                'label' => __('Review Description', TERMINAL_THEME_TEXT_DOMAIN),
+                'label' => __('Review Description', 'terminal-africa-hub'),
                 'type' => \Elementor\Controls_Manager::TEXTAREA,
                 'input_type' => 'text',
-                'placeholder' => __('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consectetur ut pretium egestas aliquam libero, duis est sed. Velit varius sit a elit et quis lectus enim, justo', TERMINAL_THEME_TEXT_DOMAIN),
-                'default' => __('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consectetur ut pretium egestas aliquam libero, duis est sed. Velit varius sit a elit et quis lectus enim, justo', TERMINAL_THEME_TEXT_DOMAIN),
+                'placeholder' => __('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consectetur ut pretium egestas aliquam libero, duis est sed. Velit varius sit a elit et quis lectus enim, justo', 'terminal-africa-hub'),
+                'default' => __('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consectetur ut pretium egestas aliquam libero, duis est sed. Velit varius sit a elit et quis lectus enim, justo', 'terminal-africa-hub'),
             ]
         );
 
@@ -113,11 +113,11 @@ class Terminal_Review_Widget extends \Elementor\Widget_Base
         $this->add_control(
             'review_author',
             [
-                'label' => __('Review Author', TERMINAL_THEME_TEXT_DOMAIN),
+                'label' => __('Review Author', 'terminal-africa-hub'),
                 'type' => \Elementor\Controls_Manager::TEXT,
                 'input_type' => 'text',
-                'placeholder' => __('Enter Review Author', TERMINAL_THEME_TEXT_DOMAIN),
-                'default' => __('John Doe', TERMINAL_THEME_TEXT_DOMAIN),
+                'placeholder' => __('Enter Review Author', 'terminal-africa-hub'),
+                'default' => __('John Doe', 'terminal-africa-hub'),
             ]
         );
 

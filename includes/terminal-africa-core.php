@@ -310,19 +310,23 @@ class TerminalTheme
      */
     public function theme_support()
     {
-        //add theme support
-        add_theme_support('menus');
         //register menus
         register_nav_menus(
             array(
-                'primary' => __('Primary Menu', TERMINAL_THEME_TEXT_DOMAIN),
-                'footer' => __('Footer Menu', TERMINAL_THEME_TEXT_DOMAIN)
+                'primary' => __('Primary Menu', 'terminal-africa-hub'),
+                'footer' => __('Footer Menu', 'terminal-africa-hub')
             )
         );
         //add theme logo upload support
         add_theme_support('custom-logo');
         //add title support
         add_theme_support('title-tag');
+
+        //automatic-feed-links
+        add_theme_support('automatic-feed-links');
+
+        //post-thumbnails
+        add_theme_support("post-thumbnails");
 
         //Set Your homepage displays to static page
         $args = array(
@@ -371,7 +375,7 @@ class TerminalTheme
     {
         // Create a new section for Terminal Africa
         $wp_customize->add_section('terminal_africa_section', array(
-            'title' => __('Terminal Africa', TERMINAL_THEME_TEXT_DOMAIN),
+            'title' => __('Terminal Africa', 'terminal-africa-hub'),
             'priority' => 30,
         ));
 
@@ -379,11 +383,12 @@ class TerminalTheme
         $wp_customize->add_setting('book_shipment_color', array(
             'default' => '#f7941e',
             'transport' => 'refresh',
+            'sanitize_callback' => 'sanitize_hex_color'
         ));
 
         // Add a color control for the 'Book Shipment' button color
         $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'book_shipment_color', array(
-            'label' => __('Book Shipment Header Color', TERMINAL_THEME_TEXT_DOMAIN),
+            'label' => __('Book Shipment Header Color', 'terminal-africa-hub'),
             'section' => 'terminal_africa_section',
             'settings' => 'book_shipment_color'
         )));
@@ -392,11 +397,12 @@ class TerminalTheme
         $wp_customize->add_setting('book_shipment_hover_color', array(
             'default' => '#333333',
             'transport' => 'refresh',
+            'sanitize_callback' => 'sanitize_hex_color'
         ));
 
         // Add a color control for the 'Book Shipment' button hover color
         $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'book_shipment_hover_color', array(
-            'label' => __('Book Shipment Header Hover Color', TERMINAL_THEME_TEXT_DOMAIN),
+            'label' => __('Book Shipment Header Hover Color', 'terminal-africa-hub'),
             'section' => 'terminal_africa_section',
             'settings' => 'book_shipment_hover_color'
         )));
@@ -405,11 +411,12 @@ class TerminalTheme
         $wp_customize->add_setting('track_shipment_color', array(
             'default' => '#f7941e',
             'transport' => 'refresh',
+            'sanitize_callback' => 'sanitize_hex_color'
         ));
 
         // Add a color control for the 'Track Shipment' button color
         $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'track_shipment_color', array(
-            'label' => __('Track Shipment Header Color', TERMINAL_THEME_TEXT_DOMAIN),
+            'label' => __('Track Shipment Header Color', 'terminal-africa-hub'),
             'section' => 'terminal_africa_section',
             'settings' => 'track_shipment_color'
         )));
@@ -418,11 +425,12 @@ class TerminalTheme
         $wp_customize->add_setting('track_shipment_hover_color', array(
             'default' => '#333333',
             'transport' => 'refresh',
+            'sanitize_callback' => 'sanitize_hex_color'
         ));
 
         // Add a color control for the 'Track Shipment' button hover color
         $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'track_shipment_hover_color', array(
-            'label' => __('Track Shipment Header Hover Color', TERMINAL_THEME_TEXT_DOMAIN),
+            'label' => __('Track Shipment Header Hover Color', 'terminal-africa-hub'),
             'section' => 'terminal_africa_section',
             'settings' => 'track_shipment_hover_color'
         )));
@@ -431,11 +439,12 @@ class TerminalTheme
         $wp_customize->add_setting('book_shipment_link', array(
             'default' => '#',
             'transport' => 'refresh',
+            'sanitize_callback' => 'esc_url_raw'
         ));
 
         // Add a control for the book shipment link
         $wp_customize->add_control('book_shipment_link', array(
-            'label' => __('Book Shipment Link', TERMINAL_THEME_TEXT_DOMAIN),
+            'label' => __('Book Shipment Link', 'terminal-africa-hub'),
             'section' => 'terminal_africa_section',
             'settings' => 'book_shipment_link'
         ));
@@ -444,11 +453,12 @@ class TerminalTheme
         $wp_customize->add_setting('track_shipment_link', array(
             'default' => '#',
             'transport' => 'refresh',
+            'sanitize_callback' => 'esc_url_raw'
         ));
 
         // Add a control for the track shipment link
         $wp_customize->add_control('track_shipment_link', array(
-            'label' => __('Track Shipment Link', TERMINAL_THEME_TEXT_DOMAIN),
+            'label' => __('Track Shipment Link', 'terminal-africa-hub'),
             'section' => 'terminal_africa_section',
             'settings' => 'track_shipment_link'
         ));
@@ -462,7 +472,7 @@ class TerminalTheme
     {
         // Create a new section for Terminal Africa
         $wp_customize->add_section('terminal_footer_section', array(
-            'title' => __('Terminal Footer', TERMINAL_THEME_TEXT_DOMAIN),
+            'title' => __('Terminal Footer', 'terminal-africa-hub'),
             'priority' => 30,
         ));
 
@@ -470,11 +480,12 @@ class TerminalTheme
         $wp_customize->add_setting('footer_background_color', array(
             'default' => '#343434',
             'transport' => 'refresh',
+            'sanitize_callback' => 'sanitize_hex_color'
         ));
 
         // Add a color control for the footer background color
         $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'footer_background_color', array(
-            'label' => __('Footer Background Color', TERMINAL_THEME_TEXT_DOMAIN),
+            'label' => __('Footer Background Color', 'terminal-africa-hub'),
             'section' => 'terminal_footer_section',
             'settings' => 'footer_background_color'
         )));
@@ -483,11 +494,12 @@ class TerminalTheme
         $wp_customize->add_setting('footer_text_color', array(
             'default' => '#ffffff',
             'transport' => 'refresh',
+            'sanitize_callback' => 'sanitize_hex_color'
         ));
 
         // Add a color control for the footer text color
         $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'footer_text_color', array(
-            'label' => __('Footer Text Color', TERMINAL_THEME_TEXT_DOMAIN),
+            'label' => __('Footer Text Color', 'terminal-africa-hub'),
             'section' => 'terminal_footer_section',
             'settings' => 'footer_text_color'
         )));
@@ -496,11 +508,12 @@ class TerminalTheme
         $wp_customize->add_setting('footer_logo', array(
             'default' => TERMINAL_THEME_ASSETS_URI . 'img/logo-full.png',
             'transport' => 'refresh',
+            'sanitize_callback' => 'esc_url_raw'
         ));
 
         // Add a control for the footer logo
         $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'footer_logo', array(
-            'label' => __('Footer Logo', TERMINAL_THEME_TEXT_DOMAIN),
+            'label' => __('Footer Logo', 'terminal-africa-hub'),
             'section' => 'terminal_footer_section',
             'settings' => 'footer_logo'
         )));
@@ -509,11 +522,12 @@ class TerminalTheme
         $wp_customize->add_setting('company_email', array(
             'default' => 'info@company.com',
             'transport' => 'refresh',
+            'sanitize_callback' => 'sanitize_email'
         ));
 
         // Add a control for the company email
         $wp_customize->add_control('company_email', array(
-            'label' => __('Company Email', TERMINAL_THEME_TEXT_DOMAIN),
+            'label' => __('Company Email', 'terminal-africa-hub'),
             'section' => 'terminal_footer_section',
             'settings' => 'company_email'
         ));
@@ -522,11 +536,12 @@ class TerminalTheme
         $wp_customize->add_setting('company_phone', array(
             'default' => '+234012345678',
             'transport' => 'refresh',
+            'sanitize_callback' => 'sanitize_text_field'
         ));
 
         // Add a control for the company phone
         $wp_customize->add_control('company_phone', array(
-            'label' => __('Company Phone', TERMINAL_THEME_TEXT_DOMAIN),
+            'label' => __('Company Phone', 'terminal-africa-hub'),
             'section' => 'terminal_footer_section',
             'settings' => 'company_phone'
         ));
@@ -535,11 +550,12 @@ class TerminalTheme
         $wp_customize->add_setting('facebook_link', array(
             'default' => '#',
             'transport' => 'refresh',
+            'sanitize_callback' => 'esc_url_raw'
         ));
 
         // Add a control for the facebook link
         $wp_customize->add_control('facebook_link', array(
-            'label' => __('Facebook Link', TERMINAL_THEME_TEXT_DOMAIN),
+            'label' => __('Facebook Link', 'terminal-africa-hub'),
             'section' => 'terminal_footer_section',
             'settings' => 'facebook_link'
         ));
@@ -547,11 +563,12 @@ class TerminalTheme
         $wp_customize->add_setting('twitter_link', array(
             'default' => '#',
             'transport' => 'refresh',
+            'sanitize_callback' => 'esc_url_raw'
         ));
 
         // Add a control for the twitter link
         $wp_customize->add_control('twitter_link', array(
-            'label' => __('Twitter Link', TERMINAL_THEME_TEXT_DOMAIN),
+            'label' => __('Twitter Link', 'terminal-africa-hub'),
             'section' => 'terminal_footer_section',
             'settings' => 'twitter_link'
         ));
@@ -560,11 +577,12 @@ class TerminalTheme
         $wp_customize->add_setting('instagram_link', array(
             'default' => '#',
             'transport' => 'refresh',
+            'sanitize_callback' => 'esc_url_raw'
         ));
 
         // Add a control for the instagram link
         $wp_customize->add_control('instagram_link', array(
-            'label' => __('Instagram Link', TERMINAL_THEME_TEXT_DOMAIN),
+            'label' => __('Instagram Link', 'terminal-africa-hub'),
             'section' => 'terminal_footer_section',
             'settings' => 'instagram_link'
         ));
@@ -624,7 +642,7 @@ class TerminalTheme
         //add blockui
         wp_enqueue_script('terminal-blockui', TERMINAL_THEME_ASSETS_URI . 'js/jquery.blockUI.js', array('jquery'), TERMINAL_THEME_VERSION, true);
         //enqueue scripts
-        wp_enqueue_style(TERMINAL_THEME_TEXT_DOMAIN, TERMINAL_THEME_BUILD_URI . 'terminal-theme.css', array(), TERMINAL_THEME_VERSION, 'all');
+        wp_enqueue_style('terminal-africa-hub', TERMINAL_THEME_BUILD_URI . 'terminal-theme.css', array(), TERMINAL_THEME_VERSION, 'all');
         //enqueue scripts
         wp_enqueue_script('terminal-africa-hub-script', TERMINAL_THEME_BUILD_URI . 'terminal-theme.js', array('jquery'), TERMINAL_THEME_VERSION, true);
         //localize scripts
