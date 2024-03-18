@@ -53,8 +53,16 @@ class TerminalTheme
      */
     public function elementor_missing_notice()
     {
+        //check WP_ALLOW_MULTISITE
+        $multisite_checks = defined('WP_ALLOW_MULTISITE') ? WP_ALLOW_MULTISITE : false;
+        //check multi site
+        if ($multisite_checks) {
+            $view = "install-elementor-multisite";
+        } else {
+            $view = "install-elementor";
+        }
         ob_start();
-        require_once TERMINAL_THEME_DIR . '/templates/notice/install-elementor.php';
+        require_once TERMINAL_THEME_DIR . '/templates/notice/' . $view . '.php';
         echo ob_get_clean();
     }
 
@@ -205,8 +213,16 @@ class TerminalTheme
      */
     public function wordpress_importer_missing_notice()
     {
+        //check WP_ALLOW_MULTISITE
+        $multisite_checks = defined('WP_ALLOW_MULTISITE') ? WP_ALLOW_MULTISITE : false;
+        //check multi site
+        if ($multisite_checks) {
+            $view = "install-importer-multisite";
+        } else {
+            $view = "install-importer";
+        }
         ob_start();
-        require_once TERMINAL_THEME_DIR . '/templates/notice/install-importer.php';
+        require_once TERMINAL_THEME_DIR . '/templates/notice/' . $view . '.php';
         echo ob_get_clean();
     }
 

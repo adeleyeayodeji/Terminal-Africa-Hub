@@ -6,7 +6,7 @@ if (!defined('ABSPATH')) {
 ?>
 
 <div class="notice notice-error">
-    <p><?php _e('Terminal Africa Hub requires Elementor to be installed and activated.', 'terminal-africa-hub'); ?></p>
+    <p style="font-weight: bold;"><?php _e('Terminal Africa Hub requires Elementor to be installed and activated.', 'terminal-africa-hub'); ?></p>
     <p>
         <?php
         //get available plugins

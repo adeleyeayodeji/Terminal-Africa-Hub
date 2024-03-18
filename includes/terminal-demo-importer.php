@@ -26,12 +26,30 @@ class TerminalDemoImporter
                 //return the file path
                 return TERMINAL_THEME_DIR . '/assets/xml/demo-content.xml';
             }
-            //source
+            //check WP_ALLOW_MULTISITE
+            $multisite_checks = defined('WP_ALLOW_MULTISITE') ? WP_ALLOW_MULTISITE : false;
+            //check multi site
+            if ($multisite_checks) {
+                $source = ABSPATH . "wp-content/plugins/terminal-demo/terminal-demo.xml";
+                //check file exists
+                if (!file_exists($source)) {
+                    throw new \Exception('The demo file does not exist, please install the Terminal Demo plugin');
+                }
+                //return the file path
+                return $source;
+            }
+            //source from remote
             $source = 'https://tplugtest.com/downloads/demo-content.xml';
-            //destination
             $destination = TERMINAL_THEME_DIR . '/assets/xml/demo-content.xml';
-            //download the file
-            $download = file_put_contents($destination, file_get_contents($source));
+
+            $response = wp_remote_get($source);
+
+            if (is_wp_error($response)) {
+                // Handle error
+                throw new \Exception($response->get_error_message());
+            } else {
+                $download = file_put_contents($destination, wp_remote_retrieve_body($response));
+            }
             //check if the file was downloaded
             if (!$download) {
                 throw new \Exception('The demo file could not be downloaded');
@@ -129,7 +147,6 @@ class TerminalDemoImporter
             }
 
             $importer = new WP_Import();
-
             // Check if the XML file exists
             $demo_file = $this->download_demo();
             if (!file_exists($demo_file)) {
@@ -143,8 +160,13 @@ class TerminalDemoImporter
             $result = $importer->import($demo_file);
             $html = ob_get_clean();
 
-            // Remove the demo file
-            $this->remove_demo();
+            //check WP_ALLOW_MULTISITE
+            $multisite_checks = defined('WP_ALLOW_MULTISITE') ? WP_ALLOW_MULTISITE : false;
+            //check multi site then leave the demo file
+            if (!$multisite_checks) {
+                // Remove the demo file
+                $this->remove_demo();
+            }
 
             // Return the output of the import
             return $html;
