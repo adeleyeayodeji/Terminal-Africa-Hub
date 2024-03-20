@@ -54,7 +54,7 @@ class TerminalTheme
     public function elementor_missing_notice()
     {
         //check WP_ALLOW_MULTISITE
-        $multisite_checks = defined('WP_ALLOW_MULTISITE') ? WP_ALLOW_MULTISITE : false;
+        $multisite_checks = is_multisite();
         //check multi site
         if ($multisite_checks) {
             $view = "install-elementor-multisite";
@@ -214,7 +214,7 @@ class TerminalTheme
     public function wordpress_importer_missing_notice()
     {
         //check WP_ALLOW_MULTISITE
-        $multisite_checks = defined('WP_ALLOW_MULTISITE') ? WP_ALLOW_MULTISITE : false;
+        $multisite_checks = is_multisite();
         //check multi site
         if ($multisite_checks) {
             $view = "install-importer-multisite";

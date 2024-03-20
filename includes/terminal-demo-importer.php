@@ -27,7 +27,7 @@ class TerminalDemoImporter
                 return TERMINAL_THEME_DIR . '/assets/xml/demo-content.xml';
             }
             //check WP_ALLOW_MULTISITE
-            $multisite_checks = defined('WP_ALLOW_MULTISITE') ? WP_ALLOW_MULTISITE : false;
+            $multisite_checks = is_multisite();
             //check multi site
             if ($multisite_checks) {
                 $source = ABSPATH . "wp-content/plugins/terminal-demo/terminal-demo.xml";
@@ -161,7 +161,7 @@ class TerminalDemoImporter
             $html = ob_get_clean();
 
             //check WP_ALLOW_MULTISITE
-            $multisite_checks = defined('WP_ALLOW_MULTISITE') ? WP_ALLOW_MULTISITE : false;
+            $multisite_checks = is_multisite();
             //check multi site then leave the demo file
             if (!$multisite_checks) {
                 // Remove the demo file
