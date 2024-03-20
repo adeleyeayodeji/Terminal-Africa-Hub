@@ -5,24 +5,9 @@ if (!defined('ABSPATH')) {
 }
 
 ?>
-<div class="notice notice-success">
-    <p style="font-weight: bold;"> Terminal Africa Hub requires WordPress Importer to be installed and activated.</p>
+<div class="notice notice-error">
+    <p style="font-weight: bold;"><?php _e('Terminal Africa Hub requires WordPress Importer to be installed and activated.'); ?></p>
     <p>
-        <?php
-        //get available plugins
-        $plugins = get_plugins();
-        //check if plugin is installed and not activated
-        if (isset($plugins['wordpress-importer/wordpress-importer.php']) && !is_plugin_active('wordpress-importer/wordpress-importer.php')) {
-            //activate plugin
-        ?>
-            <a href="<?php echo esc_url(wp_nonce_url(self_admin_url('plugins.php?action=activate&plugin=wordpress-importer/wordpress-importer.php'), 'activate-plugin_wordpress-importer/wordpress-importer.php')); ?>" class="terminal-importer-activate"><?php _e('Activate WordPress Importer', 'terminal-africa-hub'); ?></a>
-        <?php
-        } else if (!isset($plugins['wordpress-importer/wordpress-importer.php'])) {
-            //install plugin
-        ?>
-            <a href="<?php echo esc_url(wp_nonce_url(self_admin_url('update.php?action=install-plugin&plugin=wordpress-importer'), 'install-plugin_wordpress-importer')); ?>" class="terminal-importer-install"><?php _e('Install WordPress Importer', 'terminal-africa-hub'); ?></a>
-        <?php
-        }
-        ?>
+        WordPress Network Admin is required to install WordPress Importer on a multisite network. Please contact your network administrator to install WordPress Importer.
     </p>
 </div>
