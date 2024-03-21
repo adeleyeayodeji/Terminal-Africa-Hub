@@ -391,64 +391,36 @@ class TerminalTheme
     {
         // Create a new section for Terminal Africa
         $wp_customize->add_section('terminal_africa_section', array(
-            'title' => __('Terminal Africa', 'terminal-africa-hub'),
+            'title' => __('Terminal Header', 'terminal-africa-hub'),
             'priority' => 30,
         ));
 
-        // Add a new setting for the 'Book Shipment' button color
-        $wp_customize->add_setting('book_shipment_color', array(
+        // Add a new setting for the primary color
+        $wp_customize->add_setting('primary_color', array(
             'default' => '#f7941e',
             'transport' => 'refresh',
             'sanitize_callback' => 'sanitize_hex_color'
         ));
 
-        // Add a color control for the 'Book Shipment' button color
-        $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'book_shipment_color', array(
-            'label' => __('Book Shipment Header Color', 'terminal-africa-hub'),
+        // Add a color control for the primary color
+        $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'primary_color', array(
+            'label' => __('Primary Color', 'terminal-africa-hub'),
             'section' => 'terminal_africa_section',
-            'settings' => 'book_shipment_color'
+            'settings' => 'primary_color'
         )));
 
-        //hover color control for the 'Book Shipment' button
-        $wp_customize->add_setting('book_shipment_hover_color', array(
-            'default' => '#333333',
+        // Add a new setting for the secondary color
+        $wp_customize->add_setting('secondary_color', array(
+            'default' => '#343434',
             'transport' => 'refresh',
             'sanitize_callback' => 'sanitize_hex_color'
         ));
 
-        // Add a color control for the 'Book Shipment' button hover color
-        $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'book_shipment_hover_color', array(
-            'label' => __('Book Shipment Header Hover Color', 'terminal-africa-hub'),
+        // Add a color control for the secondary color
+        $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'secondary_color', array(
+            'label' => __('Secondary Color', 'terminal-africa-hub'),
             'section' => 'terminal_africa_section',
-            'settings' => 'book_shipment_hover_color'
-        )));
-
-        // Add a new setting for the 'Track Shipment' button color
-        $wp_customize->add_setting('track_shipment_color', array(
-            'default' => '#f7941e',
-            'transport' => 'refresh',
-            'sanitize_callback' => 'sanitize_hex_color'
-        ));
-
-        // Add a color control for the 'Track Shipment' button color
-        $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'track_shipment_color', array(
-            'label' => __('Track Shipment Header Color', 'terminal-africa-hub'),
-            'section' => 'terminal_africa_section',
-            'settings' => 'track_shipment_color'
-        )));
-
-        //hover color control for the 'Track Shipment' button
-        $wp_customize->add_setting('track_shipment_hover_color', array(
-            'default' => '#333333',
-            'transport' => 'refresh',
-            'sanitize_callback' => 'sanitize_hex_color'
-        ));
-
-        // Add a color control for the 'Track Shipment' button hover color
-        $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'track_shipment_hover_color', array(
-            'label' => __('Track Shipment Header Hover Color', 'terminal-africa-hub'),
-            'section' => 'terminal_africa_section',
-            'settings' => 'track_shipment_hover_color'
+            'settings' => 'secondary_color'
         )));
 
         //Add book shipment link
