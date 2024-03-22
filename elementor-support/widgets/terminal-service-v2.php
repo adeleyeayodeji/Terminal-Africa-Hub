@@ -122,7 +122,8 @@ class Terminal_Service_V2_Widget extends \Elementor\Widget_Base
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'default' => '#000',
                 'selectors' => [
-                    '{{WRAPPER}} .terminal-service-v2-icon i' => 'color: {{VALUE}}'
+                    '{{WRAPPER}} .terminal-service-v2-icon i' => 'color: {{VALUE}}',
+                    '{{WRAPPER}} .terminal-service-v2-icon svg' => 'fill: {{VALUE}}',
                 ],
             ]
         );
