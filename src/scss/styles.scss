@@ -442,6 +442,16 @@
         object-fit: contain;
       }
 
+      p {
+        color: #fff;
+        font-size: 15px;
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+        margin: 15px 0px;
+        width: 100%;
+        max-width: 80%;
+      }
+
       nav {
         display: flex;
         flex-direction: column;

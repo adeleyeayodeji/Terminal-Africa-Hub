@@ -534,6 +534,20 @@ class TerminalTheme
             'settings' => 'footer_logo'
         )));
 
+        //Add company address
+        $wp_customize->add_setting('company_address', array(
+            'default' => '123, Company Street, Company City, Company Country',
+            'transport' => 'refresh',
+            'sanitize_callback' => 'sanitize_text_field'
+        ));
+
+        // Add a control for the company address
+        $wp_customize->add_control('company_address', array(
+            'label' => __('Company Address', 'terminal-africa-hub'),
+            'section' => 'terminal_footer_section',
+            'settings' => 'company_address'
+        ));
+
         //Company email
         $wp_customize->add_setting('company_email', array(
             'default' => 'info@company.com',
@@ -643,6 +657,10 @@ class TerminalTheme
             }
 
             .terminal-africa-theme-bs .terminal-footer h4 {
+                color: <?php echo esc_attr(get_theme_mod('footer_text_color', '#ffffff')); ?> !important;
+            }
+
+            .terminal-africa-theme-bs .terminal-footer p {
                 color: <?php echo esc_attr(get_theme_mod('footer_text_color', '#ffffff')); ?> !important;
             }
         </style>

@@ -10,6 +10,9 @@
                         echo '<img src="' . esc_url($footer_img_link) . '" alt="' . get_bloginfo('name') . '">';
                         ?>
                   </a>
+                  <p>
+                      <?php echo esc_html(get_theme_mod('company_address', '123, Company Street, Company City, Company Country')); ?>
+                  </p>
                   <nav>
                       <a href="mailto:<?php echo esc_attr(get_theme_mod('company_email', 'info@company.com')) . '" target="_blank'; ?>"><?php echo esc_html(get_theme_mod('company_email', 'info@company.com')); ?></a>
                       <a href="tel:<?php echo esc_attr(get_theme_mod('company_phone', '+234012345678')); ?>"><?php echo esc_html(get_theme_mod('company_phone', '+234012345678')); ?></a>
