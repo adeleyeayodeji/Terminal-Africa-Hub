@@ -101,6 +101,32 @@ class Terminal_Service_V2_Widget extends \Elementor\Widget_Base
             ]
         );
 
+        //terminal-service-v2-icon bg color
+        $this->add_control(
+            'terminal_service_v2_icon_bg_color',
+            [
+                'label' => __('Icon Background Color', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#fdeedd',
+                'selectors' => [
+                    '{{WRAPPER}} .terminal-service-v2-icon' => 'background: {{VALUE}}',
+                ],
+            ]
+        );
+
+        //icon color
+        $this->add_control(
+            'terminal_service_v2_icon_color',
+            [
+                'label' => __('Icon Color', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#000',
+                'selectors' => [
+                    '{{WRAPPER}} .terminal-service-v2-icon i' => 'color: {{VALUE}}'
+                ],
+            ]
+        );
+
         //items array 
         $repeater = new \Elementor\Repeater();
 
@@ -111,7 +137,10 @@ class Terminal_Service_V2_Widget extends \Elementor\Widget_Base
                 'label' => __('Icon', 'terminal-africa-hub'),
                 'type' => \Elementor\Controls_Manager::ICONS,
                 'label_block' => true,
-                'default' => 'fa-solid fa-box-open', // Default icon
+                'default' => [
+                    'value' => 'fas fa-box-open',
+                    'library' => 'fa-solid',
+                ],
             ]
         );
 

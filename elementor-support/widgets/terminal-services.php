@@ -108,6 +108,19 @@ class Terminal_Services_Widget extends \Elementor\Widget_Base
             ]
         );
 
+        //title color
+        $this->add_control(
+            'title_color',
+            [
+                'label' => __('Title Color', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#000',
+                'selectors' => [
+                    '{{WRAPPER}} .terminal-service h2' => 'color: {{VALUE}}',
+                ],
+            ]
+        );
+
         //title type
         $this->add_control(
             'title_type',
@@ -128,6 +141,19 @@ class Terminal_Services_Widget extends \Elementor\Widget_Base
                 'label' => __('Description', 'terminal-africa-hub'),
                 'type' => \Elementor\Controls_Manager::TEXTAREA,
                 'default' => __('We offer a wide range of services to meet your needs', 'terminal-africa-hub'),
+            ]
+        );
+
+        //description color
+        $this->add_control(
+            'description_color',
+            [
+                'label' => __('Description Color', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#000',
+                'selectors' => [
+                    '{{WRAPPER}} .terminal-service p' => 'color: {{VALUE}}',
+                ],
             ]
         );
 

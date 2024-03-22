@@ -99,6 +99,19 @@ class Terminal_GetInTouch_Widget extends \Elementor\Widget_Base
             ]
         );
 
+        //title color
+        $this->add_control(
+            'title_color',
+            [
+                'label' => __('Title Color', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#000',
+                'selectors' => [
+                    '{{WRAPPER}} .terminal-in-touch h2' => 'color: {{VALUE}};',
+                ],
+            ]
+        );
+
         $this->add_control(
             'description',
             [
@@ -107,6 +120,19 @@ class Terminal_GetInTouch_Widget extends \Elementor\Widget_Base
                 'input_type' => 'text',
                 'placeholder' => __('Enter description', 'terminal-africa-hub'),
                 'default' => __('We are here to help you. Contact us for any inquiries or to get started with our services.', 'terminal-africa-hub'),
+            ]
+        );
+
+        //description color
+        $this->add_control(
+            'description_color',
+            [
+                'label' => __('Description Color', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#000',
+                'selectors' => [
+                    '{{WRAPPER}} .terminal-in-touch p' => 'color: {{VALUE}};',
+                ],
             ]
         );
 
