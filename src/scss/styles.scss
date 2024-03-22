@@ -353,6 +353,84 @@
   }
 
   /**
+  * Terminal Service Section v2
+  */
+  .terminal-service-v2 {
+    background-color: #ffffff;
+    padding: 70px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .terminal-service-v2-header {
+      margin-bottom: 20px;
+
+      h2 {
+        font-family: "Lato", sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        color: #333333;
+        margin-bottom: 50px;
+      }
+    }
+
+    .terminal-service-v2-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+    }
+
+    .terminal-service-v2-items {
+      width: 100%;
+      max-width: 340px;
+      height: 380px;
+      background: #ffffff;
+      box-sizing: border-box;
+      box-shadow: 1px -2px 66px 0px rgba(0, 0, 0, 0.1019607843);
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 20px;
+
+      .terminal-service-v2-icon {
+        background: #fdeedd;
+        padding: 20px;
+        border-radius: 100px;
+
+        img {
+          height: 48px;
+          width: 48px;
+          object-fit: contain;
+        }
+      }
+
+      h3 {
+        font-family: "Lato", sans-serif;
+        font-size: 32px;
+        font-weight: 500;
+        color: #333333;
+        margin-top: 20px;
+        letter-spacing: 1px;
+        margin: 0px;
+      }
+
+      p {
+        font-family: "Lato", sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        color: #000000;
+        margin: 0px;
+        line-height: 28px;
+      }
+    }
+  }
+
+  /**
   * Terminal Review Section 
   */
   .terminal-review {
