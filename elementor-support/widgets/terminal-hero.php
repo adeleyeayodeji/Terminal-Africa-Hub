@@ -116,6 +116,71 @@ class Terminal_Hero_Widget extends \Elementor\Widget_Base
             ]
         );
 
+        //first link bg color
+        $this->add_control(
+            'first_link_bg_color',
+            [
+                'label' => __('First Link Background Color', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#f7941e',
+                'selectors' => [
+                    '{{WRAPPER}} .terminal-cta a:first-child' => 'background-color: {{VALUE}};',
+                ],
+            ]
+        );
+
+        //first link text color
+        $this->add_control(
+            'first_link_text_color',
+            [
+                'label' => __('First Link Text Color', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#fff',
+                'selectors' => [
+                    '{{WRAPPER}} .terminal-cta a:first-child' => 'color: {{VALUE}};',
+                ],
+            ]
+        );
+
+        //hover
+        $this->add_control(
+            'first_link_hover_color',
+            [
+                'label' => __('First Link Hover Color', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#f7941e',
+                'selectors' => [
+                    '{{WRAPPER}} .terminal-cta a:first-child:hover' => 'color: {{VALUE}};',
+                ],
+            ]
+        );
+
+        //second link border and text color
+        $this->add_control(
+            'second_link_border_color',
+            [
+                'label' => __('Second Link Border Color', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#f7941e',
+                'selectors' => [
+                    '{{WRAPPER}} .terminal-cta a:last-child' => 'border-color: {{VALUE}}; color: {{VALUE}};',
+                ],
+            ]
+        );
+
+        //second link hover border and text color
+        $this->add_control(
+            'second_link_hover_color',
+            [
+                'label' => __('Second Link Hover Color', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#f7941e',
+                'selectors' => [
+                    '{{WRAPPER}} .terminal-cta a:last-child:hover' => 'color: {{VALUE}};',
+                ],
+            ]
+        );
+
         $this->end_controls_section();
     }
 

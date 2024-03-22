@@ -109,6 +109,32 @@ class Terminal_Contact_Widget extends \Elementor\Widget_Base
             ]
         );
 
+        //button bg
+        $this->add_control(
+            'button_bg',
+            [
+                'label' => __('Button Background', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#f7941e',
+                'selectors' => [
+                    '{{WRAPPER}} .terminal-contact-form .btn' => 'background-color: {{VALUE}};',
+                ],
+            ]
+        );
+
+        //button text color
+        $this->add_control(
+            'button_text_color',
+            [
+                'label' => __('Button Text Color', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#ffffff',
+                'selectors' => [
+                    '{{WRAPPER}} .terminal-contact-form .btn' => 'color: {{VALUE}};',
+                ],
+            ]
+        );
+
         //end
         $this->end_controls_section();
     }

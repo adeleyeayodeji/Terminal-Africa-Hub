@@ -156,9 +156,9 @@ class Terminal_Address_Widget extends \Elementor\Widget_Base
                 <li>
                     <div class="d-flex">
                         <img src="<?php echo esc_url(TERMINAL_THEME_ASSETS_URI . 'img/address.svg'); ?>" alt="">
-                        <p>
+                        <a>
                             <?php echo esc_html($settings['address']); ?>
-                        </p>
+                        </a>
                     </div>
                 </li>
             </ul>

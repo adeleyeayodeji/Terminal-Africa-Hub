@@ -147,6 +147,32 @@ class Terminal_GetInTouch_Widget extends \Elementor\Widget_Base
             ]
         );
 
+        //link bg color
+        $this->add_control(
+            'link_bg_color',
+            [
+                'label' => __('Link Background Color', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#f7941e',
+                'selectors' => [
+                    '{{WRAPPER}} .terminal-in-touch a' => 'background-color: {{VALUE}};',
+                ],
+            ]
+        );
+
+        //link text color
+        $this->add_control(
+            'link_text_color',
+            [
+                'label' => __('Link Text Color', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#fff',
+                'selectors' => [
+                    '{{WRAPPER}} .terminal-in-touch a' => 'color: {{VALUE}};',
+                ],
+            ]
+        );
+
         //end
         $this->end_controls_section();
     }
