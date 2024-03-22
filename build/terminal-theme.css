@@ -390,6 +390,10 @@
   -o-object-fit: contain;
      object-fit: contain;
 }
+.terminal-africa-theme-bs .terminal-service-v2 .terminal-service-v2-items .terminal-service-v2-icon svg {
+  height: 48px;
+  width: 48px;
+}
 .terminal-africa-theme-bs .terminal-service-v2 .terminal-service-v2-items h3 {
   font-family: "Lato", sans-serif;
   font-size: 32px;

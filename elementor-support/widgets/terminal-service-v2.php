@@ -109,8 +109,9 @@ class Terminal_Service_V2_Widget extends \Elementor\Widget_Base
             'terminal_service_v2_icon',
             [
                 'label' => __('Icon', 'terminal-africa-hub'),
-                'type' => \Elementor\Controls_Manager::MEDIA,
+                'type' => \Elementor\Controls_Manager::ICONS,
                 'label_block' => true,
+                'default' => 'fa-solid fa-box-open', // Default icon
             ]
         );
 
@@ -133,6 +134,43 @@ class Terminal_Service_V2_Widget extends \Elementor\Widget_Base
                 'type' => \Elementor\Controls_Manager::TEXTAREA,
                 'default' => __('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'terminal-africa-hub'),
                 'label_block' => true,
+            ]
+        );
+
+        //items
+        $this->add_control(
+            'terminal_service_v2_items',
+            [
+                'label' => __('Items', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::REPEATER,
+                'fields' => $repeater->get_controls(),
+                'default' => [
+                    [
+                        'terminal_service_v2_item_title' => __('Track Shipment', 'terminal-africa-hub'),
+                        'terminal_service_v2_item_description' => __('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'terminal-africa-hub'),
+                    ],
+                    [
+                        'terminal_service_v2_item_title' => __('Secure Packaging', 'terminal-africa-hub'),
+                        'terminal_service_v2_item_description' => __('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'terminal-africa-hub'),
+                    ],
+                    [
+                        'terminal_service_v2_item_title' => __('Track Shipment', 'terminal-africa-hub'),
+                        'terminal_service_v2_item_description' => __('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'terminal-africa-hub'),
+                    ],
+                    [
+                        'terminal_service_v2_item_title' => __('Track Shipment', 'terminal-africa-hub'),
+                        'terminal_service_v2_item_description' => __('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'terminal-africa-hub'),
+                    ],
+                    [
+                        'terminal_service_v2_item_title' => __('Secure Packaging', 'terminal-africa-hub'),
+                        'terminal_service_v2_item_description' => __('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'terminal-africa-hub'),
+                    ],
+                    [
+                        'terminal_service_v2_item_title' => __('Track Shipment', 'terminal-africa-hub'),
+                        'terminal_service_v2_item_description' => __('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'terminal-africa-hub'),
+                    ],
+                ],
+                'title_field' => '{{{ terminal_service_v2_item_title }}}',
             ]
         );
 
@@ -162,7 +200,13 @@ class Terminal_Service_V2_Widget extends \Elementor\Widget_Base
                 ?>
                         <div class="terminal-service-v2-items">
                             <div class="terminal-service-v2-icon">
-                                <img src="<?php echo esc_url($item['terminal_service_v2_icon']['url']); ?>" alt="">
+                                <?php
+                                if (!empty($item['terminal_service_v2_icon']['value'])) {
+                                    \Elementor\Icons_Manager::render_icon($item['terminal_service_v2_icon'], ['aria-hidden' => 'true']);
+                                } else {
+                                    echo '<img src="' . esc_url(TERMINAL_THEME_ASSETS_URI . 'img/box-search.svg') . '" alt="' . esc_attr($item['terminal_service_v2_item_title']) . '">';
+                                }
+                                ?>
                             </div>
                             <h3>
                                 <?php echo esc_html($item['terminal_service_v2_item_title']); ?>
