@@ -384,18 +384,19 @@
     }
 
     .terminal-service-v2-items {
-      width: 100%;
-      max-width: 340px;
-      height: 380px;
-      background: #ffffff;
+      align-items: flex-start;
+      background: #fff;
+      box-shadow: 1px -2px 66px 0 rgba(0, 0, 0, 0.102);
       box-sizing: border-box;
-      box-shadow: 1px -2px 66px 0px rgba(0, 0, 0, 0.1019607843);
-      padding: 40px;
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
       gap: 20px;
+      height: 400px;
+      justify-content: flex-start;
+      max-width: 340px;
+      padding: 40px;
+      width: 100%;
+      overflow: hidden;
 
       .terminal-service-v2-icon {
         background: #fdeedd;

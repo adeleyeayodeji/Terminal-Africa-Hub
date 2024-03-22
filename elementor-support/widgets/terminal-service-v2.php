@@ -211,9 +211,11 @@ class Terminal_Service_V2_Widget extends \Elementor\Widget_Base
                             <h3>
                                 <?php echo esc_html($item['terminal_service_v2_item_title']); ?>
                             </h3>
-                            <p>
-                                <?php echo esc_html($item['terminal_service_v2_item_description']); ?>
-                            </p>
+                            <div class="terminal-service-v2-p-holder">
+                                <p>
+                                    <?php echo esc_html($item['terminal_service_v2_item_description']); ?>
+                                </p>
+                            </div>
                         </div>
                 <?php
                     }
