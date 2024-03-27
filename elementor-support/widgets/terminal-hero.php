@@ -116,67 +116,106 @@ class Terminal_Hero_Widget extends \Elementor\Widget_Base
             ]
         );
 
-        //first link bg color
+        //first button bg
         $this->add_control(
-            'first_link_bg_color',
+            'hero_button_bg',
             [
-                'label' => __('First Link Background Color', 'terminal-africa-hub'),
+                'label' => __('Button Background Color', 'terminal-africa-hub'),
                 'type' => \Elementor\Controls_Manager::COLOR,
-                'default' => '#f7941e',
+                'default' => '#f1f1f1',
                 'selectors' => [
-                    '{{WRAPPER}} .terminal-cta a:first-child' => 'background-color: {{VALUE}};',
+                    '{{WRAPPER}} .terminal-cta a:first-child' => 'background-color: {{VALUE}}',
                 ],
             ]
         );
 
-        //first link text color
+        //first button text color
         $this->add_control(
-            'first_link_text_color',
+            'hero_button_text_color',
             [
-                'label' => __('First Link Text Color', 'terminal-africa-hub'),
+                'label' => __('Button Text Color', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#000',
+                'selectors' => [
+                    '{{WRAPPER}} .terminal-cta a:first-child' => 'color: {{VALUE}}',
+                ],
+            ]
+        );
+
+        //first button bg hover
+        $this->add_control(
+            'hero_button_bg_hover',
+            [
+                'label' => __('Button Background Hover Color', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#000',
+                'selectors' => [
+                    '{{WRAPPER}} .terminal-cta a:first-child:hover' => 'background-color: {{VALUE}}',
+                ],
+            ]
+        );
+
+        //first button text color hover
+        $this->add_control(
+            'hero_button_text_color_hover',
+            [
+                'label' => __('Button Text Hover Color', 'terminal-africa-hub'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'default' => '#fff',
                 'selectors' => [
-                    '{{WRAPPER}} .terminal-cta a:first-child' => 'color: {{VALUE}};',
+                    '{{WRAPPER}} .terminal-cta a:first-child:hover' => 'color: {{VALUE}}',
                 ],
             ]
         );
 
-        //hover
+        //second button bg
         $this->add_control(
-            'first_link_hover_color',
+            'hero_button_bg_2',
             [
-                'label' => __('First Link Hover Color', 'terminal-africa-hub'),
+                'label' => __('Button Background Color 2', 'terminal-africa-hub'),
                 'type' => \Elementor\Controls_Manager::COLOR,
-                'default' => '#f7941e',
+                'default' => '#f1f1f1',
                 'selectors' => [
-                    '{{WRAPPER}} .terminal-cta a:first-child:hover' => 'color: {{VALUE}};',
+                    '{{WRAPPER}} .terminal-cta a:last-child' => 'background-color: {{VALUE}}',
                 ],
             ]
         );
 
-        //second link border and text color
+        //second button text color
         $this->add_control(
-            'second_link_border_color',
+            'hero_button_text_color_2',
             [
-                'label' => __('Second Link Border Color', 'terminal-africa-hub'),
+                'label' => __('Button Text Color 2', 'terminal-africa-hub'),
                 'type' => \Elementor\Controls_Manager::COLOR,
-                'default' => '#f7941e',
+                'default' => '#000',
                 'selectors' => [
-                    '{{WRAPPER}} .terminal-cta a:last-child' => 'border-color: {{VALUE}}; color: {{VALUE}};',
+                    '{{WRAPPER}} .terminal-cta a:last-child' => 'color: {{VALUE}}',
                 ],
             ]
         );
 
-        //second link hover border and text color
+        //second button bg hover
         $this->add_control(
-            'second_link_hover_color',
+            'hero_button_bg_hover_2',
             [
-                'label' => __('Second Link Hover Color', 'terminal-africa-hub'),
+                'label' => __('Button Background Hover Color 2', 'terminal-africa-hub'),
                 'type' => \Elementor\Controls_Manager::COLOR,
-                'default' => '#f7941e',
+                'default' => '#000',
                 'selectors' => [
-                    '{{WRAPPER}} .terminal-cta a:last-child:hover' => 'color: {{VALUE}};',
+                    '{{WRAPPER}} .terminal-cta a:last-child:hover' => 'background-color: {{VALUE}}',
+                ],
+            ]
+        );
+
+        //second button text color hover
+        $this->add_control(
+            'hero_button_text_color_hover_2',
+            [
+                'label' => __('Button Text Hover Color 2', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#fff',
+                'selectors' => [
+                    '{{WRAPPER}} .terminal-cta a:last-child:hover' => 'color: {{VALUE}}',
                 ],
             ]
         );
@@ -203,7 +242,7 @@ class Terminal_Hero_Widget extends \Elementor\Widget_Base
                 </p>
                 <div class="d-flex terminal-cta">
                     <a href="<?php echo esc_attr(get_theme_mod('book_shipment_link', "#")); ?>">Book Shipment</a>
-                    <a href="<?php echo esc_attr(get_theme_mod('track_shipment_link', "#")); ?>">Track Shipment</a>
+                    <a href="<?php echo esc_attr(get_theme_mod('track_shipment_link', "#")); ?>" style="border: transparent;">Track Shipment</a>
                 </div>
             </div>
         </div>
@@ -228,7 +267,7 @@ class Terminal_Hero_Widget extends \Elementor\Widget_Base
                 </p>
                 <div class="d-flex terminal-cta">
                     <a href="<?php echo esc_attr(get_theme_mod('book_shipment_link', "#")); ?>">Book Shipment</a>
-                    <a href="<?php echo esc_attr(get_theme_mod('track_shipment_link', "#")); ?>">Track Shipment</a>
+                    <a href="<?php echo esc_attr(get_theme_mod('track_shipment_link', "#")); ?>" style="border: transparent;">Track Shipment</a>
                 </div>
             </div>
         </div>

@@ -98,6 +98,17 @@ class Terminal_Contact_Widget extends \Elementor\Widget_Base
             ]
         );
 
+        //FROM MAIL
+        $this->add_control(
+            'from_mail',
+            [
+                'label' => __('From Mail', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::TEXT,
+                'default' => get_option('admin_email'),
+                'label_block' => true,
+            ]
+        );
+
         //button text
         $this->add_control(
             'button_text',
@@ -135,6 +146,32 @@ class Terminal_Contact_Widget extends \Elementor\Widget_Base
             ]
         );
 
+        //button hover bg
+        $this->add_control(
+            'button_hover_bg',
+            [
+                'label' => __('Button Hover Background', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#000',
+                'selectors' => [
+                    '{{WRAPPER}} .terminal-contact-form .btn:hover' => 'background-color: {{VALUE}};',
+                ],
+            ]
+        );
+
+        //button hover text color
+        $this->add_control(
+            'button_hover_text_color',
+            [
+                'label' => __('Button Hover Text Color', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#ffffff',
+                'selectors' => [
+                    '{{WRAPPER}} .terminal-contact-form .btn:hover' => 'color: {{VALUE}};',
+                ],
+            ]
+        );
+
         //end
         $this->end_controls_section();
     }
@@ -154,6 +191,7 @@ class Terminal_Contact_Widget extends \Elementor\Widget_Base
                 <?php echo esc_html($settings['title']); ?>
             </h3>
             <form action="" class="terminal-form-fields" id="terminal-submit-contact">
+                <input type="hidden" name="contact_mail" value="<?php echo esc_attr($settings['from_mail']); ?>">
                 <div class="form-group">
                     <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
                 </div>

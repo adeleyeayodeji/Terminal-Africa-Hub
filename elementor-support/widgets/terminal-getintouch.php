@@ -88,6 +88,19 @@ class Terminal_GetInTouch_Widget extends \Elementor\Widget_Base
             ]
         );
 
+        //background color
+        $this->add_control(
+            'background_color',
+            [
+                'label' => __('Background Color', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#fdeedd',
+                'selectors' => [
+                    '{{WRAPPER}} .terminal-in-touch' => 'background-color: {{VALUE}}',
+                ]
+            ]
+        );
+
         $this->add_control(
             'title',
             [
@@ -160,24 +173,11 @@ class Terminal_GetInTouch_Widget extends \Elementor\Widget_Base
             ]
         );
 
-        //background color
-        $this->add_control(
-            'background_color',
-            [
-                'label' => __('Background Color', 'terminal-africa-hub'),
-                'type' => \Elementor\Controls_Manager::COLOR,
-                'default' => '#fdeedd',
-                'selectors' => [
-                    '{{WRAPPER}} .terminal-in-touch' => 'background-color: {{VALUE}}',
-                ]
-            ]
-        );
-
         //link bg color
         $this->add_control(
             'link_bg_color',
             [
-                'label' => __('Link Background Color', 'terminal-africa-hub'),
+                'label' => __('Button Background Color', 'terminal-africa-hub'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'default' => '#f7941e',
                 'selectors' => [
@@ -190,11 +190,37 @@ class Terminal_GetInTouch_Widget extends \Elementor\Widget_Base
         $this->add_control(
             'link_text_color',
             [
-                'label' => __('Link Text Color', 'terminal-africa-hub'),
+                'label' => __('Button Text Color', 'terminal-africa-hub'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'default' => '#fff',
                 'selectors' => [
                     '{{WRAPPER}} .terminal-in-touch a' => 'color: {{VALUE}};',
+                ],
+            ]
+        );
+
+        //button bg hover
+        $this->add_control(
+            'link_bg_color_hover',
+            [
+                'label' => __('Button Background Hover Color', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#000',
+                'selectors' => [
+                    '{{WRAPPER}} .terminal-in-touch a:hover' => 'background-color: {{VALUE}};',
+                ],
+            ]
+        );
+
+        //button hover text color
+        $this->add_control(
+            'link_text_color_hover',
+            [
+                'label' => __('Button Text Hover Color', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#fff',
+                'selectors' => [
+                    '{{WRAPPER}} .terminal-in-touch a:hover' => 'color: {{VALUE}};',
                 ],
             ]
         );

@@ -39,6 +39,7 @@ jQuery(document).ready(function ($) {
     var name = form.find("input[name='name']").val();
     var email = form.find("input[name='email']").val();
     var message = form.find("textarea[name='message']").val();
+    var contact_mail = form.find("input[name='contact_mail']").val();
     //ajax
     $.ajax({
       type: "POST",
@@ -47,6 +48,7 @@ jQuery(document).ready(function ($) {
         name,
         email,
         message,
+        contact_mail,
         nonce: terminal_africa_hub.nonce,
         action: "terminal_hub_contact_form"
       },
