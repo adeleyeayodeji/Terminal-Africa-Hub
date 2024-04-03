@@ -196,7 +196,15 @@ class Terminal_FAQ_Widget extends \Elementor\Widget_Base
                     </div>
                     <div class="terminal-faq-body" style="display: <?php echo ($key == 0) ? 'block' : 'none'; ?>">
                         <p>
-                            <?php echo esc_html($faq['answer']); ?>
+                            <?php
+                            echo nl2br(preg_replace_callback(
+                                '/\bhttps?:\/\/\S+\b/',
+                                function ($matches) {
+                                    return '<a href="' . $matches[0] . '">' . $matches[0] . '</a>';
+                                },
+                                esc_html($faq['answer'])
+                            ));
+                            ?>
                         </p>
                     </div>
                 </div>
