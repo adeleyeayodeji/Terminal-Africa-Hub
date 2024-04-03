@@ -195,14 +195,20 @@ class Terminal_FAQ_Widget extends \Elementor\Widget_Base
                         <img src="<?php echo TERMINAL_THEME_ASSETS_URI . '/img/accordion-' . ($key == 0 ? 'close' : 'open') . '.svg' ?>" alt="<?php echo esc_html($faq['question']); ?>">
                     </div>
                     <div class="terminal-faq-body" style="display: <?php echo ($key == 0) ? 'block' : 'none'; ?>">
-                        <p>
+                        <p style="color:black;">
                             <?php
                             echo nl2br(preg_replace_callback(
                                 '/\bhttps?:\/\/\S+\b/',
                                 function ($matches) {
                                     return '<a href="' . $matches[0] . '">' . $matches[0] . '</a>';
                                 },
-                                esc_html($faq['answer'])
+                                preg_replace_callback(
+                                    '/\b[A-Z]*\b/',
+                                    function ($matches) {
+                                        return '<b>' . $matches[0] . '</b>';
+                                    },
+                                    esc_html($faq['answer'])
+                                )
                             ));
                             ?>
                         </p>
