@@ -98,17 +98,6 @@ class Terminal_Contact_Widget extends \Elementor\Widget_Base
             ]
         );
 
-        //FROM MAIL
-        $this->add_control(
-            'from_mail',
-            [
-                'label' => __('From Mail', 'terminal-africa-hub'),
-                'type' => \Elementor\Controls_Manager::TEXT,
-                'default' => get_option('admin_email'),
-                'label_block' => true,
-            ]
-        );
-
         //button text
         $this->add_control(
             'button_text',

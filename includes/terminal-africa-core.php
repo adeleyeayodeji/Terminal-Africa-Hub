@@ -255,11 +255,12 @@ class TerminalTheme
         $message = sanitize_textarea_field($_POST['message']);
         //send email
         $to = get_option('admin_email');
-        $subject = 'New message from ' . get_bloginfo('name');
+        $subject = 'Contact Request From - ' . $email;
         $headers = array('Content-Type: text/html; charset=UTF-8');
         $body = 'Name: ' . $name . '<br/>';
         $body .= 'Email: ' . $email . '<br/>';
         $body .= 'Message: ' . $message . '<br/>';
+
         //send email
         $send = wp_mail($to, $subject, $body, $headers);
         if ($send) {
