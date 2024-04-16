@@ -87,10 +87,34 @@ class Terminal_Address_Widget extends \Elementor\Widget_Base
             ]
         );
 
+        //title
+        $this->add_control(
+            'title',
+            [
+                'label' => __('Title', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::TEXT,
+                'input_type' => 'text',
+                'default' => 'Meet Us',
+                'placeholder' => __('Enter your title', 'terminal-africa-hub'),
+            ]
+        );
+
         $this->add_control(
             'address',
             [
                 'label' => __('Address', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::TEXTAREA,
+                'input_type' => 'text',
+                'default' => 'Amman street, Ikeja, Lagos.',
+                'placeholder' => __('Enter your address', 'terminal-africa-hub'),
+            ]
+        );
+
+        //address 2
+        $this->add_control(
+            'address_2',
+            [
+                'label' => __('Address 2', 'terminal-africa-hub'),
                 'type' => \Elementor\Controls_Manager::TEXTAREA,
                 'input_type' => 'text',
                 'default' => 'Amman street, Ikeja, Lagos.',
@@ -136,7 +160,7 @@ class Terminal_Address_Widget extends \Elementor\Widget_Base
 ?>
         <div class="terminal-meet-us">
             <h3>
-                Meet Us
+                <?php echo esc_html($settings['title']); ?>
             </h3>
             <ul>
                 <li>
@@ -161,6 +185,14 @@ class Terminal_Address_Widget extends \Elementor\Widget_Base
                         </a>
                     </div>
                 </li>
+                <li>
+                    <div class="d-flex">
+                        <img src="<?php echo esc_url(TERMINAL_THEME_ASSETS_URI . 'img/address.svg'); ?>" alt="">
+                        <a style="font-size: 16px;line-height: 29px;">
+                            <?php echo esc_html($settings['address_2']); ?>
+                        </a>
+                    </div>
+                </li>
             </ul>
         </div>
     <?php
@@ -178,7 +210,7 @@ class Terminal_Address_Widget extends \Elementor\Widget_Base
     ?>
         <div class="terminal-meet-us">
             <h3>
-                Meet Us
+                <?php echo esc_html('{{settings.title}}'); ?>
             </h3>
             <ul>
                 <li>
@@ -200,6 +232,14 @@ class Terminal_Address_Widget extends \Elementor\Widget_Base
                         <img src="<?php echo esc_url(TERMINAL_THEME_ASSETS_URI . 'img/address.svg'); ?>" alt="">
                         <p>
                             {{settings.address}}
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="d-flex">
+                        <img src="<?php echo esc_url(TERMINAL_THEME_ASSETS_URI . 'img/address.svg'); ?>" alt="">
+                        <p>
+                            {{settings.address_2}}
                         </p>
                     </div>
                 </li>

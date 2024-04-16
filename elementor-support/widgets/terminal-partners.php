@@ -108,6 +108,21 @@ class Terminal_Partners_Widget extends \Elementor\Widget_Base
                             'url' => TERMINAL_THEME_ASSETS_URI . 'img/dhl.svg',
                         ],
                     ],
+                    [
+                        'partner_image' => [
+                            'url' => TERMINAL_THEME_ASSETS_URI . 'img/ups.svg',
+                        ],
+                    ],
+                    [
+                        'partner_image' => [
+                            'url' => TERMINAL_THEME_ASSETS_URI . 'img/Fedex.svg',
+                        ],
+                    ],
+                    [
+                        'partner_image' => [
+                            'url' => TERMINAL_THEME_ASSETS_URI . 'img/Aramex.svg',
+                        ],
+                    ],
                 ],
                 'title_field' => '{{{ partner_image.url }}}',
             ]
@@ -128,10 +143,13 @@ class Terminal_Partners_Widget extends \Elementor\Widget_Base
 ?>
         <div class="terminal-partners">
             <div class="d-flex justify-content-between align-items-center">
-                <img src="<?php echo esc_url(TERMINAL_THEME_ASSETS_URI . 'img/dhl.svg') ?>" alt="DHL">
-                <img src="<?php echo esc_url(TERMINAL_THEME_ASSETS_URI . 'img/ups.svg') ?>" alt="UPS">
-                <img src="<?php echo esc_url(TERMINAL_THEME_ASSETS_URI . 'img/Fedex.svg') ?>" alt="Fedex">
-                <img src="<?php echo esc_url(TERMINAL_THEME_ASSETS_URI . 'img/Aramex.svg') ?>" alt="Aramex">
+                <?php
+                foreach ($partners as $partner) :
+                ?>
+                    <img src="<?php echo esc_url($partner['partner_image']['url']); ?>" class="partner-icon" alt="Partner">
+                <?php
+                endforeach;
+                ?>
             </div>
         </div>
 <?php

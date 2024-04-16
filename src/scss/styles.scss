@@ -295,6 +295,13 @@
       flex-wrap: wrap;
       gap: 2rem;
     }
+
+    .partner-icon {
+      width: auto;
+      height: 54px;
+      object-fit: contain;
+      object-position: center;
+    }
   }
 
   /**
@@ -652,7 +659,7 @@
         margin-bottom: 45px;
 
         .d-flex {
-          gap: 10px;
+          gap: 15px;
 
           p {
             margin-bottom: 0px;
