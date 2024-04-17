@@ -6,7 +6,7 @@ if (!defined('ABSPATH')) {
 
 ?>
 <div class="notice notice-error">
-    <p style="font-weight: bold;"><?php _e('Terminal Africa Hub requires WordPress Importer to be installed and activated.'); ?></p>
+    <p style="font-weight: bold;"><?php _e('Terminal Africa Hub requires WordPress Importer to be installed and activated.', 'terminal-africa-hub'); ?></p>
     <p>
         WordPress Network Admin is required to install WordPress Importer on a multisite network. Please contact your network administrator to install WordPress Importer.
     </p>

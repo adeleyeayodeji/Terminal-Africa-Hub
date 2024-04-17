@@ -17,7 +17,11 @@ get_header();
 /* Start the Loop */
 while (have_posts()) :
 	the_post();
-	echo "<div id='post-" . the_ID() . "' " . post_class() . ">";
+?>
+	<div id='post-<?php echo the_ID(); ?>' <?php echo post_class(); ?>>
+	<?php
+	//title
+	the_title('<h1 class="entry-title text-center my-5">', '</h1>');
 
 	the_content();
 

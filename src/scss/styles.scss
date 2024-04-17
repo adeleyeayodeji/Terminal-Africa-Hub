@@ -803,3 +803,91 @@
     }
   }
 }
+
+/**
+*
+* Terminal Africa Single Blog Styles
+*
+*/
+// Single Post Styles
+.single-post {
+  .post {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+
+      &:hover {
+        color: #0056b3;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .comments-area {
+    margin-top: 2em;
+    font-size: 14px;
+
+    .comment-list {
+      list-style: none;
+      padding-left: 0;
+
+      .comment {
+        margin-bottom: 1em;
+
+        .comment-body {
+          border: 1px solid #ddd;
+          padding: 1em;
+          border-radius: 4px;
+        }
+      }
+    }
+
+    .comment-reply-link {
+      color: #007bff;
+      text-decoration: none;
+
+      &:hover {
+        color: #0056b3;
+        text-decoration: underline;
+      }
+    }
+
+    .comment-respond {
+      .comment-form-comment {
+        display: flex;
+        flex-direction: column;
+
+        textarea {
+          width: 100%;
+          max-width: 500px;
+        }
+      }
+
+      input[type="submit"] {
+        background: #f7941e;
+        padding: 10px 20px;
+        font-family: "Lato", sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+
+        &:hover {
+          background: #333333;
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
