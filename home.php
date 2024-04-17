@@ -18,5 +18,12 @@ while (have_posts()) :
     }
 endwhile; // End of the loop.
 
+// Display post pagination
+the_posts_pagination(array(
+    'mid_size'  => 2,
+    'prev_text' => __('« Previous', 'terminal-africa-hub'),
+    'next_text' => __('Next »', 'terminal-africa-hub'),
+));
+
 
 get_footer();

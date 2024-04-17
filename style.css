@@ -11,6 +11,72 @@ Version: 1.0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: terminal-africa-hub
-Tags: terminal africa, terminal t-hub, t-hub, terminal hub, terminal africa hub, terminal africa t-hub, terminal africa theme, terminal africa
-Stable tag: 1.0.1
+Tags: custom-colors, custom-menu, custom-logo, featured-images, threaded-comments
+
+Terminal Africa Hub WordPress Theme, (C) 2024 Terminal Africa
+Terminal Africa Hub is distributed under the terms of the GNU GPL.
 */
+
+.wp-caption {
+  display: block;
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
+  padding: 0;
+  text-align: center;
+}
+
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+  font-size: 0.8em;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0.5em;
+}
+
+.gallery-caption {
+  display: block;
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
+  padding: 0;
+  text-align: center;
+}
+
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bypostauthor {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin: 1.5em 0;
+  padding: 1.5em 0;
+}
+
+.alignright {
+  float: right;
+  margin-left: 1.5em;
+}
+
+.alignleft {
+  float: left;
+  margin-right: 1.5em;
+}
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}

@@ -48,7 +48,7 @@ class TerminalDemoImporter
                 // Handle error
                 throw new \Exception($response->get_error_message());
             } else {
-                $download = file_put_contents($destination, wp_remote_retrieve_body($response));
+                $download = file_put_contents($destination, wp_remote_retrieve_body($response)); //put the file in the destination
             }
             //check if the file was downloaded
             if (!$download) {

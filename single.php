@@ -23,6 +23,8 @@ while (have_posts()) :
 	//title
 	the_title('<h1 class="entry-title text-center my-5">', '</h1>');
 
+	the_post_thumbnail();
+
 	the_content();
 
 	wp_link_pages(
@@ -38,6 +40,9 @@ while (have_posts()) :
 	if (comments_open() || get_comments_number()) {
 		comments_template();
 	}
+
+	// Display the tags
+	the_tags('<p>Tags: ', ', ', '</p>');
 
 	echo '</div>'; // Closes the div with the post class
 endwhile; // End of the loop.
