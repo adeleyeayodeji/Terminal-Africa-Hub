@@ -100,6 +100,35 @@ class TerminalTheme
         add_action('wp_ajax_terminal_hub_contact_form', array($this, 'terminal_hub_contact_form'));
         //wp ajax terminal_import_demo
         add_action('wp_ajax_terminal_import_demo', array($this, 'terminal_import_demo'));
+        //add admin menu for theme customiser
+        add_action('admin_menu', array($this, 'terminal_africa_theme_menu'));
+    }
+
+    /**
+     * terminal_africa_theme_menu
+     * 
+     */
+    public function terminal_africa_theme_menu()
+    {
+        add_theme_page(
+            'Terminal Africa Hub',
+            'Terminal Africa Hub',
+            'manage_options',
+            'terminal-africa-hub',
+            array($this, 'terminal_africa_hub_page'),
+            3
+        );
+    }
+
+    /**
+     * terminal_africa_hub_page
+     * 
+     */
+    public function terminal_africa_hub_page()
+    {
+        ob_start();
+        require_once TERMINAL_THEME_DIR . '/templates/admin/terminal-africa-hub.php';
+        echo ob_get_clean();
     }
 
     /**
@@ -125,14 +154,19 @@ class TerminalTheme
                 ));
             }
 
+            //get demo_id
+            $demo_id = sanitize_text_field($_POST['demo_id']);
+
             //import demo content
             $importer = new TerminalDemoImporter();
-            $html = $importer->import_demo();
+            $html = $importer->import_demo($demo_id);
 
             //check if html has 'Have fun!'
             if (strpos($html, 'Have fun!') !== false) {
                 //update option
                 update_option('terminal_hub_demo_imported', 'yes');
+                //save active $demo_id
+                update_option('terminal_hub_active_demo', $demo_id);
                 //send success message
                 wp_send_json_success(array(
                     'message' => 'Demo content imported successfully'
@@ -140,6 +174,8 @@ class TerminalTheme
             } else {
                 //delete option terminal_hub_demo_imported
                 delete_option('terminal_hub_demo_imported');
+                //delete active $demo_id
+                delete_option('terminal_hub_active_demo');
                 //send error message
                 wp_send_json_error(array(
                     'message' => 'Demo content could not be imported',
@@ -163,6 +199,8 @@ class TerminalTheme
         delete_option('terminal-first-init');
         //delete option terminal_hub_demo_imported
         delete_option('terminal_hub_demo_imported');
+        //delete demo id
+        delete_option('terminal_hub_active_demo');
     }
 
     /**
@@ -175,6 +213,8 @@ class TerminalTheme
         delete_option('terminal-first-init');
         //delete option terminal_hub_demo_imported
         delete_option('terminal_hub_demo_imported');
+        //delete demo id
+        delete_option('terminal_hub_active_demo');
     }
 
     /**
@@ -722,6 +762,8 @@ class TerminalTheme
         wp_enqueue_script('terminal-izitoast', TERMINAL_THEME_ASSETS_URI . 'js/iziToast.min.js', array('jquery'), TERMINAL_THEME_VERSION, true);
         //sweet alert js
         wp_enqueue_script('terminal-sweetalert', TERMINAL_THEME_ASSETS_URI . 'js/sweetalert2.min.js', array('jquery'), TERMINAL_THEME_VERSION, true);
+        //terminal africa hub admin css
+        wp_enqueue_style('terminal-africa-hub-admin', TERMINAL_THEME_ASSETS_URI . 'css/terminal-theme-admin.css', array(), TERMINAL_THEME_VERSION, 'all');
         //enqueue scripts
         wp_enqueue_script('terminal-africa-hub-admin', TERMINAL_THEME_ASSETS_URI . 'js/terminal-theme-admin.js', array('jquery'), TERMINAL_THEME_VERSION, true);
         //localize scripts

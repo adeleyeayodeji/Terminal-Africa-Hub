@@ -103,9 +103,10 @@ class TerminalDemoImporter
 
     /**
      * import_demo
+     * @param string $demo_name
      * 
      */
-    public function import_demo()
+    public function import_demo(string $demo_name = null)
     {
         try {
 
