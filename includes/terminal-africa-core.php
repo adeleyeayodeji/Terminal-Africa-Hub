@@ -294,7 +294,13 @@ class TerminalTheme
         $email = sanitize_email($_POST['email']);
         $message = sanitize_textarea_field($_POST['message']);
         //send email
-        $to = get_option('admin_email');
+        $to = get_option('thub_admin_email');
+        //check $to valid
+        if (empty($to)) {
+            wp_send_json_error(array(
+                'message' => 'Unable to send email, please check the admin email address in the theme customizer'
+            ));
+        }
         $subject = 'Contact Request From - ' . $email;
         $headers = array('Content-Type: text/html; charset=UTF-8');
         $body = 'Name: ' . $name . '<br/>';

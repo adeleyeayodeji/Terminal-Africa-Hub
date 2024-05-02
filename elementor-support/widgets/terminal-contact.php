@@ -161,6 +161,17 @@ class Terminal_Contact_Widget extends \Elementor\Widget_Base
             ]
         );
 
+        //thub_admin_email
+        $this->add_control(
+            'thub_admin_email',
+            [
+                'label' => __('Admin Email', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::TEXT,
+                'default' => get_option('thub_admin_email', ''),
+                'label_block' => true,
+            ]
+        );
+
         //end
         $this->end_controls_section();
     }
@@ -174,6 +185,8 @@ class Terminal_Contact_Widget extends \Elementor\Widget_Base
     protected function render()
     {
         $settings = $this->get_settings_for_display();
+        //update option
+        update_option('thub_admin_email', $settings['thub_admin_email']);
 ?>
         <div class="terminal-contact-form">
             <h3>
