@@ -298,7 +298,7 @@ class TerminalTheme
         //check $to valid
         if (empty($to)) {
             wp_send_json_error(array(
-                'message' => 'Unable to send email, please check the admin email address in the theme customizer'
+                'message' => 'Unable to send email, please check the admin email address and try again'
             ));
         }
         $subject = 'Contact Request From - ' . $email;
