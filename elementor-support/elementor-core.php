@@ -58,6 +58,10 @@ class TerminalElementor
         \Elementor\Plugin::instance()->widgets_manager->register(new Terminal_FAQ_Widget());
         //Terminal_Service_V2_Widget
         \Elementor\Plugin::instance()->widgets_manager->register(new Terminal_Service_V2_Widget());
+        //Terminal_Hero_2_Widget
+        \Elementor\Plugin::instance()->widgets_manager->register(new Terminal_Hero_2_Widget());
+        //Terminal_Service_2_Widget
+        \Elementor\Plugin::instance()->widgets_manager->register(new Terminal_Service_2_Widget());
     }
 
     /**

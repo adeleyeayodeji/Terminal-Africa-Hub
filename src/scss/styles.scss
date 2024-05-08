@@ -890,6 +890,87 @@
       }
     }
   }
+
+  .terminal-service-2 {
+    padding: 2rem 3rem;
+    background-color: #eaffed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &--title {
+      text-align: center;
+      padding: 0rem 13rem;
+
+      h2 {
+        font-family: "Manrope", sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        color: #333333;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-family: "Manrope", sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        color: #0f172a;
+      }
+    }
+
+    &--image {
+      background-color: #044b04;
+      border-radius: 1rem;
+      padding: 0rem 5rem;
+      height: 500px;
+      margin-top: 35px;
+      margin-bottom: 40px;
+      transition: all 0.3s ease;
+
+      img {
+        max-height: 570px;
+        border-radius: 20px;
+        padding: 2px;
+        background-color: green;
+        margin-top: -25px;
+        transition: all 0.3s ease;
+      }
+    }
+
+    &--footer {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 5rem;
+      padding: 0rem 3rem;
+      gap: 3rem;
+
+      &--item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+
+        h4 {
+          font-family: "Manrope", sans-serif;
+          font-size: 20px;
+          font-weight: 700;
+          color: #333333;
+        }
+
+        p {
+          font-family: "Manrope", sans-serif;
+          font-size: 16px;
+          font-weight: 300;
+          color: #0f172a;
+        }
+      }
+    }
+  }
 }
 
 /**

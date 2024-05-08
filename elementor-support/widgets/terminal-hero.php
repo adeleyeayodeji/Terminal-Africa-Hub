@@ -254,7 +254,7 @@ class Terminal_Hero_Widget extends \Elementor\Widget_Base
      * 
      * @access protected
      */
-    protected function _content_template()
+    protected function content_template()
     {
     ?>
         <div class="terminal-hero-section" style="background-image: url('{{{ settings.hero_background.url }}}');">
