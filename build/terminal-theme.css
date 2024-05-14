@@ -864,6 +864,127 @@
   font-weight: 300;
   color: #0f172a;
 }
+.terminal-africa-theme-bs .terminal-service-2--footer--cta {
+  padding: 20px 10px;
+}
+.terminal-africa-theme-bs .terminal-service-2--footer--cta a {
+  background: #264631;
+  padding: 12px 40px;
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+.terminal-africa-theme-bs .terminal-service-2--footer--cta a:hover {
+  background: #333333;
+  color: white;
+  text-decoration: none;
+}
+.terminal-africa-theme-bs .terminal-testimonial-2 {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 7rem 3rem;
+  align-items: center;
+  transition: all 0.3s ease;
+  margin: 0 auto;
+}
+.terminal-africa-theme-bs .terminal-testimonial-2--first {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 40%;
+  transition: all 0.3s ease;
+}
+.terminal-africa-theme-bs .terminal-testimonial-2--first--comment p {
+  font-family: "Manrope", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #0f172a;
+  transition: all 0.3s ease;
+}
+.terminal-africa-theme-bs .terminal-testimonial-2--first--author p {
+  font-family: "Alex Brush", cursive;
+  font-size: 30px;
+  font-weight: 700;
+  color: #333333;
+  font-style: italic;
+  transition: all 0.3s ease;
+}
+.terminal-africa-theme-bs .terminal-testimonial-2--first--navigation {
+  display: flex;
+  gap: 5px;
+}
+.terminal-africa-theme-bs .terminal-testimonial-2--first--navigation div {
+  transition: all 0.3s ease;
+}
+.terminal-africa-theme-bs .terminal-testimonial-2--first--navigation--idle {
+  background-color: #9de09d;
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  cursor: pointer;
+}
+.terminal-africa-theme-bs .terminal-testimonial-2--first--navigation--active {
+  background-color: #102e1a;
+  border-radius: 5px;
+  width: 20px;
+  height: 7px;
+  cursor: pointer;
+}
+.terminal-africa-theme-bs .terminal-testimonial-2--second--bg {
+  background-color: #102e1a;
+  height: 357px;
+  border-radius: 20px;
+  transform: rotate(-35deg);
+  padding: 80px 0px;
+  transition: all 0.3s ease;
+}
+.terminal-africa-theme-bs .terminal-testimonial-2--second--bg--image {
+  display: flex;
+  flex-direction: column;
+  transform: rotate(34deg);
+  transition: all 0.3s ease;
+}
+.terminal-africa-theme-bs .terminal-testimonial-2--second--bg--image--first {
+  height: 35px;
+  width: 35px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -o-object-position: center;
+  object-position: center;
+  position: absolute;
+  top: -41px;
+  left: 16rem;
+  transition: all 0.3s ease;
+}
+.terminal-africa-theme-bs .terminal-testimonial-2--second--bg--image--second {
+  height: 290px;
+  width: 383px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  border-radius: 20px;
+  padding: 2px;
+  background: #102e1a;
+  transition: all 0.3s ease;
+}
+.terminal-africa-theme-bs .terminal-testimonial-2--second--bg--image--third {
+  height: 100px;
+  width: 119px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -o-object-position: center;
+  object-position: center;
+  position: absolute;
+  top: 14rem;
+  left: 1rem;
+  transition: all 0.3s ease;
+}
 
 /**
 *
@@ -9979,6 +10100,78 @@
     flex-direction: column;
     margin-top: 1rem;
   }
+  .terminal-africa-theme-bs .terminal-testimonial-2 {
+    flex-direction: column;
+    justify-content: center;
+    width: 92%;
+    overflow: hidden;
+  }
+  .terminal-africa-theme-bs .terminal-testimonial-2--first {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+  }
+  .terminal-africa-theme-bs .terminal-testimonial-2--first--comment p {
+    font-family: "Manrope", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #0f172a;
+    transition: all 0.3s ease;
+  }
+  .terminal-africa-theme-bs .terminal-testimonial-2--first--author p {
+    font-family: "Alex Brush", cursive;
+    font-size: 30px;
+    font-weight: 700;
+    color: #333333;
+    font-style: italic;
+    transition: all 0.3s ease;
+  }
+  .terminal-africa-theme-bs .terminal-testimonial-2--second--bg {
+    background-color: #102e1a;
+    height: 219px;
+    border-radius: 20px;
+    transform: rotate(-35deg);
+    padding: 61px 0px;
+  }
+  .terminal-africa-theme-bs .terminal-testimonial-2--second--bg--image {
+    display: flex;
+    flex-direction: column;
+    transform: rotate(34deg);
+  }
+  .terminal-africa-theme-bs .terminal-testimonial-2--second--bg--image--first {
+    height: 35px;
+    width: 35px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    -o-object-position: center;
+    object-position: center;
+    position: absolute;
+    top: -41px;
+    left: 7rem;
+  }
+  .terminal-africa-theme-bs .terminal-testimonial-2--second--bg--image--second {
+    height: 130px;
+    width: 197px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    border-radius: 20px;
+    padding: 2px;
+    background: #102e1a;
+  }
+  .terminal-africa-theme-bs .terminal-testimonial-2--second--bg--image--third {
+    height: 100px;
+    width: 119px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    -o-object-position: center;
+    object-position: center;
+    position: absolute;
+    top: 7rem;
+    left: 0rem;
+  }
 }
 @media only screen and (min-width: 600px) {
   .terminal-africa-theme-bs .terminal-mobile-menu {
@@ -10103,6 +10296,78 @@
     padding: 0rem 3rem;
     flex-direction: column;
     margin-top: 1rem;
+  }
+  .terminal-africa-theme-bs .terminal-testimonial-2 {
+    flex-direction: column;
+    justify-content: center;
+    width: 92%;
+    overflow: hidden;
+  }
+  .terminal-africa-theme-bs .terminal-testimonial-2--first {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+  }
+  .terminal-africa-theme-bs .terminal-testimonial-2--first--comment p {
+    font-family: "Manrope", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #0f172a;
+    transition: all 0.3s ease;
+  }
+  .terminal-africa-theme-bs .terminal-testimonial-2--first--author p {
+    font-family: "Alex Brush", cursive;
+    font-size: 30px;
+    font-weight: 700;
+    color: #333333;
+    font-style: italic;
+    transition: all 0.3s ease;
+  }
+  .terminal-africa-theme-bs .terminal-testimonial-2--second--bg {
+    background-color: #102e1a;
+    height: 219px;
+    border-radius: 20px;
+    transform: rotate(-35deg);
+    padding: 61px 0px;
+  }
+  .terminal-africa-theme-bs .terminal-testimonial-2--second--bg--image {
+    display: flex;
+    flex-direction: column;
+    transform: rotate(34deg);
+  }
+  .terminal-africa-theme-bs .terminal-testimonial-2--second--bg--image--first {
+    height: 35px;
+    width: 35px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    -o-object-position: center;
+    object-position: center;
+    position: absolute;
+    top: -41px;
+    left: 7rem;
+  }
+  .terminal-africa-theme-bs .terminal-testimonial-2--second--bg--image--second {
+    height: 130px;
+    width: 197px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    border-radius: 20px;
+    padding: 2px;
+    background: #102e1a;
+  }
+  .terminal-africa-theme-bs .terminal-testimonial-2--second--bg--image--third {
+    height: 100px;
+    width: 119px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    -o-object-position: center;
+    object-position: center;
+    position: absolute;
+    top: 7rem;
+    left: 0rem;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -10229,6 +10494,78 @@
     flex-direction: row;
     margin-top: 5rem;
   }
+  .terminal-africa-theme-bs .terminal-testimonial-2 {
+    flex-direction: row;
+    width: 100%;
+    overflow: unset;
+    justify-content: space-around;
+  }
+  .terminal-africa-theme-bs .terminal-testimonial-2--first {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 40%;
+  }
+  .terminal-africa-theme-bs .terminal-testimonial-2--first--comment p {
+    font-family: "Manrope", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #0f172a;
+    transition: all 0.3s ease;
+  }
+  .terminal-africa-theme-bs .terminal-testimonial-2--first--author p {
+    font-family: "Alex Brush", cursive;
+    font-size: 30px;
+    font-weight: 700;
+    color: #333333;
+    font-style: italic;
+    transition: all 0.3s ease;
+  }
+  .terminal-africa-theme-bs .terminal-testimonial-2--second--bg {
+    background-color: #102e1a;
+    height: 357px;
+    border-radius: 20px;
+    transform: rotate(-35deg);
+    padding: 80px 0px;
+  }
+  .terminal-africa-theme-bs .terminal-testimonial-2--second--bg--image {
+    display: flex;
+    flex-direction: column;
+    transform: rotate(34deg);
+  }
+  .terminal-africa-theme-bs .terminal-testimonial-2--second--bg--image--first {
+    height: 35px;
+    width: 35px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    -o-object-position: center;
+    object-position: center;
+    position: absolute;
+    top: -41px;
+    left: 13rem;
+  }
+  .terminal-africa-theme-bs .terminal-testimonial-2--second--bg--image--second {
+    height: 223px;
+    width: 310px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    border-radius: 20px;
+    padding: 2px;
+    background: #102e1a;
+  }
+  .terminal-africa-theme-bs .terminal-testimonial-2--second--bg--image--third {
+    height: 100px;
+    width: 119px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    -o-object-position: center;
+    object-position: center;
+    position: absolute;
+    top: 10rem;
+    left: 0rem;
+  }
 }
 @media only screen and (min-width: 992px) {
   .terminal-africa-theme-bs .terminal-mobile-menu {
@@ -10354,6 +10691,78 @@
     flex-direction: row;
     margin-top: 5rem;
   }
+  .terminal-africa-theme-bs .terminal-testimonial-2 {
+    flex-direction: row;
+    width: 100%;
+    overflow: unset;
+    justify-content: space-around;
+  }
+  .terminal-africa-theme-bs .terminal-testimonial-2--first {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 40%;
+  }
+  .terminal-africa-theme-bs .terminal-testimonial-2--first--comment p {
+    font-family: "Manrope", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #0f172a;
+    transition: all 0.3s ease;
+  }
+  .terminal-africa-theme-bs .terminal-testimonial-2--first--author p {
+    font-family: "Alex Brush", cursive;
+    font-size: 30px;
+    font-weight: 700;
+    color: #333333;
+    font-style: italic;
+    transition: all 0.3s ease;
+  }
+  .terminal-africa-theme-bs .terminal-testimonial-2--second--bg {
+    background-color: #102e1a;
+    height: 357px;
+    border-radius: 20px;
+    transform: rotate(-35deg);
+    padding: 80px 0px;
+  }
+  .terminal-africa-theme-bs .terminal-testimonial-2--second--bg--image {
+    display: flex;
+    flex-direction: column;
+    transform: rotate(34deg);
+  }
+  .terminal-africa-theme-bs .terminal-testimonial-2--second--bg--image--first {
+    height: 35px;
+    width: 35px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    -o-object-position: center;
+    object-position: center;
+    position: absolute;
+    top: -41px;
+    left: 13rem;
+  }
+  .terminal-africa-theme-bs .terminal-testimonial-2--second--bg--image--second {
+    height: 223px;
+    width: 310px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    border-radius: 20px;
+    padding: 2px;
+    background: #102e1a;
+  }
+  .terminal-africa-theme-bs .terminal-testimonial-2--second--bg--image--third {
+    height: 100px;
+    width: 119px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    -o-object-position: center;
+    object-position: center;
+    position: absolute;
+    top: 10rem;
+    left: 0rem;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .terminal-africa-theme-bs .terminal-mobile-menu {
@@ -10478,6 +10887,78 @@
     padding: 0rem 3rem;
     flex-direction: row;
     margin-top: 5rem;
+  }
+  .terminal-africa-theme-bs .terminal-testimonial-2 {
+    flex-direction: row;
+    width: 100%;
+    overflow: unset;
+    justify-content: space-around;
+  }
+  .terminal-africa-theme-bs .terminal-testimonial-2--first {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 40%;
+  }
+  .terminal-africa-theme-bs .terminal-testimonial-2--first--comment p {
+    font-family: "Manrope", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #0f172a;
+    transition: all 0.3s ease;
+  }
+  .terminal-africa-theme-bs .terminal-testimonial-2--first--author p {
+    font-family: "Alex Brush", cursive;
+    font-size: 30px;
+    font-weight: 700;
+    color: #333333;
+    font-style: italic;
+    transition: all 0.3s ease;
+  }
+  .terminal-africa-theme-bs .terminal-testimonial-2--second--bg {
+    background-color: #102e1a;
+    height: 357px;
+    border-radius: 20px;
+    transform: rotate(-35deg);
+    padding: 80px 0px;
+  }
+  .terminal-africa-theme-bs .terminal-testimonial-2--second--bg--image {
+    display: flex;
+    flex-direction: column;
+    transform: rotate(34deg);
+  }
+  .terminal-africa-theme-bs .terminal-testimonial-2--second--bg--image--first {
+    height: 35px;
+    width: 35px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    -o-object-position: center;
+    object-position: center;
+    position: absolute;
+    top: -41px;
+    left: 16rem;
+  }
+  .terminal-africa-theme-bs .terminal-testimonial-2--second--bg--image--second {
+    height: 290px;
+    width: 383px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    border-radius: 20px;
+    padding: 2px;
+    background: #102e1a;
+  }
+  .terminal-africa-theme-bs .terminal-testimonial-2--second--bg--image--third {
+    height: 100px;
+    width: 119px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    -o-object-position: center;
+    object-position: center;
+    position: absolute;
+    top: 14rem;
+    left: 1rem;
   }
 }
 

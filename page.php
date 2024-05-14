@@ -4,7 +4,6 @@ get_header();
  * Display the home page content
  * 
  */
-
 /* Start the Loop */
 while (have_posts()) :
     the_post();

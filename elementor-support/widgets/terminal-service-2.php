@@ -27,7 +27,7 @@ class Terminal_Service_2_Widget extends \Elementor\Widget_Base
      */
     public function get_name()
     {
-        return 'terminal-service-2';
+        return 'terminal-service-02';
     }
 
     /**
@@ -41,7 +41,7 @@ class Terminal_Service_2_Widget extends \Elementor\Widget_Base
      */
     public function get_title()
     {
-        return __('Terminal Service 2', 'terminal-africa-hub');
+        return __('Terminal Service 02', 'terminal-africa-hub');
     }
 
     /**
@@ -236,6 +236,11 @@ class Terminal_Service_2_Widget extends \Elementor\Widget_Base
                         <?php echo esc_html($settings['item_3_description']); ?>
                     </p>
                 </div>
+            </div>
+            <div class="terminal-service-2--footer--cta">
+                <a href="#">
+                    View all services
+                </a>
             </div>
         </div>
 <?php
