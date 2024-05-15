@@ -237,15 +237,15 @@
             transform: rotate(34deg);
 
             &--first {
-              height: 35px;
-              width: 35px;
+              height: 20px;
+              width: 20px;
               -o-object-fit: contain;
               object-fit: contain;
               -o-object-position: center;
               object-position: center;
               position: absolute;
-              top: -41px;
-              left: 7rem;
+              top: -25px;
+              left: 8rem;
             }
 
             &--second {
@@ -261,15 +261,144 @@
             }
 
             &--third {
-              height: 100px;
-              width: 119px;
+              height: 57px;
+              width: 118px;
               -o-object-fit: contain;
               object-fit: contain;
               -o-object-position: center;
               object-position: center;
               position: absolute;
-              top: 7rem;
-              left: 0rem;
+              top: 6rem;
+              left: -1rem;
+            }
+          }
+        }
+      }
+    }
+
+    .terminal-get-intouch-2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 3rem;
+      margin-top: 3rem;
+
+      &--header {
+        &--title {
+          h2 {
+            font-family: "Manrope", sans-serif;
+            font-size: 40px;
+            font-weight: 700;
+            color: #2c2c2c;
+            margin: 0;
+          }
+        }
+
+        &--line {
+          display: flex;
+          align-items: center;
+          margin-top: 4px;
+
+          //first div
+          &--first {
+            background-color: #102e1a;
+            height: 3px;
+            width: 40%;
+          }
+
+          //last
+          &--last {
+            background-color: #e7e7e8;
+            height: 2px;
+            width: 60%;
+          }
+        }
+      }
+
+      &--body {
+        margin-top: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+
+        &--email {
+          display: flex;
+          flex-direction: column;
+          gap: 0px;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+
+          span {
+            font-family: "Manrope", sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            color: #909090;
+          }
+
+          a {
+            font-family: "Manrope", sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            color: #102e1a;
+            text-decoration: none;
+          }
+        }
+
+        &--phone {
+          display: flex;
+          flex-direction: column;
+          gap: 0px;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+
+          span {
+            font-family: "Manrope", sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            color: #909090;
+          }
+
+          a {
+            font-family: "Manrope", sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            color: #102e1a;
+            text-decoration: none;
+          }
+        }
+      }
+
+      &--footer {
+        display: flex;
+        margin-top: 4rem;
+        align-items: center;
+        gap: 4rem;
+
+        &--social {
+          a {
+            display: flex;
+            gap: 1rem;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+
+            img {
+              width: 30px;
+              height: 30px;
+              object-fit: contain;
+              object-position: center;
+            }
+
+            span {
+              font-family: "Manrope", sans-serif;
+              font-weight: 700;
+              font-size: 16px;
+              color: #102e1a;
             }
           }
         }
@@ -490,7 +619,7 @@
       &--second {
         &--bg {
           background-color: #102e1a;
-          height: 219px;
+          height: 300px;
           border-radius: 20px;
           transform: rotate(-35deg);
           padding: 61px 0px;
@@ -509,12 +638,12 @@
               object-position: center;
               position: absolute;
               top: -41px;
-              left: 7rem;
+              left: 12rem;
             }
 
             &--second {
-              height: 130px;
-              width: 197px;
+              height: 213px;
+              width: 294px;
               -o-object-fit: cover;
               object-fit: cover;
               -o-object-position: center;
@@ -532,8 +661,137 @@
               -o-object-position: center;
               object-position: center;
               position: absolute;
-              top: 7rem;
+              top: 10rem;
               left: 0rem;
+            }
+          }
+        }
+      }
+    }
+
+    .terminal-get-intouch-2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 3rem;
+      margin-top: 3rem;
+
+      &--header {
+        &--title {
+          h2 {
+            font-family: "Manrope", sans-serif;
+            font-size: 40px;
+            font-weight: 700;
+            color: #2c2c2c;
+            margin: 0;
+          }
+        }
+
+        &--line {
+          display: flex;
+          align-items: center;
+          margin-top: 4px;
+
+          //first div
+          &--first {
+            background-color: #102e1a;
+            height: 3px;
+            width: 40%;
+          }
+
+          //last
+          &--last {
+            background-color: #e7e7e8;
+            height: 2px;
+            width: 60%;
+          }
+        }
+      }
+
+      &--body {
+        margin-top: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+
+        &--email {
+          display: flex;
+          flex-direction: column;
+          gap: 0px;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+
+          span {
+            font-family: "Manrope", sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            color: #909090;
+          }
+
+          a {
+            font-family: "Manrope", sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+            color: #102e1a;
+            text-decoration: none;
+          }
+        }
+
+        &--phone {
+          display: flex;
+          flex-direction: column;
+          gap: 0px;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+
+          span {
+            font-family: "Manrope", sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            color: #909090;
+          }
+
+          a {
+            font-family: "Manrope", sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+            color: #102e1a;
+            text-decoration: none;
+          }
+        }
+      }
+
+      &--footer {
+        display: flex;
+        margin-top: 6rem;
+        align-items: center;
+        gap: 7rem;
+
+        &--social {
+          a {
+            display: flex;
+            gap: 1rem;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+
+            img {
+              width: 30px;
+              height: 30px;
+              object-fit: contain;
+              object-position: center;
+            }
+
+            span {
+              font-family: "Manrope", sans-serif;
+              font-weight: 700;
+              font-size: 20px;
+              color: #102e1a;
             }
           }
         }
@@ -803,6 +1061,135 @@
         }
       }
     }
+
+    .terminal-get-intouch-2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 3rem;
+      margin-top: 3rem;
+
+      &--header {
+        &--title {
+          h2 {
+            font-family: "Manrope", sans-serif;
+            font-size: 40px;
+            font-weight: 700;
+            color: #2c2c2c;
+            margin: 0;
+          }
+        }
+
+        &--line {
+          display: flex;
+          align-items: center;
+          margin-top: 4px;
+
+          //first div
+          &--first {
+            background-color: #102e1a;
+            height: 3px;
+            width: 40%;
+          }
+
+          //last
+          &--last {
+            background-color: #e7e7e8;
+            height: 2px;
+            width: 60%;
+          }
+        }
+      }
+
+      &--body {
+        margin-top: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+
+        &--email {
+          display: flex;
+          flex-direction: column;
+          gap: 0px;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+
+          span {
+            font-family: "Manrope", sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            color: #909090;
+          }
+
+          a {
+            font-family: "Manrope", sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+            color: #102e1a;
+            text-decoration: none;
+          }
+        }
+
+        &--phone {
+          display: flex;
+          flex-direction: column;
+          gap: 0px;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+
+          span {
+            font-family: "Manrope", sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            color: #909090;
+          }
+
+          a {
+            font-family: "Manrope", sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+            color: #102e1a;
+            text-decoration: none;
+          }
+        }
+      }
+
+      &--footer {
+        display: flex;
+        margin-top: 6rem;
+        align-items: center;
+        gap: 9rem;
+
+        &--social {
+          a {
+            display: flex;
+            gap: 2rem;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+
+            img {
+              width: 30px;
+              height: 30px;
+              object-fit: contain;
+              object-position: center;
+            }
+
+            span {
+              font-family: "Manrope", sans-serif;
+              font-weight: 700;
+              font-size: 26px;
+              color: #102e1a;
+            }
+          }
+        }
+      }
+    }
   }
 
   /* Large devices (laptops/desktops, 992px and up) */
@@ -1067,6 +1454,141 @@
         }
       }
     }
+
+    .terminal-get-intouch-2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 3rem;
+      margin-top: 3rem;
+      transition: all 0.3s ease;
+
+      &--header {
+        &--title {
+          h2 {
+            font-family: "Manrope", sans-serif;
+            font-size: 40px;
+            font-weight: 700;
+            color: #2c2c2c;
+            margin: 0;
+          }
+        }
+
+        &--line {
+          display: flex;
+          align-items: center;
+          margin-top: 4px;
+
+          //first div
+          &--first {
+            background-color: #102e1a;
+            height: 3px;
+            width: 40%;
+          }
+
+          //last
+          &--last {
+            background-color: #e7e7e8;
+            height: 2px;
+            width: 60%;
+          }
+        }
+      }
+
+      &--body {
+        margin-top: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+        transition: all 0.3s ease;
+
+        &--email {
+          display: flex;
+          flex-direction: column;
+          gap: 0px;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.3s ease;
+
+          span {
+            font-family: "Manrope", sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            color: #909090;
+          }
+
+          a {
+            font-family: "Manrope", sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+            color: #102e1a;
+            text-decoration: none;
+          }
+        }
+
+        &--phone {
+          display: flex;
+          flex-direction: column;
+          gap: 0px;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.3s ease;
+
+          span {
+            font-family: "Manrope", sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            color: #909090;
+          }
+
+          a {
+            font-family: "Manrope", sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+            color: #102e1a;
+            text-decoration: none;
+          }
+        }
+      }
+
+      &--footer {
+        display: flex;
+        margin-top: 6rem;
+        align-items: center;
+        gap: 12rem;
+        transition: all 0.3s ease;
+
+        &--social {
+          a {
+            display: flex;
+            gap: 2rem;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease;
+
+            img {
+              width: 30px;
+              height: 30px;
+              object-fit: contain;
+              object-position: center;
+            }
+
+            span {
+              font-family: "Manrope", sans-serif;
+              font-weight: 700;
+              font-size: 26px;
+              color: #102e1a;
+            }
+          }
+        }
+      }
+    }
   }
 
   /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -1326,6 +1848,135 @@
               position: absolute;
               top: 14rem;
               left: 1rem;
+            }
+          }
+        }
+      }
+    }
+
+    .terminal-get-intouch-2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 3rem;
+      margin-top: 3rem;
+
+      &--header {
+        &--title {
+          h2 {
+            font-family: "Manrope", sans-serif;
+            font-size: 40px;
+            font-weight: 700;
+            color: #2c2c2c;
+            margin: 0;
+          }
+        }
+
+        &--line {
+          display: flex;
+          align-items: center;
+          margin-top: 4px;
+
+          //first div
+          &--first {
+            background-color: #102e1a;
+            height: 3px;
+            width: 40%;
+          }
+
+          //last
+          &--last {
+            background-color: #e7e7e8;
+            height: 2px;
+            width: 60%;
+          }
+        }
+      }
+
+      &--body {
+        margin-top: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+
+        &--email {
+          display: flex;
+          flex-direction: column;
+          gap: 0px;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+
+          span {
+            font-family: "Manrope", sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            color: #909090;
+          }
+
+          a {
+            font-family: "Manrope", sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+            color: #102e1a;
+            text-decoration: none;
+          }
+        }
+
+        &--phone {
+          display: flex;
+          flex-direction: column;
+          gap: 0px;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+
+          span {
+            font-family: "Manrope", sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            color: #909090;
+          }
+
+          a {
+            font-family: "Manrope", sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+            color: #102e1a;
+            text-decoration: none;
+          }
+        }
+      }
+
+      &--footer {
+        display: flex;
+        margin-top: 6rem;
+        align-items: center;
+        gap: 14rem;
+
+        &--social {
+          a {
+            display: flex;
+            gap: 2rem;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+
+            img {
+              width: 30px;
+              height: 30px;
+              object-fit: contain;
+              object-position: center;
+            }
+
+            span {
+              font-family: "Manrope", sans-serif;
+              font-weight: 700;
+              font-size: 26px;
+              color: #102e1a;
             }
           }
         }

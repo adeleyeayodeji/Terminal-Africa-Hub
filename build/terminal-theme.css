@@ -564,6 +564,15 @@
   margin: 0px;
   max-width: 100%;
 }
+.terminal-africa-theme-bs .elementor-element {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+.terminal-africa-theme-bs .elementor-element .e-con-inner {
+  padding: 0px !important;
+  margin: 0px !important;
+  max-width: 100% !important;
+}
 .terminal-africa-theme-bs .terminal-innerpage-header {
   background: #fdeedd;
   padding: 7rem 10rem;
@@ -983,6 +992,140 @@
   position: absolute;
   top: 14rem;
   left: 1rem;
+  transition: all 0.3s ease;
+}
+.terminal-africa-theme-bs .terminal-get-intouch-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  transition: all 0.3s ease;
+}
+.terminal-africa-theme-bs .terminal-get-intouch-2--header--title h2 {
+  font-family: "Manrope", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #2c2c2c;
+  margin: 0;
+}
+.terminal-africa-theme-bs .terminal-get-intouch-2--header--line {
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+  transition: all 0.3s ease;
+}
+.terminal-africa-theme-bs .terminal-get-intouch-2--header--line--first {
+  background-color: #102e1a;
+  height: 3px;
+  width: 40%;
+}
+.terminal-africa-theme-bs .terminal-get-intouch-2--header--line--last {
+  background-color: #e7e7e8;
+  height: 2px;
+  width: 60%;
+}
+.terminal-africa-theme-bs .terminal-get-intouch-2--body {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  transition: all 0.3s ease;
+}
+.terminal-africa-theme-bs .terminal-get-intouch-2--body--email {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.terminal-africa-theme-bs .terminal-get-intouch-2--body--email span {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #909090;
+  transition: all 0.3s ease;
+}
+.terminal-africa-theme-bs .terminal-get-intouch-2--body--email a {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #102e1a;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+  outline: none;
+}
+.terminal-africa-theme-bs .terminal-get-intouch-2--body--email a:hover {
+  text-decoration: none;
+}
+.terminal-africa-theme-bs .terminal-get-intouch-2--body--phone {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.terminal-africa-theme-bs .terminal-get-intouch-2--body--phone span {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #909090;
+  transition: all 0.3s ease;
+}
+.terminal-africa-theme-bs .terminal-get-intouch-2--body--phone a {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #102e1a;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+  outline: none;
+}
+.terminal-africa-theme-bs .terminal-get-intouch-2--body--phone a:hover {
+  text-decoration: none;
+}
+.terminal-africa-theme-bs .terminal-get-intouch-2--footer {
+  display: flex;
+  margin-top: 6rem;
+  align-items: center;
+  gap: 14rem;
+  transition: all 0.3s ease;
+}
+.terminal-africa-theme-bs .terminal-get-intouch-2--footer--social a {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  border: none;
+  outline: none;
+}
+.terminal-africa-theme-bs .terminal-get-intouch-2--footer--social a:hover {
+  text-decoration: none;
+}
+.terminal-africa-theme-bs .terminal-get-intouch-2--footer--social a img {
+  width: 30px;
+  height: 30px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+.terminal-africa-theme-bs .terminal-get-intouch-2--footer--social a span {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  color: #102e1a;
   transition: all 0.3s ease;
 }
 
@@ -10140,15 +10283,15 @@
     transform: rotate(34deg);
   }
   .terminal-africa-theme-bs .terminal-testimonial-2--second--bg--image--first {
-    height: 35px;
-    width: 35px;
+    height: 20px;
+    width: 20px;
     -o-object-fit: contain;
     object-fit: contain;
     -o-object-position: center;
     object-position: center;
     position: absolute;
-    top: -41px;
-    left: 7rem;
+    top: -25px;
+    left: 8rem;
   }
   .terminal-africa-theme-bs .terminal-testimonial-2--second--bg--image--second {
     height: 130px;
@@ -10162,15 +10305,122 @@
     background: #102e1a;
   }
   .terminal-africa-theme-bs .terminal-testimonial-2--second--bg--image--third {
-    height: 100px;
-    width: 119px;
+    height: 57px;
+    width: 118px;
     -o-object-fit: contain;
     object-fit: contain;
     -o-object-position: center;
     object-position: center;
     position: absolute;
-    top: 7rem;
-    left: 0rem;
+    top: 6rem;
+    left: -1rem;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--header--title h2 {
+    font-family: "Manrope", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #2c2c2c;
+    margin: 0;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--header--line {
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--header--line--first {
+    background-color: #102e1a;
+    height: 3px;
+    width: 40%;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--header--line--last {
+    background-color: #e7e7e8;
+    height: 2px;
+    width: 60%;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--body {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--body--email {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--body--email span {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #909090;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--body--email a {
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #102e1a;
+    text-decoration: none;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--body--phone {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--body--phone span {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #909090;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--body--phone a {
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #102e1a;
+    text-decoration: none;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--footer {
+    display: flex;
+    margin-top: 4rem;
+    align-items: center;
+    gap: 4rem;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--footer--social a {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--footer--social a img {
+    width: 30px;
+    height: 30px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: center;
+       object-position: center;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--footer--social a span {
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #102e1a;
   }
 }
 @media only screen and (min-width: 600px) {
@@ -10326,7 +10576,7 @@
   }
   .terminal-africa-theme-bs .terminal-testimonial-2--second--bg {
     background-color: #102e1a;
-    height: 219px;
+    height: 300px;
     border-radius: 20px;
     transform: rotate(-35deg);
     padding: 61px 0px;
@@ -10345,11 +10595,11 @@
     object-position: center;
     position: absolute;
     top: -41px;
-    left: 7rem;
+    left: 12rem;
   }
   .terminal-africa-theme-bs .terminal-testimonial-2--second--bg--image--second {
-    height: 130px;
-    width: 197px;
+    height: 213px;
+    width: 294px;
     -o-object-fit: cover;
     object-fit: cover;
     -o-object-position: center;
@@ -10366,8 +10616,115 @@
     -o-object-position: center;
     object-position: center;
     position: absolute;
-    top: 7rem;
+    top: 10rem;
     left: 0rem;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--header--title h2 {
+    font-family: "Manrope", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #2c2c2c;
+    margin: 0;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--header--line {
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--header--line--first {
+    background-color: #102e1a;
+    height: 3px;
+    width: 40%;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--header--line--last {
+    background-color: #e7e7e8;
+    height: 2px;
+    width: 60%;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--body {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--body--email {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--body--email span {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #909090;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--body--email a {
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #102e1a;
+    text-decoration: none;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--body--phone {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--body--phone span {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #909090;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--body--phone a {
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #102e1a;
+    text-decoration: none;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--footer {
+    display: flex;
+    margin-top: 6rem;
+    align-items: center;
+    gap: 7rem;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--footer--social a {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--footer--social a img {
+    width: 30px;
+    height: 30px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: center;
+       object-position: center;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--footer--social a span {
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #102e1a;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -10566,6 +10923,113 @@
     top: 10rem;
     left: 0rem;
   }
+  .terminal-africa-theme-bs .terminal-get-intouch-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--header--title h2 {
+    font-family: "Manrope", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #2c2c2c;
+    margin: 0;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--header--line {
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--header--line--first {
+    background-color: #102e1a;
+    height: 3px;
+    width: 40%;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--header--line--last {
+    background-color: #e7e7e8;
+    height: 2px;
+    width: 60%;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--body {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--body--email {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--body--email span {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #909090;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--body--email a {
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #102e1a;
+    text-decoration: none;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--body--phone {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--body--phone span {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #909090;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--body--phone a {
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #102e1a;
+    text-decoration: none;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--footer {
+    display: flex;
+    margin-top: 6rem;
+    align-items: center;
+    gap: 9rem;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--footer--social a {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--footer--social a img {
+    width: 30px;
+    height: 30px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: center;
+       object-position: center;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--footer--social a span {
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    color: #102e1a;
+  }
 }
 @media only screen and (min-width: 992px) {
   .terminal-africa-theme-bs .terminal-mobile-menu {
@@ -10763,6 +11227,119 @@
     top: 10rem;
     left: 0rem;
   }
+  .terminal-africa-theme-bs .terminal-get-intouch-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    transition: all 0.3s ease;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--header--title h2 {
+    font-family: "Manrope", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #2c2c2c;
+    margin: 0;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--header--line {
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--header--line--first {
+    background-color: #102e1a;
+    height: 3px;
+    width: 40%;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--header--line--last {
+    background-color: #e7e7e8;
+    height: 2px;
+    width: 60%;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--body {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    transition: all 0.3s ease;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--body--email {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--body--email span {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #909090;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--body--email a {
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #102e1a;
+    text-decoration: none;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--body--phone {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--body--phone span {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #909090;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--body--phone a {
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #102e1a;
+    text-decoration: none;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--footer {
+    display: flex;
+    margin-top: 6rem;
+    align-items: center;
+    gap: 12rem;
+    transition: all 0.3s ease;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--footer--social a {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--footer--social a img {
+    width: 30px;
+    height: 30px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: center;
+       object-position: center;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--footer--social a span {
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    color: #102e1a;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .terminal-africa-theme-bs .terminal-mobile-menu {
@@ -10959,6 +11536,113 @@
     position: absolute;
     top: 14rem;
     left: 1rem;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--header--title h2 {
+    font-family: "Manrope", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #2c2c2c;
+    margin: 0;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--header--line {
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--header--line--first {
+    background-color: #102e1a;
+    height: 3px;
+    width: 40%;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--header--line--last {
+    background-color: #e7e7e8;
+    height: 2px;
+    width: 60%;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--body {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--body--email {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--body--email span {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #909090;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--body--email a {
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #102e1a;
+    text-decoration: none;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--body--phone {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--body--phone span {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #909090;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--body--phone a {
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #102e1a;
+    text-decoration: none;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--footer {
+    display: flex;
+    margin-top: 6rem;
+    align-items: center;
+    gap: 14rem;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--footer--social a {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--footer--social a img {
+    width: 30px;
+    height: 30px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: center;
+       object-position: center;
+  }
+  .terminal-africa-theme-bs .terminal-get-intouch-2--footer--social a span {
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    color: #102e1a;
   }
 }
 
