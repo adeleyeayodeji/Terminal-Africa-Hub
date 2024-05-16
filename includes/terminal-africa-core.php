@@ -540,6 +540,25 @@ class TerminalTheme
             'section' => 'terminal_africa_section',
             'settings' => 'track_shipment_link'
         ));
+
+        //Header Type select
+        $wp_customize->add_setting('header_type', array(
+            'default' => '1',
+            'transport' => 'refresh',
+            'sanitize_callback' => 'sanitize_text_field'
+        ));
+
+        // Add a control for the header type
+        $wp_customize->add_control('header_type', array(
+            'label' => __('Header Type', 'terminal-africa-hub'),
+            'section' => 'terminal_africa_section',
+            'settings' => 'header_type',
+            'type' => 'select',
+            'choices' => array(
+                '1' => 'Header 1',
+                '2' => 'Header 2'
+            )
+        ));
     }
 
     /**

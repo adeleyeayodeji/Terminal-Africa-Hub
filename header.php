@@ -14,9 +14,11 @@
         <!-- container-fluid -->
         <div class="container-fluid p-0 m-0">
             <?php
+            //get theme settings header_type
+            $header_type = get_theme_mod('header_type', '1');
             /**
              * Select header type
              * @hooked header 1 - 2
              */
-            get_template_part('templates/parts/header', '2');
+            get_template_part('templates/parts/header', $header_type);
             ?>
