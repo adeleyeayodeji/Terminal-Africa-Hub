@@ -102,6 +102,7 @@ class TerminalTheme
         add_action('wp_ajax_terminal_import_demo', array($this, 'terminal_import_demo'));
         //add admin menu for theme customiser
         add_action('admin_menu', array($this, 'terminal_africa_theme_menu'));
+        //TODO::
     }
 
     /**
