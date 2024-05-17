@@ -101,33 +101,6 @@ class Terminal_Service_V2_Widget extends \Elementor\Widget_Base
             ]
         );
 
-        //terminal-service-v2-icon bg color
-        $this->add_control(
-            'terminal_service_v2_icon_bg_color',
-            [
-                'label' => __('Icon Background Color', 'terminal-africa-hub'),
-                'type' => \Elementor\Controls_Manager::COLOR,
-                'default' => '#fdeedd',
-                'selectors' => [
-                    '{{WRAPPER}} .terminal-service-v2-icon' => 'background: {{VALUE}}',
-                ],
-            ]
-        );
-
-        //icon color
-        $this->add_control(
-            'terminal_service_v2_icon_color',
-            [
-                'label' => __('Icon Color', 'terminal-africa-hub'),
-                'type' => \Elementor\Controls_Manager::COLOR,
-                'default' => '#000',
-                'selectors' => [
-                    '{{WRAPPER}} .terminal-service-v2-icon i' => 'color: {{VALUE}}',
-                    '{{WRAPPER}} .terminal-service-v2-icon svg' => 'fill: {{VALUE}}',
-                ],
-            ]
-        );
-
         //items array 
         $repeater = new \Elementor\Repeater();
 
@@ -141,6 +114,33 @@ class Terminal_Service_V2_Widget extends \Elementor\Widget_Base
                 'default' => [
                     'value' => 'fas fa-box-open',
                     'library' => 'fa-solid',
+                ],
+            ]
+        );
+
+        //terminal-service-v2-icon bg color
+        $repeater->add_control(
+            'terminal_service_v2_icon_bg_color',
+            [
+                'label' => __('Icon Background Color', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#fdeedd',
+                'selectors' => [
+                    '.terminal-service-v2-item-{{ID}}' => 'background: {{VALUE}}',
+                ],
+            ]
+        );
+
+        //icon color
+        $repeater->add_control(
+            'terminal_service_v2_icon_color',
+            [
+                'label' => __('Icon Color', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#000',
+                'selectors' => [
+                    '.terminal-service-v2-item-{{ID}} i' => 'color: {{VALUE}}',
+                    '.terminal-service-v2-item-{{ID}} svg' => 'fill: {{VALUE}}',
                 ],
             ]
         );
@@ -228,8 +228,17 @@ class Terminal_Service_V2_Widget extends \Elementor\Widget_Base
                 if ($settings['terminal_service_v2_items']) {
                     foreach ($settings['terminal_service_v2_items'] as $item) {
                 ?>
+                        <style>
+                            .terminal-service-v2-item-<?php echo $item['_id'] . ' '; ?>i {
+                                color: <?php echo esc_attr($item['terminal_service_v2_icon_color']); ?>;
+                            }
+
+                            .terminal-service-v2-item-<?php echo $item['_id'] . ' '; ?>svg {
+                                fill: <?php echo esc_attr($item['terminal_service_v2_icon_color']); ?>;
+                            }
+                        </style>
                         <div class="terminal-service-v2-items">
-                            <div class="terminal-service-v2-icon">
+                            <div class="terminal-service-v2-icon terminal-service-v2-item-<?php echo $item['_id']; ?>" style="background-color: <?php echo esc_attr($item['terminal_service_v2_icon_bg_color']); ?>;">
                                 <?php
                                 if (!empty($item['terminal_service_v2_icon']['value'])) {
                                     \Elementor\Icons_Manager::render_icon($item['terminal_service_v2_icon'], ['aria-hidden' => 'true']);

@@ -180,19 +180,26 @@ class Terminal_Address_Widget extends \Elementor\Widget_Base
                 <li>
                     <div class="d-flex">
                         <img src="<?php echo esc_url(TERMINAL_THEME_ASSETS_URI . 'img/address.svg'); ?>" alt="">
-                        <a style="font-size: 16px;line-height: 29px;">
+                        <p style="font-size: 16px;">
                             <?php echo esc_html($settings['address']); ?>
-                        </a>
+                        </p>
                     </div>
                 </li>
-                <li>
-                    <div class="d-flex">
-                        <img src="<?php echo esc_url(TERMINAL_THEME_ASSETS_URI . 'img/address.svg'); ?>" alt="">
-                        <a style="font-size: 16px;line-height: 29px;">
-                            <?php echo esc_html($settings['address_2']); ?>
-                        </a>
-                    </div>
-                </li>
+                <?php
+                //check if $settings['address_2'] is not empty
+                if (!empty($settings['address_2'])) :
+                ?>
+                    <li>
+                        <div class="d-flex">
+                            <img src="<?php echo esc_url(TERMINAL_THEME_ASSETS_URI . 'img/address.svg'); ?>" alt="">
+                            <p style="font-size: 16px;">
+                                <?php echo esc_html($settings['address_2']); ?>
+                            </p>
+                        </div>
+                    </li>
+                <?php
+                endif;
+                ?>
             </ul>
         </div>
     <?php
