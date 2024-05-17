@@ -72,6 +72,10 @@ class TerminalTheme
      */
     public function init()
     {
+        //create custom url preview_header
+        add_action('init', [$this, 'custom_rewrite_rule']);
+        //register query vars
+        add_filter('query_vars', [$this, 'register_query_vars']);
         //check if elementor plugin is installed
         if (class_exists('Elementor\Plugin')) {
             //init elementor
@@ -102,7 +106,114 @@ class TerminalTheme
         add_action('wp_ajax_terminal_import_demo', array($this, 'terminal_import_demo'));
         //add admin menu for theme customiser
         add_action('admin_menu', array($this, 'terminal_africa_theme_menu'));
-        //TODO::
+        //api init
+        add_action('rest_api_init', array($this, 'terminal_africa_api_init'));
+        //parse request
+        add_action('parse_request', array($this, 'parse_request'));
+    }
+
+    /**
+     * register_query_vars
+     * 
+     */
+    public function register_query_vars($vars)
+    {
+        $vars[] = 'preview_header';
+        $vars[] = 'preview_footer';
+        return $vars;
+    }
+
+    /**
+     * parse_request
+     * 
+     */
+    public function parse_request()
+    {
+        global $wp;
+
+        if (array_key_exists('preview_header', $wp->query_vars)) {
+            echo $this->site_header();
+            exit;
+        }
+
+        if (array_key_exists('preview_footer', $wp->query_vars)) {
+            echo $this->site_footer();
+            exit;
+        }
+    }
+
+    /**
+     * custom_rewrite_rule
+     * 
+     */
+    public function custom_rewrite_rule()
+    {
+        //rule for preview-header
+        add_rewrite_rule('^preview-header/?$', 'index.php?preview_header=true', 'top');
+        //rule for preview-footer
+        add_rewrite_rule('^preview-footer/?$', 'index.php?preview_footer=true', 'top');
+        //flush_rewrite_rules
+        flush_rewrite_rules();
+    }
+
+    /**
+     * terminal_africa_api_init
+     * 
+     */
+    public function terminal_africa_api_init()
+    {
+        //register route
+        register_rest_route('terminal-africa/v1', '/site-content', array(
+            'methods' => WP_REST_Server::READABLE,
+            'callback' => array($this, 'terminal_hub_site_content_api'),
+            'permission_callback' => '__return_true'
+        ));
+    }
+
+    /**
+     * terminal_hub_site_content_api
+     * 
+     */
+    public function terminal_hub_site_content_api($request)
+    {
+
+        //return the content
+        return new WP_REST_Response([
+            'header' => [
+                'header_details' => 'The header carries the assets of the site such as the logo, navigation, and other important assets',
+                'preview_header_url' => home_url('preview-header'),
+                'site_header_content' => $this->site_header()
+            ],
+            'footer' => [
+                'footer_details' => 'The footer carries just the content of the site footer along with javascripts for navigations',
+                'preview_footer_url' => home_url('preview-footer'),
+                'site_footer_content' => $this->site_footer()
+            ]
+        ]);
+    }
+
+    /**
+     * Site header
+     * 
+     */
+    public function site_header()
+    {
+        ob_start();
+        get_header();
+        //get the content
+        return ob_get_clean();
+    }
+
+    /**
+     * Site footer
+     * 
+     */
+    public function site_footer()
+    {
+        ob_start();
+        get_footer();
+        //get the content
+        return ob_get_clean();
     }
 
     /**
