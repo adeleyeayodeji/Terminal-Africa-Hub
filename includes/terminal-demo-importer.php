@@ -16,21 +16,22 @@ class TerminalDemoImporter
 {
     /**
      * Download the demo file
+     * @param string $demo_name
      * 
      */
-    public function download_demo()
+    public function download_demo(string $demo_name = 'terminal-murtala-demo')
     {
         try {
             //check if the file exists
-            if (file_exists(TERMINAL_THEME_DIR . '/assets/xml/demo-content.xml')) {
+            if (file_exists(TERMINAL_THEME_DIR . '/assets/xml/' . $demo_name . '.xml')) {
                 //return the file path
-                return TERMINAL_THEME_DIR . '/assets/xml/demo-content.xml';
+                return TERMINAL_THEME_DIR . '/assets/xml/' . $demo_name . '.xml';
             }
             //check WP_ALLOW_MULTISITE
             $multisite_checks = is_multisite();
             //check multi site
             if ($multisite_checks) {
-                $source = ABSPATH . "wp-content/plugins/terminal-demo/terminal-demo.xml";
+                $source = ABSPATH . "wp-content/plugins/terminal-demo/$demo_name.xml";
                 //check file exists
                 if (!file_exists($source)) {
                     throw new \Exception('The demo file does not exist, please install the Terminal Demo plugin');
@@ -39,8 +40,8 @@ class TerminalDemoImporter
                 return $source;
             }
             //source from remote
-            $source = 'https://tplugtest.com/downloads/demo-content.xml';
-            $destination = TERMINAL_THEME_DIR . '/assets/xml/demo-content.xml';
+            $source = 'https://tplugtest.com/downloads/' . $demo_name . '.xml';
+            $destination = TERMINAL_THEME_DIR . '/assets/xml/' . $demo_name . '.xml';
 
             $response = wp_remote_get($source);
 
@@ -102,6 +103,25 @@ class TerminalDemoImporter
     }
 
     /**
+     * Remove all created pages
+     * 
+     */
+    public function remove_pages()
+    {
+        try {
+            //get all pages
+            $pages = get_pages();
+            //loop through the pages
+            foreach ($pages as $page) {
+                //delete the page
+                wp_delete_post($page->ID, true);
+            }
+        } catch (\Throwable $th) {
+            throw $th;
+        }
+    }
+
+    /**
      * import_demo
      * @param string $demo_name
      * 
@@ -149,13 +169,16 @@ class TerminalDemoImporter
 
             $importer = new WP_Import();
             // Check if the XML file exists
-            $demo_file = $this->download_demo();
+            $demo_file = $this->download_demo($demo_name);
             if (!file_exists($demo_file)) {
                 throw new \Exception('The XML file does not exist');
             }
 
             // Remove previous nav menus
             $this->remove_menus();
+
+            //remove all created pages
+            $this->remove_pages();
 
             ob_start();
             $result = $importer->import($demo_file);
@@ -169,8 +192,80 @@ class TerminalDemoImporter
                 $this->remove_demo();
             }
 
+            //update theme settings
+            $this->update_theme_settings($demo_name);
+
             // Return the output of the import
             return $html;
+        } catch (\Throwable $th) {
+            throw $th;
+        }
+    }
+
+    /**
+     * update_theme_settings
+     * @param string $demo_name
+     * 
+     * @return void
+     */
+    public function update_theme_settings(string $demo_name)
+    {
+        try {
+            //check if the name is terminal-murtala-demo
+            switch ($demo_name) {
+
+                case 'terminal-murtala-demo':
+                    //update wp_customize footer_background_color
+                    set_theme_mod('footer_background_color', '#343434');
+                    //footer_text_color
+                    set_theme_mod('footer_text_color', '#ffffff');
+                    //footer_logo
+                    set_theme_mod('footer_logo', 'https://tplugtest.com/wp-content/uploads/2024/05/Screenshot-2024-05-17-at-8.35.59 AM.png');
+                    //company_address
+                    set_theme_mod('company_address', 'Powered by Terminal Africa. Lagos, Nigeria.');
+                    //company_email
+                    set_theme_mod('company_email', 'help@terminal.africa');
+                    //company_phone
+                    set_theme_mod('company_phone', '+234 000 111 22');
+                    //facebook_link
+                    set_theme_mod('facebook_link', 'https://www.facebook.com/terminalafrica');
+                    //twitter_link
+                    set_theme_mod('twitter_link', 'https://x.com/terminal_africa?lang=en');
+                    //instagram_link
+                    set_theme_mod('instagram_link', 'https://www.instagram.com/terminal_africa/?hl=en');
+                    //book_shipment_color
+                    set_theme_mod('book_shipment_color', '#F47722');
+                    //track_shipment_color
+                    set_theme_mod('track_shipment_color', '#F47722');
+
+                    break;
+
+                case 'terminal-jomo-demo':
+                    //update wp_customize footer_background_color
+                    set_theme_mod('footer_background_color', '#102E1A');
+                    //footer_text_color
+                    set_theme_mod('footer_text_color', '#ffffff');
+                    //footer_logo
+                    set_theme_mod('footer_logo', 'https://tplugtest.com/wp-content/uploads/2024/05/Frame-2380.png');
+                    //company_address
+                    set_theme_mod('company_address', 'Powered by Terminal Africa. Lagos, Nigeria.');
+                    //company_email
+                    set_theme_mod('company_email', 'help@terminal.africa');
+                    //company_phone
+                    set_theme_mod('company_phone', '+234 000 111 22');
+                    //facebook_link
+                    set_theme_mod('facebook_link', 'https://www.facebook.com/terminalafrica');
+                    //twitter_link
+                    set_theme_mod('twitter_link', 'https://x.com/terminal_africa?lang=en');
+                    //instagram_link
+                    set_theme_mod('instagram_link', 'https://www.instagram.com/terminal_africa/?hl=en');
+                    //book_shipment_color
+                    set_theme_mod('book_shipment_color', '#264631');
+                    //track_shipment_color
+                    set_theme_mod('track_shipment_color', '#264631');
+
+                    break;
+            }
         } catch (\Throwable $th) {
             throw $th;
         }
