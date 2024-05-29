@@ -78,5 +78,10 @@ if (!defined('ABSPATH')) {
             )
         );
         ?>
+        <div class="credit">
+            <p>
+                Powered by Terminal Africa
+            </p>
+        </div>
     </div>
 </div>
