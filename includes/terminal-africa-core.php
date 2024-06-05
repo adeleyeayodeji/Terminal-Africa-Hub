@@ -223,8 +223,8 @@ class TerminalTheme
     public function terminal_africa_theme_menu()
     {
         add_theme_page(
-            'Terminal Africa Hub',
-            'Terminal Africa Hub',
+            'Import Demo',
+            'Import Demo',
             'manage_options',
             'terminal-africa-hub',
             array($this, 'terminal_africa_hub_page'),

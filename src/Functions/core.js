@@ -131,4 +131,54 @@ jQuery(document).ready(function ($) {
     //hide all .customize-partial-edit-shortcut
     ul_terminal_menu.find(".customize-partial-edit-shortcut").hide();
   }, 100);
+
+  /**
+   * Get all links with text ['Get Quotes', 'Book Shipment', 'Track Shipment']
+   *
+   */
+  var linkTexts = ["Get Quotes", "Book Shipment", "Track Shipment"];
+  linkTexts.forEach((linkText) => {
+    //get current site url
+    var currentSiteUrl = new URL(window.location.href);
+    var currentSiteDomain = currentSiteUrl.hostname;
+    //check if the url has sub domain
+    if (currentSiteDomain.split(".").length > 2) {
+      //explode .
+      var currentSiteDomain = currentSiteDomain.split(".");
+      //remove the first element
+      currentSiteDomain.shift();
+      //join the elements
+      currentSiteDomain = currentSiteDomain.join(".");
+    }
+
+    //get all links with text
+    var links = $(`a:contains(${linkText})`);
+    //switch
+    switch (linkText) {
+      case "Get Quotes":
+        //update the link href
+        links.each(function (index, element) {
+          //parse the href
+          $(this).attr("href", `https://app.${currentSiteDomain}/get-quote`);
+        });
+        break;
+      case "Book Shipment":
+        //https://app.thepep.africa/book-shipment
+        links.each(function (index, element) {
+          //parse the href
+          $(this).attr(
+            "href",
+            `https://app.${currentSiteDomain}/book-shipment`
+          );
+        });
+        break;
+      case "Track Shipment":
+        //https://app.thepep.africa/track
+        links.each(function (index, element) {
+          //parse the href
+          $(this).attr("href", `https://app.${currentSiteDomain}/track`);
+        });
+        break;
+    }
+  });
 });
