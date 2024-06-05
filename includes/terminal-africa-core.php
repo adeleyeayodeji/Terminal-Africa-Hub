@@ -110,6 +110,21 @@ class TerminalTheme
         add_action('rest_api_init', array($this, 'terminal_africa_api_init'));
         //parse request
         add_action('parse_request', array($this, 'parse_request'));
+        //enable svg upload
+        add_filter('upload_mimes', array($this, 'cc_mime_types'));
+    }
+
+    /**
+     * cc_mime_types
+     * 
+     * @param array $mimes
+     * 
+     * @return array
+     */
+    public function cc_mime_types($mimes)
+    {
+        $mimes['svg'] = 'image/svg+xml';
+        return $mimes;
     }
 
     /**
