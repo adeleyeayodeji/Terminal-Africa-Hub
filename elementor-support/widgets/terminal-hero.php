@@ -238,7 +238,7 @@ class Terminal_Hero_Widget extends \Elementor\Widget_Base
                     <?php echo esc_html($settings['hero_title']); ?>
                 </h1>
                 <p>
-                    <?php echo esc_html($settings['hero_description']); ?>
+                    <?php echo wp_kses($settings['hero_description'], 'post'); ?>
                 </p>
                 <div class="d-flex terminal-cta">
                     <a href="<?php echo esc_attr(get_theme_mod('book_shipment_link', "#")); ?>">Book Shipment</a>

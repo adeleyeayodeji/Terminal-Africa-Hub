@@ -338,7 +338,7 @@ class Terminal_Services_Widget extends \Elementor\Widget_Base
                         <?php echo esc_html($settings['title']); ?>
                     </h2>
                     <p>
-                        <?php echo esc_html($settings['description']); ?>
+                        <?php echo wp_kses($settings['description'], 'post'); ?>
                     </p>
                     <div>
                         <?php if ('yes' === $settings['enable_link']) : ?>
