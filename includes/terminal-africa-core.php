@@ -115,6 +115,32 @@ class TerminalTheme
     }
 
     /**
+     * Format faq html
+     * 
+     */
+    public static function format_faq_html($answer)
+    {
+        //check for http or https and add link
+        $url = '~(?:(https?)://([^\s<]+)|(www\.[^\s<]+?\.[^\s<]+))(?<![\.,:])~i';
+        $email = '/([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})/i';
+        $uppercase = '/\b([A-Z]+)\b/';
+        //convert all “ to "
+        $content = str_replace('“', '"', $answer);
+        //convert all ” to "
+        $content = str_replace('”', '"', $content);
+        // Make URLs clickable
+        $content = preg_replace($url, '<a href="$0" target="_blank" title="$0">$0</a>', $content);
+        // Make emails clickable
+        $content = preg_replace($email, '<a href="mailto:$1">$1</a>', $content);
+        // Make uppercase text bold
+        $content = preg_replace($uppercase, '<b>$1</b>', $content);
+        //get all uppercase text and make them bold
+        $content = preg_replace($uppercase, '<b>$1</b>', $content);
+        //add line breaks
+        return nl2br($content);
+    }
+
+    /**
      * cc_mime_types
      * 
      * @param array $mimes

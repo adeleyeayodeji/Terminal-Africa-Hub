@@ -32,6 +32,8 @@ define('TERMINAL_TRACK_SHIPMENT_URL', 'https://terminal.africa/track-shipment/')
 if (!class_exists('TerminalTheme')) {
     require_once get_template_directory() . '/includes/terminal-africa-core.php';
     $terminalTheme = new TerminalTheme();
+    //add helpers
+    require_once get_template_directory() . '/includes/helpers.php';
 }
 
 /**
