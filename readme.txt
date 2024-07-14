@@ -3,7 +3,7 @@ Contributors: terminalafrica, biggidroid
 Requires at least: 5.3
 Tested up to: 6.4
 Requires PHP: 5.6
-Stable tag: 2.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -20,7 +20,12 @@ Terminal Africa Hub is a WordPress theme for the Terminal Africa Hub website.
 
 == Changelog ==
 
-= 1.0 =
+= 1.0.2 =
+
+- Released: July 14, 2024
+- Added: Gutenberg editor styles
+
+= 1.0.1 =
 
 - Released: March 31, 2024
 
