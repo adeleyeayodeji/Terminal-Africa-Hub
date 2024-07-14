@@ -35,27 +35,6 @@ class TerminalDemoImporter
             }
             //return the file path
             return $source;
-
-            /////// IGNORE tplugtest.com ///////////
-
-            //source from remote
-            $source = 'https://tplugtest.com/downloads/' . $demo_name . '.xml';
-            $destination = TERMINAL_THEME_DIR . '/assets/xml/' . $demo_name . '.xml';
-
-            $response = wp_remote_get($source);
-
-            if (is_wp_error($response)) {
-                // Handle error
-                throw new \Exception($response->get_error_message());
-            } else {
-                $download = file_put_contents($destination, wp_remote_retrieve_body($response)); //put the file in the destination
-            }
-            //check if the file was downloaded
-            if (!$download) {
-                throw new \Exception('The demo file could not be downloaded');
-            }
-            //return the file path
-            return $destination;
         } catch (\Throwable $th) {
             throw $th;
         }

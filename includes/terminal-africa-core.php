@@ -110,8 +110,6 @@ class TerminalTheme
         add_action('rest_api_init', array($this, 'terminal_africa_api_init'));
         //parse request
         add_action('parse_request', array($this, 'parse_request'));
-        //enable svg upload
-        add_filter('upload_mimes', array($this, 'cc_mime_types'));
     }
 
     /**
@@ -138,19 +136,6 @@ class TerminalTheme
         $content = preg_replace($uppercase, '<b>$1</b>', $content);
         //add line breaks
         return nl2br($content);
-    }
-
-    /**
-     * cc_mime_types
-     * 
-     * @param array $mimes
-     * 
-     * @return array
-     */
-    public function cc_mime_types($mimes)
-    {
-        $mimes['svg'] = 'image/svg+xml';
-        return $mimes;
     }
 
     /**
@@ -555,6 +540,16 @@ class TerminalTheme
 
         //add theme support for align-wide
         add_theme_support('align-wide');
+
+        /**
+         * Enqueue editor styles.
+         */
+        add_editor_style(array('assets/css/base/gutenberg-editor.css'));
+
+        /**
+         * Add support for Block Styles.
+         */
+        add_theme_support('wp-block-styles');
 
         //add theme supoort "html5"
         add_theme_support('html5', array('comment-list', 'comment-form', 'search-form', 'gallery', 'caption'));
