@@ -27,18 +27,17 @@ class TerminalDemoImporter
                 //return the file path
                 return TERMINAL_THEME_DIR . '/assets/xml/' . $demo_name . '.xml';
             }
-            //check WP_ALLOW_MULTISITE
-            $multisite_checks = is_multisite();
-            //check multi site
-            if ($multisite_checks) {
-                $source = ABSPATH . "wp-content/plugins/terminal-demo/$demo_name.xml";
-                //check file exists
-                if (!file_exists($source)) {
-                    throw new \Exception('The demo file does not exist, please install the Terminal Demo plugin');
-                }
-                //return the file path
-                return $source;
+
+            $source = ABSPATH . "wp-content/plugins/terminal-demo/$demo_name.xml";
+            //check file exists
+            if (!file_exists($source)) {
+                throw new \Exception('The demo file does not exist, please install the Terminal Demo plugin');
             }
+            //return the file path
+            return $source;
+
+            /////// IGNORE tplugtest.com ///////////
+
             //source from remote
             $source = 'https://tplugtest.com/downloads/' . $demo_name . '.xml';
             $destination = TERMINAL_THEME_DIR . '/assets/xml/' . $demo_name . '.xml';

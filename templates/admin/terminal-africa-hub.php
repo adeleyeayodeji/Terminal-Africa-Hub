@@ -13,13 +13,13 @@ if (!defined('ABSPATH')) {
 //demo data list
 $demo_data = [
     (object)[
-        "name" => "JOMO",
+        "name" => "Murtala",
         "image" => TERMINAL_THEME_ASSETS_URI . 'img/demo-img-1.png',
         "id" => "terminal-murtala-demo",
         "preview_link" => "https://murtala.terminal.africa/"
     ],
     (object)[
-        "name" => "Murtala",
+        "name" => "JOMO",
         "image" => TERMINAL_THEME_ASSETS_URI . 'img/demo-img-2.png',
         "id" => "terminal-jomo-demo",
         "preview_link" => "https://jomo.terminal.africa/"
