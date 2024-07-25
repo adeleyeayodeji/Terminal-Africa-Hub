@@ -159,7 +159,7 @@ jQuery(document).ready(function ($) {
         //update the link href
         links.each(function (index, element) {
           //parse the href
-          $(this).attr("href", `https://app.${currentSiteDomain}/get-quote`);
+          $(this).attr("href", `https://app.${currentSiteDomain}/quote`);
         });
         break;
       case "Book Shipment":
