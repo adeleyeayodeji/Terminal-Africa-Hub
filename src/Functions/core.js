@@ -166,7 +166,10 @@ jQuery(document).ready(function ($) {
         //https://app.thepep.africa/book
         links.each(function (index, element) {
           //parse the href
-          $(this).attr("href", `https://app.${currentSiteDomain}/book`);
+          $(this).attr(
+            "href",
+            `https://app.${currentSiteDomain}/shipments/book`
+          );
         });
         break;
       case "Track Shipment":
