@@ -18,5 +18,27 @@ while (have_posts()) :
     }
 endwhile; // End of the loop.
 
+?>
+
+<div class="terminal-hub-ivato-home-hero">
+    <div class="terminal-hub-ivato-home-hero--header">
+        <div class="terminal-hub-ivato-home-hero--header--left">
+            <h1>
+                Fast and Reliable Shipping with SpeedGo Logistics
+            </h1>
+        </div>
+        <div class="terminal-hub-ivato-home-hero--header--right">
+            <p>
+                We don't just deliver parcels, we deliver promises. From pick-up to destination, we're the wheels that keep your business rolling.
+            </p>
+            <a href="#">Book Shipment</a>
+        </div>
+    </div>
+    <div class="terminal-hub-ivato-home-hero--body">
+        <img src="<?php echo TERMINAL_THEME_ASSETS_URI ?>/img/service-2-img.png" alt="Image">
+    </div>
+</div>
+
+<?php
 
 get_footer();
