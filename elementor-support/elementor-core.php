@@ -38,6 +38,12 @@ class TerminalElementor
         foreach ($widgets as $widget) {
             require_once $widget;
         }
+        //include ivato theme widgets
+        $ivato_widgets = glob(TERMINAL_THEME_DIR . '/elementor-support/widgets/ivato-theme/*.php');
+        //loop through the files and include them
+        foreach ($ivato_widgets as $ivato_widget) {
+            require_once $ivato_widget;
+        }
         //register terminal hero widget
         \Elementor\Plugin::instance()->widgets_manager->register(new Terminal_Hero_Widget());
         //Terminal_Partners_Widget
@@ -66,6 +72,14 @@ class TerminalElementor
         \Elementor\Plugin::instance()->widgets_manager->register(new Terminal_Review_V2_Widget());
         //Terminal_GetInTouch_2_Widget
         \Elementor\Plugin::instance()->widgets_manager->register(new Terminal_GetInTouch_2_Widget());
+        //Terminal_Ivato_About_Widget
+        \Elementor\Plugin::instance()->widgets_manager->register(new Terminal_Ivato_About_Widget());
+        //Terminal_Ivato_Hero_Widget
+        \Elementor\Plugin::instance()->widgets_manager->register(new Terminal_Ivato_Hero_Widget());
+        //Terminal_Ivato_Service_Widget
+        \Elementor\Plugin::instance()->widgets_manager->register(new Terminal_Ivato_Service_Widget());
+        //Terminal_Ivato_Reviews_Widget
+        \Elementor\Plugin::instance()->widgets_manager->register(new Terminal_Ivato_Reviews_Widget());
     }
 
     /**
