@@ -14,13 +14,13 @@ if (!defined('ABSPATH')) {
 $demo_data = [
     (object)[
         "name" => "Murtala",
-        "image" => TERMINAL_THEME_ASSETS_URI . 'img/demo-img-1.png',
+        "image" => TERMINAL_THEME_ASSETS_URI . 'img/demo-img-2.png',
         "id" => "terminal-murtala-demo",
         "preview_link" => "https://murtala.terminal.africa/"
     ],
     (object)[
         "name" => "JOMO",
-        "image" => TERMINAL_THEME_ASSETS_URI . 'img/demo-img-2.png',
+        "image" => TERMINAL_THEME_ASSETS_URI . 'img/demo-img-1.png',
         "id" => "terminal-jomo-demo",
         "preview_link" => "https://jomo.terminal.africa/"
     ]

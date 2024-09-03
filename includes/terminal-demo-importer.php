@@ -198,7 +198,7 @@ class TerminalDemoImporter
                     //footer_text_color
                     set_theme_mod('footer_text_color', '#ffffff');
                     //footer_logo
-                    set_theme_mod('footer_logo', 'https://tplugtest.com/wp-content/uploads/2024/05/Screenshot-2024-05-17-at-8.35.59 AM.png');
+                    set_theme_mod('footer_logo', 'https://tplug.terminal.africa/wp-content/uploads/2024/05/Screenshot-2024-05-17-at-8.35.59 AM.png');
                     //company_address
                     set_theme_mod('company_address', 'Powered by Terminal Africa. Lagos, Nigeria.');
                     //company_email
@@ -224,7 +224,7 @@ class TerminalDemoImporter
                     //footer_text_color
                     set_theme_mod('footer_text_color', '#ffffff');
                     //footer_logo
-                    set_theme_mod('footer_logo', 'https://tplugtest.com/wp-content/uploads/2024/05/Frame-2380.png');
+                    set_theme_mod('footer_logo', 'https://tplug.terminal.africa/wp-content/uploads/2024/05/Frame-2380.png');
                     //company_address
                     set_theme_mod('company_address', 'Powered by Terminal Africa. Lagos, Nigeria.');
                     //company_email
