@@ -122,9 +122,9 @@ class Terminal_Ivato_Hero_Widget extends \Elementor\Widget_Base
             [
                 'label' => __('Button Background Color', 'terminal-africa-hub'),
                 'type' => \Elementor\Controls_Manager::COLOR,
-                'default' => '#f1f1f1',
+                'default' => '#0A010E',
                 'selectors' => [
-                    '{{WRAPPER}} a:first-child' => 'background-color: {{VALUE}}',
+                    '{{WRAPPER}} a' => 'background-color: {{VALUE}}',
                 ],
             ]
         );
@@ -137,7 +137,7 @@ class Terminal_Ivato_Hero_Widget extends \Elementor\Widget_Base
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'default' => '#000',
                 'selectors' => [
-                    '{{WRAPPER}} a:first-child' => 'color: {{VALUE}}',
+                    '{{WRAPPER}} a' => 'color: {{VALUE}}',
                 ],
             ]
         );
@@ -150,7 +150,7 @@ class Terminal_Ivato_Hero_Widget extends \Elementor\Widget_Base
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'default' => '#000',
                 'selectors' => [
-                    '{{WRAPPER}} a:first-child:hover' => 'background-color: {{VALUE}}',
+                    '{{WRAPPER}} a:hover' => 'background-color: {{VALUE}}',
                 ],
             ]
         );
@@ -163,7 +163,7 @@ class Terminal_Ivato_Hero_Widget extends \Elementor\Widget_Base
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'default' => '#fff',
                 'selectors' => [
-                    '{{WRAPPER}} a:first-child:hover' => 'color: {{VALUE}}',
+                    '{{WRAPPER}} a:hover' => 'color: {{VALUE}}',
                 ],
             ]
         );

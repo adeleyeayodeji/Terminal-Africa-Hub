@@ -170,6 +170,30 @@ jQuery(document).ready(function ($) {
         break;
     }
   });
+
+  /**
+   * .terminal-hub-ivato-faqs--right--items
+   *
+   */
+  $(".terminal-hub-ivato-faqs--right--items--item--question").each(function (index, element) {
+    $(this).click(function (e) {
+      e.preventDefault();
+      //close all .terminal-hub-ivato-faqs--right--items--item--answer
+      $(".terminal-hub-ivato-faqs--right--items--item--answer").each(function (index, element) {
+        $(this).slideUp();
+      });
+      //get all .terminal-hub-ivato-faqs--right--items--item--question
+      $(".terminal-hub-ivato-faqs--right--items--item--question").each(function (index, element) {
+        $(this).find("img").removeClass("rotate");
+      });
+      //get the parent
+      let parentDiv = $(this).parent();
+      //toggle the .terminal-hub-ivato-faqs--right--items--item--answer
+      parentDiv.find(".terminal-hub-ivato-faqs--right--items--item--answer").slideToggle();
+      //toggle the img
+      $(this).find("img").toggleClass("rotate");
+    });
+  });
 });
 
 /***/ }),
