@@ -108,6 +108,32 @@ class Terminal_Services_Widget extends \Elementor\Widget_Base
             ]
         );
 
+        //enable top title
+        $this->add_control(
+            'enable_top_title',
+            [
+                'label' => __('Enable Top Title', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::SWITCHER,
+                'label_on' => __('Yes', 'terminal-africa-hub'),
+                'label_off' => __('No', 'terminal-africa-hub'),
+                'return_value' => 'yes',
+                'default' => 'no',
+            ]
+        );
+
+        //top title
+        $this->add_control(
+            'top_title',
+            [
+                'label' => __('Top Title', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::TEXT,
+                'default' => __('Our Services', 'terminal-africa-hub'),
+                'condition' => [
+                    'enable_top_title' => 'yes',
+                ],
+            ]
+        );
+
         //title color
         $this->add_control(
             'title_color',
@@ -117,6 +143,7 @@ class Terminal_Services_Widget extends \Elementor\Widget_Base
                 'default' => '#000',
                 'selectors' => [
                     '{{WRAPPER}} .terminal-service h2' => 'color: {{VALUE}}',
+                    '{{WRAPPER}} .terminal-service h3' => 'color: {{VALUE}}',
                 ],
             ]
         );
@@ -332,8 +359,13 @@ class Terminal_Services_Widget extends \Elementor\Widget_Base
         $title_type = $settings['title_type'];
 ?>
         <div class="terminal-service" style="background-color: <?php echo esc_attr($settings['background_color']); ?>">
-            <div class="row m-0 justify-content-center align-items-center" style="flex-direction: <?php echo esc_attr($settings['column_direction']); ?>">
-                <div class="col-lg-5 col-md-5 col-sm-12 mb-5">
+            <div class="row m-0 justify-content-center align-items-center" style="flex-direction: <?php echo esc_attr($settings['column_direction']); ?>;gap: 20px;">
+                <div class="col-lg-5 col-md-12 col-sm-12 mb-5">
+                    <?php if ('yes' === $settings['enable_top_title']) : ?>
+                        <h3 class="top-title <?php echo esc_attr($title_type); ?>">
+                            <?php echo esc_html($settings['top_title']); ?>
+                        </h3>
+                    <?php endif; ?>
                     <h2 class="<?php echo esc_attr($title_type); ?>">
                         <?php echo esc_html($settings['title']); ?>
                     </h2>
@@ -348,7 +380,7 @@ class Terminal_Services_Widget extends \Elementor\Widget_Base
                         <?php endif; ?>
                     </div>
                 </div>
-                <div class="col-lg-5 col-md-5 col-sm-12 text-center">
+                <div class="col-lg-5 col-md-12 col-sm-12 text-center">
                     <img src="<?php echo esc_url($settings['image']['url']); ?>" alt="<?php echo esc_attr($settings['title']); ?>">
                 </div>
             </div>

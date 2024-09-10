@@ -132,7 +132,7 @@
   font-size: 12px;
   font-weight: 400;
   color: white;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 .terminal-africa-theme-bs .terminal-header .t-hub-dedicated .d-flex a:first-child:hover {
   background: #333333;
@@ -147,7 +147,7 @@
   font-size: 12px;
   font-weight: 400;
   color: #f7941e;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 .terminal-africa-theme-bs .terminal-header .t-hub-dedicated .d-flex a:last-child:hover {
   border: 1px solid #333333;
@@ -213,7 +213,7 @@
   font-size: 12px;
   font-weight: 400;
   color: white;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 .terminal-africa-theme-bs .terminal-mobile-menu-content .t-hub-dedicated .d-flex a:first-child:hover {
   background: #333333;
@@ -228,7 +228,7 @@
   font-size: 12px;
   font-weight: 400;
   color: #f7941e;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 .terminal-africa-theme-bs .terminal-mobile-menu-content .t-hub-dedicated .d-flex a:last-child:hover {
   border: 1px solid #333333;
@@ -276,7 +276,7 @@
   font-size: 17px;
   font-weight: 400;
   color: white;
-  border-radius: 10px;
+  border-radius: 2px;
 }
 .terminal-africa-theme-bs .terminal-hero-section .hero-content .d-flex a:first-child:hover {
   background: white;
@@ -291,7 +291,7 @@
   font-size: 16px;
   font-weight: 400;
   color: #f7941e;
-  border-radius: 10px;
+  border-radius: 2px;
 }
 .terminal-africa-theme-bs .terminal-hero-section .hero-content .d-flex a:last-child:hover {
   border: 1px solid white;
@@ -321,6 +321,13 @@
 .terminal-africa-theme-bs .terminal-service img {
   width: 100%;
 }
+.terminal-africa-theme-bs .terminal-service h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 20px;
+}
 .terminal-africa-theme-bs .terminal-service h2 {
   font-family: "Lato", sans-serif;
   font-size: 80px;
@@ -329,7 +336,7 @@
   margin-bottom: 60px;
 }
 .terminal-africa-theme-bs .terminal-service h2.terminal-small {
-  font-size: 40px;
+  font-size: 45px;
   font-weight: 600;
   margin-bottom: 40px;
 }
@@ -348,7 +355,7 @@
   background: #f7941e;
   padding: 16px 24px;
   font-family: "Lato", sans-serif;
-  border-radius: 15px;
+  border-radius: 2px;
   font-size: 14px;
   color: white;
 }
@@ -358,7 +365,7 @@
   text-decoration: none;
 }
 .terminal-africa-theme-bs .terminal-service-v2 {
-  background-color: #ffffff;
+  background-color: #f7f8f8;
   padding: 70px 20px;
   display: flex;
   flex-direction: column;
@@ -390,27 +397,27 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  height: 400px;
+  height: 410px;
   justify-content: flex-start;
-  max-width: 340px;
-  padding: 40px;
+  max-width: 300px;
+  padding: 28px 31px;
   width: 100%;
   overflow: hidden;
 }
 .terminal-africa-theme-bs .terminal-service-v2 .terminal-service-v2-items .terminal-service-v2-icon {
   background: #fdeedd;
-  padding: 20px;
+  padding: 15px;
   border-radius: 100px;
 }
 .terminal-africa-theme-bs .terminal-service-v2 .terminal-service-v2-items .terminal-service-v2-icon img {
-  height: 36px;
-  width: 36px;
+  height: 26px;
+  width: 26px;
   -o-object-fit: contain;
      object-fit: contain;
 }
 .terminal-africa-theme-bs .terminal-service-v2 .terminal-service-v2-items .terminal-service-v2-icon svg {
-  height: 36px;
-  width: 36px;
+  height: 26px;
+  width: 26px;
 }
 .terminal-africa-theme-bs .terminal-service-v2 .terminal-service-v2-items h3 {
   font-family: "Lato", sans-serif;
@@ -482,7 +489,7 @@
   background: #f7941e;
   padding: 16px 24px;
   font-family: "Lato", sans-serif;
-  border-radius: 15px;
+  border-radius: 2px;
   font-size: 14px;
   color: white;
 }
@@ -563,7 +570,7 @@
 .terminal-africa-theme-bs .terminal-footer .credit {
   margin-top: 4rem;
 }
-.terminal-africa-theme-bs .terminal-footer .credit p {
+.terminal-africa-theme-bs .terminal-footer .credit a {
   color: #fff;
   font-size: 14px;
   font-family: "Lato", sans-serif;
@@ -771,7 +778,7 @@
   font-size: 12px;
   font-weight: 400;
   color: white;
-  border-radius: 5px;
+  border-radius: 2px;
   border: none;
   outline: none;
 }
@@ -788,7 +795,7 @@
   font-size: 12px;
   font-weight: 400;
   color: #264631;
-  border-radius: 5px;
+  border-radius: 2px;
   border: 1px solid #264631;
   outline: none;
   transition: all 0.3s ease;
@@ -901,7 +908,7 @@
   font-size: 12px;
   font-weight: 400;
   color: white;
-  border-radius: 5px;
+  border-radius: 2px;
   border: none;
   outline: none;
 }
@@ -1871,7 +1878,7 @@
     width: 100%;
   }
   .terminal-africa-theme-bs .terminal-hub-ivato-reviews--header h2 {
-    font-size: 50px;
+    font-size: 40px;
     width: 100%;
   }
   .terminal-africa-theme-bs .terminal-hub-ivato-reviews--header p {
@@ -1905,6 +1912,9 @@
   }
   .terminal-africa-theme-bs .terminal-hub-ivato-faqs--left {
     width: 100%;
+  }
+  .terminal-africa-theme-bs .terminal-hub-ivato-faqs--left h2 {
+    font-size: 40px;
   }
   .terminal-africa-theme-bs .terminal-hub-ivato-faqs--right {
     width: 100%;
@@ -2257,7 +2267,7 @@
   font-size: 12px;
   font-weight: 400;
   color: white;
-  border-radius: 5px;
+  border-radius: 2px;
   border: none;
   outline: none;
 }
@@ -11231,7 +11241,7 @@
     font-weight: 300;
   }
   .terminal-africa-theme-bs .terminal-footer {
-    padding: 5rem 4rem;
+    padding: 3rem 2rem;
   }
   .terminal-africa-theme-bs .terminal-meet-us {
     padding: 5rem 2rem;

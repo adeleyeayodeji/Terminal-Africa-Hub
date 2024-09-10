@@ -84,7 +84,7 @@
           font-size: 12px;
           font-weight: 400;
           color: white;
-          border-radius: 5px;
+          border-radius: 2px;
 
           &:hover {
             background: #333333;
@@ -101,7 +101,7 @@
           font-size: 12px;
           font-weight: 400;
           color: #f7941e;
-          border-radius: 5px;
+          border-radius: 2px;
 
           &:hover {
             border: 1px solid #333333;
@@ -182,7 +182,7 @@
           font-size: 12px;
           font-weight: 400;
           color: white;
-          border-radius: 5px;
+          border-radius: 2px;
 
           &:hover {
             background: #333333;
@@ -199,7 +199,7 @@
           font-size: 12px;
           font-weight: 400;
           color: #f7941e;
-          border-radius: 5px;
+          border-radius: 2px;
 
           &:hover {
             border: 1px solid #333333;
@@ -258,7 +258,7 @@
           font-size: 17px;
           font-weight: 400;
           color: white;
-          border-radius: 10px;
+          border-radius: 2px;
 
           &:hover {
             background: #ffff;
@@ -275,7 +275,7 @@
           font-size: 16px;
           font-weight: 400;
           color: #f7941e;
-          border-radius: 10px;
+          border-radius: 2px;
 
           &:hover {
             border: 1px solid #ffff;
@@ -318,6 +318,14 @@
       width: 100%;
     }
 
+    h3 {
+      font-family: "Lato", sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: #333333;
+      margin-bottom: 20px;
+    }
+
     h2 {
       font-family: "Lato", sans-serif;
       font-size: 80px;
@@ -327,7 +335,7 @@
     }
 
     h2.terminal-small {
-      font-size: 40px;
+      font-size: 45px;
       font-weight: 600;
       margin-bottom: 40px;
     }
@@ -349,7 +357,7 @@
       background: #f7941e;
       padding: 16px 24px;
       font-family: "Lato", sans-serif;
-      border-radius: 15px;
+      border-radius: 2px;
       font-size: 14px;
       color: white;
 
@@ -365,7 +373,7 @@
   * Terminal Service Section v2
   */
   .terminal-service-v2 {
-    background-color: #ffffff;
+    background-color: #f7f8f8;
     padding: 70px 20px;
     display: flex;
     flex-direction: column;
@@ -400,27 +408,27 @@
       display: flex;
       flex-direction: column;
       gap: 20px;
-      height: 400px;
+      height: 410px;
       justify-content: flex-start;
-      max-width: 340px;
-      padding: 40px;
+      max-width: 300px;
+      padding: 28px 31px;
       width: 100%;
       overflow: hidden;
 
       .terminal-service-v2-icon {
         background: #fdeedd;
-        padding: 20px;
+        padding: 15px;
         border-radius: 100px;
 
         img {
-          height: 36px;
-          width: 36px;
+          height: 26px;
+          width: 26px;
           object-fit: contain;
         }
 
         svg {
-          height: 36px;
-          width: 36px;
+          height: 26px;
+          width: 26px;
         }
       }
 
@@ -510,7 +518,7 @@
       background: #f7941e;
       padding: 16px 24px;
       font-family: "Lato", sans-serif;
-      border-radius: 15px;
+      border-radius: 2px;
       font-size: 14px;
       color: white;
 
@@ -609,7 +617,7 @@
     .credit {
       margin-top: 4rem;
 
-      p {
+      a {
         color: #fff;
         font-size: 14px;
         font-family: "Lato", sans-serif;
@@ -858,7 +866,7 @@
           font-size: 12px;
           font-weight: 400;
           color: white;
-          border-radius: 5px;
+          border-radius: 2px;
           border: none;
           outline: none;
 
@@ -877,7 +885,7 @@
           font-size: 12px;
           font-weight: 400;
           color: #264631;
-          border-radius: 5px;
+          border-radius: 2px;
           border: 1px solid #264631;
           outline: none;
           transition: all 0.3s ease;
@@ -1006,7 +1014,7 @@
           font-size: 12px;
           font-weight: 400;
           color: white;
-          border-radius: 5px;
+          border-radius: 2px;
           border: none;
           outline: none;
 
@@ -1377,7 +1385,7 @@
         font-size: 12px;
         font-weight: 400;
         color: white;
-        border-radius: 5px;
+        border-radius: 2px;
         border: none;
         outline: none;
 
