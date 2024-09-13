@@ -84,6 +84,8 @@ class TerminalElementor
         \Elementor\Plugin::instance()->widgets_manager->register(new Terminal_Ivato_Book_Shipment_Widget());
         //Terminal_Ivato_Faqs_Widget
         \Elementor\Plugin::instance()->widgets_manager->register(new Terminal_Ivato_Faqs_Widget());
+        //Terminal_Ivato_Inner_Services_Widget
+        \Elementor\Plugin::instance()->widgets_manager->register(new Terminal_Ivato_Inner_Services_Widget());
     }
 
     /**

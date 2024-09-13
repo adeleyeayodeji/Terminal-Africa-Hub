@@ -85,7 +85,55 @@ class Terminal_Ivato_Inner_Services_Widget extends \Elementor\Widget_Base
             ]
         );
 
+        //add service list repeater
+        $service_list = new \Elementor\Repeater();
 
+        $service_list->add_control(
+            'service_image',
+            [
+                'label' => __('Service Image', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::MEDIA,
+                'default' => [
+                    'url' => \Elementor\Utils::get_placeholder_image_src(),
+                ],
+            ]
+        );
+
+        $service_list->add_control(
+            'service_title',
+            [
+                'label' => __('Service Title', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::TEXT,
+                'default' => __('Service Title', 'terminal-africa-hub'),
+            ]
+        );
+
+        $service_list->add_control(
+            'service_description',
+            [
+                'label' => __('Service Description', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::TEXTAREA,
+                'default' => __('Service Description', 'terminal-africa-hub'),
+            ]
+        );
+
+        $this->add_control(
+            'service_list',
+            [
+                'label' => __('Service List', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::REPEATER,
+                'fields' => $service_list->get_controls(),
+                'default' => [
+                    [
+                        'service_image' => [
+                            'url' => get_template_directory_uri() . '/assets/img/44f580b0f42bb6ce447cb6973453537f.png',
+                        ],
+                        'service_title' => __('Service Title', 'terminal-africa-hub'),
+                        'service_description' => __('Service Description', 'terminal-africa-hub'),
+                    ],
+                ],
+            ]
+        );
 
 
         $this->end_controls_section();
@@ -100,36 +148,21 @@ class Terminal_Ivato_Inner_Services_Widget extends \Elementor\Widget_Base
     {
         $settings = $this->get_settings_for_display();
 ?>
-        <div class="terminal-hub-ivato-services">
-            <div class="terminal-hub-ivato-services--header">
-                <h2>
-                    <?php echo esc_html($settings['title']); ?>
-                </h2>
-                <p>
-                    <?php echo esc_html($settings['description']); ?>
-                </p>
-            </div>
-            <div class="terminal-hub-ivato-services--body">
-                <div class="terminal-hub-ivato-services--body--top">
-                    <?php foreach ($settings['images'] as $image) : ?>
-                        <img src="<?php echo esc_url($image['image']['url']); ?>" alt="">
-                    <?php endforeach; ?>
-                </div>
-                <div class="terminal-hub-ivato-services--body--bottom">
-                    <div class="terminal-hub-ivato-services--body--bottom--images">
-                        <?php foreach ($settings['second_images'] as $image) : ?>
-                            <img src="<?php echo esc_url($image['second_image']['url']); ?>" alt="">
-                        <?php endforeach; ?>
+        <div class="terminal-hub-ivato-services-list">
+            <div class="terminal-hub-ivato-services-list--items">
+                <?php
+                foreach ($settings['service_list'] as $service) :
+                ?>
+                    <div class="terminal-hub-ivato-services-list--items--item">
+                        <img src="<?php echo $service['service_image']['url']; ?>" alt="<?php echo $service['service_title']; ?>">
+                        <h3><?php echo $service['service_title']; ?></h3>
+                        <p>
+                            <?php echo $service['service_description']; ?>
+                        </p>
                     </div>
-                    <div class="terminal-hub-ivato-services--body--bottom--cta">
-                        <a href="<?php echo esc_url($settings['cta_link']['url']); ?>">
-                            <span>
-                                <?php echo esc_html($settings['cta']); ?>
-                            </span>
-                            <img src="<?php echo TERMINAL_THEME_ASSETS_URI ?>/img/chevron-right.svg" alt="">
-                        </a>
-                    </div>
-                </div>
+                <?php
+                endforeach;
+                ?>
             </div>
         </div>
 <?php
