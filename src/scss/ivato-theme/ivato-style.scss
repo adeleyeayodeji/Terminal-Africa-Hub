@@ -674,5 +674,61 @@
   }
 }
 
+.terminal-hub-ivato-services-list {
+  padding: 3rem 7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  transition: all 0.3s ease;
+
+  &--items {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: start;
+    justify-content: start;
+    flex-wrap: wrap;
+    width: 100%;
+
+    &--item {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: start;
+      justify-content: center;
+      transition: all 0.3s ease;
+      width: 100%;
+      max-width: 323px;
+
+      img {
+        width: 100%;
+        height: 210px;
+        object-fit: cover;
+        object-position: center center;
+        transition: all 0.3s ease;
+        border-radius: 5px;
+      }
+
+      h3 {
+        font-family: "Inter", sans-serif;
+        font-size: 21px;
+        font-weight: 700;
+        color: #333333;
+        margin: 0;
+        line-height: 32.4px;
+      }
+
+      p {
+        font-family: "Inter", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        color: #333333;
+        margin: 0;
+        line-height: 27px;
+      }
+    }
+  }
+}
+
 //import responsive styles
 @import "./responsive.scss";

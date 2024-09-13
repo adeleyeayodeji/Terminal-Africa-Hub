@@ -1745,6 +1745,58 @@
   margin: 0;
   line-height: 27px;
 }
+.terminal-africa-theme-bs .terminal-hub-ivato-services-list {
+  padding: 3rem 7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  transition: all 0.3s ease;
+}
+.terminal-africa-theme-bs .terminal-hub-ivato-services-list--items {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: start;
+  justify-content: start;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.terminal-africa-theme-bs .terminal-hub-ivato-services-list--items--item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: start;
+  justify-content: center;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 323px;
+}
+.terminal-africa-theme-bs .terminal-hub-ivato-services-list--items--item img {
+  width: 100%;
+  height: 210px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+.terminal-africa-theme-bs .terminal-hub-ivato-services-list--items--item h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  color: #333333;
+  margin: 0;
+  line-height: 32.4px;
+}
+.terminal-africa-theme-bs .terminal-hub-ivato-services-list--items--item p {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #333333;
+  margin: 0;
+  line-height: 27px;
+}
 @media (max-width: 800px) {
   .terminal-africa-theme-bs .terminal-hub-ivato-home-hero {
     padding: 2rem 20px;
@@ -1867,6 +1919,12 @@
   .terminal-africa-theme-bs .terminal-hub-ivato-book-shipment--body--wrapper {
     width: 80%;
   }
+  .terminal-africa-theme-bs .terminal-hub-ivato-services-list {
+    padding: 3rem 2rem;
+  }
+  .terminal-africa-theme-bs .terminal-hub-ivato-services-list--items--item {
+    max-width: 47% !important;
+  }
 }
 @media (max-width: 768px) {
   .terminal-africa-theme-bs .terminal-hub-ivato-reviews {
@@ -1918,6 +1976,15 @@
   }
   .terminal-africa-theme-bs .terminal-hub-ivato-faqs--right {
     width: 100%;
+  }
+  .terminal-africa-theme-bs .terminal-hub-ivato-services-list {
+    padding: 3rem 2rem;
+  }
+  .terminal-africa-theme-bs .terminal-hub-ivato-services-list--items {
+    justify-content: center;
+  }
+  .terminal-africa-theme-bs .terminal-hub-ivato-services-list--items--item {
+    max-width: 90% !important;
   }
 }
 @media (max-width: 600px) {
@@ -2108,6 +2175,9 @@
   .terminal-africa-theme-bs .terminal-hub-ivato-book-shipment--body--wrapper {
     width: 70%;
   }
+  .terminal-africa-theme-bs .terminal-hub-ivato-services-list--items--item {
+    max-width: 46% !important;
+  }
 }
 @media (min-width: 1060px) {
   .terminal-africa-theme-bs .terminal-hub-ivato-home-hero {
@@ -2193,6 +2263,9 @@
   .terminal-africa-theme-bs .terminal-hub-ivato-book-shipment--body--wrapper {
     width: 57%;
   }
+  .terminal-africa-theme-bs .terminal-hub-ivato-services-list--items--item {
+    max-width: 30% !important;
+  }
 }
 @media (min-width: 1440px) {
   .terminal-africa-theme-bs .terminal-hub-ivato-home-hero {
@@ -2203,6 +2276,9 @@
   }
   .terminal-africa-theme-bs .terminal-hub-ivato-home-hero--header--right {
     max-width: 50%;
+  }
+  .terminal-africa-theme-bs .terminal-hub-ivato-services-list--items--item {
+    max-width: 323px !important;
   }
 }
 

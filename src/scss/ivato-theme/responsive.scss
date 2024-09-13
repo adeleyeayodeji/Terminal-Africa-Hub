@@ -175,6 +175,16 @@
       }
     }
   }
+
+  .terminal-hub-ivato-services-list {
+    padding: 3rem 2rem;
+
+    &--items {
+      &--item {
+        max-width: 47% !important;
+      }
+    }
+  }
 }
 
 //max 768px
@@ -238,6 +248,17 @@
 
     &--right {
       width: 100%;
+    }
+  }
+
+  .terminal-hub-ivato-services-list {
+    padding: 3rem 2rem;
+
+    &--items {
+      justify-content: center;
+      &--item {
+        max-width: 90% !important;
+      }
     }
   }
 }
@@ -538,6 +559,14 @@
       }
     }
   }
+
+  .terminal-hub-ivato-services-list {
+    &--items {
+      &--item {
+        max-width: 46% !important;
+      }
+    }
+  }
 }
 
 //min 1060
@@ -659,6 +688,14 @@
       }
     }
   }
+
+  .terminal-hub-ivato-services-list {
+    &--items {
+      &--item {
+        max-width: 30% !important;
+      }
+    }
+  }
 }
 
 //min 1440px
@@ -673,6 +710,14 @@
 
       &--right {
         max-width: 50%;
+      }
+    }
+  }
+
+  .terminal-hub-ivato-services-list {
+    &--items {
+      &--item {
+        max-width: 323px !important;
       }
     }
   }
