@@ -483,6 +483,145 @@
   }
 }
 
+.terminal-hub-ivato-locations {
+  padding: 3rem 7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  transition: all 0.3s ease;
+
+  &--header {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    transition: all 0.3s ease;
+
+    h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 60px;
+      font-weight: 700;
+      color: #333333;
+      margin: 0;
+      font-style: italic;
+      width: 47%;
+    }
+
+    p {
+      font-family: "Manrope", sans-serif;
+      font-size: 24px;
+      font-weight: 300;
+      color: #333333;
+      margin: 0;
+      width: 45%;
+    }
+  }
+
+  &--body {
+    &--items {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      align-items: start;
+      justify-content: space-between;
+      transition: all 0.3s ease;
+      flex-wrap: wrap;
+      width: 100%;
+
+      &--item {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: start;
+        justify-content: start;
+        transition: all 0.3s ease;
+        width: 100%;
+        max-width: 373px;
+
+        &--header {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          align-items: start;
+          justify-content: start;
+          transition: all 0.3s ease;
+
+          &--icon {
+            background-color: #f6f6f6;
+            padding: 17px;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+
+            img {
+              height: 25px;
+              width: 25px;
+              object-fit: contain;
+              object-position: center center;
+              transition: all 0.3s ease;
+            }
+          }
+
+          h3 {
+            font-family: "Inter", sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: #333333;
+            margin: 0;
+            line-height: 24px;
+          }
+        }
+
+        &--content {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          align-items: start;
+          justify-content: start;
+          transition: all 0.3s ease;
+
+          p {
+            font-family: "Inter", sans-serif;
+            font-size: 16px;
+            font-weight: 300;
+            color: #333333;
+            margin: 0;
+            line-height: 27px;
+          }
+        }
+
+        &--cta {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          align-items: start;
+          justify-content: start;
+          transition: all 0.3s ease;
+
+          a {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            align-items: center;
+            justify-content: start;
+            transition: all 0.3s ease;
+
+            img {
+              height: 23px;
+            }
+
+            span {
+              font-family: "Inter", sans-serif;
+              font-size: 13px;
+              font-weight: 400;
+              color: #333333;
+              line-height: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 .terminal-hub-ivato-book-shipment {
   padding: 3rem 0;
   display: flex;

@@ -118,6 +118,32 @@
     }
   }
 
+  .terminal-hub-ivato-locations {
+    padding: 3rem 2rem;
+
+    &--header {
+      flex-direction: column;
+      gap: 20px;
+
+      h2 {
+        width: 100%;
+        font-size: 50px;
+      }
+
+      p {
+        width: 100%;
+        font-size: 19px;
+      }
+    }
+
+    &--body {
+      &--items {
+        flex-direction: column;
+        gap: 50px;
+      }
+    }
+  }
+
   .terminal-hub-ivato-reviews {
     padding: 3rem 2rem;
 
@@ -189,6 +215,32 @@
 
 //max 768px
 @media (max-width: 768px) {
+  .terminal-hub-ivato-locations {
+    padding: 3rem 2rem;
+
+    &--header {
+      flex-direction: column;
+      gap: 20px;
+
+      h2 {
+        width: 100%;
+        font-size: 40px;
+      }
+
+      p {
+        width: 100%;
+        font-size: 19px;
+      }
+    }
+
+    &--body {
+      &--items {
+        flex-direction: column;
+        gap: 50px;
+      }
+    }
+  }
+
   .terminal-hub-ivato-reviews {
     padding: 3rem 2rem;
 
@@ -508,6 +560,32 @@
     }
   }
 
+  .terminal-hub-ivato-locations {
+    padding: 3rem 3rem;
+
+    &--header {
+      flex-direction: row;
+      gap: 20px;
+
+      h2 {
+        width: 50%;
+        font-size: 50px;
+      }
+
+      p {
+        width: 45%;
+        font-size: 19px;
+      }
+    }
+
+    &--body {
+      &--items {
+        flex-direction: row;
+        gap: 20px;
+      }
+    }
+  }
+
   .terminal-hub-ivato-reviews {
     padding: 3rem 3rem;
 
@@ -623,6 +701,25 @@
 
       p {
         width: 45%;
+      }
+    }
+  }
+
+  .terminal-hub-ivato-locations {
+    padding: 3rem 7rem;
+
+    &--header {
+      flex-direction: row;
+      gap: 0;
+
+      h2 {
+        width: 47%;
+        font-size: 60px;
+      }
+
+      p {
+        width: 45%;
+        font-size: 24px;
       }
     }
   }
