@@ -211,6 +211,10 @@
       }
     }
   }
+
+  .ivato-bold {
+    font-size: 40px !important;
+  }
 }
 
 //max 768px
@@ -312,6 +316,22 @@
         max-width: 90% !important;
       }
     }
+  }
+
+  .terminal-contact-form {
+    &.ivato-design-2 {
+      padding: 1rem 2rem;
+      padding-top: 0;
+
+      .terminal-form-fields-custom {
+        flex-direction: column;
+      }
+    }
+  }
+
+  .terminal-hub-ivato-map {
+    padding: 1rem 2rem;
+    padding-bottom: 3rem;
   }
 }
 
@@ -645,6 +665,10 @@
       }
     }
   }
+
+  .ivato-bold {
+    font-size: 50px !important;
+  }
 }
 
 //min 1060
@@ -792,6 +816,10 @@
         max-width: 30% !important;
       }
     }
+  }
+
+  .ivato-bold {
+    font-size: 55px !important;
   }
 }
 

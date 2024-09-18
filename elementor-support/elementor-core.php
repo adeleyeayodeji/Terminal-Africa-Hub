@@ -88,6 +88,8 @@ class TerminalElementor
         \Elementor\Plugin::instance()->widgets_manager->register(new Terminal_Ivato_Inner_Services_Widget());
         //Terminal_Ivato_Locations_Widget
         \Elementor\Plugin::instance()->widgets_manager->register(new Terminal_Ivato_Locations_Widget());
+        //Terminal_Ivato_Map_Widget
+        \Elementor\Plugin::instance()->widgets_manager->register(new Terminal_Ivato_Map_Widget());
     }
 
     /**

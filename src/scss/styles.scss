@@ -703,7 +703,7 @@
 
         a {
           font-family: "Lato", sans-serif;
-          font-size: 20px;
+          font-size: 16px;
           font-weight: 400;
           color: #333333;
           text-decoration: none;
@@ -711,6 +711,13 @@
             color: #f7941e;
             text-decoration: none;
           }
+        }
+
+        p {
+          font-family: "Lato", sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          color: #333333;
         }
       }
     }
@@ -755,7 +762,7 @@
       input::placeholder,
       textarea::placeholder {
         font-family: "Lato", sans-serif;
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 400;
         color: #64607dac;
       }
@@ -773,6 +780,52 @@
           background: #333333;
           color: white;
           text-decoration: none;
+        }
+      }
+    }
+
+    &.ivato-design-2 {
+      padding: 5rem 3rem;
+      background: transparent;
+      width: 100%;
+      max-width: 650px;
+
+      .terminal-form-fields-custom {
+        display: flex;
+        width: 100%;
+        gap: 20px;
+
+        .form-group {
+          width: 100%;
+        }
+      }
+
+      h3 {
+        font-family: "Inter", sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        color: #333333;
+        margin-bottom: 1rem;
+      }
+
+      form {
+        input {
+          padding: 23px 15px;
+        }
+
+        button {
+          background: #f7941e;
+          padding: 13px 24px;
+          font-family: "Lato", sans-serif;
+          border-radius: 4px;
+          font-size: 14px;
+          color: white;
+          border: none;
+        }
+
+        textarea {
+          width: 100%;
+          padding: 10px 13px;
         }
       }
     }
@@ -1309,6 +1362,11 @@
   }
 
   @import "./ivato-theme/ivato-style.scss";
+}
+
+.terminal-hub-ivato-map {
+  padding: 1rem 3rem;
+  padding-bottom: 3rem;
 }
 
 /**

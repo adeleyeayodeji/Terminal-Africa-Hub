@@ -869,5 +869,11 @@
   }
 }
 
+.ivato-bold {
+  font-family: "Inter", sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 55px;
+}
+
 //import responsive styles
 @import "./responsive.scss";

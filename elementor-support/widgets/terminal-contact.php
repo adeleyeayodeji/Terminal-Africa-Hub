@@ -98,6 +98,20 @@ class Terminal_Contact_Widget extends \Elementor\Widget_Base
             ]
         );
 
+        //desifn types
+        $this->add_control(
+            'design_type',
+            [
+                'label' => __('Design Type', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::SELECT,
+                'default' => 'ivato-design-1',
+                'options' => [
+                    'ivato-design-1' => __('Ivato Design 1', 'terminal-africa-hub'),
+                    'ivato-design-2' => __('Ivato Design 2', 'terminal-africa-hub'),
+                ],
+            ]
+        );
+
         //button text
         $this->add_control(
             'button_text',
@@ -188,20 +202,22 @@ class Terminal_Contact_Widget extends \Elementor\Widget_Base
         //update option
         update_option('thub_admin_email', $settings['thub_admin_email']);
 ?>
-        <div class="terminal-contact-form">
+        <div class="terminal-contact-form <?php echo esc_attr($settings['design_type']); ?>">
             <h3>
                 <?php echo esc_html($settings['title']); ?>
             </h3>
             <form action="" class="terminal-form-fields" id="terminal-submit-contact">
                 <input type="hidden" name="contact_mail" value="<?php echo esc_attr($settings['from_mail']); ?>">
-                <div class="form-group">
-                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+                <div class="terminal-form-fields-custom">
+                    <div class="form-group">
+                        <input type="text" name="name" id="name" class="form-control" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" id="email" class="form-control" placeholder="E-mail" required>
+                    </div>
                 </div>
                 <div class="form-group">
-                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
-                </div>
-                <div class="form-group">
-                    <textarea name="message" id="message" class="form-control" placeholder="Enter your message" cols="50" rows="5" required></textarea>
+                    <textarea name="message" id="message" class="form-control" placeholder="Type your message" cols="50" rows="5" required></textarea>
                 </div>
                 <div class="terminal-form-message" style="display: none;"></div>
                 <div class="form-group">

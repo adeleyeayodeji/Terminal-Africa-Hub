@@ -99,6 +99,20 @@ class Terminal_Address_Widget extends \Elementor\Widget_Base
             ]
         );
 
+        //title header type
+        $this->add_control(
+            'title_header_type',
+            [
+                'label' => __('Title Header Type', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::SELECT,
+                'options' => [
+                    'ivato-light' => 'Light',
+                    'ivato-bold' => 'Bold',
+                ],
+                'default' => 'ivato-light',
+            ]
+        );
+
         $this->add_control(
             'address',
             [
@@ -159,7 +173,7 @@ class Terminal_Address_Widget extends \Elementor\Widget_Base
         $settings = $this->get_settings_for_display();
 ?>
         <div class="terminal-meet-us">
-            <h3>
+            <h3 class="<?php echo esc_attr($settings['title_header_type']); ?>">
                 <?php echo esc_html($settings['title']); ?>
             </h3>
             <ul>

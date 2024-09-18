@@ -635,7 +635,7 @@
 }
 .terminal-africa-theme-bs .terminal-meet-us ul li a {
   font-family: "Lato", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
   color: #333333;
   text-decoration: none;
@@ -643,6 +643,12 @@
 .terminal-africa-theme-bs .terminal-meet-us ul li a:hover {
   color: #f7941e;
   text-decoration: none;
+}
+.terminal-africa-theme-bs .terminal-meet-us ul li p {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333333;
 }
 .terminal-africa-theme-bs .terminal-contact-form {
   padding: 5rem 5rem;
@@ -676,14 +682,14 @@
 }
 .terminal-africa-theme-bs .terminal-contact-form form input::-moz-placeholder, .terminal-africa-theme-bs .terminal-contact-form form textarea::-moz-placeholder {
   font-family: "Lato", sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   color: rgba(100, 96, 125, 0.6745098039);
 }
 .terminal-africa-theme-bs .terminal-contact-form form input::placeholder,
 .terminal-africa-theme-bs .terminal-contact-form form textarea::placeholder {
   font-family: "Lato", sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   color: rgba(100, 96, 125, 0.6745098039);
 }
@@ -700,6 +706,43 @@
   background: #333333;
   color: white;
   text-decoration: none;
+}
+.terminal-africa-theme-bs .terminal-contact-form.ivato-design-2 {
+  padding: 5rem 3rem;
+  background: transparent;
+  width: 100%;
+  max-width: 650px;
+}
+.terminal-africa-theme-bs .terminal-contact-form.ivato-design-2 .terminal-form-fields-custom {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+.terminal-africa-theme-bs .terminal-contact-form.ivato-design-2 .terminal-form-fields-custom .form-group {
+  width: 100%;
+}
+.terminal-africa-theme-bs .terminal-contact-form.ivato-design-2 h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 1rem;
+}
+.terminal-africa-theme-bs .terminal-contact-form.ivato-design-2 form input {
+  padding: 23px 15px;
+}
+.terminal-africa-theme-bs .terminal-contact-form.ivato-design-2 form button {
+  background: #f7941e;
+  padding: 13px 24px;
+  font-family: "Lato", sans-serif;
+  border-radius: 4px;
+  font-size: 14px;
+  color: white;
+  border: none;
+}
+.terminal-africa-theme-bs .terminal-contact-form.ivato-design-2 form textarea {
+  width: 100%;
+  padding: 10px 13px;
 }
 .terminal-africa-theme-bs .terminal-faqs {
   padding: 5rem 5rem;
@@ -1920,6 +1963,11 @@
   margin: 0;
   line-height: 27px;
 }
+.terminal-africa-theme-bs .ivato-bold {
+  font-family: "Inter", sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 55px;
+}
 @media (max-width: 800px) {
   .terminal-africa-theme-bs .terminal-hub-ivato-home-hero {
     padding: 2rem 20px;
@@ -2067,6 +2115,9 @@
   .terminal-africa-theme-bs .terminal-hub-ivato-services-list--items--item {
     max-width: 47% !important;
   }
+  .terminal-africa-theme-bs .ivato-bold {
+    font-size: 40px !important;
+  }
 }
 @media (max-width: 768px) {
   .terminal-africa-theme-bs .terminal-hub-ivato-locations {
@@ -2146,6 +2197,17 @@
   }
   .terminal-africa-theme-bs .terminal-hub-ivato-services-list--items--item {
     max-width: 90% !important;
+  }
+  .terminal-africa-theme-bs .terminal-contact-form.ivato-design-2 {
+    padding: 1rem 2rem;
+    padding-top: 0;
+  }
+  .terminal-africa-theme-bs .terminal-contact-form.ivato-design-2 .terminal-form-fields-custom {
+    flex-direction: column;
+  }
+  .terminal-africa-theme-bs .terminal-hub-ivato-map {
+    padding: 1rem 2rem;
+    padding-bottom: 3rem;
   }
 }
 @media (max-width: 600px) {
@@ -2358,6 +2420,9 @@
   .terminal-africa-theme-bs .terminal-hub-ivato-services-list--items--item {
     max-width: 46% !important;
   }
+  .terminal-africa-theme-bs .ivato-bold {
+    font-size: 50px !important;
+  }
 }
 @media (min-width: 1060px) {
   .terminal-africa-theme-bs .terminal-hub-ivato-home-hero {
@@ -2461,6 +2526,9 @@
   .terminal-africa-theme-bs .terminal-hub-ivato-services-list--items--item {
     max-width: 30% !important;
   }
+  .terminal-africa-theme-bs .ivato-bold {
+    font-size: 55px !important;
+  }
 }
 @media (min-width: 1440px) {
   .terminal-africa-theme-bs .terminal-hub-ivato-home-hero {
@@ -2475,6 +2543,11 @@
   .terminal-africa-theme-bs .terminal-hub-ivato-services-list--items--item {
     max-width: 323px !important;
   }
+}
+
+.terminal-hub-ivato-map {
+  padding: 1rem 3rem;
+  padding-bottom: 3rem;
 }
 
 /**
@@ -11515,7 +11588,7 @@
     padding: 3rem 2rem;
   }
   .terminal-africa-theme-bs .terminal-meet-us {
-    padding: 5rem 2rem;
+    padding: 3rem 2rem;
   }
   .terminal-africa-theme-bs .terminal-contact-form {
     padding: 5rem 2rem;
@@ -11829,7 +11902,7 @@
     padding: 5rem 4rem;
   }
   .terminal-africa-theme-bs .terminal-meet-us {
-    padding: 5rem 2rem;
+    padding: 3rem 2rem;
   }
   .terminal-africa-theme-bs .terminal-contact-form {
     padding: 5rem 2rem;
