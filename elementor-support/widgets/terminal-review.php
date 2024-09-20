@@ -40,7 +40,7 @@ class Terminal_Review_Widget extends \Elementor\Widget_Base
      */
     public function get_title()
     {
-        return __('Terminal Review', 'terminal-africa-hub');
+        return __('Terminal Review - JOMO', 'terminal-africa-hub');
     }
 
     /**
@@ -151,8 +151,8 @@ class Terminal_Review_Widget extends \Elementor\Widget_Base
                 <img src="<?php echo esc_url(TERMINAL_THEME_ASSETS_URI . 'img/star-filled.svg') ?>" alt="">
                 <img src="<?php echo esc_url(TERMINAL_THEME_ASSETS_URI . 'img/star-filled.svg') ?>" alt="">
                 <img src="<?php echo esc_url(TERMINAL_THEME_ASSETS_URI . 'img/star-filled.svg') ?>" alt="">
-                <img src="<?php echo esc_url(TERMINAL_THEME_ASSETS_URI . 'img/star.svg') ?>" alt="">
-                <img src="<?php echo esc_url(TERMINAL_THEME_ASSETS_URI . 'img/star.svg') ?>" alt="">
+                <img src="<?php echo esc_url(TERMINAL_THEME_ASSETS_URI . 'img/star-filled.svg') ?>" alt="">
+                <img src="<?php echo esc_url(TERMINAL_THEME_ASSETS_URI . 'img/star-filled.svg') ?>" alt="">
             </div>
         </div>
 <?php

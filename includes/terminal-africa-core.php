@@ -707,6 +707,34 @@ class TerminalTheme
                 '2' => 'Header 2'
             )
         ));
+
+        //add header active color
+        $wp_customize->add_setting('header_active_color', array(
+            'default' => 'unset',
+            'transport' => 'refresh',
+            'sanitize_callback' => 'sanitize_hex_color'
+        ));
+
+        // Add a color control for the header active color
+        $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'header_active_color', array(
+            'label' => __('Header Active Color', 'terminal-africa-hub'),
+            'section' => 'terminal_africa_section',
+            'settings' => 'header_active_color'
+        )));
+
+        //add footer active color
+        $wp_customize->add_setting('footer_active_color', array(
+            'default' => 'unset',
+            'transport' => 'refresh',
+            'sanitize_callback' => 'sanitize_hex_color'
+        ));
+
+        // Add a color control for the footer active color
+        $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'footer_active_color', array(
+            'label' => __('Footer Active Color', 'terminal-africa-hub'),
+            'section' => 'terminal_africa_section',
+            'settings' => 'footer_active_color'
+        )));
     }
 
     /**
@@ -882,7 +910,7 @@ class TerminalTheme
             }
 
             .terminal-africa-theme-bs .terminal-footer .t-hub-menu-ul li a {
-                color: <?php echo esc_attr(get_theme_mod('footer_text_color', '#ffffff')); ?> !important;
+                color: <?php echo esc_attr(get_theme_mod('footer_text_color', '#ffffff')); ?>;
             }
 
             .terminal-africa-theme-bs .terminal-footer .terminal-footer-1 nav a {
@@ -896,6 +924,17 @@ class TerminalTheme
             .terminal-africa-theme-bs .terminal-footer p {
                 color: <?php echo esc_attr(get_theme_mod('footer_text_color', '#ffffff')); ?> !important;
             }
+
+            <?php if (get_theme_mod('header_active_color', 'unset') !== 'unset') : ?>.terminal-header .current-menu-item a {
+                color: <?php echo esc_attr(get_theme_mod('header_active_color', '#f7941e')); ?> !important;
+            }
+
+            <?php endif; ?><?php if (get_theme_mod('footer_active_color', 'unset') !== 'unset') :
+                            ?>.terminal-footer .current-menu-item a {
+                color: <?php echo esc_attr(get_theme_mod('footer_active_color', '#f7941e')); ?> !important;
+            }
+
+            <?php endif; ?>
         </style>
 <?php
     }

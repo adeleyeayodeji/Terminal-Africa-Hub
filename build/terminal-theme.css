@@ -258,6 +258,10 @@
   font-size: 20px;
   font-weight: 400;
   color: #fff;
+  width: 100%;
+  max-width: 739px;
+  margin: 0 auto;
+  line-height: 33.2px;
 }
 .terminal-africa-theme-bs .terminal-hero-section .hero-content .d-flex {
   justify-content: center;
@@ -457,13 +461,17 @@
   font-size: 32px;
   font-weight: 300;
   color: #5d5d5d;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .terminal-africa-theme-bs .terminal-review p.terminal-review-profile {
-  font-family: "Alex Brush", cursive;
-  font-size: 36px;
-  font-weight: 400;
+  font-family: "Lato", sans-serif;
+  font-size: 25px;
+  font-weight: 300;
   color: #333333;
+  line-height: 43.2px;
+}
+.terminal-africa-theme-bs .terminal-review img {
+  height: 24px !important;
 }
 .terminal-africa-theme-bs .terminal-in-touch {
   background: #fdeedd;
@@ -11571,7 +11579,7 @@
     font-weight: 300;
   }
   .terminal-africa-theme-bs .terminal-review p.terminal-review-profile {
-    font-size: 25px;
+    font-size: 18px;
   }
   .terminal-africa-theme-bs .terminal-review img {
     height: 20px;
@@ -11885,7 +11893,7 @@
     font-weight: 300;
   }
   .terminal-africa-theme-bs .terminal-review p.terminal-review-profile {
-    font-size: 25px;
+    font-size: 18px;
   }
   .terminal-africa-theme-bs .terminal-review img {
     height: 20px;
@@ -12190,7 +12198,7 @@
     font-weight: 300;
   }
   .terminal-africa-theme-bs .terminal-review p.terminal-review-profile {
-    font-size: 25px;
+    font-size: 20px;
   }
   .terminal-africa-theme-bs .terminal-review img {
     height: 20px;
@@ -12495,7 +12503,7 @@
     font-weight: 300;
   }
   .terminal-africa-theme-bs .terminal-review p.terminal-review-profile {
-    font-size: 36px;
+    font-size: 25px;
   }
   .terminal-africa-theme-bs .terminal-review img {
     height: auto;
@@ -12806,7 +12814,7 @@
     font-weight: 300;
   }
   .terminal-africa-theme-bs .terminal-review p.terminal-review-profile {
-    font-size: 36px;
+    font-size: 25px;
   }
   .terminal-africa-theme-bs .terminal-review img {
     height: auto;

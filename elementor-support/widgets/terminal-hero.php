@@ -39,7 +39,7 @@ class Terminal_Hero_Widget extends \Elementor\Widget_Base
      */
     public function get_title()
     {
-        return __('Terminal Hero', 'terminal-africa-hub');
+        return __('Terminal Hero - JOMO', 'terminal-africa-hub');
     }
 
     /**
