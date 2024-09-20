@@ -1757,14 +1757,13 @@
   line-height: 24px;
 }
 .terminal-africa-theme-bs .terminal-hub-ivato-book-shipment {
-  padding: 3rem 0;
+  padding: 3rem 7rem;
   display: flex;
   flex-direction: column;
   gap: 50px;
   transition: all 0.3s ease;
 }
 .terminal-africa-theme-bs .terminal-hub-ivato-book-shipment--header {
-  padding: 0 7rem;
   transition: all 0.3s ease;
 }
 .terminal-africa-theme-bs .terminal-hub-ivato-book-shipment--header h2 {
@@ -2106,16 +2105,16 @@
     line-height: 38px;
   }
   .terminal-africa-theme-bs .terminal-hub-ivato-book-shipment {
-    padding: 2rem 0;
-  }
-  .terminal-africa-theme-bs .terminal-hub-ivato-book-shipment--header {
-    padding: 0 3rem;
+    padding: 2rem 3rem;
   }
   .terminal-africa-theme-bs .terminal-hub-ivato-book-shipment--header h2 {
     font-size: 45px;
   }
   .terminal-africa-theme-bs .terminal-hub-ivato-book-shipment--body--wrapper {
     width: 80%;
+  }
+  .terminal-africa-theme-bs .terminal-hub-ivato-book-shipment--body--wrapper a span {
+    font-size: 25px;
   }
   .terminal-africa-theme-bs .terminal-hub-ivato-services-list {
     padding: 3rem 2rem;
@@ -2246,10 +2245,7 @@
     height: 315px;
   }
   .terminal-africa-theme-bs .terminal-hub-ivato-book-shipment {
-    padding: 2rem 0;
-  }
-  .terminal-africa-theme-bs .terminal-hub-ivato-book-shipment--header {
-    padding: 0 2rem;
+    padding: 2rem 2rem;
   }
   .terminal-africa-theme-bs .terminal-hub-ivato-book-shipment--header h2 {
     font-size: 45px;
@@ -2306,10 +2302,7 @@
     font-size: 21px;
   }
   .terminal-africa-theme-bs .terminal-hub-ivato-book-shipment {
-    padding: 2rem 0;
-  }
-  .terminal-africa-theme-bs .terminal-hub-ivato-book-shipment--header {
-    padding: 0 1rem;
+    padding: 2rem 1rem;
   }
   .terminal-africa-theme-bs .terminal-hub-ivato-book-shipment--header h2 {
     font-size: 45px;
@@ -2414,10 +2407,7 @@
     line-height: 38px;
   }
   .terminal-africa-theme-bs .terminal-hub-ivato-book-shipment {
-    padding: 3rem 0;
-  }
-  .terminal-africa-theme-bs .terminal-hub-ivato-book-shipment--header {
-    padding: 0 3rem;
+    padding: 3rem 3rem;
   }
   .terminal-africa-theme-bs .terminal-hub-ivato-book-shipment--header h2 {
     font-size: 50px;
@@ -2520,10 +2510,7 @@
     line-height: 27px;
   }
   .terminal-africa-theme-bs .terminal-hub-ivato-book-shipment {
-    padding: 3rem 0;
-  }
-  .terminal-africa-theme-bs .terminal-hub-ivato-book-shipment--header {
-    padding: 0 7rem;
+    padding: 3rem 7rem;
   }
   .terminal-africa-theme-bs .terminal-hub-ivato-book-shipment--header h2 {
     font-size: 57px;

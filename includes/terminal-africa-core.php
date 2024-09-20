@@ -795,7 +795,7 @@ class TerminalTheme
         $wp_customize->add_setting('company_address', array(
             'default' => '123, Company Street, Company City, Company Country',
             'transport' => 'refresh',
-            'sanitize_callback' => 'sanitize_text_field'
+            'sanitize_callback' => 'wp_kses_post'
         ));
 
         // Add a control for the company address

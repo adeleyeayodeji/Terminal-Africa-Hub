@@ -185,11 +185,9 @@
   }
 
   .terminal-hub-ivato-book-shipment {
-    padding: 2rem 0;
+    padding: 2rem 3rem;
 
     &--header {
-      padding: 0 3rem;
-
       h2 {
         font-size: 45px;
       }
@@ -198,6 +196,12 @@
     &--body {
       &--wrapper {
         width: 80%;
+
+        a {
+          span {
+            font-size: 25px;
+          }
+        }
       }
     }
   }
@@ -383,11 +387,9 @@
   }
 
   .terminal-hub-ivato-book-shipment {
-    padding: 2rem 0;
+    padding: 2rem 2rem;
 
     &--header {
-      padding: 0 2rem;
-
       h2 {
         font-size: 45px;
       }
@@ -489,11 +491,9 @@
   }
 
   .terminal-hub-ivato-book-shipment {
-    padding: 2rem 0;
+    padding: 2rem 1rem;
 
     &--header {
-      padding: 0 1rem;
-
       h2 {
         font-size: 45px;
       }
@@ -641,11 +641,9 @@
   }
 
   .terminal-hub-ivato-book-shipment {
-    padding: 3rem 0;
+    padding: 3rem 3rem;
 
     &--header {
-      padding: 0 3rem;
-
       h2 {
         font-size: 50px;
       }
@@ -793,11 +791,9 @@
   }
 
   .terminal-hub-ivato-book-shipment {
-    padding: 3rem 0;
+    padding: 3rem 7rem;
 
     &--header {
-      padding: 0 7rem;
-
       h2 {
         font-size: 57px;
       }

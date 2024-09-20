@@ -16,7 +16,19 @@ if (!defined('ABSPATH')) {
                 ?>
             </a>
             <p>
-                <?php echo esc_html(get_theme_mod('company_address', '123, Company Street, Company City, Company Country')); ?>
+                <?php
+                $allowed_tags = array(
+                    'p' => array(),
+                    'br' => array(),
+                    'strong' => array(),
+                    'em' => array(),
+                    'a' => array(
+                        'href' => array(),
+                        'title' => array()
+                    ),
+                );
+                echo wp_kses(get_theme_mod('company_address', '123, Company Street, Company City, Company Country'), $allowed_tags);
+                ?>
             </p>
             <nav>
                 <a href="mailto:<?php echo esc_attr(get_theme_mod('company_email', 'info@company.com')) . '" target="_blank'; ?>"><?php echo esc_html(get_theme_mod('company_email', 'info@company.com')); ?></a>
