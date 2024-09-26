@@ -90,6 +90,8 @@ class TerminalElementor
         \Elementor\Plugin::instance()->widgets_manager->register(new Terminal_Ivato_Locations_Widget());
         //Terminal_Ivato_Map_Widget
         \Elementor\Plugin::instance()->widgets_manager->register(new Terminal_Ivato_Map_Widget());
+        //Terminal_Ivato_Offer_Widget
+        \Elementor\Plugin::instance()->widgets_manager->register(new Terminal_Ivato_Offer_Widget());
     }
 
     /**
