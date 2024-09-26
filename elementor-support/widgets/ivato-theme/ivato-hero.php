@@ -124,7 +124,7 @@ class Terminal_Ivato_Hero_Widget extends \Elementor\Widget_Base
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'default' => '#0A010E',
                 'selectors' => [
-                    '{{WRAPPER}} a' => 'background-color: {{VALUE}}',
+                    '{{WRAPPER}} a:first-child' => 'background-color: {{VALUE}}',
                 ],
             ]
         );
@@ -137,7 +137,7 @@ class Terminal_Ivato_Hero_Widget extends \Elementor\Widget_Base
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'default' => '#000',
                 'selectors' => [
-                    '{{WRAPPER}} a' => 'color: {{VALUE}}',
+                    '{{WRAPPER}} a:first-child' => 'color: {{VALUE}}',
                 ],
             ]
         );
@@ -150,7 +150,7 @@ class Terminal_Ivato_Hero_Widget extends \Elementor\Widget_Base
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'default' => '#000',
                 'selectors' => [
-                    '{{WRAPPER}} a:hover' => 'background-color: {{VALUE}}',
+                    '{{WRAPPER}} a:first-child:hover' => 'background-color: {{VALUE}}',
                 ],
             ]
         );
@@ -163,7 +163,59 @@ class Terminal_Ivato_Hero_Widget extends \Elementor\Widget_Base
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'default' => '#fff',
                 'selectors' => [
-                    '{{WRAPPER}} a:hover' => 'color: {{VALUE}}',
+                    '{{WRAPPER}} a:first-child:hover' => 'color: {{VALUE}}',
+                ],
+            ]
+        );
+
+        //second button bg
+        $this->add_control(
+            'hero_button_bg_2',
+            [
+                'label' => __('Button Background Color', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#0A010E',
+                'selectors' => [
+                    '{{WRAPPER}} a:last-child' => 'background-color: {{VALUE}}',
+                ],
+            ]
+        );
+
+        //second button text color
+        $this->add_control(
+            'hero_button_text_color_2',
+            [
+                'label' => __('Button Text Color', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#000',
+                'selectors' => [
+                    '{{WRAPPER}} a:last-child' => 'color: {{VALUE}}',
+                ],
+            ]
+        );
+
+        //second button bg hover
+        $this->add_control(
+            'hero_button_bg_hover_2',
+            [
+                'label' => __('Button Background Hover Color', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#000',
+                'selectors' => [
+                    '{{WRAPPER}} a:last-child:hover' => 'background-color: {{VALUE}}',
+                ],
+            ]
+        );
+
+        //second button text color hover
+        $this->add_control(
+            'hero_button_text_color_hover_2',
+            [
+                'label' => __('Button Text Hover Color', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#fff',
+                'selectors' => [
+                    '{{WRAPPER}} a:last-child:hover' => 'color: {{VALUE}}',
                 ],
             ]
         );
@@ -191,7 +243,10 @@ class Terminal_Ivato_Hero_Widget extends \Elementor\Widget_Base
                     <p>
                         <?php echo $settings['hero_description']; ?>
                     </p>
-                    <a href="#">Book Shipment</a>
+                    <div class="terminal-hub-ivato-home-hero--header--right--buttons">
+                        <a href="#">Book Shipment</a>
+                        <a href="#">Track Package</a>
+                    </div>
                 </div>
             </div>
             <div class="terminal-hub-ivato-home-hero--body">

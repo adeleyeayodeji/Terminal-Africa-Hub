@@ -168,6 +168,13 @@ jQuery(document).ready(function ($) {
           $(this).attr("href", `https://app.${currentSiteDomain}/track`);
         });
         break;
+      case "Track Package":
+        //https://app.thepep.africa/track
+        links.each(function (index, element) {
+          //parse the href
+          $(this).attr("href", `https://app.${currentSiteDomain}/track`);
+        });
+        break;
     }
   });
 

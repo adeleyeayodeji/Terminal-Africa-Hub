@@ -533,10 +533,10 @@ class TerminalTheme
         add_theme_support("responsive-embeds");
 
         //add theme support for custom-header
-        add_theme_support('custom-header');
+        // add_theme_support('custom-header');
 
         //add theme support for custom-background
-        add_theme_support('custom-background');
+        // add_theme_support('custom-background');
 
         //add theme support for align-wide
         add_theme_support('align-wide');
@@ -749,6 +749,61 @@ class TerminalTheme
             'priority' => 30,
         ));
 
+        //footer type
+        $wp_customize->add_setting('footer_type', array(
+            'default' => '1',
+            'transport' => 'refresh',
+            'sanitize_callback' => 'sanitize_text_field'
+        ));
+
+        // Add a control for the footer type
+        $wp_customize->add_control('footer_type', array(
+            'label' => __('Footer Type', 'terminal-africa-hub'),
+            'section' => 'terminal_footer_section',
+            'settings' => 'footer_type',
+            'type' => 'select',
+            'choices' => array(
+                '1' => 'Footer 1',
+                '2' => 'Footer 2'
+            )
+        ));
+
+        //if footer_type is 2 show icon color
+        $wp_customize->add_setting('footer_icon_color', array(
+            'default' => '#ffffff',
+            'transport' => 'refresh',
+            'sanitize_callback' => 'sanitize_hex_color'
+        ));
+
+        // Add a color control for the footer icon color
+        $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'footer_icon_color', array(
+            'label' => __('Footer Icon Foreground Color', 'terminal-africa-hub'),
+            'section' => 'terminal_footer_section',
+            'settings' => 'footer_icon_color',
+            //check if footer type is 2
+            'active_callback' => function () {
+                return get_theme_mod('footer_type', '1') == '2';
+            }
+        )));
+
+        // Add a new setting for the footer icon background color
+        $wp_customize->add_setting('footer_icon_background_color', array(
+            'default' => '#343434',
+            'transport' => 'refresh',
+            'sanitize_callback' => 'sanitize_hex_color'
+        ));
+
+        // Add a color control for the footer icon background color
+        $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'footer_icon_background_color', array(
+            'label' => __('Footer Icon Background Color', 'terminal-africa-hub'),
+            'section' => 'terminal_footer_section',
+            'settings' => 'footer_icon_background_color',
+            //check if footer type is 2
+            'active_callback' => function () {
+                return get_theme_mod('footer_type', '1') == '2';
+            }
+        )));
+
         // Add a new setting for the footer background color
         $wp_customize->add_setting('footer_background_color', array(
             'default' => '#343434',
@@ -791,6 +846,24 @@ class TerminalTheme
             'settings' => 'footer_logo'
         )));
 
+        //footer copyright color
+        $wp_customize->add_setting('footer_copyright_color', array(
+            'default' => '#b8b3a7',
+            'transport' => 'refresh',
+            'sanitize_callback' => 'sanitize_hex_color'
+        ));
+
+        // Add a color control for the footer copyright color
+        $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'footer_copyright_color', array(
+            'label' => __('Footer Copyright Color', 'terminal-africa-hub'),
+            'section' => 'terminal_footer_section',
+            'settings' => 'footer_copyright_color',
+            //check if footer type is 2
+            'active_callback' => function () {
+                return get_theme_mod('footer_type', '1') == '2';
+            }
+        )));
+
         //Add company address
         $wp_customize->add_setting('company_address', array(
             'default' => '123, Company Street, Company City, Company Country',
@@ -802,7 +875,11 @@ class TerminalTheme
         $wp_customize->add_control('company_address', array(
             'label' => __('Company Address', 'terminal-africa-hub'),
             'section' => 'terminal_footer_section',
-            'settings' => 'company_address'
+            'settings' => 'company_address',
+            //check if footer type is 1
+            'active_callback' => function () {
+                return get_theme_mod('footer_type', '1') == '1';
+            }
         ));
 
         //Company email
@@ -816,7 +893,11 @@ class TerminalTheme
         $wp_customize->add_control('company_email', array(
             'label' => __('Company Email', 'terminal-africa-hub'),
             'section' => 'terminal_footer_section',
-            'settings' => 'company_email'
+            'settings' => 'company_email',
+            //check if footer type is 1
+            'active_callback' => function () {
+                return get_theme_mod('footer_type', '1') == '1';
+            }
         ));
 
         //Company phone
@@ -830,7 +911,11 @@ class TerminalTheme
         $wp_customize->add_control('company_phone', array(
             'label' => __('Company Phone', 'terminal-africa-hub'),
             'section' => 'terminal_footer_section',
-            'settings' => 'company_phone'
+            'settings' => 'company_phone',
+            //check if footer type is 1
+            'active_callback' => function () {
+                return get_theme_mod('footer_type', '1') == '1';
+            }
         ));
 
         //social media links
@@ -872,6 +957,24 @@ class TerminalTheme
             'label' => __('Instagram Link', 'terminal-africa-hub'),
             'section' => 'terminal_footer_section',
             'settings' => 'instagram_link'
+        ));
+
+        //add linkedin
+        $wp_customize->add_setting('linkedin_link', array(
+            'default' => '#',
+            'transport' => 'refresh',
+            'sanitize_callback' => 'esc_url_raw'
+        ));
+
+        // Add a control for the linkedin link
+        $wp_customize->add_control('linkedin_link', array(
+            'label' => __('Linkedin Link', 'terminal-africa-hub'),
+            'section' => 'terminal_footer_section',
+            'settings' => 'linkedin_link',
+            //check if footer type is 2
+            'active_callback' => function () {
+                return get_theme_mod('footer_type', '1') == '2';
+            }
         ));
     }
 
@@ -923,6 +1026,11 @@ class TerminalTheme
 
             .terminal-africa-theme-bs .terminal-footer p {
                 color: <?php echo esc_attr(get_theme_mod('footer_text_color', '#ffffff')); ?> !important;
+            }
+
+            .terminal-africa-theme-bs .terminal-footer .terminal-ivato-copyright p,
+            .terminal-africa-theme-bs .terminal-footer .terminal-ivato-copyright a {
+                color: <?php echo esc_attr(get_theme_mod('footer_copyright_color', '#b8b3a7')); ?> !important;
             }
 
             <?php if (get_theme_mod('header_active_color', 'unset') !== 'unset') : ?>.terminal-header .current-menu-item a {

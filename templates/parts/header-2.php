@@ -18,10 +18,22 @@ if (!defined('ABSPATH')) {
             ?>
         </a>
     </div>
-    <div class="t-hub-dedicated">
+    <div class="t-hub-menu">
+        <?php
+        //wp menu
+        wp_nav_menu(
+            array(
+                'theme_location' => 'primary',
+                'container' => '',
+                'menu_class' => 't-hub-menu-ul'
+            )
+        );
+        ?>
+    </div>
+    <div class="t-hub-dedicated ivato-header-2-wrapper-desktop">
         <div class="d-flex">
-            <a href="<?php echo esc_attr(get_theme_mod('book_shipment_link', "#")); ?>">Book Shipment</a>
-            <a href="<?php echo esc_attr(get_theme_mod('track_shipment_link', "#")); ?>">Track Shipment</a>
+            <a href="#">Login</a>
+            <a href="#">Sign Up</a>
         </div>
     </div>
 </div>
@@ -44,13 +56,25 @@ if (!defined('ABSPATH')) {
     </div>
 </div>
 <div class="terminal-mobile-menu-content">
-    <div class="t-hub-dedicated">
+    <div class="t-hub-menu">
+        <?php
+        //wp menu
+        wp_nav_menu(
+            array(
+                'theme_location' => 'primary',
+                'container' => '',
+                'menu_class' => 't-hub-menu-ul'
+            )
+        );
+        ?>
+    </div>
+    <div class="t-hub-dedicated ivato-header-2-wrapper-mobile">
         <nav class="d-flex">
-            <a href="<?php echo esc_attr(get_theme_mod('book_shipment_link', "#")); ?>">
-                Book Shipment
+            <a href="#">
+                Login
             </a>
-            <a href="<?php echo esc_attr(get_theme_mod('track_shipment_link', "#")); ?>">
-                Track Shipment
+            <a href="#">
+                Sign Up
             </a>
         </nav>
     </div>
