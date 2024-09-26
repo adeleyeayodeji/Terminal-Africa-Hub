@@ -51,8 +51,16 @@ if (!defined('ABSPATH')) {
             ?>
         </a>
     </div>
-    <div class="t-hub-mobile-menu terminal-mobile-menu-content-trigger cursor-pointer">
-        <img src="<?php echo esc_url(TERMINAL_THEME_ASSETS_URI . 'img/menu-icon.svg') ?>" alt="" class="cursor-pointer">
+    <div class="t-hub-mobile-menu-cta">
+        <div class="t-hub-mobile-menu-cta--links">
+            <div class="d-flex">
+                <a href="#">Login</a>
+                <a href="#">Sign Up</a>
+            </div>
+        </div>
+        <div class="t-hub-mobile-menu terminal-mobile-menu-content-trigger cursor-pointer">
+            <img src="<?php echo esc_url(TERMINAL_THEME_ASSETS_URI . 'img/menu-icon.svg') ?>" alt="" class="cursor-pointer" data-close-menu-icon="<?php echo esc_url(TERMINAL_THEME_ASSETS_URI . 'img/close-menu.svg') ?>" data-open-menu-icon="<?php echo esc_url(TERMINAL_THEME_ASSETS_URI . 'img/menu-icon.svg') ?>">
+        </div>
     </div>
 </div>
 <div class="terminal-mobile-menu-content">

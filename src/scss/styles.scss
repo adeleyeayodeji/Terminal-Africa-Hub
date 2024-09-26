@@ -26,6 +26,60 @@
 
     .t-hub-mobile-menu {
       cursor: pointer;
+      background-color: #efefec;
+
+      img {
+        height: 40px;
+      }
+    }
+
+    .t-hub-mobile-menu-cta {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+
+      &--links {
+        .d-flex {
+          gap: 10px;
+
+          a {
+            text-decoration: none;
+          }
+
+          a:first-child {
+            background: #f7941e;
+            padding: 10px 20px;
+            font-family: "Lato", sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            color: white;
+            border-radius: 2px;
+
+            &:hover {
+              background: #333333;
+              color: white;
+              text-decoration: none;
+            }
+          }
+
+          a:last-child {
+            border: 1px solid #f7941e;
+            background: transparent;
+            padding: 10px 20px;
+            font-family: "Lato", sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            color: #f7941e;
+            border-radius: 2px;
+
+            &:hover {
+              border: 1px solid #333333;
+              color: #333333;
+              text-decoration: none;
+            }
+          }
+        }
+      }
     }
   }
 

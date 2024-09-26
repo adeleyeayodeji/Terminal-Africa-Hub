@@ -109,8 +109,31 @@ jQuery(document).ready(function ($) {
   $(".terminal-mobile-menu-content-trigger").click(function (e) {
     e.preventDefault();
     //toggle fade in and out on .terminal-mobile-menu-content
-    $(".terminal-mobile-menu-content").fadeToggle();
+    $(".terminal-mobile-menu-content").toggle();
   });
+
+  /**
+   * Listen for .terminal-mobile-menu-content dropdown
+   *
+   */
+  setInterval(() => {
+    //check if .terminal-mobile-menu-content display is block
+    if ($(".terminal-mobile-menu-content").css("display") === "block") {
+      //get the src
+      var src = $(".terminal-mobile-menu-content-trigger")
+        .find("img")
+        .attr("data-close-menu-icon");
+      //change the src
+      $(".terminal-mobile-menu-content-trigger").find("img").attr("src", src);
+    } else {
+      //get the src
+      var src = $(".terminal-mobile-menu-content-trigger")
+        .find("img")
+        .attr("data-open-menu-icon");
+      //change the src
+      $(".terminal-mobile-menu-content-trigger").find("img").attr("src", src);
+    }
+  }, 50);
 
   //check if current with is above 1200px then hide the mobile menu content
   $(window).resize(function () {

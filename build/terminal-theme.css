@@ -88,6 +88,50 @@
 }
 .terminal-africa-theme-bs .terminal-mobile-menu .t-hub-mobile-menu {
   cursor: pointer;
+  background-color: #efefec;
+}
+.terminal-africa-theme-bs .terminal-mobile-menu .t-hub-mobile-menu img {
+  height: 40px;
+}
+.terminal-africa-theme-bs .terminal-mobile-menu .t-hub-mobile-menu-cta {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.terminal-africa-theme-bs .terminal-mobile-menu .t-hub-mobile-menu-cta--links .d-flex {
+  gap: 10px;
+}
+.terminal-africa-theme-bs .terminal-mobile-menu .t-hub-mobile-menu-cta--links .d-flex a {
+  text-decoration: none;
+}
+.terminal-africa-theme-bs .terminal-mobile-menu .t-hub-mobile-menu-cta--links .d-flex a:first-child {
+  background: #f7941e;
+  padding: 10px 20px;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: white;
+  border-radius: 2px;
+}
+.terminal-africa-theme-bs .terminal-mobile-menu .t-hub-mobile-menu-cta--links .d-flex a:first-child:hover {
+  background: #333333;
+  color: white;
+  text-decoration: none;
+}
+.terminal-africa-theme-bs .terminal-mobile-menu .t-hub-mobile-menu-cta--links .d-flex a:last-child {
+  border: 1px solid #f7941e;
+  background: transparent;
+  padding: 10px 20px;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #f7941e;
+  border-radius: 2px;
+}
+.terminal-africa-theme-bs .terminal-mobile-menu .t-hub-mobile-menu-cta--links .d-flex a:last-child:hover {
+  border: 1px solid #333333;
+  color: #333333;
+  text-decoration: none;
 }
 .terminal-africa-theme-bs .terminal-header {
   display: flex;
@@ -1300,6 +1344,9 @@
      object-position: center center;
   transition: all 0.3s ease;
 }
+.terminal-africa-theme-bs .ivato-header-2-wrapper-mobile {
+  display: none;
+}
 .terminal-africa-theme-bs .terminal-hub-ivato-about {
   padding: 3rem 7rem;
   display: flex;
@@ -2475,6 +2522,12 @@
   .terminal-africa-theme-bs .terminal-hub-ivato-about--body--content--cta a {
     width: -moz-fit-content;
     width: fit-content;
+  }
+  .terminal-africa-theme-bs .ivato-header-2-wrapper-mobile {
+    display: block;
+  }
+  .terminal-africa-theme-bs .t-hub-mobile-menu-cta--links {
+    display: none;
   }
   .terminal-africa-theme-bs .terminal-hub-ivato-services--body--top img:first-child {
     width: 50%;
