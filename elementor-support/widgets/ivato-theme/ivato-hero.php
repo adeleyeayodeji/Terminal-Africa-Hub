@@ -172,7 +172,7 @@ class Terminal_Ivato_Hero_Widget extends \Elementor\Widget_Base
         $this->add_control(
             'hero_button_bg_2',
             [
-                'label' => __('Button Background Color', 'terminal-africa-hub'),
+                'label' => __('Button 2 Background Color', 'terminal-africa-hub'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'default' => '#0A010E',
                 'selectors' => [
@@ -185,7 +185,7 @@ class Terminal_Ivato_Hero_Widget extends \Elementor\Widget_Base
         $this->add_control(
             'hero_button_text_color_2',
             [
-                'label' => __('Button Text Color', 'terminal-africa-hub'),
+                'label' => __('Button 2 Text Color', 'terminal-africa-hub'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'default' => '#000',
                 'selectors' => [
@@ -198,7 +198,7 @@ class Terminal_Ivato_Hero_Widget extends \Elementor\Widget_Base
         $this->add_control(
             'hero_button_bg_hover_2',
             [
-                'label' => __('Button Background Hover Color', 'terminal-africa-hub'),
+                'label' => __('Button 2 Background Hover Color', 'terminal-africa-hub'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'default' => '#000',
                 'selectors' => [
@@ -211,7 +211,7 @@ class Terminal_Ivato_Hero_Widget extends \Elementor\Widget_Base
         $this->add_control(
             'hero_button_text_color_hover_2',
             [
-                'label' => __('Button Text Hover Color', 'terminal-africa-hub'),
+                'label' => __('Button 2 Text Hover Color', 'terminal-africa-hub'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'default' => '#fff',
                 'selectors' => [
