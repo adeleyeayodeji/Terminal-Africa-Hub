@@ -984,23 +984,27 @@ class TerminalTheme
 ?>
         <style type="text/css">
             .terminal-header .t-hub-dedicated a:first-child,
-            .terminal-mobile-menu-content .t-hub-dedicated a:first-child {
+            .terminal-mobile-menu-content .t-hub-dedicated a:first-child,
+            .t-hub-mobile-menu-cta .t-hub-mobile-menu-cta--links a:first-child {
                 background-color: <?php echo esc_attr(get_theme_mod('book_shipment_color', '#f7941e')); ?> !important;
             }
 
             .terminal-header .t-hub-dedicated a:first-child:hover,
-            .terminal-mobile-menu-content .t-hub-dedicated a:first-child:hover {
+            .terminal-mobile-menu-content .t-hub-dedicated a:first-child:hover,
+            .t-hub-mobile-menu-cta .t-hub-mobile-menu-cta--links a:first-child:hover {
                 background-color: <?php echo esc_attr(get_theme_mod('book_shipment_hover_color', '#333333')); ?> !important;
             }
 
             .terminal-header .t-hub-dedicated a:last-child,
-            .terminal-mobile-menu-content .t-hub-dedicated a:last-child {
+            .terminal-mobile-menu-content .t-hub-dedicated a:last-child,
+            .t-hub-mobile-menu-cta .t-hub-mobile-menu-cta--links a:last-child {
                 border-color: <?php echo esc_attr(get_theme_mod('track_shipment_color', '#f7941e')); ?> !important;
                 color: <?php echo esc_attr(get_theme_mod('track_shipment_color', '#f7941e')); ?> !important;
             }
 
             .terminal-header .t-hub-dedicated a:last-child:hover,
-            .terminal-mobile-menu-content .t-hub-dedicated a:last-child:hover {
+            .terminal-mobile-menu-content .t-hub-dedicated a:last-child:hover,
+            .t-hub-mobile-menu-cta .t-hub-mobile-menu-cta--links a:last-child:hover {
                 border-color: <?php echo esc_attr(get_theme_mod('track_shipment_hover_color', '#333333')); ?> !important;
                 color: <?php echo esc_attr(get_theme_mod('track_shipment_hover_color', '#333333')); ?> !important;
             }

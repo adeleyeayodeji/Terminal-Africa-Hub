@@ -215,17 +215,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 5px 15px;
   margin-top: 111px;
 }
 .terminal-africa-theme-bs .terminal-mobile-menu-content .t-hub-menu ul {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
   justify-content: center;
   align-items: center;
   margin-bottom: 0px;
-  margin-top: 10px;
+  margin-top: 30px;
   padding-left: 0px;
 }
 .terminal-africa-theme-bs .terminal-mobile-menu-content .t-hub-menu ul li {
@@ -2425,6 +2425,12 @@
   }
 }
 @media (max-width: 768px) {
+  .terminal-africa-theme-bs .terminal-hub-ivato-offer--header h2 {
+    line-height: unset;
+  }
+  .terminal-africa-theme-bs .terminal-hub-ivato-offer--header h2 span {
+    line-height: unset;
+  }
   .terminal-africa-theme-bs .terminal-hub-ivato-locations {
     padding: 3rem 2rem;
   }

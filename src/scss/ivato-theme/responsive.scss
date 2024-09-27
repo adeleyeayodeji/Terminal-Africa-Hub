@@ -279,6 +279,18 @@
 
 //max 768px
 @media (max-width: 768px) {
+  .terminal-hub-ivato-offer {
+    &--header {
+      h2 {
+        line-height: unset;
+
+        span {
+          line-height: unset;
+        }
+      }
+    }
+  }
+
   .terminal-hub-ivato-locations {
     padding: 3rem 2rem;
 

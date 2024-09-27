@@ -188,18 +188,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgb(0 0 0 / 7%) 0px 5px 15px;
     margin-top: 111px;
 
     .t-hub-menu {
       ul {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 30px;
         justify-content: center;
         align-items: center;
         margin-bottom: 0px;
-        margin-top: 10px;
+        margin-top: 30px;
         padding-left: 0px;
 
         li {
