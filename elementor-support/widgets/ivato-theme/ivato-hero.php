@@ -194,6 +194,19 @@ class Terminal_Ivato_Hero_Widget extends \Elementor\Widget_Base
             ]
         );
 
+        //second button border
+        $this->add_control(
+            'hero_button_border_2',
+            [
+                'label' => __('Button 2 Border Color', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#0A010E',
+                'selectors' => [
+                    '{{WRAPPER}} a:last-child' => 'border-color: {{VALUE}}',
+                ],
+            ]
+        );
+
         //second button bg hover
         $this->add_control(
             'hero_button_bg_hover_2',
