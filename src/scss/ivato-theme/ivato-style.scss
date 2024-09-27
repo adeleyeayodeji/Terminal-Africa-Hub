@@ -150,8 +150,9 @@
     &--image {
       width: 600px;
       height: 440px;
-      object-fit: cover;
-      object-position: center center;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
       transition: all 0.3s ease;
     }
 
@@ -327,6 +328,7 @@
     flex-direction: column;
     gap: 10px;
     margin-top: 2rem;
+    overflow: hidden;
 
     &--top {
       display: flex;
@@ -939,7 +941,7 @@
 
   .terminal-ivato-site-icon {
     img {
-      height: 21px;
+      height: 40px;
       object-fit: contain;
       object-position: center center;
       transition: all 0.3s ease;

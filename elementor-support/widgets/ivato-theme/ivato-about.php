@@ -191,6 +191,16 @@ class Terminal_Ivato_About_Widget extends \Elementor\Widget_Base
             ]
         );
 
+        //first cta text
+        $this->add_control(
+            'first_cta_text',
+            [
+                'label' => __('First CTA Text', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::TEXT,
+                'default' => __('Book Shipment', 'terminal-africa-hub'),
+            ]
+        );
+
         //first cta background
         $this->add_control(
             'first_cta_background',
@@ -214,6 +224,28 @@ class Terminal_Ivato_About_Widget extends \Elementor\Widget_Base
                 'selectors' => [
                     '{{WRAPPER}} .terminal-hub-ivato-about--body--content--cta a:first-child' => 'color: {{VALUE}}',
                 ],
+            ]
+        );
+
+        //first cta link
+        $this->add_control(
+            'first_cta_link',
+            [
+                'label' => __('First CTA Link', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::URL,
+                'default' => [
+                    'url' => '#',
+                ],
+            ]
+        );
+
+        //second cta text
+        $this->add_control(
+            'second_cta_text',
+            [
+                'label' => __('Second CTA Text', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::TEXT,
+                'default' => __('Track Shipment', 'terminal-africa-hub'),
             ]
         );
 
@@ -243,6 +275,18 @@ class Terminal_Ivato_About_Widget extends \Elementor\Widget_Base
             ]
         );
 
+        //second cta link
+        $this->add_control(
+            'second_cta_link',
+            [
+                'label' => __('Second CTA Link', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::URL,
+                'default' => [
+                    'url' => '#',
+                ],
+            ]
+        );
+
         $this->end_controls_section();
     }
 
@@ -265,7 +309,7 @@ class Terminal_Ivato_About_Widget extends \Elementor\Widget_Base
                 </p>
             </div>
             <div class="terminal-hub-ivato-about--body">
-                <div class="terminal-hub-ivato-about--body--image" style="background-image: url('<?php echo TERMINAL_THEME_ASSETS_URI ?>/img/bg.jpeg');">
+                <div class="terminal-hub-ivato-about--body--image" style="background-image: url('<?php echo esc_url($settings['image']['url']); ?>');">
                 </div>
                 <div class="terminal-hub-ivato-about--body--content">
                     <div class="terminal-hub-ivato-about--body--content--top">
@@ -301,11 +345,11 @@ class Terminal_Ivato_About_Widget extends \Elementor\Widget_Base
                         </div>
                     </div>
                     <div class="terminal-hub-ivato-about--body--content--cta">
-                        <a href="#">
-                            Book Shipment
+                        <a href="<?php echo esc_url($settings['first_cta_link']['url']); ?>">
+                            <?php echo esc_html($settings['first_cta_text']); ?>
                         </a>
-                        <a href="#">
-                            Track Shipment
+                        <a href="<?php echo esc_url($settings['second_cta_link']['url']); ?>">
+                            <?php echo esc_html($settings['second_cta_text']); ?>
                         </a>
                     </div>
                 </div>

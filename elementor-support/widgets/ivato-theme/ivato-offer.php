@@ -131,7 +131,9 @@ class Terminal_Ivato_Offer_Widget extends \Elementor\Widget_Base
             [
                 'label' => __('Header Button Link', 'terminal-africa-hub'),
                 'type' => \Elementor\Controls_Manager::URL,
-                'default' => __('#', 'terminal-africa-hub'),
+                'default' => [
+                    'url' => '#',
+                ],
             ]
         );
 
@@ -183,6 +185,16 @@ class Terminal_Ivato_Offer_Widget extends \Elementor\Widget_Base
             ]
         );
 
+        //background color
+        $this->add_control(
+            'background_color',
+            [
+                'label' => __('Background Color', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#000',
+            ]
+        );
+
         $this->end_controls_section();
     }
 
@@ -195,7 +207,7 @@ class Terminal_Ivato_Offer_Widget extends \Elementor\Widget_Base
     {
         $settings = $this->get_settings_for_display();
 ?>
-        <div class="terminal-hub-ivato-offer">
+        <div class="terminal-hub-ivato-offer" style="background-color: <?php echo esc_attr($settings['background_color']); ?>;">
             <div class="terminal-hub-ivato-offer--header">
                 <h2>
                     <?php echo esc_html($settings['header_title']); ?> <span><?php echo esc_html($settings['header_title_span']); ?></span>

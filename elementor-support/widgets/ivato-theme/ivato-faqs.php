@@ -220,7 +220,7 @@ class Terminal_Ivato_Faqs_Widget extends \Elementor\Widget_Base
                 <h2>
                     <?php echo esc_html($settings['title']); ?>
                 </h2>
-                <a href="<?php echo esc_url($settings['link_url']); ?>">
+                <a href="<?php echo esc_url($settings['link_url']['url']); ?>">
                     <span>
                         <?php echo esc_html($settings['link_title']); ?>
                     </span>

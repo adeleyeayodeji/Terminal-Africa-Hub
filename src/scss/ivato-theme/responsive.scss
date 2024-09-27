@@ -849,7 +849,7 @@
 //min 1060
 @media (min-width: 1060px) {
   .terminal-hub-ivato-home-hero {
-    padding: 3rem 7rem;
+    padding: 3rem 3rem;
 
     &--header {
       &--left {
@@ -861,7 +861,7 @@
   }
 
   .terminal-hub-ivato-about {
-    padding: 3rem 7rem;
+    padding: 3rem 3rem;
 
     &--body {
       flex-direction: row;
@@ -889,7 +889,7 @@
   }
 
   .terminal-hub-ivato-services {
-    padding: 3rem 7rem;
+    padding: 3rem 3rem;
 
     &--header {
       flex-direction: row;
@@ -905,7 +905,7 @@
   }
 
   .terminal-hub-ivato-locations {
-    padding: 3rem 7rem;
+    padding: 3rem 3rem;
 
     &--header {
       flex-direction: row;
@@ -924,7 +924,7 @@
   }
 
   .terminal-hub-ivato-reviews {
-    padding: 3rem 7rem;
+    padding: 3rem 3rem;
 
     &--header {
       h2 {
@@ -971,7 +971,7 @@
     padding: 3rem 0rem;
 
     &--header {
-      padding: 0rem 7rem;
+      padding: 0rem 3rem;
       h2 {
         font-size: 50px;
       }
@@ -981,7 +981,7 @@
       &--wrapper {
         width: 57%;
         a {
-          padding: 15px 7rem;
+          padding: 15px 3rem;
         }
       }
     }
@@ -1039,11 +1039,39 @@
     }
   }
 
+  .terminal-hub-ivato-about {
+    padding: 3rem 7rem;
+  }
+
+  .terminal-hub-ivato-services {
+    padding: 3rem 7rem;
+  }
+
+  .terminal-hub-ivato-locations {
+    padding: 3rem 7rem;
+  }
+
+  .terminal-hub-ivato-reviews {
+    padding: 3rem 7rem;
+  }
+
+  .terminal-hub-ivato-book-shipment {
+    padding: 3rem 0rem;
+
+    &--header {
+      padding: 0rem 7rem;
+    }
+  }
+
   .terminal-hub-ivato-services-list {
     &--items {
       &--item {
         max-width: 323px !important;
       }
     }
+  }
+
+  .terminal-hub-ivato-book-shipment--body--wrapper a {
+    padding: 15px 7rem;
   }
 }

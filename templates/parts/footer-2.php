@@ -112,11 +112,13 @@ if (!defined('ABSPATH')) {
             <p>© <?php echo date('Y') . ' ' . get_bloginfo('name') ?>. Powered by <a href="https://terminal.africa" target="_blank">Terminal Africa</a>. All rights reserved.</p>
         </div>
         <div class="terminal-ivato-site-icon">
-            <?php
-            //fetch footer_logo
-            $footer_img_link = get_theme_mod('footer_logo', TERMINAL_THEME_ASSETS_URI . 'img/logo-full.png');
-            ?>
-            <img src="<?php echo esc_url($footer_img_link); ?>" alt="<?php echo get_bloginfo('name'); ?>">
+            <a href="<?php echo esc_url(home_url('/')); ?>">
+                <?php
+                //fetch footer_logo
+                $footer_img_link = get_theme_mod('footer_logo', TERMINAL_THEME_ASSETS_URI . 'img/logo-full.png');
+                ?>
+                <img src="<?php echo esc_url($footer_img_link); ?>" alt="<?php echo get_bloginfo('name'); ?>">
+            </a>
         </div>
     </div>
 </div>
