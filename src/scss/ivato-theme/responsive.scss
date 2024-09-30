@@ -262,7 +262,7 @@
               font-size: 15px;
             }
 
-            span:last-child {
+            span:nth-child(2) {
               font-size: 24px;
             }
           }
@@ -437,7 +437,7 @@
             width: 50%;
           }
 
-          &:last-child {
+          &:nth-child(2) {
             display: none;
           }
         }
@@ -448,7 +448,7 @@
           img {
             height: 300px;
 
-            &:last-child {
+            &:nth-child(2) {
               display: none;
             }
           }
@@ -648,7 +648,7 @@
               font-size: 15px;
             }
 
-            span:last-child {
+            span:nth-child(2) {
               font-size: 20px;
             }
           }
@@ -836,7 +836,7 @@
       &--left {
         ol {
           li {
-            span:last-child {
+            span:nth-child(2) {
               font-size: 24px;
             }
           }
@@ -959,7 +959,7 @@
           line-height: 31.4px;
         }
 
-        p:last-child {
+        p:nth-child(2) {
           font-size: 14px;
           line-height: 27px;
         }
@@ -1006,7 +1006,7 @@
       &--left {
         ol {
           li {
-            span:last-child {
+            span:nth-child(2) {
               font-size: 30px;
             }
           }
@@ -1066,7 +1066,7 @@
   .terminal-hub-ivato-services-list {
     &--items {
       &--item {
-        max-width: 323px !important;
+        max-width: 340px !important;
       }
     }
   }

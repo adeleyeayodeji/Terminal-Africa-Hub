@@ -1259,7 +1259,7 @@
 .terminal-africa-theme-bs .terminal-hub-ivato-home-hero--header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   gap: 10px;
   width: 100%;
   transition: all 0.3s ease;
@@ -1321,13 +1321,13 @@
   color: white;
   text-decoration: none;
 }
-.terminal-africa-theme-bs .terminal-hub-ivato-home-hero--header--right--buttons a:last-child {
+.terminal-africa-theme-bs .terminal-hub-ivato-home-hero--header--right--buttons a:nth-child(2) {
   background: transparent;
   color: #0a010e;
   border: 1px solid #0a010e;
   transition: all 0.3s ease;
 }
-.terminal-africa-theme-bs .terminal-hub-ivato-home-hero--header--right--buttons a:last-child:hover {
+.terminal-africa-theme-bs .terminal-hub-ivato-home-hero--header--right--buttons a:nth-child(2):hover {
   background-color: #0a010e;
   color: #fff;
 }
@@ -1495,13 +1495,13 @@
   background-color: #333333;
   color: #fff;
 }
-.terminal-africa-theme-bs .terminal-hub-ivato-about--body--content--cta a:last-child {
+.terminal-africa-theme-bs .terminal-hub-ivato-about--body--content--cta a:nth-child(2) {
   background: transparent;
   color: #0a010e;
   border: 1px solid #0a010e;
   transition: all 0.3s ease;
 }
-.terminal-africa-theme-bs .terminal-hub-ivato-about--body--content--cta a:last-child:hover {
+.terminal-africa-theme-bs .terminal-hub-ivato-about--body--content--cta a:nth-child(2):hover {
   background-color: #0a010e;
   color: #fff;
 }
@@ -1690,7 +1690,7 @@
   margin: 0;
   line-height: 31.4px;
 }
-.terminal-africa-theme-bs .terminal-hub-ivato-reviews--body--right p:last-child {
+.terminal-africa-theme-bs .terminal-hub-ivato-reviews--body--right p:nth-child(2) {
   font-family: "Inter", serif;
   font-size: 14px;
   font-weight: 300;
@@ -2203,7 +2203,7 @@
   align-items: center;
   justify-content: center;
 }
-.terminal-africa-theme-bs .terminal-hub-ivato-offer--body--left ol li span:last-child {
+.terminal-africa-theme-bs .terminal-hub-ivato-offer--body--left ol li span:nth-child(2) {
   font-family: "Inter", sans-serif;
   font-size: 30px;
   font-weight: 700;
@@ -2228,6 +2228,9 @@
      object-position: center center;
   transition: all 0.3s ease;
   border-radius: 5px;
+}
+.terminal-africa-theme-bs .terminal-header .t-hub-logo img {
+  height: 38px;
 }
 @media (max-width: 800px) {
   .terminal-africa-theme-bs .terminal-hub-ivato-home-hero {
@@ -2416,7 +2419,7 @@
     height: 45px;
     font-size: 15px;
   }
-  .terminal-africa-theme-bs .terminal-hub-ivato-offer--body--left ol li span:last-child {
+  .terminal-africa-theme-bs .terminal-hub-ivato-offer--body--left ol li span:nth-child(2) {
     font-size: 24px;
   }
   .terminal-africa-theme-bs .terminal-hub-ivato-offer--body--right {
@@ -2541,13 +2544,13 @@
   .terminal-africa-theme-bs .terminal-hub-ivato-services--body--top img:nth-child(2) {
     width: 50%;
   }
-  .terminal-africa-theme-bs .terminal-hub-ivato-services--body--top img:last-child {
+  .terminal-africa-theme-bs .terminal-hub-ivato-services--body--top img:nth-child(2) {
     display: none;
   }
   .terminal-africa-theme-bs .terminal-hub-ivato-services--body--bottom--images img {
     height: 300px;
   }
-  .terminal-africa-theme-bs .terminal-hub-ivato-services--body--bottom--images img:last-child {
+  .terminal-africa-theme-bs .terminal-hub-ivato-services--body--bottom--images img:nth-child(2) {
     display: none;
   }
   .terminal-africa-theme-bs .terminal-hub-ivato-services--body--bottom--cta {
@@ -2672,7 +2675,7 @@
     height: 45px;
     font-size: 15px;
   }
-  .terminal-africa-theme-bs .terminal-hub-ivato-offer--body--left ol li span:last-child {
+  .terminal-africa-theme-bs .terminal-hub-ivato-offer--body--left ol li span:nth-child(2) {
     font-size: 20px;
   }
   .terminal-africa-theme-bs .terminal-hub-ivato-offer--body--right {
@@ -2798,7 +2801,7 @@
   .terminal-africa-theme-bs .terminal-hub-ivato-offer {
     padding: 6rem 0rem;
   }
-  .terminal-africa-theme-bs .terminal-hub-ivato-offer--body--left ol li span:last-child {
+  .terminal-africa-theme-bs .terminal-hub-ivato-offer--body--left ol li span:nth-child(2) {
     font-size: 24px;
   }
 }
@@ -2885,7 +2888,7 @@
     font-size: 18px;
     line-height: 31.4px;
   }
-  .terminal-africa-theme-bs .terminal-hub-ivato-reviews--body--right p:last-child {
+  .terminal-africa-theme-bs .terminal-hub-ivato-reviews--body--right p:nth-child(2) {
     font-size: 14px;
     line-height: 27px;
   }
@@ -2913,7 +2916,7 @@
   .terminal-africa-theme-bs .terminal-hub-ivato-offer {
     padding: 6rem 2rem;
   }
-  .terminal-africa-theme-bs .terminal-hub-ivato-offer--body--left ol li span:last-child {
+  .terminal-africa-theme-bs .terminal-hub-ivato-offer--body--left ol li span:nth-child(2) {
     font-size: 30px;
   }
 }
@@ -2951,7 +2954,7 @@
     padding: 0rem 7rem;
   }
   .terminal-africa-theme-bs .terminal-hub-ivato-services-list--items--item {
-    max-width: 323px !important;
+    max-width: 340px !important;
   }
   .terminal-africa-theme-bs .terminal-hub-ivato-book-shipment--body--wrapper a {
     padding: 15px 7rem;

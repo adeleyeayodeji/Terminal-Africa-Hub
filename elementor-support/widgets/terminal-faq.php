@@ -89,6 +89,22 @@ class Terminal_FAQ_Widget extends \Elementor\Widget_Base
             ]
         );
 
+        //remove terminal-faqs padding top
+        $this->add_control(
+            'remove_padding_top',
+            [
+                'label' => __('Remove Padding Top', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::SWITCHER,
+                'label_on' => __('Yes', 'terminal-africa-hub'),
+                'label_off' => __('No', 'terminal-africa-hub'),
+                'return_value' => 'yes',
+                'default' => 'no',
+                'selectors' => [
+                    '{{WRAPPER}} .terminal-faqs' => 'padding-top: 0;',
+                ],
+            ]
+        );
+
         $repeater = new \Elementor\Repeater();
 
         $repeater->add_control(

@@ -239,6 +239,18 @@ class Terminal_Ivato_About_Widget extends \Elementor\Widget_Base
             ]
         );
 
+        //enable second cta
+        $this->add_control(
+            'enable_second_cta',
+            [
+                'label' => __('Enable Second CTA', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::SWITCHER,
+                'default' => 'yes',
+                'label_on' => __('Yes', 'terminal-africa-hub'),
+                'label_off' => __('No', 'terminal-africa-hub'),
+            ]
+        );
+
         //second cta text
         $this->add_control(
             'second_cta_text',
@@ -246,6 +258,9 @@ class Terminal_Ivato_About_Widget extends \Elementor\Widget_Base
                 'label' => __('Second CTA Text', 'terminal-africa-hub'),
                 'type' => \Elementor\Controls_Manager::TEXT,
                 'default' => __('Track Shipment', 'terminal-africa-hub'),
+                'condition' => [
+                    'enable_second_cta' => 'yes',
+                ],
             ]
         );
 
@@ -258,6 +273,9 @@ class Terminal_Ivato_About_Widget extends \Elementor\Widget_Base
                 'default' => '#000',
                 'selectors' => [
                     '{{WRAPPER}} .terminal-hub-ivato-about--body--content--cta a:last-child' => 'border-color: {{VALUE}}',
+                ],
+                'condition' => [
+                    'enable_second_cta' => 'yes',
                 ],
             ]
         );
@@ -272,6 +290,9 @@ class Terminal_Ivato_About_Widget extends \Elementor\Widget_Base
                 'selectors' => [
                     '{{WRAPPER}} .terminal-hub-ivato-about--body--content--cta a:last-child' => 'color: {{VALUE}}',
                 ],
+                'condition' => [
+                    'enable_second_cta' => 'yes',
+                ],
             ]
         );
 
@@ -283,6 +304,9 @@ class Terminal_Ivato_About_Widget extends \Elementor\Widget_Base
                 'type' => \Elementor\Controls_Manager::URL,
                 'default' => [
                     'url' => '#',
+                ],
+                'condition' => [
+                    'enable_second_cta' => 'yes',
                 ],
             ]
         );
@@ -348,9 +372,11 @@ class Terminal_Ivato_About_Widget extends \Elementor\Widget_Base
                         <a href="<?php echo esc_url($settings['first_cta_link']['url']); ?>">
                             <?php echo esc_html($settings['first_cta_text']); ?>
                         </a>
-                        <a href="<?php echo esc_url($settings['second_cta_link']['url']); ?>">
-                            <?php echo esc_html($settings['second_cta_text']); ?>
-                        </a>
+                        <?php if ($settings['enable_second_cta'] === 'yes') : ?>
+                            <a href="<?php echo esc_url($settings['second_cta_link']['url']); ?>">
+                                <?php echo esc_html($settings['second_cta_text']); ?>
+                            </a>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>

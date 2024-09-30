@@ -243,7 +243,7 @@ class Terminal_Ivato_Faqs_Widget extends \Elementor\Widget_Base
                             </div>
                             <div class="terminal-hub-ivato-faqs--right--items--item--answer">
                                 <p>
-                                    <?php echo esc_html($faq['answer']); ?>
+                                    <?php echo wp_kses_post($faq['answer']); ?>
                                 </p>
                             </div>
                         </div>

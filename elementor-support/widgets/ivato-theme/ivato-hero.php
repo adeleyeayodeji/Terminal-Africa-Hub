@@ -85,6 +85,18 @@ class Terminal_Ivato_Hero_Widget extends \Elementor\Widget_Base
             ]
         );
 
+        //enable toggle for image display
+        $this->add_control(
+            'hero_image_toggle',
+            [
+                'label' => __('Display Image', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::SWITCHER,
+                'default' => 'yes',
+                'label_on' => __('Yes', 'terminal-africa-hub'),
+                'label_off' => __('No', 'terminal-africa-hub'),
+            ]
+        );
+
         $this->add_control(
             'hero_image',
             [
@@ -92,6 +104,9 @@ class Terminal_Ivato_Hero_Widget extends \Elementor\Widget_Base
                 'type' => \Elementor\Controls_Manager::MEDIA,
                 'default' => [
                     'url' => TERMINAL_THEME_ASSETS_URI . '/img/service-2-img.png',
+                ],
+                'condition' => [
+                    'hero_image_toggle' => 'yes',
                 ],
             ]
         );
@@ -116,6 +131,18 @@ class Terminal_Ivato_Hero_Widget extends \Elementor\Widget_Base
             ]
         );
 
+        //hide button 1
+        $this->add_control(
+            'hero_button_1_toggle',
+            [
+                'label' => __('Show Button 1', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::SWITCHER,
+                'default' => 'yes',
+                'label_on' => __('Yes', 'terminal-africa-hub'),
+                'label_off' => __('No', 'terminal-africa-hub'),
+            ]
+        );
+
         //first button bg
         $this->add_control(
             'hero_button_bg',
@@ -125,6 +152,37 @@ class Terminal_Ivato_Hero_Widget extends \Elementor\Widget_Base
                 'default' => '#0A010E',
                 'selectors' => [
                     '{{WRAPPER}} a:first-child' => 'background-color: {{VALUE}}',
+                ],
+                'condition' => [
+                    'hero_button_1_toggle' => 'yes',
+                ],
+            ]
+        );
+
+        //button text
+        $this->add_control(
+            'hero_button_text',
+            [
+                'label' => __('Button Text', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::TEXT,
+                'default' => __('Book Shipment', 'terminal-africa-hub'),
+                'condition' => [
+                    'hero_button_1_toggle' => 'yes',
+                ],
+            ]
+        );
+
+        //button link
+        $this->add_control(
+            'hero_button_link',
+            [
+                'label' => __('Button Link', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::URL,
+                'default' => [
+                    'url' => '#'
+                ],
+                'condition' => [
+                    'hero_button_1_toggle' => 'yes',
                 ],
             ]
         );
@@ -139,6 +197,9 @@ class Terminal_Ivato_Hero_Widget extends \Elementor\Widget_Base
                 'selectors' => [
                     '{{WRAPPER}} a:first-child' => 'color: {{VALUE}}',
                 ],
+                'condition' => [
+                    'hero_button_1_toggle' => 'yes',
+                ],
             ]
         );
 
@@ -151,6 +212,9 @@ class Terminal_Ivato_Hero_Widget extends \Elementor\Widget_Base
                 'default' => '#000',
                 'selectors' => [
                     '{{WRAPPER}} a:first-child:hover' => 'background-color: {{VALUE}}',
+                ],
+                'condition' => [
+                    'hero_button_1_toggle' => 'yes',
                 ],
             ]
         );
@@ -165,6 +229,21 @@ class Terminal_Ivato_Hero_Widget extends \Elementor\Widget_Base
                 'selectors' => [
                     '{{WRAPPER}} a:first-child:hover' => 'color: {{VALUE}}',
                 ],
+                'condition' => [
+                    'hero_button_1_toggle' => 'yes',
+                ],
+            ]
+        );
+
+        //hide second button
+        $this->add_control(
+            'hero_button_2_toggle',
+            [
+                'label' => __('Show Button 2', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::SWITCHER,
+                'default' => 'no',
+                'label_on' => __('Yes', 'terminal-africa-hub'),
+                'label_off' => __('No', 'terminal-africa-hub'),
             ]
         );
 
@@ -176,7 +255,10 @@ class Terminal_Ivato_Hero_Widget extends \Elementor\Widget_Base
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'default' => '#0A010E',
                 'selectors' => [
-                    '{{WRAPPER}} a:last-child' => 'background-color: {{VALUE}}',
+                    '{{WRAPPER}} a:nth-child(2)' => 'background-color: {{VALUE}}',
+                ],
+                'condition' => [
+                    'hero_button_2_toggle' => 'yes',
                 ],
             ]
         );
@@ -189,7 +271,10 @@ class Terminal_Ivato_Hero_Widget extends \Elementor\Widget_Base
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'default' => '#000',
                 'selectors' => [
-                    '{{WRAPPER}} a:last-child' => 'color: {{VALUE}}',
+                    '{{WRAPPER}} a:nth-child(2)' => 'color: {{VALUE}}',
+                ],
+                'condition' => [
+                    'hero_button_2_toggle' => 'yes',
                 ],
             ]
         );
@@ -202,7 +287,10 @@ class Terminal_Ivato_Hero_Widget extends \Elementor\Widget_Base
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'default' => '#0A010E',
                 'selectors' => [
-                    '{{WRAPPER}} a:last-child' => 'border-color: {{VALUE}}',
+                    '{{WRAPPER}} a:nth-child(2)' => 'border-color: {{VALUE}}',
+                ],
+                'condition' => [
+                    'hero_button_2_toggle' => 'yes',
                 ],
             ]
         );
@@ -215,7 +303,10 @@ class Terminal_Ivato_Hero_Widget extends \Elementor\Widget_Base
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'default' => '#000',
                 'selectors' => [
-                    '{{WRAPPER}} a:last-child:hover' => 'background-color: {{VALUE}}',
+                    '{{WRAPPER}} a:nth-child(2):hover' => 'background-color: {{VALUE}}',
+                ],
+                'condition' => [
+                    'hero_button_2_toggle' => 'yes',
                 ],
             ]
         );
@@ -228,7 +319,10 @@ class Terminal_Ivato_Hero_Widget extends \Elementor\Widget_Base
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'default' => '#fff',
                 'selectors' => [
-                    '{{WRAPPER}} a:last-child:hover' => 'color: {{VALUE}}',
+                    '{{WRAPPER}} a:nth-child(2):hover' => 'color: {{VALUE}}',
+                ],
+                'condition' => [
+                    'hero_button_2_toggle' => 'yes',
                 ],
             ]
         );
@@ -257,14 +351,22 @@ class Terminal_Ivato_Hero_Widget extends \Elementor\Widget_Base
                         <?php echo $settings['hero_description']; ?>
                     </p>
                     <div class="terminal-hub-ivato-home-hero--header--right--buttons">
-                        <a href="#">Book Shipment</a>
-                        <a href="#">Track Package</a>
+                        <?php if ($settings['hero_button_1_toggle'] === 'yes') : ?>
+                            <a href="<?php echo esc_url($settings['hero_button_link']['url']); ?>">
+                                <?php echo esc_html($settings['hero_button_text']); ?>
+                            </a>
+                        <?php endif; ?>
+                        <?php if ($settings['hero_button_2_toggle'] === 'yes') : ?>
+                            <a href="#">Track Package</a>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
-            <div class="terminal-hub-ivato-home-hero--body">
-                <img src="<?php echo $settings['hero_image']['url']; ?>" alt="<?php echo $settings['hero_title']; ?>">
-            </div>
+            <?php if ($settings['hero_image_toggle'] === 'yes') : ?>
+                <div class="terminal-hub-ivato-home-hero--body">
+                    <img src="<?php echo $settings['hero_image']['url']; ?>" alt="<?php echo $settings['hero_title']; ?>">
+                </div>
+            <?php endif; ?>
         </div>
 <?php
     }

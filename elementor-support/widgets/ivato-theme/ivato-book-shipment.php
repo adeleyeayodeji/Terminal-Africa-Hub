@@ -85,12 +85,27 @@ class Terminal_Ivato_Book_Shipment_Widget extends \Elementor\Widget_Base
             ]
         );
 
+        //toggle title
+        $this->add_control(
+            'enable_title',
+            [
+                'label' => __('Enable Title', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::SWITCHER,
+                'default' => 'yes',
+                'label_on' => __('Yes', 'terminal-africa-hub'),
+                'label_off' => __('No', 'terminal-africa-hub'),
+            ]
+        );
+
         $this->add_control(
             'title',
             [
                 'label' => __('Title', 'terminal-africa-hub'),
                 'type' => \Elementor\Controls_Manager::TEXT,
                 'default' => __('Send your parcels with ease and assurance.', 'terminal-africa-hub'),
+                'condition' => [
+                    'enable_title' => 'yes',
+                ],
             ]
         );
 
@@ -170,6 +185,21 @@ class Terminal_Ivato_Book_Shipment_Widget extends \Elementor\Widget_Base
             ]
         );
 
+        //remove bottom space
+        $this->add_control(
+            'remove_bottom_space',
+            [
+                'label' => __('Remove Bottom Space', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::SWITCHER,
+                'default' => 'no',
+                'label_on' => __('Yes', 'terminal-africa-hub'),
+                'label_off' => __('No', 'terminal-africa-hub'),
+                'selectors' => [
+                    '{{WRAPPER}} .terminal-hub-ivato-book-shipment' => 'padding-bottom: 0;',
+                ],
+            ]
+        );
+
         $this->end_controls_section();
     }
 
@@ -184,9 +214,11 @@ class Terminal_Ivato_Book_Shipment_Widget extends \Elementor\Widget_Base
 ?>
         <div class="terminal-hub-ivato-book-shipment">
             <div class="terminal-hub-ivato-book-shipment--header">
-                <h2>
-                    <?php echo esc_html($settings['title']); ?>
-                </h2>
+                <?php if ($settings['enable_title'] === 'yes') : ?>
+                    <h2>
+                        <?php echo esc_html($settings['title']); ?>
+                    </h2>
+                <?php endif; ?>
             </div>
             <div class="terminal-hub-ivato-book-shipment--body">
                 <div class="terminal-hub-ivato-book-shipment--body--wrapper">
