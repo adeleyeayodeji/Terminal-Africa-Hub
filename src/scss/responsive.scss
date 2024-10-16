@@ -1195,6 +1195,15 @@
     }
   }
 
+  //max only screen and (min-width: 992px)
+  @media only screen and (max-width: 991px) {
+    .ivato-hero-advanced {
+      .terminal-thub-hero-2--image {
+        display: none;
+      }
+    }
+  }
+
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {
     .terminal-mobile-menu {
@@ -1984,6 +1993,27 @@
               color: #102e1a;
             }
           }
+        }
+      }
+    }
+
+    .ivato-hero-advanced {
+      h1 {
+        font-size: 50px;
+      }
+
+      p {
+        font-size: 20px;
+      }
+
+      .terminal-thub-hero-2--image {
+        display: flex;
+        justify-content: center;
+
+        img {
+          width: 430px;
+          height: 400px;
+          object-fit: contain;
         }
       }
     }

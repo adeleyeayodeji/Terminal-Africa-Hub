@@ -243,4 +243,34 @@ jQuery(document).ready(function ($) {
       });
     }
   );
+
+  /**
+   * init scroll
+   *
+   */
+  var initScroll = function () {
+    if ($(window).scrollTop() > 90) {
+      $(".ivato-header").addClass("ivato-header--sticky");
+      //check if scroll is greater than 375
+      if ($(window).scrollTop() > 365) {
+        $(".ivato-header").addClass("ivato-header--sticky--sticky-on-scroll");
+      } else {
+        $(".ivato-header").removeClass(
+          "ivato-header--sticky--sticky-on-scroll"
+        );
+      }
+    } else {
+      $(".ivato-header").removeClass("ivato-header--sticky");
+      $(".ivato-header").removeClass("ivato-header--sticky--sticky-on-scroll");
+    }
+  };
+
+  //init
+  initScroll();
+
+  /**
+   * .ivato-header
+   *
+   */
+  $(window).scroll(initScroll);
 });

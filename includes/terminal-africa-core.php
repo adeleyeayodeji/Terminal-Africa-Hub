@@ -708,6 +708,25 @@ class TerminalTheme
             )
         ));
 
+        //header design 
+        $wp_customize->add_setting('header_design', array(
+            'default' => 'thub-default-header',
+            'transport' => 'refresh',
+            'sanitize_callback' => 'sanitize_text_field'
+        ));
+
+        // Add a control for the header design
+        $wp_customize->add_control('header_design', array(
+            'label' => __('Header Design', 'terminal-africa-hub'),
+            'section' => 'terminal_africa_section',
+            'settings' => 'header_design',
+            'type' => 'select',
+            'choices' => array(
+                'thub-default-header' => 'Default Header',
+                'ivato-header' => 'Ivato Header'
+            )
+        ));
+
         //add header active color
         $wp_customize->add_setting('header_active_color', array(
             'default' => 'unset',

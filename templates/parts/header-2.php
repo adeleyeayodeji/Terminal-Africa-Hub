@@ -3,8 +3,11 @@
 if (!defined('ABSPATH')) {
     exit('Direct script access denied.');
 }
+
+//get header design
+$header_design = get_theme_mod('header_design', 'thub-default-header');
 ?>
-<div class="terminal-header">
+<div class="terminal-header <?php echo esc_attr($header_design); ?>">
     <div class="t-hub-logo">
         <a href="<?php echo esc_url(home_url()); ?>">
             <?php
@@ -37,7 +40,7 @@ if (!defined('ABSPATH')) {
         </div>
     </div>
 </div>
-<div class="terminal-mobile-menu">
+<div class="terminal-mobile-menu ivato-header">
     <div class="t-hub-logo">
         <a href="<?php echo esc_url(home_url()); ?>">
             <?php
