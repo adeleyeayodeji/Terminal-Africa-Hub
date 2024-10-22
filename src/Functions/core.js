@@ -159,7 +159,15 @@ jQuery(document).ready(function ($) {
    * Get all links with text ['Get Quotes', 'Book Shipment', 'Track Shipment']
    *
    */
-  var linkTexts = ["Get Quotes", "Book Shipment", "Track Shipment"];
+  var linkTexts = [
+    "Get Quotes",
+    "Book Shipment",
+    "Track Shipment",
+    "Track Package",
+    "Send Cargo",
+    "Send Express",
+    "Travels"
+  ];
   linkTexts.forEach((linkText) => {
     //get current site url
     var currentSiteUrl = new URL(window.location.href);
@@ -207,6 +215,35 @@ jQuery(document).ready(function ($) {
         links.each(function (index, element) {
           //parse the href
           $(this).attr("href", `https://app.${currentSiteDomain}/track`);
+        });
+        break;
+      case "Send Cargo":
+        //https://app.thepep.africa/book
+        links.each(function (index, element) {
+          //parse the href
+          $(this).attr(
+            "href",
+            `https://app.${currentSiteDomain}/shipments/book-cargo`
+          );
+        });
+        break;
+      case "Send Express":
+        //https://app.thepep.africa/book
+        links.each(function (index, element) {
+          //parse the href
+          $(this).attr(
+            "href",
+            `https://app.${currentSiteDomain}/shipments/book`
+          );
+        });
+        break;
+      case "Travels":
+        //https://app.thepep.africa/travels
+        links.each(function (index, element) {
+          $(this).attr(
+            "href",
+            `https://app.${currentSiteDomain}/shipments/book`
+          );
         });
         break;
     }

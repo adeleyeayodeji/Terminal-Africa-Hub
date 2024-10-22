@@ -85,6 +85,20 @@ class Terminal_Ivato_About_Widget extends \Elementor\Widget_Base
             ]
         );
 
+        //fonts
+        $this->add_control(
+            'section_font',
+            [
+                'label' => __('Title Font', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::FONT,
+                'default' => 'Lato, sans-serif',
+                'selectors' => [
+                    '{{WRAPPER}} .terminal-hub-ivato-about h2, {{WRAPPER}} .terminal-hub-ivato-about h3, {{WRAPPER}} .terminal-hub-ivato-about p, {{WRAPPER}} .terminal-hub-ivato-about span, {{WRAPPER}} .terminal-hub-ivato-about a' => 'font-family: {{VALUE}}',
+                ],
+            ]
+        );
+
+
         $this->add_control(
             'title',
             [
@@ -227,6 +241,32 @@ class Terminal_Ivato_About_Widget extends \Elementor\Widget_Base
             ]
         );
 
+        //first cta hover text color
+        $this->add_control(
+            'first_cta_hover_text_color',
+            [
+                'label' => __('First CTA Hover Text Color', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#fff',
+                'selectors' => [
+                    '{{WRAPPER}} .terminal-hub-ivato-about--body--content--cta a:first-child:hover' => 'color: {{VALUE}}',
+                ],
+            ]
+        );
+
+        //first cta hover background color
+        $this->add_control(
+            'first_cta_hover_background_color',
+            [
+                'label' => __('First CTA Hover Background Color', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#000',
+                'selectors' => [
+                    '{{WRAPPER}} .terminal-hub-ivato-about--body--content--cta a:first-child:hover' => 'background-color: {{VALUE}}',
+                ],
+            ]
+        );
+
         //first cta link
         $this->add_control(
             'first_cta_link',
@@ -296,6 +336,38 @@ class Terminal_Ivato_About_Widget extends \Elementor\Widget_Base
             ]
         );
 
+        //second hover text color
+        $this->add_control(
+            'second_cta_hover_text_color',
+            [
+                'label' => __('Second CTA Hover Text Color', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#fff',
+                'selectors' => [
+                    '{{WRAPPER}} .terminal-hub-ivato-about--body--content--cta a:last-child:hover' => 'color: {{VALUE}}',
+                ],
+                'condition' => [
+                    'enable_second_cta' => 'yes',
+                ],
+            ]
+        );
+
+        //second cta hover background color
+        $this->add_control(
+            'second_cta_hover_background_color',
+            [
+                'label' => __('Second CTA Hover Background Color', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#000',
+                'selectors' => [
+                    '{{WRAPPER}} .terminal-hub-ivato-about--body--content--cta a:last-child:hover' => 'background-color: {{VALUE}}',
+                ],
+                'condition' => [
+                    'enable_second_cta' => 'yes',
+                ],
+            ]
+        );
+
         //second cta link
         $this->add_control(
             'second_cta_link',
@@ -328,7 +400,7 @@ class Terminal_Ivato_About_Widget extends \Elementor\Widget_Base
                 <h2>
                     <?php echo $settings['title']; ?>
                 </h2>
-                <p>
+                <p style="display: none;">
                     <?php echo $settings['description']; ?>
                 </p>
             </div>

@@ -85,6 +85,29 @@ class Terminal_Ivato_Inner_Services_Widget extends \Elementor\Widget_Base
             ]
         );
 
+        //enable title
+        $this->add_control(
+            'enable_title',
+            [
+                'label' => __('Enable Title', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::SWITCHER,
+                'default' => 'no',
+            ]
+        );
+
+        //title
+        $this->add_control(
+            'title',
+            [
+                'label' => __('Title', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::TEXT,
+                'default' => __('Title', 'terminal-africa-hub'),
+                'condition' => [
+                    'enable_title' => 'yes',
+                ],
+            ]
+        );
+
         //add service list repeater
         $service_list = new \Elementor\Repeater();
 
@@ -135,6 +158,21 @@ class Terminal_Ivato_Inner_Services_Widget extends \Elementor\Widget_Base
             ]
         );
 
+        //design type 
+        $this->add_control(
+            'design_type',
+            [
+                'label' => __('Design Type', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::SELECT,
+                'default' => 'type-1',
+                'options' => [
+                    'ivato-type-1' => __('Ivato Type 1', 'terminal-africa-hub'),
+                    'ivato-type-2' => __('Ivato Type 2', 'terminal-africa-hub'),
+                ],
+            ]
+        );
+
+
 
         $this->end_controls_section();
     }
@@ -148,7 +186,17 @@ class Terminal_Ivato_Inner_Services_Widget extends \Elementor\Widget_Base
     {
         $settings = $this->get_settings_for_display();
 ?>
-        <div class="terminal-hub-ivato-services-list">
+        <div class="terminal-hub-ivato-services-list <?php echo $settings['design_type']; ?>">
+            <?php if ($settings['enable_title'] === 'yes') : ?>
+                <div class="terminal-hub-ivato-services-list--header">
+                    <h2>
+                        <?php echo $settings['title']; ?>
+                    </h2>
+                    <a href="#">
+                        <span>See all services &gt;</span>
+                    </a>
+                </div>
+            <?php endif; ?>
             <div class="terminal-hub-ivato-services-list--items">
                 <?php
                 foreach ($settings['service_list'] as $service) :

@@ -2,6 +2,16 @@
 * Responsive Styles
 */
 
+//max 1060px
+@media (max-width: 1060px) {
+  .terminal-hub-ivato-reviews--body--right p:nth-child(2) {
+    font-size: 20px;
+    line-height: 33px;
+    font-family: "Lato";
+    font-weight: 400;
+  }
+}
+
 //max 800
 @media (max-width: 800px) {
   .terminal-hub-ivato-home-hero {
@@ -33,6 +43,7 @@
 
   .terminal-hub-ivato-about {
     padding: 2rem 2rem;
+    gap: 25px;
 
     &--body {
       flex-direction: column;
@@ -81,7 +92,7 @@
 
       h2 {
         width: 100%;
-        font-size: 50px;
+        font-size: 30px;
       }
 
       p {
@@ -218,6 +229,25 @@
         max-width: 47% !important;
       }
     }
+
+    &.ivato-type-2 {
+      padding: 3rem 2rem;
+      gap: 25px;
+
+      .terminal-hub-ivato-services-list--items {
+        &--item {
+          flex-grow: 1;
+          width: 47%;
+          max-width: 100% !important;
+        }
+      }
+
+      .terminal-hub-ivato-services-list--header {
+        h2 {
+          font-size: 30px;
+        }
+      }
+    }
   }
 
   .ivato-bold {
@@ -326,7 +356,7 @@
       width: 100%;
 
       h2 {
-        font-size: 40px;
+        font-size: 30px;
         width: 100%;
       }
 
@@ -388,6 +418,18 @@
         max-width: 90% !important;
       }
     }
+
+    &.ivato-type-2 {
+      padding: 2rem 1rem;
+
+      .terminal-hub-ivato-services-list--items {
+        &--item {
+          flex-grow: 1;
+          width: 95%;
+          max-width: 95% !important;
+        }
+      }
+    }
   }
 
   .terminal-contact-form {
@@ -419,6 +461,14 @@
 
   .ivato-header-2-wrapper-mobile {
     display: block;
+  }
+
+  .terminal-africa-hub-ivato-send-parcel {
+    padding: 3rem 2rem;
+
+    &--cta {
+      flex-direction: column;
+    }
   }
 
   .t-hub-mobile-menu-cta--links {
@@ -568,6 +618,14 @@
     }
   }
 
+  .terminal-africa-hub-ivato-send-parcel {
+    padding: 2rem 1rem;
+
+    &--cta {
+      flex-direction: column;
+    }
+  }
+
   .terminal-hub-ivato-reviews {
     padding: 2rem 1rem;
   }
@@ -690,7 +748,7 @@
   }
 
   .terminal-hub-ivato-about {
-    padding: 2rem 3rem;
+    padding: 2rem 5rem;
 
     &--body {
       flex-direction: column;
@@ -716,6 +774,10 @@
         width: 100%;
       }
     }
+  }
+
+  .terminal-hub-ivato-services-list {
+    padding: 2rem 5rem;
   }
 
   .terminal-hub-ivato-services {
@@ -766,7 +828,7 @@
 
     &--header {
       h2 {
-        font-size: 50px;
+        font-size: 38px;
       }
 
       p {
@@ -823,6 +885,22 @@
         max-width: 46% !important;
       }
     }
+
+    &.ivato-type-2 {
+      padding: 3rem 5rem;
+
+      .terminal-hub-ivato-services-list--items {
+        &--item {
+          flex-grow: 1;
+          width: 46%;
+          max-width: 100% !important;
+        }
+      }
+    }
+  }
+
+  .terminal-hub-ivato-faqs {
+    padding: 3rem 5rem;
   }
 
   .ivato-bold {
@@ -861,17 +939,18 @@
   }
 
   .terminal-hub-ivato-about {
-    padding: 3rem 3rem;
+    padding: 3rem 7rem;
 
     &--body {
       flex-direction: row;
 
       &--image {
-        width: 600px;
+        width: 55%;
+        height: 400px;
       }
 
       &--content {
-        width: auto;
+        width: 45%;
       }
     }
 
@@ -928,7 +1007,7 @@
 
     &--header {
       h2 {
-        font-size: 60px;
+        font-size: 38px;
       }
 
       p {
@@ -946,7 +1025,7 @@
         gap: 17px;
 
         h3 {
-          font-family: "Inter", serif;
+          font-family: "Lato", serif;
           font-size: 32px;
           font-weight: 700;
           color: #333333;
@@ -960,8 +1039,10 @@
         }
 
         p:nth-child(2) {
-          font-size: 14px;
-          line-height: 27px;
+          font-size: 22px;
+          line-height: 38px;
+          font-family: "Lato";
+          font-weight: 400;
         }
       }
     }
@@ -988,11 +1069,29 @@
   }
 
   .terminal-hub-ivato-services-list {
+    padding: 3rem 7rem;
+
     &--items {
       &--item {
         max-width: 30% !important;
       }
     }
+
+    &.ivato-type-2 {
+      padding: 3rem 7rem;
+
+      .terminal-hub-ivato-services-list--items {
+        &--item {
+          flex-grow: 1;
+          width: 30%;
+          max-width: 100% !important;
+        }
+      }
+    }
+  }
+
+  .terminal-hub-ivato-faqs {
+    padding: 3rem 7rem;
   }
 
   .ivato-bold {
@@ -1067,6 +1166,18 @@
     &--items {
       &--item {
         max-width: 340px !important;
+      }
+    }
+
+    &.ivato-type-2 {
+      padding: 3rem 7rem;
+
+      .terminal-hub-ivato-services-list--items {
+        &--item {
+          flex-grow: 1;
+          width: 30%;
+          max-width: 100% !important;
+        }
       }
     }
   }

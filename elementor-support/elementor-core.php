@@ -92,6 +92,8 @@ class TerminalElementor
         \Elementor\Plugin::instance()->widgets_manager->register(new Terminal_Ivato_Map_Widget());
         //Terminal_Ivato_Offer_Widget
         \Elementor\Plugin::instance()->widgets_manager->register(new Terminal_Ivato_Offer_Widget());
+        //Terminal_Ivato_Send_Parcel_Widget
+        \Elementor\Plugin::instance()->widgets_manager->register(new Terminal_Ivato_Send_Parcel_Widget());
     }
 
     /**
