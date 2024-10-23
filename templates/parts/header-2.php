@@ -81,12 +81,8 @@ $header_design = get_theme_mod('header_design', 'thub-default-header');
     </div>
     <div class="t-hub-dedicated ivato-header-2-wrapper-mobile">
         <nav class="d-flex">
-            <a href="#">
-                Login
-            </a>
-            <a href="#">
-                Sign Up
-            </a>
+            <a href="#">Login</a>
+            <a href="#">Sign Up</a>
         </nav>
     </div>
 </div>

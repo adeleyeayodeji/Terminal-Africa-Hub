@@ -246,6 +246,21 @@ jQuery(document).ready(function ($) {
           );
         });
         break;
+      case "Login":
+        //https://app.thepep.africa/auth/login
+        links.each(function (index, element) {
+          $(this).attr("href", `https://app.${currentSiteDomain}/auth/login`);
+        });
+        break;
+      case "Sign Up":
+        //https://app.thepep.africa/auth/register
+        links.each(function (index, element) {
+          $(this).attr(
+            "href",
+            `https://app.${currentSiteDomain}/auth/register`
+          );
+        });
+        break;
     }
   });
 
