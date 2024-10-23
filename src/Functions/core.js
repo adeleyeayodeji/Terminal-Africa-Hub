@@ -166,7 +166,9 @@ jQuery(document).ready(function ($) {
     "Track Package",
     "Send Cargo",
     "Send Express",
-    "Travels"
+    "Travels",
+    "Login",
+    "Sign Up"
   ];
   linkTexts.forEach((linkText) => {
     //get current site url

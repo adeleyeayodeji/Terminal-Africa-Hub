@@ -147,7 +147,7 @@ jQuery(document).ready(function ($) {
    * Get all links with text ['Get Quotes', 'Book Shipment', 'Track Shipment']
    *
    */
-  var linkTexts = ["Get Quotes", "Book Shipment", "Track Shipment", "Track Package", "Send Cargo", "Send Express", "Travels"];
+  var linkTexts = ["Get Quotes", "Book Shipment", "Track Shipment", "Track Package", "Send Cargo", "Send Express", "Travels", "Login", "Sign Up"];
   linkTexts.forEach(linkText => {
     //get current site url
     var currentSiteUrl = new URL(window.location.href);
