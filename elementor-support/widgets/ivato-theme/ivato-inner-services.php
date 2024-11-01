@@ -158,6 +158,34 @@ class Terminal_Ivato_Inner_Services_Widget extends \Elementor\Widget_Base
             ]
         );
 
+        //CTA Text if enable_title is yes
+        $this->add_control(
+            'cta_text',
+            [
+                'label' => __('CTA Text', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::TEXT,
+                'default' => __('See all services &gt;', 'terminal-africa-hub'),
+                'condition' => [
+                    'enable_title' => 'yes',
+                ],
+            ]
+        );
+
+        //CTA Link if enable_title is yes
+        $this->add_control(
+            'cta_link',
+            [
+                'label' => __('CTA Link', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::URL,
+                'condition' => [
+                    'enable_title' => 'yes',
+                ],
+                'default' => [
+                    'url' => '#',
+                ],
+            ]
+        );
+
         //design type 
         $this->add_control(
             'design_type',
@@ -192,8 +220,8 @@ class Terminal_Ivato_Inner_Services_Widget extends \Elementor\Widget_Base
                     <h2>
                         <?php echo $settings['title']; ?>
                     </h2>
-                    <a href="#">
-                        <span>See all services &gt;</span>
+                    <a href="<?php echo $settings['cta_link']['url']; ?>">
+                        <span><?php echo $settings['cta_text']; ?></span>
                     </a>
                 </div>
             <?php endif; ?>
