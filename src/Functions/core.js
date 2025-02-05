@@ -1,4 +1,22 @@
 jQuery(document).ready(function ($) {
+  /**
+   * Check current matched terminal.africa
+   *
+   */
+  var checkSiteUrl = function () {
+    //get current site url
+    var currentSiteUrl = new URL(window.location.href);
+    var currentSiteDomain = currentSiteUrl.hostname;
+    //check if the url match terminal.africa
+    if (currentSiteDomain.indexOf("terminal.africa") !== -1) {
+      // return whitelabel
+      return "whitelabelv2";
+    } else {
+      // return app
+      return "app";
+    }
+  };
+
   $(".terminal-faq-header").each(function (index, element) {
     $(this).click(function (e) {
       e.preventDefault();
@@ -186,13 +204,18 @@ jQuery(document).ready(function ($) {
 
     //get all links with text
     var links = $(`a:contains(${linkText})`);
+    //check site type
+    var siteType = checkSiteUrl();
     //switch
     switch (linkText) {
       case "Get Quotes":
         //update the link href
         links.each(function (index, element) {
           //parse the href
-          $(this).attr("href", `https://app.${currentSiteDomain}/quotes`);
+          $(this).attr(
+            "href",
+            `https://${siteType}.${currentSiteDomain}/quotes`
+          );
         });
         break;
       case "Book Shipment":
@@ -201,7 +224,7 @@ jQuery(document).ready(function ($) {
           //parse the href
           $(this).attr(
             "href",
-            `https://app.${currentSiteDomain}/shipments/book`
+            `https://${siteType}.${currentSiteDomain}/shipments/book`
           );
         });
         break;
@@ -209,14 +232,20 @@ jQuery(document).ready(function ($) {
         //https://app.thepep.africa/track
         links.each(function (index, element) {
           //parse the href
-          $(this).attr("href", `https://app.${currentSiteDomain}/track`);
+          $(this).attr(
+            "href",
+            `https://${siteType}.${currentSiteDomain}/track`
+          );
         });
         break;
       case "Track Package":
         //https://app.thepep.africa/track
         links.each(function (index, element) {
           //parse the href
-          $(this).attr("href", `https://app.${currentSiteDomain}/track`);
+          $(this).attr(
+            "href",
+            `https://${siteType}.${currentSiteDomain}/track`
+          );
         });
         break;
       case "Send Cargo":
@@ -225,7 +254,7 @@ jQuery(document).ready(function ($) {
           //parse the href
           $(this).attr(
             "href",
-            `https://app.${currentSiteDomain}/shipments/book-cargo`
+            `https://${siteType}.${currentSiteDomain}/shipments/book-cargo`
           );
         });
         break;
@@ -235,7 +264,7 @@ jQuery(document).ready(function ($) {
           //parse the href
           $(this).attr(
             "href",
-            `https://app.${currentSiteDomain}/shipments/book`
+            `https://${siteType}.${currentSiteDomain}/shipments/book`
           );
         });
         break;
@@ -244,14 +273,17 @@ jQuery(document).ready(function ($) {
         links.each(function (index, element) {
           $(this).attr(
             "href",
-            `https://app.${currentSiteDomain}/shipments/book`
+            `https://${siteType}.${currentSiteDomain}/shipments/book`
           );
         });
         break;
       case "Login":
         //https://app.thepep.africa/auth/login
         links.each(function (index, element) {
-          $(this).attr("href", `https://app.${currentSiteDomain}/auth/login`);
+          $(this).attr(
+            "href",
+            `https://${siteType}.${currentSiteDomain}/auth/login`
+          );
         });
         break;
       case "Sign Up":
@@ -259,7 +291,7 @@ jQuery(document).ready(function ($) {
         links.each(function (index, element) {
           $(this).attr(
             "href",
-            `https://app.${currentSiteDomain}/auth/register`
+            `https://${siteType}.${currentSiteDomain}/auth/register`
           );
         });
         break;
