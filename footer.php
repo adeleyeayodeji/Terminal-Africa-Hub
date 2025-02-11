@@ -6,8 +6,17 @@
      */
     //get footer type
     $footer_type = get_theme_mod('footer_type', '1');
+    switch ($footer_type) {
+      case 'safi':
+        $path = 'templates/parts/safi/footer';
+        $footer_type = "";
+        break;
+      default:
+        $path = 'templates/parts/footer';
+        break;
+    }
     //display footer
-    get_template_part('templates/parts/footer', $footer_type);
+    get_template_part($path, $footer_type);
     ?>
   </div>
   <!-- /container-fluid -->

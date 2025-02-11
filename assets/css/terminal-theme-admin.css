@@ -39,12 +39,23 @@
 }
 
 .terminal-africa-hub-content-item img {
-  height: 250px;
+  height: 220px;
   width: 100%;
   max-width: 300px;
   margin-bottom: 10px;
-  object-fit: cover;
-  object-position: center;
+  object-fit: contain;
+  object-position: center top;
+}
+
+@media (max-width: 768px) {
+  .terminal-africa-hub-content-item img {
+    height: 220px;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+    object-fit: cover;
+    object-position: center top;
+  }
 }
 
 .terminal-africa-hub-demo-cta {

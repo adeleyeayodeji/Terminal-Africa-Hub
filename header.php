@@ -16,9 +16,18 @@
             <?php
             //get theme settings header_type
             $header_type = get_theme_mod('header_type', '1');
+            switch ($header_type) {
+                case 'safi':
+                    $path = 'templates/parts/safi/header';
+                    $header_type = "";
+                    break;
+                default:
+                    $path = 'templates/parts/header';
+                    break;
+            }
             /**
              * Select header type
              * @hooked header 1 - 2
              */
-            get_template_part('templates/parts/header', $header_type);
+            get_template_part($path, $header_type);
             ?>

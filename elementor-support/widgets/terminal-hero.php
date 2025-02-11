@@ -85,6 +85,20 @@ class Terminal_Hero_Widget extends \Elementor\Widget_Base
             ]
         );
 
+        //hero type
+        $this->add_control(
+            'hero_type',
+            [
+                'label' => __('Hero Type', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::SELECT,
+                'options' => [
+                    'hero_1' => __('Hero 1', 'terminal-africa-hub'),
+                    'safi' => __('Safi', 'terminal-africa-hub'),
+                ],
+                'default' => 'hero_1',
+            ]
+        );
+
         $this->add_control(
             'hero_background',
             [
@@ -178,6 +192,9 @@ class Terminal_Hero_Widget extends \Elementor\Widget_Base
                 'selectors' => [
                     '{{WRAPPER}} .terminal-cta a:last-child' => 'background-color: {{VALUE}}',
                 ],
+                'condition' => [
+                    'hero_type' => 'hero_1',
+                ],
             ]
         );
 
@@ -190,6 +207,9 @@ class Terminal_Hero_Widget extends \Elementor\Widget_Base
                 'default' => '#000',
                 'selectors' => [
                     '{{WRAPPER}} .terminal-cta a:last-child' => 'color: {{VALUE}}',
+                ],
+                'condition' => [
+                    'hero_type' => 'hero_1',
                 ],
             ]
         );
@@ -204,6 +224,9 @@ class Terminal_Hero_Widget extends \Elementor\Widget_Base
                 'selectors' => [
                     '{{WRAPPER}} .terminal-cta a:last-child:hover' => 'background-color: {{VALUE}}',
                 ],
+                'condition' => [
+                    'hero_type' => 'hero_1',
+                ],
             ]
         );
 
@@ -216,6 +239,73 @@ class Terminal_Hero_Widget extends \Elementor\Widget_Base
                 'default' => '#fff',
                 'selectors' => [
                     '{{WRAPPER}} .terminal-cta a:last-child:hover' => 'color: {{VALUE}}',
+                ],
+                'condition' => [
+                    'hero_type' => 'hero_1',
+                ],
+            ]
+        );
+
+        //second button bg 2
+        $this->add_control(
+            'hero_button_bg_2_safi',
+            [
+                'label' => __('Button Border Color 2', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#f1f1f1',
+                'selectors' => [
+                    '{{WRAPPER}} .terminal-cta a:last-child' => 'background: transparent;border: 1px solid {{VALUE}}'
+                ],
+                'condition' => [
+                    'hero_type' => 'safi',
+                ],
+            ]
+        );
+
+        //second button text color
+        $this->add_control(
+            'hero_button_text_color_2_safi',
+            [
+                'label' => __('Button Text Color 2', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#000',
+                'selectors' => [
+                    '{{WRAPPER}} .terminal-cta a:last-child' => 'color: {{VALUE}}',
+                ],
+                'condition' => [
+                    'hero_type' => 'safi',
+                ],
+            ]
+        );
+
+        //second button bg hover
+        $this->add_control(
+            'hero_button_bg_hover_2_safi',
+            [
+                'label' => __('Button Border Hover Color 2', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#000',
+                'selectors' => [
+                    '{{WRAPPER}} .terminal-cta a:last-child:hover' => 'background: transparent;border: 1px solid {{VALUE}}',
+                ],
+                'condition' => [
+                    'hero_type' => 'safi',
+                ],
+            ]
+        );
+
+        //second button text color hover
+        $this->add_control(
+            'hero_button_text_color_hover_2_safi',
+            [
+                'label' => __('Button Text Hover Color 2', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#fff',
+                'selectors' => [
+                    '{{WRAPPER}} .terminal-cta a:last-child:hover' => 'color: {{VALUE}}',
+                ],
+                'condition' => [
+                    'hero_type' => 'safi',
                 ],
             ]
         );
@@ -232,7 +322,7 @@ class Terminal_Hero_Widget extends \Elementor\Widget_Base
     {
         $settings = $this->get_settings_for_display();
 ?>
-        <div class="terminal-hero-section" style="background-image: url('<?php echo esc_url($settings['hero_background']['url']); ?>');">
+        <div class="terminal-hero-section <?php echo "thub-hero-type-" . esc_attr($settings['hero_type']); ?>" style="background-image: url('<?php echo esc_url($settings['hero_background']['url']); ?>');">
             <div class="hero-content">
                 <h1>
                     <?php echo esc_html($settings['hero_title']); ?>
@@ -241,33 +331,8 @@ class Terminal_Hero_Widget extends \Elementor\Widget_Base
                     <?php echo wp_kses($settings['hero_description'], 'post'); ?>
                 </p>
                 <div class="d-flex terminal-cta">
-                    <a href="<?php echo esc_attr(get_theme_mod('book_shipment_link', "#")); ?>">Book Shipment</a>
-                    <a href="<?php echo esc_attr(get_theme_mod('track_shipment_link', "#")); ?>" style="border: transparent;">Track Shipment</a>
-                </div>
-            </div>
-        </div>
-    <?php
-    }
-
-    /**
-     * Render Terminal Hero Widget Output on the live preview.
-     * 
-     * @access protected
-     */
-    protected function content_template()
-    {
-    ?>
-        <div class="terminal-hero-section" style="background-image: url('{{{ settings.hero_background.url }}}');">
-            <div class="hero-content">
-                <h1>
-                    {{{ settings.hero_title }}}
-                </h1>
-                <p>
-                    {{{ settings.hero_description }}}
-                </p>
-                <div class="d-flex terminal-cta">
-                    <a href="<?php echo esc_attr(get_theme_mod('book_shipment_link', "#")); ?>">Book Shipment</a>
-                    <a href="<?php echo esc_attr(get_theme_mod('track_shipment_link', "#")); ?>" style="border: transparent;">Track Shipment</a>
+                    <a href="<?php echo esc_attr(get_theme_mod('book_shipment_link', "#")); ?>" class="<?php echo "thub-hero-type-" . esc_attr($settings['hero_type']); ?>">Book Shipment</a>
+                    <a href="<?php echo esc_attr(get_theme_mod('track_shipment_link', "#")); ?>" class="<?php echo "thub-hero-type-" . esc_attr($settings['hero_type']); ?>" style="<?php echo $settings['hero_type'] == 'safi' ? '' : 'border:transparent'; ?>">Track Shipment</a>
                 </div>
             </div>
         </div>

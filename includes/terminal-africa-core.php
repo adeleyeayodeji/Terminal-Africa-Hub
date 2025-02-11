@@ -704,7 +704,8 @@ class TerminalTheme
             'type' => 'select',
             'choices' => array(
                 '1' => 'Header 1',
-                '2' => 'Header 2'
+                '2' => 'Header 2',
+                'safi' => 'Safi Header'
             )
         ));
 
@@ -783,7 +784,8 @@ class TerminalTheme
             'type' => 'select',
             'choices' => array(
                 '1' => 'Footer 1',
-                '2' => 'Footer 2'
+                '2' => 'Footer 2',
+                'safi' => 'Safi Footer'
             )
         ));
 

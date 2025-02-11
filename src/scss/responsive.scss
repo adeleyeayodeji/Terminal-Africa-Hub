@@ -1,4 +1,8 @@
 .terminal-africa-theme-bs {
+  width: 100% !important;
+  max-width: 1720px !important;
+  margin: 0 auto !important;
+
   /* Extra small devices (phones, 600px and down) */
   @media only screen and (max-width: 600px) {
     .terminal-mobile-menu {

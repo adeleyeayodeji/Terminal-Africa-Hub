@@ -1,0 +1,244 @@
+.t-hub-dedicated-safi {
+  .d-flex {
+    gap: 10px;
+  }
+
+  a {
+    text-decoration: none !important;
+    background: transparent !important;
+    padding: 10px 20px !important;
+    font-family: "Lato", sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    border-radius: 5px !important;
+    transition: all 0.3s ease-in-out !important;
+
+    border: 1px solid #f7941e !important;
+    color: #f7941e !important;
+
+    &:hover {
+      background-color: #000000c7 !important;
+      color: #fff !important;
+    }
+
+    &:last-child {
+      background-color: #f7941e !important;
+      color: #fff !important;
+
+      &:hover {
+        background-color: #fff !important;
+        color: #f7941e !important;
+      }
+    }
+  }
+}
+
+.terminal-mobile-menu-content-safi {
+  margin-top: 100px !important;
+
+  .t-hub-dedicated-safi {
+    .d-flex {
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+
+      a {
+        width: fit-content;
+      }
+    }
+  }
+}
+
+.thub-safi-footer {
+  &-logo {
+    img {
+      height: 35px;
+      object-fit: contain;
+    }
+  }
+
+  &-parent-link {
+    a {
+      font-size: 16px;
+      font-weight: 500;
+      font-family: "Manrope", sans-serif;
+      color: #ffffff;
+      line-height: 22px;
+
+      &:hover {
+        color: #ffffff !important;
+      }
+    }
+  }
+
+  &-address {
+    p:first-child {
+      font-size: 16px;
+      font-weight: 400;
+      font-family: "Manrope", sans-serif;
+      line-height: 21.86px;
+      color: #ffffff;
+    }
+
+    p:last-child,
+    a {
+      font-size: 14px;
+      font-weight: 400;
+      font-family: "Manrope", sans-serif;
+      line-height: 19.12px;
+      color: #b9b9b9 !important;
+    }
+  }
+
+  &-copyright {
+    span {
+      font-size: 14px;
+      font-weight: 400;
+      font-family: "Manrope", sans-serif;
+      line-height: 19.12px;
+      color: #b9b9b9 !important;
+    }
+
+    a {
+      color: #b9b9b9 !important;
+    }
+  }
+}
+
+.thub-hero-type-safi {
+  .hero-content {
+    h1 {
+      font-weight: 700 !important;
+    }
+
+    a {
+      border-radius: 6px !important;
+      font-size: 16px !important;
+    }
+  }
+}
+
+.thub-safi-services-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  li {
+    span {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 36px;
+      font-family: "Lato", sans-serif;
+      color: #333333;
+    }
+  }
+}
+
+.thub-type-btn-safi {
+  border-radius: 8px !important;
+  padding: 15px 30px !important;
+}
+
+.thub-type-safi-get-intouch-2 {
+  padding: 2rem 10px 4rem 0px !important;
+  margin-top: 0 !important;
+  border: none !important;
+  margin-bottom: 0 !important;
+
+  h2 {
+    font-family: "Lato", sans-serif !important;
+    font-size: 60px !important;
+    font-weight: 700 !important;
+    line-height: 96px !important;
+    color: #333333 !important;
+  }
+
+  .terminal-get-intouch-2--header--line {
+    display: none !important;
+  }
+
+  .terminal-get-intouch-2--body--content {
+    width: 100%;
+    max-width: 540px;
+    margin: 25px auto;
+
+    &--data {
+      font-family: "Lato", sans-serif !important;
+      font-size: 20px !important;
+      font-weight: 400 !important;
+      line-height: 30px !important;
+      color: #333333 !important;
+      text-align: center !important;
+    }
+  }
+
+  .terminal-get-intouch-2--footer--social {
+    background-color: #ffff;
+    padding: 39px 76px;
+    width: 245px;
+    border-radius: 19px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.thub-safi-footer-back-to-top {
+  &:hover {
+    svg {
+      path {
+        fill: #f7941e !important;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .terminal-africa-theme-bs
+    .thub-type-safi-get-intouch-2
+    .terminal-get-intouch-2--footer {
+    display: flex;
+    margin-top: 6rem;
+    align-items: center;
+    gap: 6rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .terminal-africa-theme-bs
+    .thub-type-safi-get-intouch-2
+    .terminal-get-intouch-2--footer {
+    display: flex;
+    margin-top: 6rem;
+    align-items: center;
+    gap: 3rem;
+    transition: all 0.3s ease;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .terminal-africa-theme-bs
+    .thub-type-safi-get-intouch-2
+    .terminal-get-intouch-2--footer {
+    display: flex;
+    margin-top: 6rem;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+
+//max 740px
+@media only screen and (max-width: 740px) {
+  .terminal-africa-theme-bs
+    .thub-type-safi-get-intouch-2
+    .terminal-get-intouch-2--footer {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .terminal-africa-theme-bs .thub-type-safi-get-intouch-2 h2 {
+    font-size: 28px !important;
+  }
+}

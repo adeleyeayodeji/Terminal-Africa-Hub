@@ -85,6 +85,20 @@ class Terminal_Services_Widget extends \Elementor\Widget_Base
             ]
         );
 
+        //type
+        $this->add_control(
+            'type',
+            [
+                'label' => __('Type', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::SELECT,
+                'default' => 'default',
+                'options' => [
+                    'default' => __('Default', 'terminal-africa-hub'),
+                    'safi' => __('Safi', 'terminal-africa-hub')
+                ]
+            ]
+        );
+
         //column direction
         $this->add_control(
             'column_direction',
@@ -168,9 +182,44 @@ class Terminal_Services_Widget extends \Elementor\Widget_Base
                 'label' => __('Description', 'terminal-africa-hub'),
                 'type' => \Elementor\Controls_Manager::TEXTAREA,
                 'default' => __('We offer a wide range of services to meet your needs', 'terminal-africa-hub'),
+                'condition' => [
+                    'type' => 'default',
+                ],
             ]
         );
 
+        //repeater for safi
+        $this->add_control(
+            'safi_services',
+            [
+                'label' => __('Safi Services', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::REPEATER,
+                'condition' => [
+                    'type' => 'safi',
+                ],
+                'fields' => [
+                    [
+                        'name' => 'title',
+                        'label' => __('Title', 'terminal-africa-hub'),
+                        'type' => \Elementor\Controls_Manager::TEXT,
+                    ],
+                ],
+                'default' => [
+                    [
+                        'title' => __('✅ Fast shipping', 'terminal-africa-hub'),
+                    ],
+                    [
+                        'title' => __('✅ Cargo shipping', 'terminal-africa-hub'),
+                    ],
+                    [
+                        'title' => __('✅ Secure packaging', 'terminal-africa-hub'),
+                    ],
+                    [
+                        'title' => __('✅ International express delivery', 'terminal-africa-hub'),
+                    ],
+                ],
+            ]
+        );
         //description color
         $this->add_control(
             'description_color',
@@ -370,15 +419,27 @@ class Terminal_Services_Widget extends \Elementor\Widget_Base
                         <?php echo esc_html($settings['title']); ?>
                     </h2>
                     <p>
-                        <?php echo wp_kses($settings['description'], 'post'); ?>
-                    </p>
-                    <div>
-                        <?php if ('yes' === $settings['enable_link']) : ?>
-                            <a href="<?php echo esc_url($settings['url']['url']); ?>" title="<?php echo esc_attr($settings['url_title']); ?>">
-                                <?php echo esc_html($settings['url_title']); ?>
-                            </a>
-                        <?php endif; ?>
-                    </div>
+                        <?php if ($settings['type'] == 'safi') : ?>
+                    <ul class="thub-safi-services-list">
+                        <?php foreach ($settings['safi_services'] as $service) : ?>
+                            <li>
+                                <span>
+                                    <?php echo esc_html($service['title']); ?>
+                                </span>
+                            </li>
+                        <?php endforeach; ?>
+                    </ul>
+                <?php else: ?>
+                    <?php echo wp_kses($settings['description'], 'post'); ?>
+                <?php endif; ?>
+                </p>
+                <div>
+                    <?php if ('yes' === $settings['enable_link']) : ?>
+                        <a href="<?php echo esc_url($settings['url']['url']); ?>" title="<?php echo esc_attr($settings['url_title']); ?>" class="<?php echo "thub-type-btn-" . $settings['type']; ?>">
+                            <?php echo esc_html($settings['url_title']); ?>
+                        </a>
+                    <?php endif; ?>
+                </div>
                 </div>
                 <div class="col-lg-5 col-md-12 col-sm-12 text-center">
                     <img src="<?php echo esc_url($settings['image']['url']); ?>" alt="<?php echo esc_attr($settings['title']); ?>">

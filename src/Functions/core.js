@@ -351,6 +351,16 @@ jQuery(document).ready(function ($) {
     }
   };
 
+  /**
+   * .thub-safi-footer-back-to-top
+   *
+   */
+  $(".thub-safi-footer-back-to-top").click(function (e) {
+    e.preventDefault();
+    //scroll to top
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+  });
+
   //init
   initScroll();
 

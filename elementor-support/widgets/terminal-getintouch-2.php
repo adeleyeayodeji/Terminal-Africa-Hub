@@ -88,6 +88,66 @@ class Terminal_GetInTouch_2_Widget extends \Elementor\Widget_Base
             ]
         );
 
+        //type
+        $this->add_control(
+            'type',
+            [
+                'label' => __('Type', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::SELECT,
+                'options' => [
+                    'safi' => __('Safi', 'terminal-africa-hub'),
+                    'default' => __('Default', 'terminal-africa-hub'),
+                ],
+                'default' => 'default',
+            ]
+        );
+
+        //content
+        $this->add_control(
+            'content',
+            [
+                'label' => __('Content', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::TEXTAREA,
+                'default' => __('Lorem ipsum dolor sit amet consectetur. Ipsum pharetra sapien sagittis quisque.', 'terminal-africa-hub'),
+                'label_block' => true,
+                'condition' => [
+                    'type' => 'safi',
+                ],
+            ]
+        );
+
+        //background color
+        $this->add_control(
+            'background_color',
+            [
+                'label' => __('Background Color', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#f7941e',
+                'selectors' => [
+                    '{{WRAPPER}} .thub-type-safi-get-intouch-2' => 'background-color: {{VALUE}}',
+                ],
+                'condition' => [
+                    'type' => 'safi',
+                ],
+            ]
+        );
+
+        //foreground color
+        $this->add_control(
+            'foreground_color',
+            [
+                'label' => __('Foreground Color', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#fff',
+                'selectors' => [
+                    '{{WRAPPER}} .thub-type-safi-get-intouch-2' => 'color: {{VALUE}}',
+                ],
+                'condition' => [
+                    'type' => 'safi',
+                ],
+            ]
+        );
+
         //title
         $this->add_control(
             'title',
@@ -169,7 +229,26 @@ class Terminal_GetInTouch_2_Widget extends \Elementor\Widget_Base
     {
         $settings = $this->get_settings_for_display();
 ?>
-        <div class="terminal-get-intouch-2">
+        <style>
+            .thub-type-safi-get-intouch-2 h2 {
+                color: <?php echo $settings['foreground_color']; ?> !important;
+            }
+
+            .thub-type-safi-get-intouch-2 .terminal-get-intouch-2--body--content--data {
+                color: <?php echo $settings['foreground_color']; ?> !important;
+            }
+
+            .thub-type-safi-get-intouch-2 .terminal-get-intouch-2--body--email a,
+            .thub-type-safi-get-intouch-2 .terminal-get-intouch-2--body--phone a {
+                color: <?php echo $settings['foreground_color']; ?> !important;
+            }
+
+            .thub-type-safi-get-intouch-2 .terminal-get-intouch-2--body span {
+                color: <?php echo $settings['foreground_color']; ?> !important;
+            }
+        </style>
+
+        <div class="terminal-get-intouch-2 <?php echo "thub-type-" . $settings['type']; ?>-get-intouch-2">
             <div class="terminal-get-intouch-2--header">
                 <div class="terminal-get-intouch-2--header--title">
                     <h2>
@@ -181,6 +260,13 @@ class Terminal_GetInTouch_2_Widget extends \Elementor\Widget_Base
                     <div class="terminal-get-intouch-2--header--line--last"></div>
                 </div>
             </div>
+            <?php if ($settings['type'] == 'safi') : ?>
+                <div class="terminal-get-intouch-2--body--content">
+                    <div class="terminal-get-intouch-2--body--content--data">
+                        <?php echo wp_kses_post($settings['content']); ?>
+                    </div>
+                </div>
+            <?php endif ?>
             <div class="terminal-get-intouch-2--body">
                 <div class="terminal-get-intouch-2--body--email">
                     <span>
