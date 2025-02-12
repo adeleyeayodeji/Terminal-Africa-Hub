@@ -264,6 +264,8 @@ class TerminalDemoImporter
                     set_theme_mod('footer_background_color', '#343434');
                     //footer_text_color
                     set_theme_mod('footer_text_color', '#ffffff');
+                    //set footer type to safi
+                    set_theme_mod('footer_type', 'safi');
 
                     //footer_logo
                     set_theme_mod('footer_logo', 'http://tplug.terminal.africa/wp-content/uploads/2025/02/logo-full.png');
