@@ -605,90 +605,6 @@ class TerminalTheme
             'priority' => 30,
         ));
 
-        // Add a new setting for the 'Book Shipment' button color
-        $wp_customize->add_setting('book_shipment_color', array(
-            'default' => '#f7941e',
-            'transport' => 'refresh',
-            'sanitize_callback' => 'sanitize_hex_color'
-        ));
-
-        // Add a color control for the 'Book Shipment' button color
-        $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'book_shipment_color', array(
-            'label' => __('Book Shipment Header Color', 'terminal-africa-hub'),
-            'section' => 'terminal_africa_section',
-            'settings' => 'book_shipment_color'
-        )));
-
-        //hover color control for the 'Book Shipment' button
-        $wp_customize->add_setting('book_shipment_hover_color', array(
-            'default' => '#333333',
-            'transport' => 'refresh',
-            'sanitize_callback' => 'sanitize_hex_color'
-        ));
-
-        // Add a color control for the 'Book Shipment' button hover color
-        $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'book_shipment_hover_color', array(
-            'label' => __('Book Shipment Header Hover Color', 'terminal-africa-hub'),
-            'section' => 'terminal_africa_section',
-            'settings' => 'book_shipment_hover_color'
-        )));
-
-        // Add a new setting for the 'Track Shipment' button color
-        $wp_customize->add_setting('track_shipment_color', array(
-            'default' => '#f7941e',
-            'transport' => 'refresh',
-            'sanitize_callback' => 'sanitize_hex_color'
-        ));
-
-        // Add a color control for the 'Track Shipment' button color
-        $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'track_shipment_color', array(
-            'label' => __('Track Shipment Header Color', 'terminal-africa-hub'),
-            'section' => 'terminal_africa_section',
-            'settings' => 'track_shipment_color'
-        )));
-
-        //hover color control for the 'Track Shipment' button
-        $wp_customize->add_setting('track_shipment_hover_color', array(
-            'default' => '#333333',
-            'transport' => 'refresh',
-            'sanitize_callback' => 'sanitize_hex_color'
-        ));
-
-        // Add a color control for the 'Track Shipment' button hover color
-        $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'track_shipment_hover_color', array(
-            'label' => __('Track Shipment Header Hover Color', 'terminal-africa-hub'),
-            'section' => 'terminal_africa_section',
-            'settings' => 'track_shipment_hover_color'
-        )));
-
-        //Add book shipment link
-        $wp_customize->add_setting('book_shipment_link', array(
-            'default' => '#',
-            'transport' => 'refresh',
-            'sanitize_callback' => 'esc_url_raw'
-        ));
-
-        // Add a control for the book shipment link
-        $wp_customize->add_control('book_shipment_link', array(
-            'label' => __('Book Shipment Link', 'terminal-africa-hub'),
-            'section' => 'terminal_africa_section',
-            'settings' => 'book_shipment_link'
-        ));
-
-        //Add track shipment link
-        $wp_customize->add_setting('track_shipment_link', array(
-            'default' => '#',
-            'transport' => 'refresh',
-            'sanitize_callback' => 'esc_url_raw'
-        ));
-
-        // Add a control for the track shipment link
-        $wp_customize->add_control('track_shipment_link', array(
-            'label' => __('Track Shipment Link', 'terminal-africa-hub'),
-            'section' => 'terminal_africa_section',
-            'settings' => 'track_shipment_link'
-        ));
-
         //Header Type select
         $wp_customize->add_setting('header_type', array(
             'default' => '1',
@@ -708,6 +624,214 @@ class TerminalTheme
                 'safi' => 'Safi Header'
             )
         ));
+
+        //show primary color
+        $wp_customize->add_setting('main_button_bg_color_safi', array(
+            'default' => '#f7941e',
+            'transport' => 'refresh',
+            'sanitize_callback' => 'sanitize_hex_color'
+        ));
+
+        // Add a color control for the primary color
+        $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'main_button_bg_color_safi', array(
+            'label' => __('Main Button Background Color', 'terminal-africa-hub'),
+            'section' => 'terminal_africa_section',
+            'settings' => 'main_button_bg_color_safi',
+            //only show for safi header
+            'active_callback' => function () {
+                return get_theme_mod('header_type', '1') == 'safi';
+            }
+        )));
+
+        //main button text color
+        $wp_customize->add_setting('main_button_text_color_safi', array(
+            'default' => '#ffffff',
+            'transport' => 'refresh',
+            'sanitize_callback' => 'sanitize_hex_color'
+        ));
+
+        // Add a color control for the primary color
+        $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'main_button_text_color_safi', array(
+            'label' => __('Main Button Text Color', 'terminal-africa-hub'),
+            'section' => 'terminal_africa_section',
+            'settings' => 'main_button_text_color_safi',
+            //only show for safi header
+            'active_callback' => function () {
+                return get_theme_mod('header_type', '1') == 'safi';
+            }
+        )));
+
+        //hover color control for the main button
+        $wp_customize->add_setting('main_button_hover_bg_color_safi', array(
+            'default' => '#f7941e',
+            'transport' => 'refresh',
+            'sanitize_callback' => 'sanitize_hex_color'
+        ));
+
+        // Add a color control for the primary color
+        $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'main_button_hover_bg_color_safi', array(
+            'label' => __('Main Button Hover Background Color', 'terminal-africa-hub'),
+            'section' => 'terminal_africa_section',
+            'settings' => 'main_button_hover_bg_color_safi',
+            //only show for safi header
+            'active_callback' => function () {
+                return get_theme_mod('header_type', '1') == 'safi';
+            }
+        )));
+
+        //hover text color
+        $wp_customize->add_setting('main_button_hover_text_color_safi', array(
+            'default' => '#ffffff',
+            'transport' => 'refresh',
+            'sanitize_callback' => 'sanitize_hex_color'
+        ));
+
+        // Add a color control for the primary color
+        $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'main_button_hover_text_color_safi', array(
+            'label' => __('Main Button Hover Text Color', 'terminal-africa-hub'),
+            'section' => 'terminal_africa_section',
+            'settings' => 'main_button_hover_text_color_safi',
+            //only show for safi header
+            'active_callback' => function () {
+                return get_theme_mod('header_type', '1') == 'safi';
+            }
+        )));
+
+        //Outline Color
+        $wp_customize->add_setting('main_button_outline_color_safi', array(
+            'default' => '#f7941e',
+            'transport' => 'refresh',
+            'sanitize_callback' => 'sanitize_hex_color'
+        ));
+
+        // Add a color control for the primary color
+        $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'main_button_outline_color_safi', array(
+            'label' => __('Main Button Outline Color', 'terminal-africa-hub'),
+            'section' => 'terminal_africa_section',
+            'settings' => 'main_button_outline_color_safi',
+            //only show for safi header
+            'active_callback' => function () {
+                return get_theme_mod('header_type', '1') == 'safi';
+            }
+        )));
+
+        //hover outline color
+        $wp_customize->add_setting('main_button_hover_outline_color_safi', array(
+            'default' => '#f7941e',
+            'transport' => 'refresh',
+            'sanitize_callback' => 'sanitize_hex_color'
+        ));
+
+        // Add a color control for the primary color
+        $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'main_button_hover_outline_color_safi', array(
+            'label' => __('Main Button Hover Outline Color', 'terminal-africa-hub'),
+            'section' => 'terminal_africa_section',
+            'settings' => 'main_button_hover_outline_color_safi',
+            //only show for safi header
+            'active_callback' => function () {
+                return get_theme_mod('header_type', '1') == 'safi';
+            }
+        )));
+
+        // Add a new setting for the 'Book Shipment' button color
+        $wp_customize->add_setting('book_shipment_color', array(
+            'default' => '#f7941e',
+            'transport' => 'refresh',
+            'sanitize_callback' => 'sanitize_hex_color'
+        ));
+
+        // Add a color control for the 'Book Shipment' button color
+        $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'book_shipment_color', array(
+            'label' => __('Book Shipment Header Color', 'terminal-africa-hub'),
+            'section' => 'terminal_africa_section',
+            'settings' => 'book_shipment_color',
+            //check if header is not safi
+            'active_callback' => function () {
+                return get_theme_mod('header_type', '1') != 'safi';
+            }
+        )));
+
+        //hover color control for the 'Book Shipment' button
+        $wp_customize->add_setting('book_shipment_hover_color', array(
+            'default' => '#333333',
+            'transport' => 'refresh',
+            'sanitize_callback' => 'sanitize_hex_color'
+        ));
+
+        // Add a color control for the 'Book Shipment' button hover color
+        $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'book_shipment_hover_color', array(
+            'label' => __('Book Shipment Header Hover Color', 'terminal-africa-hub'),
+            'section' => 'terminal_africa_section',
+            'settings' => 'book_shipment_hover_color',
+            //check if header is not safi
+            'active_callback' => function () {
+                return get_theme_mod('header_type', '1') != 'safi';
+            }
+        )));
+
+        // Add a new setting for the 'Track Shipment' button color
+        $wp_customize->add_setting('track_shipment_color', array(
+            'default' => '#f7941e',
+            'transport' => 'refresh',
+            'sanitize_callback' => 'sanitize_hex_color'
+        ));
+
+        // Add a color control for the 'Track Shipment' button color
+        $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'track_shipment_color', array(
+            'label' => __('Track Shipment Header Color', 'terminal-africa-hub'),
+            'section' => 'terminal_africa_section',
+            'settings' => 'track_shipment_color',
+            //check if header is not safi
+            'active_callback' => function () {
+                return get_theme_mod('header_type', '1') != 'safi';
+            }
+        )));
+
+        //hover color control for the 'Track Shipment' button
+        $wp_customize->add_setting('track_shipment_hover_color', array(
+            'default' => '#333333',
+            'transport' => 'refresh',
+            'sanitize_callback' => 'sanitize_hex_color'
+        ));
+
+        // Add a color control for the 'Track Shipment' button hover color
+        $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'track_shipment_hover_color', array(
+            'label' => __('Track Shipment Header Hover Color', 'terminal-africa-hub'),
+            'section' => 'terminal_africa_section',
+            'settings' => 'track_shipment_hover_color',
+            //check if header is not safi
+            'active_callback' => function () {
+                return get_theme_mod('header_type', '1') != 'safi';
+            }
+        )));
+
+        //Add book shipment link
+        // $wp_customize->add_setting('book_shipment_link', array(
+        //     'default' => '#',
+        //     'transport' => 'refresh',
+        //     'sanitize_callback' => 'esc_url_raw'
+        // ));
+
+        // // Add a control for the book shipment link
+        // $wp_customize->add_control('book_shipment_link', array(
+        //     'label' => __('Book Shipment Link', 'terminal-africa-hub'),
+        //     'section' => 'terminal_africa_section',
+        //     'settings' => 'book_shipment_link'
+        // ));
+
+        //Add track shipment link
+        // $wp_customize->add_setting('track_shipment_link', array(
+        //     'default' => '#',
+        //     'transport' => 'refresh',
+        //     'sanitize_callback' => 'esc_url_raw'
+        // ));
+
+        // // Add a control for the track shipment link
+        // $wp_customize->add_control('track_shipment_link', array(
+        //     'label' => __('Track Shipment Link', 'terminal-africa-hub'),
+        //     'section' => 'terminal_africa_section',
+        //     'settings' => 'track_shipment_link'
+        // ));
 
         //header design 
         $wp_customize->add_setting('header_design', array(
@@ -1029,6 +1153,36 @@ class TerminalTheme
                 border-color: <?php echo esc_attr(get_theme_mod('track_shipment_hover_color', '#333333')); ?> !important;
                 color: <?php echo esc_attr(get_theme_mod('track_shipment_hover_color', '#333333')); ?> !important;
             }
+
+            /**
+             * Safi Header
+             */
+            .terminal-header .t-hub-dedicated-safi a,
+            .terminal-mobile-menu-content .t-hub-dedicated-safi a {
+                border-color: <?php echo esc_attr(get_theme_mod('main_button_outline_color_safi', '#f7941e')); ?> !important;
+                color: <?php echo esc_attr(get_theme_mod('main_button_outline_color_safi', '#ffffff')); ?> !important;
+            }
+
+            .terminal-header .t-hub-dedicated-safi a:hover,
+            .terminal-mobile-menu-content .t-hub-dedicated-safi a:hover {
+                border-color: <?php echo esc_attr(get_theme_mod('main_button_hover_outline_color_safi', '#333333')); ?> !important;
+                color: <?php echo esc_attr(get_theme_mod('main_button_hover_outline_color_safi', '#333333')); ?> !important;
+            }
+
+            .terminal-header .t-hub-dedicated-safi a:last-child,
+            .terminal-mobile-menu-content .t-hub-dedicated-safi a:last-child {
+                background-color: <?php echo esc_attr(get_theme_mod('main_button_bg_color_safi', '#f7941e')); ?> !important;
+                color: <?php echo esc_attr(get_theme_mod('main_button_text_color_safi', '#ffffff')); ?> !important;
+                border: 1px solid <?php echo esc_attr(get_theme_mod('main_button_bg_color_safi', '#f7941e')); ?> !important;
+            }
+
+            .terminal-header .t-hub-dedicated-safi a:last-child:hover,
+            .terminal-mobile-menu-content .t-hub-dedicated-safi a:last-child:hover {
+                background-color: <?php echo esc_attr(get_theme_mod('main_button_hover_bg_color_safi', '#333333')); ?> !important;
+                color: <?php echo esc_attr(get_theme_mod('main_button_hover_text_color_safi', '#ffffff')); ?> !important;
+                border: 1px solid <?php echo esc_attr(get_theme_mod('main_button_hover_bg_color_safi', '#333333')); ?> !important;
+            }
+
 
             /**
             * Terminal Footer

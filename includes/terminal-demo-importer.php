@@ -243,6 +243,53 @@ class TerminalDemoImporter
                     set_theme_mod('track_shipment_color', '#264631');
 
                     break;
+
+                case 'terminal-safi-demo':
+                    //set header type to safi
+                    set_theme_mod('header_type', 'safi');
+                    //main button bg color
+                    set_theme_mod('main_button_bg_color_safi', '#f7941e');
+                    //main button text color
+                    set_theme_mod('main_button_text_color_safi', '#ffffff');
+                    //main button hover bg color
+                    set_theme_mod('main_button_hover_bg_color_safi', '#333333');
+                    //main button hover text color
+                    set_theme_mod('main_button_hover_text_color_safi', '#ffffff');
+                    //main button outline color
+                    set_theme_mod('main_button_outline_color_safi', '#f7941e');
+                    //main button hover outline color
+                    set_theme_mod('main_button_hover_outline_color_safi', '#333333');
+
+                    //update wp_customize footer_background_color
+                    set_theme_mod('footer_background_color', '#343434');
+                    //footer_text_color
+                    set_theme_mod('footer_text_color', '#ffffff');
+
+                    //footer_logo
+                    set_theme_mod('footer_logo', 'http://tplug.terminal.africa/wp-content/uploads/2025/02/logo-full.png');
+                    //company_address
+                    set_theme_mod('company_address', '123, Company Street, Company City, Company Country');
+                    //company_email
+                    set_theme_mod(
+                        'company_email',
+                        'help@terminal.africa'
+                    );
+                    //company_phone
+                    set_theme_mod(
+                        'company_phone',
+                        '+234 000 111 22'
+                    );
+                    //facebook_link
+                    set_theme_mod(
+                        'facebook_link',
+                        'https://www.facebook.com/terminalafrica'
+                    );
+                    //twitter_link
+                    set_theme_mod('twitter_link', 'https://x.com/terminal_africa?lang=en');
+                    //instagram_link
+                    set_theme_mod('instagram_link', 'https://www.instagram.com/terminal_africa/?hl=en');
+
+                    break;
             }
         } catch (\Throwable $th) {
             throw $th;
