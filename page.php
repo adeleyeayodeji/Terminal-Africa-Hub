@@ -19,7 +19,36 @@ while (have_posts()) :
 endwhile; // End of the loop.
 
 ?>
-
+<div class="thub-maputo-ceo">
+    <div class="thub-maputo-ceo--items">
+        <?php
+        for ($i = 0; $i < 3; $i++) {
+        ?>
+            <div class="thub-maputo-ceo--item">
+                <div class="thub-maputo-ceo--item--header">
+                    <div class="thub-maputo-ceo--item--header--image">
+                        <img src="http://tplug.terminal.africa/wp-content/uploads/2024/05/photo-1522529599102-193c0d76b5b6.avif" alt="Maputo CEO">
+                    </div>
+                    <div class="thub-maputo-ceo--item--header--content">
+                        <h3>
+                            Blessing
+                        </h3>
+                        <p>
+                            CEO Shippo
+                        </p>
+                    </div>
+                </div>
+                <div class="thub-maputo-ceo--item--content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+            </div>
+        <?php
+        }
+        ?>
+    </div>
+</div>
 
 <?php
 
