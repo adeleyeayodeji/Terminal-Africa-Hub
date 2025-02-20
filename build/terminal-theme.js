@@ -315,6 +315,19 @@ jQuery(document).ready(function ($) {
 
 /***/ }),
 
+/***/ "./src/scss/maputo/maputo.scss":
+/*!*************************************!*\
+  !*** ./src/scss/maputo/maputo.scss ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./src/scss/responsive.scss":
 /*!**********************************!*\
   !*** ./src/scss/responsive.scss ***!
@@ -447,8 +460,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _scss_terminal_bootstrap_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./scss/terminal_bootstrap.scss */ "./src/scss/terminal_bootstrap.scss");
 /* harmony import */ var _scss_responsive_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./scss/responsive.scss */ "./src/scss/responsive.scss");
 /* harmony import */ var _scss_safi_safi_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./scss/safi/safi.scss */ "./src/scss/safi/safi.scss");
-/* harmony import */ var _Functions_core_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Functions/core.js */ "./src/Functions/core.js");
-/* harmony import */ var _Functions_core_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_Functions_core_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _scss_maputo_maputo_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./scss/maputo/maputo.scss */ "./src/scss/maputo/maputo.scss");
+/* harmony import */ var _Functions_core_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Functions/core.js */ "./src/Functions/core.js");
+/* harmony import */ var _Functions_core_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_Functions_core_js__WEBPACK_IMPORTED_MODULE_5__);
+
 
 
 

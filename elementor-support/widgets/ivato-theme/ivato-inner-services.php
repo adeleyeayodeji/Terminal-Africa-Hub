@@ -85,6 +85,20 @@ class Terminal_Ivato_Inner_Services_Widget extends \Elementor\Widget_Base
             ]
         );
 
+        //type
+        $this->add_control(
+            'design_type',
+            [
+                'label' => __('Design Type', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::SELECT,
+                'default' => 'ivato',
+                'options' => [
+                    'ivato' => __('Ivato', 'terminal-africa-hub'),
+                    'maputo' => __('Maputo', 'terminal-africa-hub'),
+                ],
+            ]
+        );
+
         //enable title
         $this->add_control(
             'enable_title',
@@ -104,6 +118,19 @@ class Terminal_Ivato_Inner_Services_Widget extends \Elementor\Widget_Base
                 'default' => __('Title', 'terminal-africa-hub'),
                 'condition' => [
                     'enable_title' => 'yes',
+                ],
+            ]
+        );
+
+        //description
+        $this->add_control(
+            'description',
+            [
+                'label' => __('Description', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::TEXTAREA,
+                'default' => __('From tracking to packaging to international deliveries and everywhere in between, we’ve got you covered.', 'terminal-africa-hub'),
+                'condition' => [
+                    'design_type' => 'maputo',
                 ],
             ]
         );
@@ -216,16 +243,37 @@ class Terminal_Ivato_Inner_Services_Widget extends \Elementor\Widget_Base
 ?>
         <div class="terminal-hub-ivato-services-list <?php echo $settings['design_type']; ?>">
             <?php if ($settings['enable_title'] === 'yes') : ?>
-                <div class="terminal-hub-ivato-services-list--header">
-                    <h2>
-                        <?php echo $settings['title']; ?>
-                    </h2>
-                    <a href="<?php echo $settings['cta_link']['url']; ?>">
-                        <span><?php echo $settings['cta_text']; ?></span>
-                    </a>
-                </div>
+                <?php if ($settings['design_type'] === 'ivato') : ?>
+                    <div class="terminal-hub-ivato-services-list--header">
+                        <h2>
+                            <?php echo $settings['title']; ?>
+                        </h2>
+                        <a href="<?php echo $settings['cta_link']['url']; ?>">
+                            <span><?php echo $settings['cta_text']; ?></span>
+                        </a>
+                    </div>
+                <?php
+                elseif ($settings['design_type'] === 'maputo') :
+                ?>
+                    <div class="terminal-hub-maputo-services-list--header">
+                        <h2>
+                            <?php echo $settings['title']; ?>
+                        </h2>
+                        <p>
+                            <?php echo $settings['description']; ?>
+                        </p>
+                        <a href="<?php echo $settings['cta_link']['url']; ?>">
+                            <span>
+                                <?php echo $settings['cta_text']; ?>
+                                <svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.15128 11.7238C0.806762 11.3655 0.817933 10.7958 1.17623 10.4512L5.90153 6L1.17623 1.54875C0.817933 1.20424 0.806761 0.634497 1.15128 0.276201C1.49579 -0.0820923 2.06553 -0.0932637 2.42382 0.25125L7.82382 5.35125C8.00029 5.52093 8.10003 5.75518 8.10003 6C8.10003 6.24481 8.00029 6.47907 7.82382 6.64875L2.42382 11.7487C2.06553 12.0933 1.49579 12.0821 1.15128 11.7238Z" fill="#333333" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                <?php endif; ?>
             <?php endif; ?>
-            <div class="terminal-hub-ivato-services-list--items">
+            <div class="terminal-hub-ivato-services-list--items <?php echo $settings['design_type']; ?>">
                 <?php
                 foreach ($settings['service_list'] as $service) :
                 ?>

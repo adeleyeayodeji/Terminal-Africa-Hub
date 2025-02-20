@@ -621,10 +621,12 @@ class TerminalTheme
             'choices' => array(
                 '1' => 'Header 1',
                 '2' => 'Header 2',
-                'safi' => 'Safi Header'
+                'safi' => 'Safi Header',
+                'maputo' => 'Maputo Header'
             )
         ));
 
+        /////////////// Safi Header Start ///////////////
         //show primary color
         $wp_customize->add_setting('main_button_bg_color_safi', array(
             'default' => '#f7941e',
@@ -733,6 +735,194 @@ class TerminalTheme
             }
         )));
 
+        /////////////// Safi Header End ///////////////
+
+        /////////////// Maputo Header Start ///////////////
+
+        // Login Background Color
+        $wp_customize->add_setting('maputo_login_background_color', array(
+            'default' => '#ffffff33',
+            'transport' => 'refresh',
+            'sanitize_callback' => 'sanitize_hex_color'
+        ));
+
+        // Add a color control for the login background color
+        $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'maputo_login_background_color', array(
+            'label' => __('Login Background Color', 'terminal-africa-hub'),
+            'section' => 'terminal_africa_section',
+            'settings' => 'maputo_login_background_color',
+            //only show for maputo header
+            'active_callback' => function () {
+                return get_theme_mod('header_type', '1') == 'maputo';
+            }
+        )));
+
+        // Login Text Color
+        $wp_customize->add_setting('maputo_login_text_color', array(
+            'default' => '#ffffff',
+            'transport' => 'refresh',
+            'sanitize_callback' => 'sanitize_hex_color'
+        ));
+
+        // Add a color control for the login text color
+        $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'maputo_login_text_color', array(
+            'label' => __('Login Text Color', 'terminal-africa-hub'),
+            'section' => 'terminal_africa_section',
+            'settings' => 'maputo_login_text_color',
+            //only show for maputo header
+            'active_callback' => function () {
+                return get_theme_mod('header_type', '1') == 'maputo';
+            }
+        )));
+
+        //Hover Login Background Color
+        $wp_customize->add_setting('maputo_login_background_hover_color', array(
+            'default' => '#ffffff',
+            'transport' => 'refresh',
+            'sanitize_callback' => 'sanitize_hex_color'
+        ));
+
+        // Add a color control for the login background hover color
+        $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'maputo_login_background_hover_color', array(
+            'label' => __('Login Background Hover Color', 'terminal-africa-hub'),
+            'section' => 'terminal_africa_section',
+            'settings' => 'maputo_login_background_hover_color',
+            //only show for maputo header
+            'active_callback' => function () {
+                return get_theme_mod('header_type', '1') == 'maputo';
+            }
+        )));
+
+        //Hover Login Text Color
+        $wp_customize->add_setting('maputo_login_text_hover_color', array(
+            'default' => '#ffffff',
+            'transport' => 'refresh',
+            'sanitize_callback' => 'sanitize_hex_color'
+        ));
+
+        // Add a color control for the login text hover color
+        $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'maputo_login_text_hover_color', array(
+            'label' => __('Login Text Hover Color', 'terminal-africa-hub'),
+            'section' => 'terminal_africa_section',
+            'settings' => 'maputo_login_text_hover_color',
+            //only show for maputo header
+            'active_callback' => function () {
+                return get_theme_mod('header_type', '1') == 'maputo';
+            }
+        )));
+
+        //Sign Up Background Color
+        $wp_customize->add_setting('maputo_sign_up_background_color', array(
+            'default' => '#ffffff',
+            'transport' => 'refresh',
+            'sanitize_callback' => 'sanitize_hex_color'
+        ));
+
+        // Add a color control for the sign up background color
+        $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'maputo_sign_up_background_color', array(
+            'label' => __('Sign Up Background Color', 'terminal-africa-hub'),
+            'section' => 'terminal_africa_section',
+            'settings' => 'maputo_sign_up_background_color',
+            //only show for maputo header
+            'active_callback' => function () {
+                return get_theme_mod('header_type', '1') == 'maputo';
+            }
+        )));
+
+        //Sign Up Text Color
+        $wp_customize->add_setting('maputo_sign_up_text_color', array(
+            'default' => '#ffffff',
+            'transport' => 'refresh',
+            'sanitize_callback' => 'sanitize_hex_color'
+        ));
+
+        // Add a color control for the sign up text color
+        $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'maputo_sign_up_text_color', array(
+            'label' => __('Sign Up Text Color', 'terminal-africa-hub'),
+            'section' => 'terminal_africa_section',
+            'settings' => 'maputo_sign_up_text_color',
+            //only show for maputo header
+            'active_callback' => function () {
+                return get_theme_mod('header_type', '1') == 'maputo';
+            }
+        )));
+
+        //Hover Sign Up Background Color
+        $wp_customize->add_setting('maputo_sign_up_background_hover_color', array(
+            'default' => '#ffffff',
+            'transport' => 'refresh',
+            'sanitize_callback' => 'sanitize_hex_color'
+        ));
+
+        // Add a color control for the sign up background hover color
+        $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'maputo_sign_up_background_hover_color', array(
+            'label' => __('Sign Up Background Hover Color', 'terminal-africa-hub'),
+            'section' => 'terminal_africa_section',
+            'settings' => 'maputo_sign_up_background_hover_color',
+            //only show for maputo header
+            'active_callback' => function () {
+                return get_theme_mod('header_type', '1') == 'maputo';
+            }
+        )));
+
+        //Hover Sign Up Text Color
+        $wp_customize->add_setting('maputo_sign_up_text_hover_color', array(
+            'default' => '#ffffff',
+            'transport' => 'refresh',
+            'sanitize_callback' => 'sanitize_hex_color'
+        ));
+
+        // Add a color control for the sign up text hover color
+        $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'maputo_sign_up_text_hover_color', array(
+            'label' => __('Sign Up Text Hover Color', 'terminal-africa-hub'),
+            'section' => 'terminal_africa_section',
+            'settings' => 'maputo_sign_up_text_hover_color',
+            //only show for maputo header
+            'active_callback' => function () {
+                return get_theme_mod('header_type', '1') == 'maputo';
+            }
+        )));
+
+        //Header Background Color
+        $wp_customize->add_setting('maputo_header_background_color', array(
+            'default' => '#ffffff',
+            'transport' => 'refresh',
+            'sanitize_callback' => 'sanitize_hex_color'
+        ));
+
+        // Add a color control for the header background color
+        $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'maputo_header_background_color', array(
+            'label' => __('Header Background Color', 'terminal-africa-hub'),
+            'section' => 'terminal_africa_section',
+            'settings' => 'maputo_header_background_color',
+            //only show for maputo header
+            'active_callback' => function () {
+                return get_theme_mod('header_type', '1') == 'maputo';
+            }
+        )));
+
+        //Header Text Color
+        $wp_customize->add_setting('maputo_header_text_color', array(
+            'default' => '#ffffff',
+            'transport' => 'refresh',
+            'sanitize_callback' => 'sanitize_hex_color'
+        ));
+
+        // Add a color control for the header text color
+        $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'maputo_header_text_color', array(
+            'label' => __('Header Text Color', 'terminal-africa-hub'),
+            'section' => 'terminal_africa_section',
+            'settings' => 'maputo_header_text_color',
+            //only show for maputo header
+            'active_callback' => function () {
+                return get_theme_mod('header_type', '1') == 'maputo';
+            }
+        )));
+
+        /////////////// Maputo Header End ///////////////
+
+        /////////////// Default Header Start ///////////////
+
         // Add a new setting for the 'Book Shipment' button color
         $wp_customize->add_setting('book_shipment_color', array(
             'default' => '#f7941e',
@@ -745,9 +935,11 @@ class TerminalTheme
             'label' => __('Book Shipment Header Color', 'terminal-africa-hub'),
             'section' => 'terminal_africa_section',
             'settings' => 'book_shipment_color',
-            //check if header is not safi
+            //check if header is not safi or maputo
             'active_callback' => function () {
-                return get_theme_mod('header_type', '1') != 'safi';
+                $header_type = get_theme_mod('header_type', '1');
+                $ignore_headers = array('safi', 'maputo');
+                return !in_array($header_type, $ignore_headers);
             }
         )));
 
@@ -765,7 +957,9 @@ class TerminalTheme
             'settings' => 'book_shipment_hover_color',
             //check if header is not safi
             'active_callback' => function () {
-                return get_theme_mod('header_type', '1') != 'safi';
+                $header_type = get_theme_mod('header_type', '1');
+                $ignore_headers = array('safi', 'maputo');
+                return !in_array($header_type, $ignore_headers);
             }
         )));
 
@@ -783,7 +977,9 @@ class TerminalTheme
             'settings' => 'track_shipment_color',
             //check if header is not safi
             'active_callback' => function () {
-                return get_theme_mod('header_type', '1') != 'safi';
+                $header_type = get_theme_mod('header_type', '1');
+                $ignore_headers = array('safi', 'maputo');
+                return !in_array($header_type, $ignore_headers);
             }
         )));
 
@@ -801,9 +997,13 @@ class TerminalTheme
             'settings' => 'track_shipment_hover_color',
             //check if header is not safi
             'active_callback' => function () {
-                return get_theme_mod('header_type', '1') != 'safi';
+                $header_type = get_theme_mod('header_type', '1');
+                $ignore_headers = array('safi', 'maputo');
+                return !in_array($header_type, $ignore_headers);
             }
         )));
+
+        /////////////// Default Header End ///////////////
 
         //Add book shipment link
         // $wp_customize->add_setting('book_shipment_link', array(
@@ -1153,6 +1353,44 @@ class TerminalTheme
                 border-color: <?php echo esc_attr(get_theme_mod('track_shipment_hover_color', '#333333')); ?> !important;
                 color: <?php echo esc_attr(get_theme_mod('track_shipment_hover_color', '#333333')); ?> !important;
             }
+
+            /**
+             * Maputo Header
+             */
+            .maputo-header,
+            .ivato-header.maputo-header-mobile {
+                background-color: <?php echo esc_attr(get_theme_mod('maputo_header_background_color', '#ffffff')); ?> !important;
+            }
+
+            .maputo-header .maputo-header-left a,
+            .ivato-header.maputo-header-mobile .t-hub-mobile-menu-cta--links a {
+                color: <?php echo esc_attr(get_theme_mod('maputo_header_text_color', '#ffffff')); ?> !important;
+            }
+
+            .maputo-header .maputo-header-right a:first-child,
+            .ivato-header.maputo-header-mobile .t-hub-mobile-menu-cta--links a:first-child {
+                background-color: <?php echo esc_attr(get_theme_mod('maputo_login_background_color', '#ffffff33')); ?> !important;
+                color: <?php echo esc_attr(get_theme_mod('maputo_login_text_color', '#ffffff')); ?> !important;
+            }
+
+            .maputo-header .maputo-header-right a:first-child:hover,
+            .ivato-header.maputo-header-mobile .t-hub-mobile-menu-cta--links a:first-child:hover {
+                background-color: <?php echo esc_attr(get_theme_mod('maputo_login_background_hover_color', '#ffffff')); ?> !important;
+                color: <?php echo esc_attr(get_theme_mod('maputo_login_text_hover_color', '#ffffff')); ?> !important;
+            }
+
+            .maputo-header .maputo-header-right a:last-child,
+            .ivato-header.maputo-header-mobile .t-hub-mobile-menu-cta--links a:last-child {
+                background-color: <?php echo esc_attr(get_theme_mod('maputo_sign_up_background_color', '#ffffff')); ?> !important;
+                color: <?php echo esc_attr(get_theme_mod('maputo_sign_up_text_color', '#ffffff')); ?> !important;
+            }
+
+            .maputo-header .maputo-header-right a:last-child:hover,
+            .ivato-header.maputo-header-mobile .t-hub-mobile-menu-cta--links a:last-child:hover {
+                background-color: <?php echo esc_attr(get_theme_mod('maputo_sign_up_background_hover_color', '#ffffff')); ?> !important;
+                color: <?php echo esc_attr(get_theme_mod('maputo_sign_up_text_hover_color', '#ffffff')); ?> !important;
+            }
+
 
             /**
              * Safi Header

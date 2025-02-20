@@ -13917,5 +13917,275 @@
     font-size: 28px !important;
   }
 }
+/*!****************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/scss/maputo/maputo.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************/
+.maputo-header {
+  background-color: #000 !important;
+  margin: 0 !important;
+  padding: 20px !important;
+}
+.maputo-header .maputo-header-left {
+  display: flex !important;
+  justify-content: center !important;
+}
+.maputo-header .maputo-header-left a {
+  color: #fff !important;
+}
+.maputo-header .maputo-header-right a {
+  background: rgba(255, 255, 255, 0.2) !important;
+  border-radius: 25px !important;
+  padding: 15px 30px !important;
+  color: #fff !important;
+  font-weight: bold !important;
+}
+.maputo-header .maputo-header-right a:first-child {
+  background: rgba(255, 255, 255, 0.2) !important;
+  color: #fff !important;
+}
+.maputo-header .maputo-header-right a:last-child {
+  background: #ffffff !important;
+  color: #3b343e !important;
+  border: none !important;
+}
+
+.ivato-header.maputo-header-mobile {
+  background: #000 !important;
+}
+.ivato-header.maputo-header-mobile .t-hub-mobile-menu-cta--links a {
+  background: rgba(255, 255, 255, 0.2) !important;
+  border-radius: 25px !important;
+  padding: 15px 30px !important;
+  color: #fff !important;
+  font-weight: bold !important;
+}
+.ivato-header.maputo-header-mobile .t-hub-mobile-menu-cta--links a:first-child {
+  background: rgba(255, 255, 255, 0.2) !important;
+  color: #fff !important;
+}
+.ivato-header.maputo-header-mobile .t-hub-mobile-menu-cta--links a:last-child {
+  background: #ffffff !important;
+  border: none !important;
+}
+
+.thub-hero-type-maputo .hero-content h1 {
+  font-weight: 700 !important;
+}
+.thub-hero-type-maputo .hero-content a {
+  border-radius: 6px !important;
+  font-size: 16px !important;
+}
+
+.terminal-cta a.thub-hero-type-maputo {
+  background: rgba(255, 255, 255, 0.2) !important;
+  border-radius: 25px !important;
+  padding: 15px 30px !important;
+  color: #fff !important;
+  font-weight: 500 !important;
+}
+.terminal-cta a.thub-hero-type-maputo:first-child {
+  background: #fff !important;
+  color: #000 !important;
+}
+.terminal-cta a.thub-hero-type-maputo:hover {
+  background: #fff !important;
+  color: #000 !important;
+}
+.terminal-cta a.thub-hero-type-maputo:last-child {
+  background: rgba(255, 255, 255, 0.2) !important;
+  color: #fff !important;
+}
+.terminal-cta a.thub-hero-type-maputo:last-child:hover {
+  background: #fff !important;
+  color: #000 !important;
+}
+
+.thub-maputo-services-hero {
+  padding: 8rem 7rem;
+  background-color: #f5f3e8;
+  transition: all 0.3s ease;
+}
+.thub-maputo-services-hero--items {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.thub-maputo-services-hero--item {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  max-width: 520px;
+  height: 100%;
+  max-height: 640px;
+  background-color: #e3ccad;
+  padding: 40px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+.thub-maputo-services-hero--item-image {
+  width: 100%;
+  height: 100%;
+  max-height: 322px;
+}
+.thub-maputo-services-hero--item-image img {
+  width: 100%;
+  height: 100%;
+  max-height: 322px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+  overflow: hidden;
+  -o-object-position: center top;
+     object-position: center top;
+  transition: all 0.3s ease;
+}
+.thub-maputo-services-hero--item-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: all 0.3s ease;
+}
+.thub-maputo-services-hero--item-content h4 {
+  font-size: 23px;
+  line-height: 24px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: #000;
+  transition: all 0.3s ease;
+}
+.thub-maputo-services-hero--item-content p {
+  font-size: 18px;
+  line-height: 27px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: rgba(85, 85, 85, 0.8);
+}
+.thub-maputo-services-hero--item-content a {
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: #000;
+  text-decoration: none !important;
+  background: #fff;
+  border-radius: 25px;
+  padding: 16px 34px;
+}
+.thub-maputo-services-hero--item-content a:hover {
+  background: #000;
+  color: #fff;
+}
+@media (min-width: 600px) {
+  .thub-maputo-services-hero {
+    padding: 8rem 3rem;
+  }
+}
+@media (max-width: 700px) {
+  .thub-maputo-services-hero {
+    padding: 5rem 3rem;
+  }
+  .thub-maputo-services-hero--items {
+    flex-direction: column;
+  }
+  .thub-maputo-services-hero--item {
+    max-width: 100%;
+  }
+  .thub-maputo-services-hero--item-content {
+    gap: 10px;
+  }
+  .thub-maputo-services-hero--item-content h4 {
+    font-size: 20px;
+  }
+  .thub-maputo-services-hero--item-content p {
+    font-size: 16px;
+  }
+  .thub-maputo-services-hero--item-content a {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1000px) {
+  .thub-maputo-services-hero {
+    padding: 8rem 7rem;
+  }
+}
+
+.terminal-hub-maputo-services-list--header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.terminal-hub-maputo-services-list--header h2 {
+  font-size: 50px;
+  line-height: 67.2px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: #333333;
+}
+.terminal-hub-maputo-services-list--header p {
+  font-size: 16px;
+  line-height: 27px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: rgba(85, 85, 85, 0.8);
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+}
+.terminal-hub-maputo-services-list--header a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  background: #f5f3e8;
+  border-radius: 25px;
+  padding: 16px 34px;
+  color: #000;
+  text-decoration: none !important;
+}
+.terminal-hub-maputo-services-list--header a:hover {
+  background: #000;
+  color: #fff;
+}
+.terminal-hub-maputo-services-list--header a:hover svg path {
+  fill: #fff;
+}
+@media (max-width: 760px) {
+  .terminal-hub-maputo-services-list--header h2 {
+    font-size: 40px;
+  }
+}
+
+.terminal-hub-ivato-services-list--items.maputo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.terminal-hub-ivato-services-list--items.maputo img {
+  border-radius: 31px;
+}
+.terminal-hub-ivato-services-list--items.maputo p {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #5f5d5d;
+  margin: 0;
+  line-height: 26px;
+}
 
 /*# sourceMappingURL=terminal-theme.css.map*/

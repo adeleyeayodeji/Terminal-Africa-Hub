@@ -44,6 +44,14 @@ class TerminalElementor
         foreach ($ivato_widgets as $ivato_widget) {
             require_once $ivato_widget;
         }
+
+        //include maputo theme widgets
+        $maputo_widgets = glob(TERMINAL_THEME_DIR . '/elementor-support/widgets/maputo-theme/*.php');
+        //loop through the files and include them
+        foreach ($maputo_widgets as $maputo_widget) {
+            require_once $maputo_widget;
+        }
+
         //register terminal hero widget
         \Elementor\Plugin::instance()->widgets_manager->register(new Terminal_Hero_Widget());
         //Terminal_Partners_Widget
@@ -94,6 +102,8 @@ class TerminalElementor
         \Elementor\Plugin::instance()->widgets_manager->register(new Terminal_Ivato_Offer_Widget());
         //Terminal_Ivato_Send_Parcel_Widget
         \Elementor\Plugin::instance()->widgets_manager->register(new Terminal_Ivato_Send_Parcel_Widget());
+        //Terminal_Maputo_Hero_Widget
+        \Elementor\Plugin::instance()->widgets_manager->register(new Terminal_Maputo_Hero_Widget());
     }
 
     /**

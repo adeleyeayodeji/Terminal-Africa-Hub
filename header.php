@@ -21,6 +21,10 @@
                     $path = 'templates/parts/safi/header';
                     $header_type = "";
                     break;
+                case 'maputo':
+                    $path = 'templates/parts/maputo/header';
+                    $header_type = "";
+                    break;
                 default:
                     $path = 'templates/parts/header';
                     break;

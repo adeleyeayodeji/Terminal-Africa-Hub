@@ -94,6 +94,7 @@ class Terminal_Hero_Widget extends \Elementor\Widget_Base
                 'options' => [
                     'hero_1' => __('Hero 1', 'terminal-africa-hub'),
                     'safi' => __('Safi', 'terminal-africa-hub'),
+                    'maputo' => __('Maputo', 'terminal-africa-hub'),
                 ],
                 'default' => 'hero_1',
             ]
@@ -138,7 +139,7 @@ class Terminal_Hero_Widget extends \Elementor\Widget_Base
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'default' => '#f1f1f1',
                 'selectors' => [
-                    '{{WRAPPER}} .terminal-cta a:first-child' => 'background-color: {{VALUE}}',
+                    '{{WRAPPER}} .terminal-cta a:first-child' => 'background: {{VALUE}} !important',
                 ],
             ]
         );
@@ -151,7 +152,7 @@ class Terminal_Hero_Widget extends \Elementor\Widget_Base
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'default' => '#000',
                 'selectors' => [
-                    '{{WRAPPER}} .terminal-cta a:first-child' => 'color: {{VALUE}}',
+                    '{{WRAPPER}} .terminal-cta a:first-child' => 'color: {{VALUE}} !important',
                 ],
             ]
         );
@@ -164,7 +165,7 @@ class Terminal_Hero_Widget extends \Elementor\Widget_Base
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'default' => '#000',
                 'selectors' => [
-                    '{{WRAPPER}} .terminal-cta a:first-child:hover' => 'background-color: {{VALUE}}',
+                    '{{WRAPPER}} .terminal-cta a:first-child:hover' => 'background: {{VALUE}} !important',
                 ],
             ]
         );
@@ -177,7 +178,7 @@ class Terminal_Hero_Widget extends \Elementor\Widget_Base
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'default' => '#fff',
                 'selectors' => [
-                    '{{WRAPPER}} .terminal-cta a:first-child:hover' => 'color: {{VALUE}}',
+                    '{{WRAPPER}} .terminal-cta a:first-child:hover' => 'color: {{VALUE}} !important',
                 ],
             ]
         );
@@ -190,10 +191,10 @@ class Terminal_Hero_Widget extends \Elementor\Widget_Base
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'default' => '#f1f1f1',
                 'selectors' => [
-                    '{{WRAPPER}} .terminal-cta a:last-child' => 'background-color: {{VALUE}}',
+                    '{{WRAPPER}} .terminal-cta a:last-child' => 'background: {{VALUE}} !important',
                 ],
                 'condition' => [
-                    'hero_type' => 'hero_1',
+                    'hero_type' => ['hero_1', 'maputo'],
                 ],
             ]
         );
@@ -206,10 +207,10 @@ class Terminal_Hero_Widget extends \Elementor\Widget_Base
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'default' => '#000',
                 'selectors' => [
-                    '{{WRAPPER}} .terminal-cta a:last-child' => 'color: {{VALUE}}',
+                    '{{WRAPPER}} .terminal-cta a:last-child' => 'color: {{VALUE}} !important',
                 ],
                 'condition' => [
-                    'hero_type' => 'hero_1',
+                    'hero_type' => ['hero_1', 'maputo'],
                 ],
             ]
         );
@@ -222,10 +223,10 @@ class Terminal_Hero_Widget extends \Elementor\Widget_Base
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'default' => '#000',
                 'selectors' => [
-                    '{{WRAPPER}} .terminal-cta a:last-child:hover' => 'background-color: {{VALUE}}',
+                    '{{WRAPPER}} .terminal-cta a:last-child:hover' => 'background: {{VALUE}} !important',
                 ],
                 'condition' => [
-                    'hero_type' => 'hero_1',
+                    'hero_type' => ['hero_1', 'maputo'],
                 ],
             ]
         );
@@ -238,10 +239,10 @@ class Terminal_Hero_Widget extends \Elementor\Widget_Base
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'default' => '#fff',
                 'selectors' => [
-                    '{{WRAPPER}} .terminal-cta a:last-child:hover' => 'color: {{VALUE}}',
+                    '{{WRAPPER}} .terminal-cta a:last-child:hover' => 'color: {{VALUE}} !important',
                 ],
                 'condition' => [
-                    'hero_type' => 'hero_1',
+                    'hero_type' => ['hero_1', 'maputo'],
                 ],
             ]
         );
