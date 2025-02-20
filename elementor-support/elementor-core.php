@@ -104,6 +104,8 @@ class TerminalElementor
         \Elementor\Plugin::instance()->widgets_manager->register(new Terminal_Ivato_Send_Parcel_Widget());
         //Terminal_Maputo_Hero_Widget
         \Elementor\Plugin::instance()->widgets_manager->register(new Terminal_Maputo_Hero_Widget());
+        //Terminal_Maputo_Ceo_Widget
+        \Elementor\Plugin::instance()->widgets_manager->register(new Terminal_Maputo_CEO_Widget());
     }
 
     /**

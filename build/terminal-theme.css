@@ -14243,13 +14243,13 @@
   transition: all 0.3s ease;
 }
 .thub-maputo-ceo--item--header--image img {
-  width: 64px;
-  height: 64px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center top;
-     object-position: center top;
-  border-radius: 50%;
+  width: 64px !important;
+  height: 64px !important;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+  -o-object-position: center top !important;
+     object-position: center top !important;
+  border-radius: 50% !important;
 }
 .thub-maputo-ceo--item--header--content {
   display: flex;
@@ -14278,6 +14278,38 @@
   font-family: "Inter", sans-serif;
   font-weight: 400;
   color: rgba(85, 85, 85, 0.8);
+}
+
+@media (min-width: 1300px) {
+  .maputo.terminal-hub-ivato-faqs {
+    padding: 4rem 16rem;
+  }
+}
+.maputo.terminal-hub-ivato-faqs .terminal-hub-ivato-faqs--left {
+  gap: 15px;
+}
+.maputo.terminal-hub-ivato-faqs .terminal-hub-ivato-faqs--left p {
+  font-size: 16px;
+  line-height: 27px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: rgba(85, 85, 85, 0.8);
+}
+.maputo.terminal-hub-ivato-faqs .terminal-hub-ivato-faqs--left a {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: #000;
+  text-decoration: none !important;
+  background: #f5f3e8;
+  border-radius: 25px;
+  padding: 13px 34px;
+  border: none !important;
+}
+.maputo.terminal-hub-ivato-faqs .terminal-hub-ivato-faqs--left a:hover {
+  background: #000;
+  color: #fff;
 }
 
 /*# sourceMappingURL=terminal-theme.css.map*/

@@ -85,6 +85,33 @@ class Terminal_Ivato_Faqs_Widget extends \Elementor\Widget_Base
             ]
         );
 
+        //type
+        $this->add_control(
+            'type',
+            [
+                'label' => __('Type', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::SELECT,
+                'options' => [
+                    'ivato' => __('Ivato', 'terminal-africa-hub'),
+                    'maputo' => __('Maputo', 'terminal-africa-hub'),
+                ],
+                'default' => 'ivato',
+            ]
+        );
+
+        //show description for maputo
+        $this->add_control(
+            'description',
+            [
+                'label' => __('Description', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::TEXTAREA,
+                'default' => __('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ', 'terminal-africa-hub'),
+                'condition' => [
+                    'type' => 'maputo',
+                ],
+            ]
+        );
+
         $this->add_control(
             'title',
             [
@@ -215,11 +242,16 @@ class Terminal_Ivato_Faqs_Widget extends \Elementor\Widget_Base
     {
         $settings = $this->get_settings_for_display();
 ?>
-        <div class="terminal-hub-ivato-faqs">
+        <div class="terminal-hub-ivato-faqs <?php echo esc_attr($settings['type']); ?>">
             <div class="terminal-hub-ivato-faqs--left">
                 <h2>
                     <?php echo esc_html($settings['title']); ?>
                 </h2>
+                <?php if ($settings['type'] === 'maputo') : ?>
+                    <p>
+                        <?php echo wp_kses_post($settings['description']); ?>
+                    </p>
+                <?php endif; ?>
                 <a href="<?php echo esc_url($settings['link_url']['url']); ?>">
                     <span>
                         <?php echo esc_html($settings['link_title']); ?>

@@ -368,11 +368,11 @@
 
       &--image {
         img {
-          width: 64px;
-          height: 64px;
-          object-fit: cover;
-          object-position: center top;
-          border-radius: 50%;
+          width: 64px !important;
+          height: 64px !important;
+          object-fit: cover !important;
+          object-position: center top !important;
+          border-radius: 50% !important;
         }
       }
 
@@ -408,6 +408,42 @@
         font-family: "Inter", sans-serif;
         font-weight: 400;
         color: #555555cc;
+      }
+    }
+  }
+}
+
+.maputo.terminal-hub-ivato-faqs {
+  @media (min-width: 1300px) {
+    padding: 4rem 16rem;
+  }
+
+  .terminal-hub-ivato-faqs--left {
+    gap: 15px;
+
+    p {
+      font-size: 16px;
+      line-height: 27px;
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+      color: #555555cc;
+    }
+
+    a {
+      font-size: 14px;
+      line-height: 24px;
+      font-family: "Inter", sans-serif;
+      font-weight: 500;
+      color: #000;
+      text-decoration: none !important;
+      background: #f5f3e8;
+      border-radius: 25px;
+      padding: 13px 34px;
+      border: none !important;
+
+      &:hover {
+        background: #000;
+        color: #fff;
       }
     }
   }

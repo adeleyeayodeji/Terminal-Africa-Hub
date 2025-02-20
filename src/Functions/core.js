@@ -330,6 +330,9 @@ jQuery(document).ready(function ($) {
     }
   );
 
+  //trigger the first .terminal-hub-ivato-faqs--right--items--item--question
+  $(".terminal-hub-ivato-faqs--right--items--item--question").eq(0).click();
+
   /**
    * init scroll
    *
