@@ -14354,8 +14354,18 @@
 }
 
 .thub-maputo-footer {
-  padding: 5rem 7rem;
+  padding: 0rem 7rem;
   transition: all 0.3s ease;
+}
+@media (min-width: 1058px) {
+  .thub-maputo-footer {
+    padding: 0rem 7rem;
+  }
+}
+@media (max-width: 1058px) {
+  .thub-maputo-footer {
+    padding: 0rem 1rem;
+  }
 }
 .thub-maputo-footer--header {
   display: flex;
@@ -14377,12 +14387,25 @@
   font-weight: 700;
   color: #fff;
 }
+@media (min-width: 1058px) {
+  .thub-maputo-footer--header--content h2 {
+    font-size: 72px;
+  }
+}
+@media (max-width: 800px) {
+  .thub-maputo-footer--header--content h2 {
+    font-size: 50px;
+    line-height: 60.4px;
+    text-align: center;
+  }
+}
 .thub-maputo-footer--header--cta {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 .thub-maputo-footer--header--cta a {
   font-size: 14px;
@@ -14443,6 +14466,57 @@
 }
 .thub-maputo-footer--footer--menu li a:hover {
   color: #5f5d5d;
+}
+
+.thub-maputo-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+}
+.thub-maputo-social a:hover svg path {
+  fill: #5f5d5d;
+}
+
+.thub-maputo-mobile-menu-content {
+  transition: all 0.3s ease;
+  background: #0a010e !important;
+}
+.thub-maputo-mobile-menu-content .t-hub-menu-ul li a {
+  color: #fff !important;
+}
+.thub-maputo-mobile-menu-content .maputo-header-mobile-dedicated a {
+  background: rgba(255, 255, 255, 0.2) !important;
+  border-radius: 25px !important;
+  padding: 15px 30px !important;
+  color: #fff !important;
+  font-weight: bold !important;
+  border: none !important;
+}
+.thub-maputo-mobile-menu-content .maputo-header-mobile-dedicated a:first-child {
+  background: rgba(255, 255, 255, 0.2) !important;
+  color: #fff !important;
+}
+.thub-maputo-mobile-menu-content .maputo-header-mobile-dedicated a:first-child:hover {
+  background: #fff !important;
+  color: rgba(255, 255, 255, 0.2) !important;
+}
+.thub-maputo-mobile-menu-content .maputo-header-mobile-dedicated a:last-child {
+  background: #fff !important;
+  color: rgba(255, 255, 255, 0.2) !important;
+}
+.thub-maputo-mobile-menu-content .maputo-header-mobile-dedicated a:last-child:hover {
+  background: rgba(255, 255, 255, 0.2) !important;
+  color: #fff !important;
+}
+
+.thub-maputo-mobile-menu-content-admin {
+  top: 38px !important;
+}
+@media (max-width: 783px) {
+  .thub-maputo-mobile-menu-content-admin {
+    top: 40px !important;
+  }
 }
 
 /*# sourceMappingURL=terminal-theme.css.map*/

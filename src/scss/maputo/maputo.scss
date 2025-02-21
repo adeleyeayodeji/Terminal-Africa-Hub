@@ -492,8 +492,18 @@
 }
 
 .thub-maputo-footer {
-  padding: 5rem 7rem;
+  padding: 0rem 7rem;
   transition: all 0.3s ease;
+
+  //min 1058
+  @media (min-width: 1058px) {
+    padding: 0rem 7rem;
+  }
+
+  //max 1058
+  @media (max-width: 1058px) {
+    padding: 0rem 1rem;
+  }
 
   &--header {
     display: flex;
@@ -514,6 +524,18 @@
         font-family: "Inter", sans-serif;
         font-weight: 700;
         color: #fff;
+
+        //min 1058
+        @media (min-width: 1058px) {
+          font-size: 72px;
+        }
+
+        //max 1058
+        @media (max-width: 800px) {
+          font-size: 50px;
+          line-height: 60.4px;
+          text-align: center;
+        }
       }
     }
 
@@ -523,6 +545,7 @@
       align-items: center;
       justify-content: center;
       gap: 20px;
+      flex-wrap: wrap;
 
       a {
         font-size: 14px;
@@ -595,5 +618,74 @@
         }
       }
     }
+  }
+}
+
+.thub-maputo-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+
+  a {
+    &:hover {
+      svg {
+        path {
+          fill: #5f5d5d;
+        }
+      }
+    }
+  }
+}
+
+.thub-maputo-mobile-menu-content {
+  transition: all 0.3s ease;
+  background: #0a010e !important;
+
+  .t-hub-menu-ul {
+    li {
+      a {
+        color: #fff !important;
+      }
+    }
+  }
+
+  .maputo-header-mobile-dedicated {
+    a {
+      background: rgba(255, 255, 255, 0.2) !important;
+      border-radius: 25px !important;
+      padding: 15px 30px !important;
+      color: #fff !important;
+      font-weight: bold !important;
+      border: none !important;
+
+      &:first-child {
+        background: #ffffff33 !important;
+        color: #fff !important;
+
+        &:hover {
+          background: #fff !important;
+          color: #ffffff33 !important;
+        }
+      }
+
+      &:last-child {
+        background: #fff !important;
+        color: #ffffff33 !important;
+
+        &:hover {
+          background: #ffffff33 !important;
+          color: #fff !important;
+        }
+      }
+    }
+  }
+}
+
+.thub-maputo-mobile-menu-content-admin {
+  top: 38px !important;
+
+  @media (max-width: 783px) {
+    top: 40px !important;
   }
 }

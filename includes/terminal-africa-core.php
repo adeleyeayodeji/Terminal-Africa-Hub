@@ -1240,10 +1240,6 @@ class TerminalTheme
             'label' => __('Company Email', 'terminal-africa-hub'),
             'section' => 'terminal_footer_section',
             'settings' => 'company_email',
-            //check if footer type is 1
-            'active_callback' => function () {
-                return get_theme_mod('footer_type', '1') == '1';
-            }
         ));
 
         //Company phone
@@ -1258,10 +1254,6 @@ class TerminalTheme
             'label' => __('Company Phone', 'terminal-africa-hub'),
             'section' => 'terminal_footer_section',
             'settings' => 'company_phone',
-            //check if footer type is 1
-            'active_callback' => function () {
-                return get_theme_mod('footer_type', '1') == '1';
-            }
         ));
 
         //social media links
@@ -1420,6 +1412,30 @@ class TerminalTheme
                 background-color: <?php echo esc_attr(get_theme_mod('main_button_hover_bg_color_safi', '#333333')); ?> !important;
                 color: <?php echo esc_attr(get_theme_mod('main_button_hover_text_color_safi', '#ffffff')); ?> !important;
                 border: 1px solid <?php echo esc_attr(get_theme_mod('main_button_hover_bg_color_safi', '#333333')); ?> !important;
+            }
+
+
+            /**
+            * Maputo Pop up button styles
+            */
+            .t-hub-dedicated.maputo-header-mobile-dedicated a:first-child {
+                background-color: <?php echo esc_attr(get_theme_mod('maputo_login_background_color', '#ffffff33')); ?> !important;
+                color: <?php echo esc_attr(get_theme_mod('maputo_login_text_color', '#ffffff')); ?> !important;
+            }
+
+            .t-hub-dedicated.maputo-header-mobile-dedicated a:first-child:hover {
+                background-color: <?php echo esc_attr(get_theme_mod('maputo_login_background_hover_color', '#ffffff')); ?> !important;
+                color: <?php echo esc_attr(get_theme_mod('maputo_login_text_hover_color', '#ffffff')); ?> !important;
+            }
+
+            .t-hub-dedicated.maputo-header-mobile-dedicated a:last-child {
+                background-color: <?php echo esc_attr(get_theme_mod('maputo_sign_up_background_color', '#ffffff')); ?> !important;
+                color: <?php echo esc_attr(get_theme_mod('maputo_sign_up_text_color', '#ffffff')); ?> !important;
+            }
+
+            .t-hub-dedicated.maputo-header-mobile-dedicated a:last-child:hover {
+                background-color: <?php echo esc_attr(get_theme_mod('maputo_sign_up_background_hover_color', '#ffffff')); ?> !important;
+                color: <?php echo esc_attr(get_theme_mod('maputo_sign_up_text_hover_color', '#ffffff')); ?> !important;
             }
 
 

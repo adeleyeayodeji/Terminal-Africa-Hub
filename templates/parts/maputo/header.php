@@ -66,7 +66,7 @@ if (!defined('ABSPATH')) {
         </div>
     </div>
 </div>
-<div class="terminal-mobile-menu-content">
+<div class="terminal-mobile-menu-content thub-maputo-mobile-menu-content <?php echo current_user_can('administrator') ? 'thub-maputo-mobile-menu-content-admin' : ''; ?>">
     <div class="t-hub-menu">
         <?php
         //wp menu
@@ -79,7 +79,7 @@ if (!defined('ABSPATH')) {
         );
         ?>
     </div>
-    <div class="t-hub-dedicated ivato-header-2-wrapper-mobile">
+    <div class="t-hub-dedicated ivato-header-2-wrapper-mobile maputo-header-mobile-dedicated">
         <nav class="d-flex">
             <a href="#">Login</a>
             <a href="#">Sign Up</a>
