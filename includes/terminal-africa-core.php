@@ -1109,7 +1109,8 @@ class TerminalTheme
             'choices' => array(
                 '1' => 'Footer 1',
                 '2' => 'Footer 2',
-                'safi' => 'Safi Footer'
+                'safi' => 'Safi Footer',
+                'maputo' => 'Maputo Footer'
             )
         ));
 

@@ -11,6 +11,10 @@
         $path = 'templates/parts/safi/footer';
         $footer_type = "";
         break;
+      case 'maputo':
+        $path = 'templates/parts/maputo/footer';
+        $footer_type = "";
+        break;
       default:
         $path = 'templates/parts/footer';
         break;

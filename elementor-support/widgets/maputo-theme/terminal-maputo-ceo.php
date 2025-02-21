@@ -39,7 +39,7 @@ class Terminal_Maputo_CEO_Widget extends \Elementor\Widget_Base
      */
     public function get_title()
     {
-        return __('Terminal Maputo CEO', 'terminal-africa-hub');
+        return __('Terminal Maputo CEO / Location Hub', 'terminal-africa-hub');
     }
 
     /**
@@ -86,6 +86,44 @@ class Terminal_Maputo_CEO_Widget extends \Elementor\Widget_Base
             ]
         );
 
+        //bg color
+        $this->add_control(
+            'bg_color',
+            [
+                'label' => __('Background Color', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#F5F3E8',
+                'selectors' => [
+                    '{{WRAPPER}} .thub-maputo-ceo' => 'background: {{VALUE}};',
+                ],
+            ]
+        );
+
+        //checkbox to show or hide the location hub
+        $this->add_control(
+            'show_location_hub',
+            [
+                'label' => __('Use as a Location Hub', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::SWITCHER,
+                'default' => 'no',
+                'return_value' => 'yes',
+                'description' => __('Use this widget as a location hub', 'terminal-africa-hub'),
+            ]
+        );
+
+        //location hub title
+        $this->add_control(
+            'location_hub_title',
+            [
+                'label' => __('Location Hub Title', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::TEXT,
+                'default' => __('Location Hub', 'terminal-africa-hub'),
+                'condition' => [
+                    'show_location_hub' => 'yes',
+                ],
+            ]
+        );
+
         $repeater = new \Elementor\Repeater();
 
         $repeater->add_control(
@@ -95,7 +133,7 @@ class Terminal_Maputo_CEO_Widget extends \Elementor\Widget_Base
                 'type' => \Elementor\Controls_Manager::MEDIA,
                 'default' => [
                     'url' => \Elementor\Utils::get_placeholder_image_src(),
-                ],
+                ]
             ]
         );
 
@@ -151,27 +189,45 @@ class Terminal_Maputo_CEO_Widget extends \Elementor\Widget_Base
         $settings = $this->get_settings_for_display();
 ?>
         <div class="thub-maputo-ceo">
+            <?php if ($settings['show_location_hub'] == 'yes') : ?>
+                <div class="thub-maputo-ceo--location-hub">
+                    <h2><?php echo esc_html($settings['location_hub_title']); ?></h2>
+                </div>
+            <?php endif; ?>
             <div class="thub-maputo-ceo--items">
                 <?php
                 foreach ($settings['items'] as $item) {
                 ?>
                     <div class="thub-maputo-ceo--item">
-                        <div class="thub-maputo-ceo--item--header">
-                            <div class="thub-maputo-ceo--item--header--image">
-                                <img src="<?php echo esc_url($item['image']['url']); ?>" alt="<?php echo esc_attr($item['name']); ?>">
+                        <div class="thub-maputo-ceo--item--header <?php echo empty($item['position']) ? 'thub-maputo-ceo--item--header--with-position' : ''; ?>">
+                            <div class="thub-maputo-ceo--item--header--image <?php echo $settings['show_location_hub'] == 'yes' ? 'maputo-ceo--item--header--image--icon' : ''; ?>">
+                                <?php if ($settings['show_location_hub'] == 'yes') : ?>
+                                    <svg width="22" height="27" viewBox="0 0 22 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15 11C15 13.2091 13.2091 15 11 15C8.79086 15 7 13.2091 7 11C7 8.79086 8.79086 7 11 7C13.2091 7 15 8.79086 15 11Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M21 11C21 20.5228 11 26 11 26C11 26 1 20.5228 1 11C1 5.47715 5.47715 1 11 1C16.5228 1 21 5.47715 21 11Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                <?php else : ?>
+                                    <img src="<?php echo esc_url($item['image']['url']); ?>" alt="<?php echo esc_attr($item['name']); ?>">
+                                <?php endif; ?>
                             </div>
                             <div class="thub-maputo-ceo--item--header--content">
                                 <h3>
                                     <?php echo esc_html($item['name']); ?>
                                 </h3>
-                                <p>
-                                    <?php echo esc_html($item['position']); ?>
-                                </p>
+                                <?php
+                                if (!empty($item['position'])) :
+                                ?>
+                                    <p>
+                                        <?php echo esc_html($item['position']); ?>
+                                    </p>
+                                <?php
+                                endif;
+                                ?>
                             </div>
                         </div>
                         <div class="thub-maputo-ceo--item--content">
                             <p>
-                                <?php echo esc_html($item['description']); ?>
+                                <?php echo wp_kses_post($item['description']); ?>
                             </p>
                         </div>
                     </div>
