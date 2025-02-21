@@ -138,6 +138,17 @@ class Terminal_Ivato_Inner_Services_Widget extends \Elementor\Widget_Base
         //add service list repeater
         $service_list = new \Elementor\Repeater();
 
+        //add condition to enable image
+        $service_list->add_control(
+            'enable_image',
+            [
+                'label' => __('Enable Image', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::SWITCHER,
+                'default' => 'yes',
+            ]
+        );
+
+        //add service image
         $service_list->add_control(
             'service_image',
             [
@@ -145,6 +156,9 @@ class Terminal_Ivato_Inner_Services_Widget extends \Elementor\Widget_Base
                 'type' => \Elementor\Controls_Manager::MEDIA,
                 'default' => [
                     'url' => \Elementor\Utils::get_placeholder_image_src(),
+                ],
+                'condition' => [
+                    'enable_image' => 'yes',
                 ],
             ]
         );
@@ -227,8 +241,6 @@ class Terminal_Ivato_Inner_Services_Widget extends \Elementor\Widget_Base
             ]
         );
 
-
-
         $this->end_controls_section();
     }
 
@@ -278,7 +290,9 @@ class Terminal_Ivato_Inner_Services_Widget extends \Elementor\Widget_Base
                 foreach ($settings['service_list'] as $service) :
                 ?>
                     <div class="terminal-hub-ivato-services-list--items--item">
-                        <img src="<?php echo $service['service_image']['url']; ?>" alt="<?php echo $service['service_title']; ?>">
+                        <?php if ($service['enable_image'] === 'yes') : ?>
+                            <img src="<?php echo $service['service_image']['url']; ?>" alt="<?php echo $service['service_title']; ?>">
+                        <?php endif; ?>
                         <h3><?php echo $service['service_title']; ?></h3>
                         <p>
                             <?php echo $service['service_description']; ?>

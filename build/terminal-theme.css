@@ -14519,4 +14519,145 @@
   }
 }
 
+.thub-maputo-faq-header {
+  background: #f5f3e8;
+  padding: 6rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+@media (min-width: 1058px) {
+  .thub-maputo-faq-header {
+    padding: 6rem 5rem;
+  }
+}
+@media (max-width: 1058px) {
+  .thub-maputo-faq-header {
+    padding: 4rem 1rem;
+  }
+}
+.thub-maputo-faq-header h1 {
+  font-size: 55px;
+  line-height: 86.4px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: #333333;
+  text-align: center;
+  margin: 0;
+}
+@media (min-width: 1058px) {
+  .thub-maputo-faq-header h1 {
+    font-size: 55px;
+  }
+}
+@media (max-width: 1058px) {
+  .thub-maputo-faq-header h1 {
+    font-size: 40px;
+    line-height: 57.6px;
+  }
+}
+.thub-maputo-faq-header a {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: #000;
+  text-decoration: none !important;
+  background: #fff;
+  border-radius: 25px;
+  padding: 14px 34px;
+  transition: all 0.3s ease;
+}
+.thub-maputo-faq-header a:hover {
+  background: #000;
+  color: #fff;
+}
+
+@media (min-width: 1060px) {
+  .terminal-hub-maputo-footer-cta-container {
+    padding: 3rem 7rem;
+  }
+}
+@media (max-width: 1058px) {
+  .terminal-hub-maputo-footer-cta-container {
+    padding: 3rem 3rem;
+  }
+}
+
+.terminal-hub-maputo-footer-cta {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background: #d8ddcd;
+  padding: 40px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+@media (min-width: 1058px) {
+  .terminal-hub-maputo-footer-cta {
+    padding: 40px 60px;
+  }
+}
+@media (max-width: 1058px) {
+  .terminal-hub-maputo-footer-cta {
+    padding: 40px 1rem;
+    flex-direction: column;
+  }
+}
+.terminal-hub-maputo-footer-cta--left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 15px;
+}
+@media (max-width: 1058px) {
+  .terminal-hub-maputo-footer-cta--left {
+    justify-content: center;
+    align-items: center;
+  }
+}
+.terminal-hub-maputo-footer-cta--left h3 {
+  font-size: 20px;
+  line-height: 27px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: #333333;
+  margin: 0;
+  font-weight: 600;
+}
+.terminal-hub-maputo-footer-cta--left p {
+  font-size: 16px;
+  line-height: 27px;
+  font-family: "Inter", sans-serif;
+  color: rgba(85, 85, 85, 0.8);
+  margin: 0;
+  font-weight: 400;
+}
+.terminal-hub-maputo-footer-cta--right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.terminal-hub-maputo-footer-cta--right a {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: #000;
+  text-decoration: none !important;
+  background: #fff;
+  border-radius: 25px;
+  padding: 14px 34px;
+  transition: all 0.3s ease;
+}
+.terminal-hub-maputo-footer-cta--right a:hover {
+  background: #000;
+  color: #fff;
+}
+
 /*# sourceMappingURL=terminal-theme.css.map*/

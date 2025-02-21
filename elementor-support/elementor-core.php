@@ -106,6 +106,10 @@ class TerminalElementor
         \Elementor\Plugin::instance()->widgets_manager->register(new Terminal_Maputo_Hero_Widget());
         //Terminal_Maputo_Ceo_Widget
         \Elementor\Plugin::instance()->widgets_manager->register(new Terminal_Maputo_CEO_Widget());
+        //Terminal_Maputo_FAQ_Header_Widget
+        \Elementor\Plugin::instance()->widgets_manager->register(new Terminal_Maputo_FAQ_Header_Widget());
+        //Terminal_Maputo_Footer_CTA_Widget
+        \Elementor\Plugin::instance()->widgets_manager->register(new Terminal_Maputo_Footer_CTA_Widget());
     }
 
     /**
