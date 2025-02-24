@@ -834,3 +834,27 @@
     }
   }
 }
+
+.maputo-hide-title {
+  .terminal-hub-ivato-faqs--left {
+    display: none !important;
+  }
+
+  .terminal-hub-ivato-faqs--right {
+    width: 100% !important;
+  }
+}
+
+.maputo-footer-custom {
+  @media (min-width: 1060px) {
+    .terminal-hub-maputo-footer-cta-container {
+      padding: 3rem 16rem;
+    }
+  }
+
+  @media (max-width: 1058px) {
+    .terminal-hub-maputo-footer-cta-container {
+      padding: 3rem 3rem;
+    }
+  }
+}

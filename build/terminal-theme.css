@@ -14660,4 +14660,22 @@
   color: #fff;
 }
 
+.maputo-hide-title .terminal-hub-ivato-faqs--left {
+  display: none !important;
+}
+.maputo-hide-title .terminal-hub-ivato-faqs--right {
+  width: 100% !important;
+}
+
+@media (min-width: 1060px) {
+  .maputo-footer-custom .terminal-hub-maputo-footer-cta-container {
+    padding: 3rem 16rem;
+  }
+}
+@media (max-width: 1058px) {
+  .maputo-footer-custom .terminal-hub-maputo-footer-cta-container {
+    padding: 3rem 3rem;
+  }
+}
+
 /*# sourceMappingURL=terminal-theme.css.map*/

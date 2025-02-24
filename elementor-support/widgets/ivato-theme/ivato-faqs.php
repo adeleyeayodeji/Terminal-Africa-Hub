@@ -99,6 +99,16 @@ class Terminal_Ivato_Faqs_Widget extends \Elementor\Widget_Base
             ]
         );
 
+        //hide title
+        $this->add_control(
+            'hide_title',
+            [
+                'label' => __('Hide Title', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::SWITCHER,
+                'default' => 'no'
+            ]
+        );
+
         //show description for maputo
         $this->add_control(
             'description',
@@ -242,7 +252,7 @@ class Terminal_Ivato_Faqs_Widget extends \Elementor\Widget_Base
     {
         $settings = $this->get_settings_for_display();
 ?>
-        <div class="terminal-hub-ivato-faqs <?php echo esc_attr($settings['type']); ?>">
+        <div class="terminal-hub-ivato-faqs <?php echo esc_attr($settings['type']); ?> <?php echo $settings['hide_title'] === 'yes' ? 'maputo-hide-title' : ''; ?>">
             <div class="terminal-hub-ivato-faqs--left">
                 <h2>
                     <?php echo esc_html($settings['title']); ?>

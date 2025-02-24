@@ -186,7 +186,8 @@ jQuery(document).ready(function ($) {
     "Send Express",
     "Travels",
     "Login",
-    "Sign Up"
+    "Sign Up",
+    "Create an account"
   ];
   linkTexts.forEach((linkText) => {
     //get current site url
@@ -287,6 +288,15 @@ jQuery(document).ready(function ($) {
         });
         break;
       case "Sign Up":
+        //https://app.thepep.africa/auth/register
+        links.each(function (index, element) {
+          $(this).attr(
+            "href",
+            `https://${siteType}.${currentSiteDomain}/auth/register`
+          );
+        });
+        break;
+      case "Create an account":
         //https://app.thepep.africa/auth/register
         links.each(function (index, element) {
           $(this).attr(

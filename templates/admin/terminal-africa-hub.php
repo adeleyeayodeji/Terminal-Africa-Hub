@@ -25,6 +25,12 @@ $demo_data = [
         "preview_link" => "https://jomo.terminal.africa/"
     ],
     (object)[
+        "name" => "Maputo",
+        "image" => TERMINAL_THEME_ASSETS_URI . 'img/themes/maputo.png',
+        "id" => "terminal-maputo-demo",
+        "preview_link" => "https://maputo.terminal.africa/"
+    ],
+    (object)[
         "name" => "Ivato",
         "image" => TERMINAL_THEME_ASSETS_URI . 'img/themes/ivato.png',
         "id" => "terminal-ivato-demo",

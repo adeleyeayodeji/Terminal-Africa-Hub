@@ -159,9 +159,15 @@ class Terminal_Maputo_FAQ_Header_Widget extends \Elementor\Widget_Base
             <h1>
                 <?php echo esc_html($settings['faq_header_title']); ?>
             </h1>
-            <a href="<?php echo esc_url($settings['faq_header_button_link']['url']); ?>">
-                <?php echo esc_html($settings['faq_header_button_text']); ?>
-            </a>
+            <?php
+            if (!empty($settings['faq_header_button_text'])):
+            ?>
+                <a href="<?php echo esc_url($settings['faq_header_button_link']['url']); ?>">
+                    <?php echo esc_html($settings['faq_header_button_text']); ?>
+                </a>
+            <?php
+            endif;
+            ?>
         </div>
 <?php
     }

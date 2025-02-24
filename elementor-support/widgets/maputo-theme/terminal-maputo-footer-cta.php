@@ -145,6 +145,7 @@ class Terminal_Maputo_Footer_CTA_Widget extends \Elementor\Widget_Base
      */
     protected function render()
     {
+        //for advance class: maputo-footer-custom
         $settings = $this->get_settings_for_display();
 ?>
         <div class="terminal-hub-maputo-footer-cta-container">
