@@ -297,7 +297,7 @@ class TerminalDemoImporter
                     //set header type to maputo
                     set_theme_mod('header_type', 'maputo');
                     //maputo_header_background_color
-                    set_theme_mod('maputo_header_background_color', '#ffffff');
+                    set_theme_mod('maputo_header_background_color', '#0a010e');
                     //maputo_header_text_color
                     set_theme_mod('maputo_header_text_color', '#ffffff');
                     //maputo_header_button_color
@@ -309,21 +309,21 @@ class TerminalDemoImporter
                     //maputo_header_button_hover_text_color
                     set_theme_mod('maputo_header_button_hover_text_color', '#ffffff');
                     //maputo_login_background_color
-                    set_theme_mod('maputo_login_background_color', '#ffffff33');
+                    set_theme_mod('maputo_login_background_color', '#3d3d3d');
                     //maputo_login_text_color
                     set_theme_mod('maputo_login_text_color', '#ffffff');
                     //maputo_login_background_hover_color
-                    set_theme_mod('maputo_login_background_hover_color', '#ffffff');
+                    set_theme_mod('maputo_login_background_hover_color', '#636363');
                     //maputo_login_text_hover_color
                     set_theme_mod('maputo_login_text_hover_color', '#ffffff');
                     //maputo_sign_up_background_color
                     set_theme_mod('maputo_sign_up_background_color', '#ffffff');
                     //maputo_sign_up_text_color
-                    set_theme_mod('maputo_sign_up_text_color', '#ffffff');
+                    set_theme_mod('maputo_sign_up_text_color', '#000000');
                     //maputo_sign_up_background_hover_color
-                    set_theme_mod('maputo_sign_up_background_hover_color', '#ffffff');
+                    set_theme_mod('maputo_sign_up_background_hover_color', '#dddddd');
                     //maputo_sign_up_text_hover_color
-                    set_theme_mod('maputo_sign_up_text_hover_color', '#ffffff');
+                    set_theme_mod('maputo_sign_up_text_hover_color', '#000000');
 
                     //update wp_customize footer_background_color
                     set_theme_mod('footer_background_color', '#0a010e');
