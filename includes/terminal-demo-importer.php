@@ -359,6 +359,55 @@ class TerminalDemoImporter
                     set_theme_mod('instagram_link', 'https://www.instagram.com/terminal_africa/?hl=en');
 
                     break;
+                case 'terminal-ivato-demo':
+                    //set header type to maputo
+                    set_theme_mod('header_type', '2');
+                    //set Header Design
+                    set_theme_mod('header_design', 'ivato-header');
+                    //set book_shipment_color
+                    set_theme_mod('book_shipment_color', '#00aff0');
+                    //set book_shipment_hover_color
+                    set_theme_mod('book_shipment_hover_color', '#000000');
+                    //track_shipment_color
+                    set_theme_mod('track_shipment_color', '#000000');
+                    //set track_shipment_hover_color
+                    set_theme_mod('track_shipment_hover_color', '#686868');
+                    //set footer type
+                    set_theme_mod('footer_type', '2');
+                    //set footer_icon_color
+                    set_theme_mod('footer_icon_color', '#ffffff');
+                    //set footer_icon_background_color
+                    set_theme_mod('footer_icon_background_color', '#333333');
+                    //set footer_background_color
+                    set_theme_mod('footer_background_color', '#efefec');
+                    //set footer_text_color
+                    set_theme_mod('footer_text_color', '#333333');
+                    //set footer_copyright_color
+                    set_theme_mod('footer_copyright_color', '#b8b3a7');
+
+                    //company_address
+                    set_theme_mod('company_address', '123, Company Street, Company City, Company Country');
+                    //company_email
+                    set_theme_mod(
+                        'company_email',
+                        'help@terminal.africa'
+                    );
+                    //company_phone
+                    set_theme_mod(
+                        'company_phone',
+                        '+234 000 111 22'
+                    );
+                    //facebook_link
+                    set_theme_mod(
+                        'facebook_link',
+                        'https://www.facebook.com/terminalafrica'
+                    );
+                    //twitter_link
+                    set_theme_mod('twitter_link', 'https://x.com/terminal_africa?lang=en');
+                    //instagram_link
+                    set_theme_mod('instagram_link', 'https://www.instagram.com/terminal_africa/?hl=en');
+
+                    break;
             }
         } catch (\Throwable $th) {
             throw $th;
