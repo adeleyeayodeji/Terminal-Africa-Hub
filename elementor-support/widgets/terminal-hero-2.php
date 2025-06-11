@@ -132,6 +132,64 @@ class Terminal_Hero_2_Widget extends \Elementor\Widget_Base
             ]
         );
 
+        //header gradient first color
+        $this->add_control(
+            'header_gradient_first_color',
+            [
+                'label' => __('Header Gradient First Color', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#f4ebe3',
+                'condition' => [
+                    'header_type' => 'ivato-hero-advanced',
+                ],
+            ]
+        );
+
+        //header gradient second color
+        $this->add_control(
+            'header_gradient_second_color',
+            [
+                'label' => __('Header Gradient Second Color', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#faf9f8',
+                'condition' => [
+                    'header_type' => 'ivato-hero-advanced',
+                ],
+            ]
+        );
+
+        //title color
+        $this->add_control(
+            'title_color',
+            [
+                'label' => __('Title Color', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#2c2c2c',
+                'condition' => [
+                    'header_type' => 'ivato-hero-advanced',
+                ],
+                'selectors' => [
+                    '{{WRAPPER}} .terminal-thub-hero-2--content h1' => 'color: {{VALUE}};',
+                ],
+            ]
+        );
+
+        //description color
+        $this->add_control(
+            'description_color',
+            [
+                'label' => __('Description Color', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#343434',
+                'condition' => [
+                    'header_type' => 'ivato-hero-advanced',
+                ],
+                'selectors' => [
+                    '{{WRAPPER}} .terminal-thub-hero-2--content p' => 'color: {{VALUE}};',
+                ],
+            ]
+        );
+
         //Button one bg color
         $this->add_control(
             'button_one_bg_color',
@@ -277,7 +335,7 @@ class Terminal_Hero_2_Widget extends \Elementor\Widget_Base
         $settings = $this->get_settings_for_display();
         $header_type = $settings['header_type'];
 ?>
-        <div class="terminal-thub-hero-2 <?php echo esc_attr($header_type); ?>">
+        <div class="terminal-thub-hero-2 <?php echo esc_attr($header_type); ?>" <?php if ($header_type == 'ivato-hero-advanced') : ?>style="background: linear-gradient(258.17deg, <?php echo esc_attr($settings['header_gradient_first_color']); ?> -1.3%, <?php echo esc_attr($settings['header_gradient_second_color']); ?> 96.65%) !important;" <?php endif; ?>>
             <div class="terminal-thub-hero-2--content">
                 <h1>
                     <?php echo esc_html($settings['title']); ?>

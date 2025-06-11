@@ -103,6 +103,32 @@ class Terminal_Ivato_Reviews_Widget extends \Elementor\Widget_Base
             ]
         );
 
+        //bg color
+        $this->add_control(
+            'bg_color',
+            [
+                'label' => __('BG Color', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#fff',
+                'selectors' => [
+                    '{{WRAPPER}} .terminal-hub-ivato-reviews' => 'background-color: {{VALUE}}',
+                ],
+            ]
+        );
+
+        //text color
+        $this->add_control(
+            'text_color',
+            [
+                'label' => __('Text Color', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#333333',
+                'selectors' => [
+                    '{{WRAPPER}} .terminal-hub-ivato-reviews h2, {{WRAPPER}} .terminal-hub-ivato-reviews h3, {{WRAPPER}} .terminal-hub-ivato-reviews p, {{WRAPPER}} .terminal-hub-ivato-reviews span, {{WRAPPER}} .terminal-hub-ivato-reviews a' => 'color: {{VALUE}}',
+                ],
+            ]
+        );
+
         $this->add_control(
             'image',
             [

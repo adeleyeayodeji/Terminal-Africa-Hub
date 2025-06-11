@@ -95,6 +95,32 @@ class Terminal_Ivato_Send_Parcel_Widget extends \Elementor\Widget_Base
             ]
         );
 
+        //bg color
+        $this->add_control(
+            'bg_color',
+            [
+                'label' => __('BG Color', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#fff',
+                'selectors' => [
+                    '{{WRAPPER}} .terminal-africa-hub-ivato-send-parcel' => 'background-color: {{VALUE}}',
+                ],
+            ]
+        );
+
+        //text color
+        $this->add_control(
+            'text_color',
+            [
+                'label' => __('Text Color', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#333333',
+                'selectors' => [
+                    '{{WRAPPER}} .terminal-africa-hub-ivato-send-parcel h3' => 'color: {{VALUE}}',
+                ],
+            ]
+        );
+
         //book shipment button
         $this->add_control(
             'book_shipment_button',

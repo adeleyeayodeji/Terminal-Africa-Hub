@@ -122,6 +122,32 @@ class Terminal_Ivato_Inner_Services_Widget extends \Elementor\Widget_Base
             ]
         );
 
+        //bg color
+        $this->add_control(
+            'bg_color',
+            [
+                'label' => __('BG Color', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#fff',
+                'selectors' => [
+                    '{{WRAPPER}} .terminal-hub-ivato-services-list' => 'background-color: {{VALUE}}',
+                ],
+            ]
+        );
+
+        //text color
+        $this->add_control(
+            'text_color',
+            [
+                'label' => __('Text Color', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#333333',
+                'selectors' => [
+                    '{{WRAPPER}} .terminal-hub-ivato-services-list h2, {{WRAPPER}} .terminal-hub-ivato-services-list h3, {{WRAPPER}} .terminal-hub-ivato-services-list p, {{WRAPPER}} .terminal-hub-ivato-services-list span, {{WRAPPER}} .terminal-hub-ivato-services-list a' => 'color: {{VALUE}}',
+                ],
+            ]
+        );
+
         //description
         $this->add_control(
             'description',

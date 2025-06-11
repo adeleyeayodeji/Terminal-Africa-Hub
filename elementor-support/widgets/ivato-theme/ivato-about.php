@@ -108,6 +108,32 @@ class Terminal_Ivato_About_Widget extends \Elementor\Widget_Base
             ]
         );
 
+        //container bg color
+        $this->add_control(
+            'container_bg_color',
+            [
+                'label' => __('Container BG Color', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#fff',
+                'selectors' => [
+                    '{{WRAPPER}} .terminal-hub-ivato-about' => 'background-color: {{VALUE}}',
+                ],
+            ]
+        );
+
+        //text color
+        $this->add_control(
+            'text_color',
+            [
+                'label' => __('Text Color', 'terminal-africa-hub'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'default' => '#333333',
+                'selectors' => [
+                    '{{WRAPPER}} .terminal-hub-ivato-about h2, {{WRAPPER}} .terminal-hub-ivato-about h3, {{WRAPPER}} .terminal-hub-ivato-about p, {{WRAPPER}} .terminal-hub-ivato-about span, {{WRAPPER}} .terminal-hub-ivato-about a' => 'color: {{VALUE}}',
+                ],
+            ]
+        );
+
         $this->add_control(
             'description',
             [
@@ -428,13 +454,13 @@ class Terminal_Ivato_About_Widget extends \Elementor\Widget_Base
                     </div>
                     <div class="terminal-hub-ivato-about--body--content--contact">
                         <div class="terminal-hub-ivato-about--body--content--contact--email">
-                            <img src="<?php echo TERMINAL_THEME_ASSETS_URI ?>/img/map.svg" alt="Email">
+                            <img src="<?php echo TERMINAL_THEME_ASSETS_URI ?>img/map.svg" alt="Email">
                             <span>
                                 <?php echo $settings['email']; ?>
                             </span>
                         </div>
                         <div class="terminal-hub-ivato-about--body--content--contact--phone">
-                            <img src="<?php echo TERMINAL_THEME_ASSETS_URI ?>/img/phone.svg" alt="Phone">
+                            <img src="<?php echo TERMINAL_THEME_ASSETS_URI ?>img/phone.svg" alt="Phone">
                             <span>
                                 <?php echo $settings['phone']; ?>
                             </span>
