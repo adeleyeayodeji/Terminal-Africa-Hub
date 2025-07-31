@@ -78,7 +78,7 @@ if (!defined('ABSPATH')) {
             )
         );
         ?>
-        <div class="credit">
+        <div class="credit" style="display: none !important;">
             <a href="https://www.terminal.africa/" target="_blank">
                 Powered by Terminal Africa
             </a>

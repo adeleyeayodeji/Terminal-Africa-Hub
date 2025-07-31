@@ -62,7 +62,7 @@ if (!defined('ABSPATH')) {
             <div class="d-flex justify-content-between thub-safi-footer-copyright">
                 <div>
                     <span>
-                        © <?php echo date('Y') . ' ' . get_bloginfo('name') ?>. Powered by <a href="https://terminal.africa" target="_blank">Terminal Africa</a>. All rights reserved.
+                        © <?php echo date('Y') . ' ' . get_bloginfo('name') ?>. All rights reserved.
                     </span>
                 </div>
                 <div>

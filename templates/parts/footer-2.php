@@ -109,7 +109,7 @@ if (!defined('ABSPATH')) {
             ?>
         </div>
         <div class="terminal-ivato-copyright">
-            <p>© <?php echo date('Y') . ' ' . get_bloginfo('name') ?>. Powered by <a href="https://terminal.africa" target="_blank">Terminal Africa</a>. All rights reserved.</p>
+            <p>© <?php echo date('Y') . ' ' . get_bloginfo('name') ?>. All rights reserved.</p>
         </div>
         <div class="terminal-ivato-site-icon">
             <a href="<?php echo esc_url(home_url('/')); ?>">
